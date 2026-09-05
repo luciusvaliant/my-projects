@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тест собеседование — Frontend / Backend / Fullstack</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0f172a;--card:#1e293b;--card2:#334155;--text:#e2e8f0;--muted:#94a3b8;
+  --primary:#6366f1;--primary-d:#4f46e5;--green:#22c55e;--green-d:#16a34a;
+  --red:#ef4444;--red-d:#dc2626;--amber:#f59e0b;--radius:14px;
+}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:16px}
+#app{width:100%;max-width:760px}
+.screen{display:none;animation:fade .3s ease}
+.screen.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+.header{text-align:center;margin-bottom:24px}
+.header h1{font-size:1.6rem;margin-bottom:6px}
+.header p{color:var(--muted);font-size:.9rem}
+.settings-card{background:var(--card);border-radius:var(--radius);padding:24px 20px}
+.settings-group{margin-bottom:22px}
+.settings-group:last-child{margin-bottom:0}
+.settings-label{font-size:1rem;font-weight:600;margin-bottom:10px;display:block}
+.btn-group{display:flex;flex-wrap:wrap;gap:8px}
+.btn-opt{
+  flex:1;min-width:70px;padding:11px 14px;border:2px solid var(--card2);background:var(--card2);
+  color:var(--text);border-radius:10px;font-size:.88rem;cursor:pointer;transition:all .15s;text-align:center;
+}
+.btn-opt:hover{border-color:var(--primary)}
+.btn-opt.selected{border-color:var(--primary);background:var(--primary-d);color:#fff;font-weight:600}
+.btn-start{
+  width:100%;margin-top:22px;padding:16px;background:var(--primary);color:#fff;border:none;
+  border-radius:12px;font-size:1.1rem;font-weight:700;cursor:pointer;transition:background .2s;
+}
+.btn-start:hover{background:var(--primary-d)}
+.tag-group{display:flex;flex-wrap:wrap;gap:6px}
+.tag-chip{
+  padding:7px 13px;border:2px solid var(--card2);background:var(--card2);color:var(--muted);
+  border-radius:20px;font-size:.82rem;cursor:pointer;transition:all .15s;
+}
+.tag-chip:hover{border-color:var(--primary);color:var(--text)}
+.tag-chip.selected{border-color:var(--primary);background:var(--primary-d);color:#fff;font-weight:600}
+.tag-hint{font-size:.8rem;color:var(--muted);margin-top:8px}
+
+.progress-wrap{margin-bottom:14px}
+.progress-bar{height:8px;background:var(--card);border-radius:4px;overflow:hidden}
+.progress-fill{height:100%;background:var(--primary);transition:width .3s;border-radius:4px}
+.progress-text{font-size:.83rem;color:var(--muted);margin-top:6px;display:flex;justify-content:space-between}
+.q-card{background:var(--card);border-radius:var(--radius);padding:22px 20px}
+.q-badges{margin-bottom:12px;display:flex;flex-wrap:wrap;gap:6px}
+.q-badge{display:inline-block;background:var(--primary-d);color:#fff;padding:3px 11px;border-radius:20px;font-size:.76rem}
+.q-badge.tag{background:var(--card2);color:var(--muted)}
+.q-text{font-size:1.1rem;line-height:1.5;margin-bottom:20px}
+.q-options{display:flex;flex-direction:column;gap:9px}
+.q-option{
+  padding:13px 16px;background:var(--card2);border:2px solid transparent;border-radius:10px;
+  cursor:pointer;transition:all .15s;font-size:.95rem;line-height:1.4;
+}
+.q-option:hover{border-color:var(--primary)}
+.q-option.selected{border-color:var(--primary);background:rgba(99,102,241,.2)}
+.q-option.correct{border-color:var(--green);background:rgba(34,197,94,.15)}
+.q-option.wrong{border-color:var(--red);background:rgba(239,68,68,.15)}
+.q-option.disabled{cursor:default;pointer-events:none}
+.q-review{
+  margin-top:18px;padding:16px;background:var(--bg);border-radius:10px;border-left:4px solid var(--primary);
+  animation:fade .3s ease;
+}
+.q-review h4{margin-bottom:7px;font-size:.95rem}
+.q-review p{font-size:.9rem;line-height:1.5;color:var(--muted)}
+.q-review .verdict{font-weight:700;margin-bottom:8px;font-size:1rem}
+.q-review .verdict.ok{color:var(--green)}
+.q-review .verdict.no{color:var(--red)}
+.q-nav{margin-top:18px;display:flex;gap:12px}
+.btn-nav{
+  flex:1;padding:14px;border:none;border-radius:10px;font-size:1rem;font-weight:600;cursor:pointer;transition:all .2s;
+}
+.btn-next{background:var(--primary);color:#fff}
+.btn-next:hover{background:var(--primary-d)}
+.btn-next:disabled{opacity:.4;cursor:not-allowed}
+
+.results-card{background:var(--card);border-radius:var(--radius);padding:26px 22px}
+.score-circle{
+  width:110px;height:110px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  margin:0 auto 18px;font-size:2rem;font-weight:800;border:4px solid;
+}
+.score-circle.ok{border-color:var(--green);color:var(--green)}
+.score-circle.mid{border-color:var(--amber);color:var(--amber)}
+.score-circle.low{border-color:var(--red);color:var(--red)}
+.results-title{text-align:center;font-size:1.25rem;margin-bottom:5px}
+.results-sub{text-align:center;color:var(--muted);margin-bottom:22px;font-size:.9rem}
+.results-list{display:flex;flex-direction:column;gap:10px;margin-bottom:22px;max-height:50vh;overflow-y:auto}
+.result-item{background:var(--card2);border-radius:10px;padding:14px;border-left:4px solid}
+.result-item.ok{border-color:var(--green)}
+.result-item.no{border-color:var(--red)}
+.result-item .ri-q{font-size:.92rem;margin-bottom:7px;font-weight:600}
+.result-item .ri-a{font-size:.84rem;color:var(--muted);line-height:1.4}
+.result-item .ri-a strong{color:var(--text)}
+.btn-restart{
+  width:100%;padding:16px;background:var(--primary);color:#fff;border:none;border-radius:12px;
+  font-size:1.1rem;font-weight:700;cursor:pointer;transition:background .2s;
+}
+.btn-restart:hover{background:var(--primary-d)}
+
+@media(max-width:520px){
+  .header h1{font-size:1.3rem}
+  .q-card{padding:18px 16px}
+  .q-text{font-size:1.02rem}
+  .btn-opt{min-width:55px;font-size:.8rem;padding:9px 10px}
+  .tag-chip{font-size:.76rem;padding:6px 10px}
+}
+</style>
+</head>
+<body>
+<div id="app">
+
+  <!-- START SCREEN -->
+  <div id="screen-start" class="screen active">
+    <div class="header">
+      <h1>🎓 Тест: Собеседование IT</h1>
+      <p>Frontend · Backend · Fullstack — выбери своё направление</p>
+    </div>
+    <div class="settings-card">
+      <div class="settings-group">
+        <label class="settings-label">Направление</label>
+        <div class="btn-group" id="dir-group">
+          <button class="btn-opt selected" data-dir="all">Все</button>
+          <button class="btn-opt" data-dir="frontend">Frontend</button>
+          <button class="btn-opt" data-dir="backend">Backend</button>
+          <button class="btn-opt" data-dir="fullstack">Fullstack</button>
+        </div>
+      </div>
+      <div class="settings-group">
+        <label class="settings-label">Технологии и языки</label>
+        <div class="tag-group" id="tag-group"></div>
+        <div class="tag-hint">Можно выбрать несколько или не выбирать ничего — тогда все</div>
+      </div>
+      <div class="settings-group">
+        <label class="settings-label">Сколько вопросов?</label>
+        <div class="btn-group" id="count-group">
+          <button class="btn-opt" data-count="5">5</button>
+          <button class="btn-opt" data-count="10">10</button>
+          <button class="btn-opt" data-count="15">15</button>
+          <button class="btn-opt" data-count="20">20</button>
+          <button class="btn-opt selected" data-count="0">Все</button>
+        </div>
+      </div>
+      <div class="settings-group">
+        <label class="settings-label">Когда показывать разбор?</label>
+        <div class="btn-group" id="review-group">
+          <button class="btn-opt selected" data-review="each">После каждого вопроса</button>
+          <button class="btn-opt" data-review="end">После всех вопросов</button>
+        </div>
+      </div>
+      <button class="btn-start" id="btn-start">Начать тест</button>
+    </div>
+  </div>
+
+  <!-- QUIZ SCREEN -->
+  <div id="screen-quiz" class="screen">
+    <div class="progress-wrap">
+      <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+      <div class="progress-text">
+        <span id="progress-label">Вопрос 1 из 10</span>
+        <span id="progress-score">Правильно: 0</span>
+      </div>
+    </div>
+    <div class="q-card">
+      <div class="q-badges" id="q-badges"></div>
+      <div class="q-text" id="q-text">Вопрос</div>
+      <div class="q-options" id="q-options"></div>
+      <div id="q-review-container"></div>
+      <div class="q-nav">
+        <button class="btn-nav btn-next" id="btn-next" disabled>Далее</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESULTS SCREEN -->
+  <div id="screen-results" class="screen">
+    <div class="results-card">
+      <div class="score-circle" id="score-circle">0%</div>
+      <div class="results-title" id="results-title">Результат</div>
+      <div class="results-sub" id="results-sub"></div>
+      <div class="results-list" id="results-list"></div>
+      <button class="btn-restart" id="btn-restart">Пройти заново</button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ===== UNREGISTER ANY OLD SERVICE WORKERS =====
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then(regs => {
+    regs.forEach(r => r.unregister());
+  });
+}
+
+// ===== EMBEDDED QUESTIONS (fallback if no server) =====
+let ALL_QUESTIONS = [];
+
+// ===== STATE =====
+let selectedDir = 'all';
+let selectedTags = new Set();
+let selectedCount = 0;
+let reviewMode = 'each';
+let quizQuestions = [];
+let currentIndex = 0;
+let selectedOption = null;
+let answered = false;
+let score = 0;
+let answers = [];
+let currentShuffledOptions = null;
+
+// ===== INIT =====
+async function loadQuestions() {
+  try {
+    const resp = await fetch('questions.json');
+    if (resp.ok) {
+      const data = await resp.json();
+      if (data.questions && data.questions.length > 0) {
+        ALL_QUESTIONS = data.questions;
+      }
+    }
+  } catch(e) {}
+  if (ALL_QUESTIONS.length === 0) {
+    document.getElementById('screen-start').innerHTML = '<div class="header"><h1>Ошибка загрузки</h1><p>Не удалось загрузить questions.json. Запустите локальный сервер: <code>python3 -m http.server 8080</code></p></div>';
+    return;
+  }
+  buildTagSelector();
+}
+
+
+// ===== TAG SELECTOR =====
+function buildTagSelector() {
+  const allTags = new Set();
+  ALL_QUESTIONS.forEach(q => {
+    if (q.tags) q.tags.forEach(t => allTags.add(t));
+  });
+  const container = document.getElementById('tag-group');
+  container.innerHTML = '';
+  [...allTags].sort().forEach(tag => {
+    const chip = document.createElement('button');
+    chip.className = 'tag-chip';
+    chip.textContent = tag;
+    chip.dataset.tag = tag;
+    chip.addEventListener('click', () => {
+      if (selectedTags.has(tag)) {
+        selectedTags.delete(tag);
+        chip.classList.remove('selected');
+      } else {
+        selectedTags.add(tag);
+        chip.classList.add('selected');
+      }
+    });
+    container.appendChild(chip);
+  });
+}
+
+// ===== HELPERS =====
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+function filterQuestions() {
+  let pool = ALL_QUESTIONS.filter(q => {
+    if (selectedDir !== 'all' && !q.direction.includes(selectedDir)) return false;
+    if (selectedTags.size > 0) {
+      const hasTag = q.tags.some(t => selectedTags.has(t));
+      if (!hasTag) return false;
+    }
+    return true;
+  });
+  if (pool.length === 0) pool = ALL_QUESTIONS;
+  return pool;
+}
+
+// ===== START SCREEN EVENTS =====
+document.getElementById('dir-group').addEventListener('click', e => {
+  if (e.target.classList.contains('btn-opt')) {
+    document.querySelectorAll('#dir-group .btn-opt').forEach(b => b.classList.remove('selected'));
+    e.target.classList.add('selected');
+    selectedDir = e.target.dataset.dir;
+  }
+});
+
+document.getElementById('count-group').addEventListener('click', e => {
+  if (e.target.classList.contains('btn-opt')) {
+    document.querySelectorAll('#count-group .btn-opt').forEach(b => b.classList.remove('selected'));
+    e.target.classList.add('selected');
+    selectedCount = parseInt(e.target.dataset.count);
+  }
+});
+
+document.getElementById('review-group').addEventListener('click', e => {
+  if (e.target.classList.contains('btn-opt')) {
+    document.querySelectorAll('#review-group .btn-opt').forEach(b => b.classList.remove('selected'));
+    e.target.classList.add('selected');
+    reviewMode = e.target.dataset.review;
+  }
+});
+
+document.getElementById('btn-start').addEventListener('click', () => {
+  const pool = shuffle(filterQuestions());
+  quizQuestions = selectedCount === 0 ? pool : pool.slice(0, Math.min(selectedCount, pool.length));
+  if (quizQuestions.length === 0) {
+    alert('Нет вопросов по выбранным фильтрам. Показываем все.');
+    quizQuestions = shuffle(ALL_QUESTIONS).slice(0, selectedCount || 10);
+  }
+  currentIndex = 0;
+  score = 0;
+  answers = [];
+  showScreen('screen-quiz');
+  renderQuestion();
+});
+
+// ===== QUIZ SCREEN =====
+function renderQuestion() {
+  const q = quizQuestions[currentIndex];
+  selectedOption = null;
+  answered = false;
+
+  const pct = (currentIndex / quizQuestions.length) * 100;
+  document.getElementById('progress-fill').style.width = pct + '%';
+  document.getElementById('progress-label').textContent = 'Вопрос ' + (currentIndex + 1) + ' из ' + quizQuestions.length;
+  document.getElementById('progress-score').textContent = 'Правильно: ' + score;
+
+  // Badges
+  var badgesDiv = document.getElementById('q-badges');
+  badgesDiv.innerHTML = '';
+  var dirBadge = document.createElement('span');
+  dirBadge.className = 'q-badge';
+  dirBadge.textContent = q.direction.join(' / ');
+  badgesDiv.appendChild(dirBadge);
+  if (q.tags) {
+    q.tags.forEach(function(t) {
+      var tagBadge = document.createElement('span');
+      tagBadge.className = 'q-badge tag';
+      tagBadge.textContent = t;
+      badgesDiv.appendChild(tagBadge);
+    });
+  }
+
+  document.getElementById('q-text').textContent = q.question;
+
+  // SHUFFLE OPTIONS each render
+  var indices = q.options.map(function(_, i) { return i; });
+  var shuffled = shuffle(indices);
+  currentShuffledOptions = shuffled;
+
+  var container = document.getElementById('q-options');
+  container.innerHTML = '';
+  shuffled.forEach(function(origIdx, displayIdx) {
+    var div = document.createElement('div');
+    div.className = 'q-option';
+    div.textContent = q.options[origIdx];
+    div.dataset.displayIdx = displayIdx;
+    div.dataset.origIdx = origIdx;
+    div.addEventListener('click', function() { selectOption(displayIdx); });
+    container.appendChild(div);
+  });
+
+  document.getElementById('q-review-container').innerHTML = '';
+  document.getElementById('btn-next').disabled = true;
+  document.getElementById('btn-next').textContent = currentIndex === quizQuestions.length - 1 ? 'Завершить' : 'Далее';
+}
+
+function selectOption(displayIdx) {
+  if (answered) return;
+  selectedOption = displayIdx;
+  var opts = document.querySelectorAll('.q-option');
+  opts.forEach(function(o, i) {
+    o.classList.toggle('selected', i === displayIdx);
+  });
+  document.getElementById('btn-next').disabled = false;
+}
+
+document.getElementById('btn-next').addEventListener('click', function() {
+  if (selectedOption === null) return;
+
+  if (!answered) {
+    answered = true;
+    var q = quizQuestions[currentIndex];
+    var selectedOrigIdx = currentShuffledOptions[selectedOption];
+    var isCorrect = selectedOrigIdx === q.correctIndex;
+    if (isCorrect) score++;
+
+    answers.push({
+      question: q.question,
+      direction: q.direction.join(' / '),
+      tags: q.tags,
+      selected: q.options[selectedOrigIdx],
+      correct: q.options[q.correctIndex],
+      isCorrect: isCorrect,
+      explanation: q.explanation,
+      answer: q.answer
+    });
+
+    var opts = document.querySelectorAll('.q-option');
+    opts.forEach(function(o, i) {
+      o.classList.add('disabled');
+      o.classList.remove('selected');
+      var origIdx = currentShuffledOptions[i];
+      if (origIdx === q.correctIndex) o.classList.add('correct');
+      if (i === selectedOption && !isCorrect) o.classList.add('wrong');
+    });
+
+    document.getElementById('progress-score').textContent = 'Правильно: ' + score;
+
+    if (reviewMode === 'each') {
+      showReview(q, isCorrect);
+      document.getElementById('btn-next').disabled = false;
+    } else {
+      document.getElementById('btn-next').disabled = true;
+      setTimeout(advance, 700);
+    }
+  } else {
+    advance();
+  }
+});
+
+function showReview(q, isCorrect) {
+  var container = document.getElementById('q-review-container');
+  container.innerHTML =
+    '<div class="q-review">' +
+    '<div class="verdict ' + (isCorrect ? 'ok' : 'no') + '">' + (isCorrect ? '✅ Верно!' : '❌ Неверно') + '</div>' +
+    '<h4>Разбор:</h4>' +
+    '<p>' + q.explanation + '</p>' +
+    '<p style="margin-top:10px"><strong style="color:var(--text)">Полный ответ:</strong> ' + q.answer + '</p>' +
+    '</div>';
+}
+
+function advance() {
+  currentIndex++;
+  if (currentIndex >= quizQuestions.length) {
+    showResults();
+  } else {
+    renderQuestion();
+  }
+}
+
+// ===== RESULTS SCREEN =====
+function showResults() {
+  document.getElementById('progress-fill').style.width = '100%';
+  var total = quizQuestions.length;
+  var pct = Math.round((score / total) * 100);
+
+  var circle = document.getElementById('score-circle');
+  circle.textContent = pct + '%';
+  circle.className = 'score-circle ' + (pct >= 70 ? 'ok' : pct >= 40 ? 'mid' : 'low');
+
+  var title, sub;
+  if (pct >= 90) { title = 'Отлично! 🏆'; sub = 'Вы готовы к собеседованию!'; }
+  else if (pct >= 70) { title = 'Хорошо! 👍'; sub = 'Ещё немного подготовки и всё будет отлично.'; }
+  else if (pct >= 40) { title = 'Неплохо 📚'; sub = 'Повторите темы с ошибками и попробуйте снова.'; }
+  else { title = 'Есть над чем поработать 💪'; sub = 'Изучите разбор и попробуйте ещё раз.'; }
+
+  document.getElementById('results-title').textContent = title;
+  document.getElementById('results-sub').textContent = score + ' из ' + total + ' правильных. ' + sub;
+
+  var list = document.getElementById('results-list');
+  list.innerHTML = '';
+  answers.forEach(function(a, i) {
+    var div = document.createElement('div');
+    div.className = 'result-item ' + (a.isCorrect ? 'ok' : 'no');
+    var html = '<div class="ri-q">' + (i + 1) + '. ' + a.question + '</div>';
+    if (!a.isCorrect) {
+      html += '<div class="ri-a">Ваш ответ: <span style="color:var(--red)">' + a.selected + '</span><br>';
+      html += 'Правильный: <span style="color:var(--green)"><strong>' + a.correct + '</strong></span></div>';
+    } else {
+      html += '<div class="ri-a"><span style="color:var(--green)">✓ ' + a.correct + '</span></div>';
+    }
+    html += '<div class="ri-a" style="margin-top:6px"><strong>Разбор:</strong> ' + a.explanation + '</div>';
+    div.innerHTML = html;
+    list.appendChild(div);
+  });
+
+  showScreen('screen-results');
+}
+
+document.getElementById('btn-restart').addEventListener('click', function() {
+  showScreen('screen-start');
+});
+
+// ===== START =====
+loadQuestions();
+</script>
+</body>
+</html>

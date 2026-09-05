@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор орнаментов из страз</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <header class="sidebar__header">
+                <h1 class="logo">✦ Rhinestone Studio</h1>
+                <p class="subtitle">Генератор орнаментов для выкладки стразами</p>
+            </header>
+
+            <div class="controls">
+                <div class="tab-bar">
+                    <button class="tab-btn active" data-tab="ornaments">Готовые орнаменты</button>
+                    <button class="tab-btn" data-tab="draw">Ручное рисование</button>
+                </div>
+
+                <!-- Вкладка: Готовые орнаменты -->
+                <div class="tab-panel active" id="tab-ornaments">
+                    <div class="control-group">
+                        <label class="control-label">
+                            Виды орнаментов
+                            <span class="combo-badge" id="comboBadge">1 выбран</span>
+                        </label>
+                        <div class="ornament-groups" id="ornamentGroups"></div>
+                    </div>
+
+                    <div class="control-group" id="sliderGroup">
+                        <label class="control-label">
+                            Настройки для: <span id="activeTypeLabel">Мандала</span>
+                        </label>
+                        <label class="control-label">
+                            Оси симметрии: <span id="symmetryValue">8</span>
+                        </label>
+                        <input type="range" id="symmetry" min="3" max="16" value="8" class="slider">
+
+                        <label class="control-label">
+                            Количество колец: <span id="ringsValue">6</span>
+                        </label>
+                        <input type="range" id="rings" min="2" max="12" value="6" class="slider">
+
+                        <label class="control-label">
+                            Плотность: <span id="densityValue">5</span>
+                        </label>
+                        <input type="range" id="density" min="1" max="10" value="5" class="slider">
+                    </div>
+                </div>
+
+                <!-- Вкладка: Ручное рисование -->
+                <div class="tab-panel" id="tab-draw">
+                    <div class="control-group">
+                        <label class="control-label">Инструмент рисования</label>
+                        <p class="draw-hint">Рисуйте мышью по холсту. Стразы появятся по линиям с учётом плотности.</p>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label">
+                            Оси симметрии: <span id="drawSymmetryValue">1</span>
+                        </label>
+                        <input type="range" id="drawSymmetry" min="1" max="16" value="1" class="slider">
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label">
+                            Плотность страз: <span id="drawDensityValue">5</span>
+                        </label>
+                        <input type="range" id="drawDensity" min="1" max="10" value="5" class="slider">
+                    </div>
+
+                    <div class="control-group">
+                        <div class="draw-buttons">
+                            <button class="btn btn--secondary btn--sm" id="drawGenerateBtn">Показать стразы</button>
+                            <button class="btn btn--secondary btn--sm" id="drawClearBtn">Очистить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Цветовая палитра</label>
+                    <div class="palette-buttons">
+                        <button class="palette-btn active" data-palette="diamond" title="Бриллиант">
+                            <span class="palette-swatch" style="background: linear-gradient(135deg, #e0e8ff, #b0c4de, #f0f8ff)"></span>
+                            <span>Бриллиант</span>
+                        </button>
+                        <button class="palette-btn" data-palette="sapphire" title="Сапфир">
+                            <span class="palette-swatch" style="background: linear-gradient(135deg, #0f52ba, #1e90ff, #87ceeb)"></span>
+                            <span>Сапфир</span>
+                        </button>
+                        <button class="palette-btn" data-palette="ruby" title="Рубин">
+                            <span class="palette-swatch" style="background: linear-gradient(135deg, #9b111e, #e0115f, #ff6b6b)"></span>
+                            <span>Рубин</span>
+                        </button>
+                        <button class="palette-btn" data-palette="emerald" title="Изумруд">
+                            <span class="palette-swatch" style="background: linear-gradient(135deg, #01796f, #50c878, #a8e6cf)"></span>
+                            <span>Изумруд</span>
+                        </button>
+                        <button class="palette-btn" data-palette="amethyst" title="Аметист">
+                            <span class="palette-swatch" style="background: linear-gradient(135deg, #9966cc, #d8bfd8, #e6e6fa)"></span>
+                            <span>Аметист</span>
+                        </button>
+                        <button class="palette-btn" data-palette="gold" title="Золото">
+                            <span class="palette-swatch" style="background: linear-gradient(135deg, #b8860b, #ffd700, #fff8dc)"></span>
+                            <span>Золото</span>
+                        </button>
+                        <button class="palette-btn" data-palette="rainbow" title="Радуга">
+                            <span class="palette-swatch" style="background: linear-gradient(135deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3)"></span>
+                            <span>Радуга</span>
+                        </button>
+                        <button class="palette-btn" data-palette="sunset" title="Закат">
+                            <span class="palette-swatch" style="background: linear-gradient(135deg, #ff6b6b, #feca57, #ff9ff3, #f368e0)"></span>
+                            <span>Закат</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Размеры страз</label>
+                    <div class="size-toggles">
+                        <label class="size-toggle">
+                            <input type="checkbox" data-size="small" checked>
+                            <span class="size-tag size-tag--small">SS6</span>
+                            <span class="size-label">2 мм</span>
+                        </label>
+                        <label class="size-toggle">
+                            <input type="checkbox" data-size="medium" checked>
+                            <span class="size-tag size-tag--medium">SS10</span>
+                            <span class="size-label">2.8 мм</span>
+                        </label>
+                        <label class="size-toggle">
+                            <input type="checkbox" data-size="large" checked>
+                            <span class="size-tag size-tag--large">SS16</span>
+                            <span class="size-label">3.8 мм</span>
+                        </label>
+                        <label class="size-toggle">
+                            <input type="checkbox" data-size="xlarge" checked>
+                            <span class="size-tag size-tag--xlarge">SS20</span>
+                            <span class="size-label">4.8 мм</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-toggle">
+                        <input type="checkbox" id="showGrid">
+                        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                        <span class="toggle-label">Показать сетку</span>
+                    </label>
+                    <label class="control-toggle">
+                        <input type="checkbox" id="showInfo" checked>
+                        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                        <span class="toggle-label">Информация о стразах</span>
+                    </label>
+                    <label class="control-toggle">
+                        <input type="checkbox" id="schemaMode">
+                        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                        <span class="toggle-label">Только схема (без страз)</span>
+                    </label>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn--primary" id="regenerateBtn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 11-3.5-7.1L21 8M21 3v5h-5"/></svg>
+                        Новый орнамент
+                    </button>
+                    <button class="btn btn--secondary" id="downloadBtn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                        Скачать PNG
+                    </button>
+                </div>
+            </div>
+
+            <div class="stats" id="stats">
+                <div class="stat">
+                    <span class="stat-value" id="totalStones">0</span>
+                    <span class="stat-label">всего страз</span>
+                </div>
+                <div class="stat-row" id="sizeBreakdown"></div>
+            </div>
+        </aside>
+
+        <main class="canvas-area">
+            <div class="canvas-wrapper">
+                <canvas id="ornamentCanvas"></canvas>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
