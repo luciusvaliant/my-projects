@@ -27,7 +27,13 @@
     };
 
     // --- Настройки по умолчанию для типа ---
-    const DEFAULT_TYPE_SETTINGS = { symmetry: 8, rings: 6, density: 5 };
+    const DEFAULT_TYPE_SETTINGS = {
+        symmetry: 8,
+        rings: 6,
+        density: 5,
+        palette: 'diamond',
+        enabledSizes: { small: true, medium: true, large: true, xlarge: true },
+    };
 
     // --- Состояние приложения ---
     const state = {
@@ -262,7 +268,10 @@
     // --- Настройки per-type ---
     function ensureTypeSettings(typeId) {
         if (!state.typeSettings[typeId]) {
-            state.typeSettings[typeId] = { ...DEFAULT_TYPE_SETTINGS };
+            state.typeSettings[typeId] = {
+                ...DEFAULT_TYPE_SETTINGS,
+                enabledSizes: { ...DEFAULT_TYPE_SETTINGS.enabledSizes },
+            };
         }
         return state.typeSettings[typeId];
     }
@@ -272,6 +281,8 @@
         state.symmetry = ts.symmetry;
         state.rings = ts.rings;
         state.density = ts.density;
+        state.palette = ts.palette;
+        state.enabledSizes = { ...ts.enabledSizes };
     }
 
     function syncSlidersToActive() {
@@ -291,6 +302,13 @@
             sliderGroup.style.opacity = state.activeType ? '1' : '0.4';
             sliderGroup.style.pointerEvents = state.activeType ? 'auto' : 'none';
         }
+        // Палитра и размеры активного типа
+        document.querySelectorAll('.palette-btn').forEach(b => {
+            b.classList.toggle('active', b.dataset.palette === ts.palette);
+        });
+        document.querySelectorAll('.size-toggle input').forEach(cb => {
+            cb.checked = ts.enabledSizes[cb.dataset.size];
+        });
     }
 
     // --- Размещение страза с учётом симметрии ---
@@ -2150,6 +2168,9 @@
                 document.querySelectorAll('.palette-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 state.palette = btn.dataset.palette;
+                if (state.activeType) {
+                    ensureTypeSettings(state.activeType).palette = state.palette;
+                }
                 render();
             });
         });
@@ -2189,6 +2210,9 @@
         document.querySelectorAll('.size-toggle input').forEach(cb => {
             cb.addEventListener('change', () => {
                 state.enabledSizes[cb.dataset.size] = cb.checked;
+                if (state.activeType) {
+                    ensureTypeSettings(state.activeType).enabledSizes[cb.dataset.size] = cb.checked;
+                }
                 render();
             });
         });
