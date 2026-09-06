@@ -2059,6 +2059,70 @@
         }
     }
 
+    // --- Полный сброс приложения (как при перезагрузке) ---
+    function resetAll() {
+        // Состояние
+        state.selectedTypes = [];
+        state.activeType = null;
+        state.typeSettings = {};
+        state.symmetry = DEFAULT_TYPE_SETTINGS.symmetry;
+        state.rings = DEFAULT_TYPE_SETTINGS.rings;
+        state.density = DEFAULT_TYPE_SETTINGS.density;
+        state.palette = DEFAULT_TYPE_SETTINGS.palette;
+        state.enabledSizes = { ...DEFAULT_TYPE_SETTINGS.enabledSizes };
+        state.showGrid = false;
+        state.showInfo = true;
+        state.seed = Math.random();
+        state.expandedGroups = new Set(['floral']);
+        state.schemaMode = false;
+        state.activeTab = 'ornaments';
+        state.drawnPaths = [];
+        state.drawGenerated = false;
+        state.drawSymmetry = 1;
+        state.drawDensity = 5;
+        state.drawPalette = 'diamond';
+        state.drawEnabledSizes = { ...DEFAULT_TYPE_SETTINGS.enabledSizes };
+        isDrawing = false;
+        currentPath = null;
+
+        // UI: список орнаментов, бейдж, слайдеры, палитра, размеры
+        buildGroupUI();
+        updateComboBadge();
+        syncSlidersToActive();
+
+        // UI: тогглы
+        document.getElementById('showGrid').checked = false;
+        document.getElementById('showInfo').checked = true;
+        document.getElementById('stats').style.display = 'block';
+        const schemaToggle = document.getElementById('schemaMode');
+        if (schemaToggle) schemaToggle.checked = false;
+
+        // UI: слайдеры и кнопка вкладки рисования
+        const drawSymSlider = document.getElementById('drawSymmetry');
+        if (drawSymSlider) {
+            drawSymSlider.value = 1;
+            document.getElementById('drawSymmetryValue').textContent = '1';
+        }
+        const drawDensSlider = document.getElementById('drawDensity');
+        if (drawDensSlider) {
+            drawDensSlider.value = 5;
+            document.getElementById('drawDensityValue').textContent = '5';
+        }
+        const drawGenBtn = document.getElementById('drawGenerateBtn');
+        if (drawGenBtn) drawGenBtn.textContent = 'Показать стразы';
+
+        // UI: вкладка «Готовые орнаменты»
+        document.querySelectorAll('.tab-btn').forEach(b => {
+            b.classList.toggle('active', b.dataset.tab === 'ornaments');
+        });
+        document.querySelectorAll('.tab-panel').forEach(p => {
+            p.classList.toggle('active', p.id === 'tab-ornaments');
+        });
+        canvas.classList.remove('draw-cursor');
+
+        resizeCanvas();
+    }
+
     // --- Скачивание PNG ---
     function downloadPNG() {
         const types = state.selectedTypes.length > 0 ? state.selectedTypes.join('-') : 'mandala';
@@ -2302,15 +2366,10 @@
             });
         }
 
-        // Очистка рисунка
+        // Полный сброс приложения
         const drawClearBtn = document.getElementById('drawClearBtn');
         if (drawClearBtn) {
-            drawClearBtn.addEventListener('click', () => {
-                state.drawnPaths = [];
-                state.drawGenerated = false;
-                if (drawGenBtn) drawGenBtn.textContent = 'Показать стразы';
-                render();
-            });
+            drawClearBtn.addEventListener('click', resetAll);
         }
 
         // Кнопки
