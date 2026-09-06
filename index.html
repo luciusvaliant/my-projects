@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мои проекты</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0f172a;--card:#1e293b;--card2:#334155;--text:#e2e8f0;--muted:#94a3b8;
+  --primary:#6366f1;--radius:16px;
+}
+body{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  background:var(--bg);color:var(--text);min-height:100vh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:32px 16px;
+}
+.header{text-align:center;margin-bottom:40px}
+.header h1{font-size:2rem;font-weight:700;margin-bottom:8px}
+.header p{color:var(--muted);font-size:.95rem}
+.cards{
+  display:grid;gap:20px;width:100%;max-width:860px;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+}
+.card{
+  display:flex;flex-direction:column;gap:12px;
+  background:var(--card);border:1px solid var(--card2);border-radius:var(--radius);
+  padding:28px 24px;text-decoration:none;color:var(--text);
+  transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;
+}
+.card:hover{
+  transform:translateY(-4px);border-color:var(--primary);
+  box-shadow:0 12px 32px rgba(99,102,241,.18);
+}
+.card-icon{font-size:2rem;line-height:1}
+.card h2{font-size:1.25rem;font-weight:600}
+.card p{color:var(--muted);font-size:.9rem;line-height:1.5;flex:1}
+.card-link{
+  color:var(--primary);font-size:.85rem;font-weight:600;
+  display:inline-flex;align-items:center;gap:6px;
+}
+.card:hover .card-link{gap:10px}
+.card-link{transition:gap .2s ease}
+.footer{margin-top:40px;color:var(--muted);font-size:.8rem}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <h1>Мои проекты</h1>
+  <p>Выберите проект, чтобы открыть его</p>
+</header>
+
+<main class="cards">
+
+  <a class="card" href="./ornament/">
+    <span class="card-icon">✦</span>
+    <h2>Rhinestone Studio</h2>
+    <p>Генератор орнаментов для выкладки стразами. Готовые орнаменты разных стилей, ручное рисование, палитры и размеры страз, экспорт в PNG.</p>
+    <span class="card-link">Открыть →</span>
+  </a>
+
+  <a class="card" href="./sobes/">
+    <span class="card-icon">📝</span>
+    <h2>Тест: Собеседование IT</h2>
+    <p>Подготовка к собеседованию: 44 вопроса по направлениям Frontend, Backend и Fullstack с фильтрацией по технологиям и разбором ответов.</p>
+    <span class="card-link">Открыть →</span>
+  </a>
+
+</main>
+
+<footer class="footer">Развёрнуто на GitHub Pages</footer>
+
+</body>
+</html>
