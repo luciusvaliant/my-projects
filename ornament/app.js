@@ -37,8 +37,8 @@
 
     // --- Состояние приложения ---
     const state = {
-        selectedTypes: ['mandala'],
-        activeType: 'mandala',
+        selectedTypes: [],
+        activeType: null,
         typeSettings: {},
         symmetry: 8,
         rings: 6,
@@ -55,6 +55,9 @@
         drawGenerated: false,
         drawSymmetry: 1,
         drawDensity: 5,
+        // Свои палитра и размеры для слоя ручного рисования
+        drawPalette: 'diamond',
+        drawEnabledSizes: { small: true, medium: true, large: true, xlarge: true },
     };
 
     // --- Группы орнаментов ---
@@ -302,12 +305,25 @@
             sliderGroup.style.opacity = state.activeType ? '1' : '0.4';
             sliderGroup.style.pointerEvents = state.activeType ? 'auto' : 'none';
         }
-        // Палитра и размеры активного типа
+        syncPaletteSizeUI();
+    }
+
+    // Синхронизация UI палитры и размеров с настройками текущего режима
+    function syncPaletteSizeUI() {
+        let palette, sizes;
+        if (state.activeTab === 'draw') {
+            palette = state.drawPalette;
+            sizes = state.drawEnabledSizes;
+        } else {
+            const ts = state.activeType ? ensureTypeSettings(state.activeType) : DEFAULT_TYPE_SETTINGS;
+            palette = ts.palette;
+            sizes = ts.enabledSizes;
+        }
         document.querySelectorAll('.palette-btn').forEach(b => {
-            b.classList.toggle('active', b.dataset.palette === ts.palette);
+            b.classList.toggle('active', b.dataset.palette === palette);
         });
         document.querySelectorAll('.size-toggle input').forEach(cb => {
-            cb.checked = ts.enabledSizes[cb.dataset.size];
+            cb.checked = sizes[cb.dataset.size];
         });
     }
 
@@ -1939,18 +1955,6 @@
             drawGrid(cx, cy, maxRadius);
         }
 
-        // Режим рисования
-        if (state.activeTab === 'draw') {
-            // Показываем схему путей
-            drawSchemaPaths(cx, cy, maxRadius);
-            // Если включена генерация — поверх рисуем стразы
-            if (state.drawGenerated) {
-                generateRhinestonesFromPaths(cx, cy, maxRadius);
-            }
-            updateStats();
-            return;
-        }
-
         // Генерация орнаментов — наслоение всех выбранных типов
         const types = state.selectedTypes;
         const perTypeAlpha = types.length > 1 ? 0.85 : 1.0;
@@ -1977,6 +1981,18 @@
             if (types.length > 1 && i > 0) {
                 ctx.restore();
             }
+        }
+
+        // Слой ручного рисования — поверх орнаментов, сохраняется при переключении вкладок.
+        // Использует собственные палитру и размеры, независимые от орнаментов.
+        state.palette = state.drawPalette;
+        state.enabledSizes = { ...state.drawEnabledSizes };
+        // Линии-схема: всегда во вкладке рисования; во вкладке орнаментов — только если стразы ещё не сгенерированы.
+        if (state.activeTab === 'draw' || !state.drawGenerated) {
+            drawSchemaPaths(cx, cy, maxRadius);
+        }
+        if (state.drawGenerated) {
+            generateRhinestonesFromPaths(cx, cy, maxRadius);
         }
 
         // Восстанавливаем настройки активного типа для слайдеров
@@ -2168,7 +2184,9 @@
                 document.querySelectorAll('.palette-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 state.palette = btn.dataset.palette;
-                if (state.activeType) {
+                if (state.activeTab === 'draw') {
+                    state.drawPalette = state.palette;
+                } else if (state.activeType) {
                     ensureTypeSettings(state.activeType).palette = state.palette;
                 }
                 render();
@@ -2210,7 +2228,9 @@
         document.querySelectorAll('.size-toggle input').forEach(cb => {
             cb.addEventListener('change', () => {
                 state.enabledSizes[cb.dataset.size] = cb.checked;
-                if (state.activeType) {
+                if (state.activeTab === 'draw') {
+                    state.drawEnabledSizes[cb.dataset.size] = cb.checked;
+                } else if (state.activeType) {
                     ensureTypeSettings(state.activeType).enabledSizes[cb.dataset.size] = cb.checked;
                 }
                 render();
@@ -2247,6 +2267,7 @@
                 document.getElementById('tab-' + tabId).classList.add('active');
                 state.activeTab = tabId;
                 canvas.classList.toggle('draw-cursor', tabId === 'draw');
+                syncPaletteSizeUI();
                 render();
             });
         });
