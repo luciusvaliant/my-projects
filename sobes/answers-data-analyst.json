@@ -1,0 +1,45 @@
+{
+  "answers": [
+    {
+      "id": 58,
+      "answer": "REST API — способ построения веб-API на основе архитектурного стиля REST. API предоставляет доступ к ресурсам через HTTP: каждый ресурс имеет URL, операции выполняются HTTP-методами (GET, POST, PUT, PATCH, DELETE), данные передаются в JSON (реже XML).\n\nХарактеристики:\n- Ресурсо-ориентированность: `/users` — коллекция, `/users/42` — конкретный ресурс, `/users/42/orders` — подчинённая коллекция.\n- HTTP-методы с семантикой: GET — чтение, POST — создание, PUT/PATCH — обновление, DELETE — удаление.\n- Stateless: сервер не хранит сессию; аутентификация — через токен в Authorization.\n- Кэширование через HTTP-заголовки (Cache-Control, ETag).\n- Стандартные коды: 2xx — успех, 4xx — ошибка клиента, 5xx — сервера.\n\nREST API — самый распространённый стиль публичных веб-API благодаря простоте, стандартному HTTP и удобству отладки (curl, DevTools). Альтернативы: GraphQL (гибкая выборка полей), gRPC (binary, для S2S), SOAP (XML, корпоративный).\n\nДля аналитика данных REST API — частый источник данных: внешние сервисы (CRM, рекламные платформы, платёжные шлюзы) отдают данные через REST-эндпоинты. Аналитик пишет скрипты (Python requests, Airflow operators), тянущие данные в хранилище по расписанию. Важные аспекты: пагинация (page/cursor), rate limiting (429 + Retry-After), идемпотентность, аутентификация (OAuth2, API key), обработка ошибок и ретраи с экспоненциальной задержкой.",
+      "explanation": "REST API — веб-API в стиле REST: ресурсы по URL, HTTP-методы, JSON, stateless, кэширование, стандартные коды. Самый распространённый стиль публичных API; для аналитика — источник данных с пагинацией, rate limit, OAuth2. Распространённое заблуждение: «Библиотека для построения графических интерфейсов, где ресурсы описываются в XML, а обмен данными идёт только через WebSocket» — это неверно. Также неверно утверждение: «Протокол синхронизации баз данных, где каждый запрос требует авторизации по сертификату и сохраняет сессию на сервере».",
+      "example": "```python\nimport requests, time\nurl = 'https://api.crm.example/leads'\ntoken = '...'\nall_rows, page = [], 1\nwhile True:\n  r = requests.get(url, params={'page': page, 'per_page': 100},\n                   headers={'Authorization': f'Bearer {token}'})\n  if r.status_code == 429:\n    time.sleep(int(r.headers.get('Retry-After', 60))); continue\n  r.raise_for_status()\n  data = r.json()\n  if not data: break\n  all_rows.extend(data); page += 1\n```",
+      "key_points": [
+        "REST API: ресурсы по URL, HTTP-методы, JSON, stateless, кэш, стандартные коды.",
+        "Самый распространённый стиль публичных веб-API.",
+        "Для аналитика — источник данных: пагинация, rate limit, OAuth2/API key.",
+        "Обрабатывать 429 через Retry-After и экспоненциальную задержку.",
+        "Альтернативы: GraphQL, gRPC, SOAP."
+      ],
+      "pitfalls": [
+        "Игнорировать пагинацию; не обрабатывать 429 и таймауты; хранить токен в коде вместо vault/окружения."
+      ],
+      "quality": "good",
+      "quality_note": "",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 3703,
+      "answer": "Теорема CAP — это consistency, Availability, Partition Tolerance; при разделении сети нельзя одновременно C и A.",
+      "explanation": "CAP: C/A/P, нельзя все три. Распространённое заблуждение: «CAP не относится к распределённым системам» — это неверно.",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 3704,
+      "answer": "Waterfall — последовательный, документоёмкий; Agile — итеративный, гибкий, спринты, ценность.",
+      "explanation": "Waterfall vs Agile: последовательный vs итеративный.",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 3739,
+      "answer": "К основным вариантам относятся: Среднее — сумма/n, чувствительно к выбросам; медиана — середина, устойчива к выбросам.",
+      "explanation": "Mean vs median: чувствительность к выбросам.",
+      "options": [],
+      "correctIndex": null
+    }
+  ]
+}

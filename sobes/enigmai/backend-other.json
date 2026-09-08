@@ -1,0 +1,2219 @@
+[
+  {
+    "id": "q-6a143680975b692556e5637b",
+    "freq": 28,
+    "question": "Что такое принципы SOLID и в чем заключается суть каждого из них?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56373",
+    "freq": 14,
+    "question": "Что такое REST и в чем заключается суть этого архитектурного стиля?",
+    "tags": [
+      "web",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56400",
+    "freq": 12,
+    "question": "Что такое транзакция в базе данных и зачем она нужна?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e563d2",
+    "freq": 11,
+    "question": "В чем разница между методами HTTP PUT и PATCH?",
+    "tags": [
+      "web",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e563b2",
+    "freq": 10,
+    "question": "Что такое Apache Kafka?",
+    "tags": [
+      "architecture",
+      "Kafka",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143681975b692556e56eb9",
+    "freq": 10,
+    "question": "Почему вы решили уйти с предыдущего места работы?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d35",
+    "freq": 6,
+    "question": "Какая была ваша роль в этом проекте?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e5645c",
+    "freq": 5,
+    "question": "Для чего нужны индексы в базе данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e563e6",
+    "freq": 4,
+    "question": "Что такое stack trace?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56412",
+    "freq": 4,
+    "question": "Что такое дедлок?",
+    "tags": [
+      "concurrency",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e567db",
+    "freq": 4,
+    "question": "Что такое GIL (Global Interpreter Lock) в Python, зачем он нужен и как он связан с многопоточностью?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e5646c",
+    "freq": 4,
+    "question": "Что такое репликация и зачем она нужна?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e564c9",
+    "freq": 4,
+    "question": "Что такое метод в объектно-ориентированном программировании?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143684975b692556e57baa",
+    "freq": 4,
+    "question": "Из каких частей состоит HTTP-запрос?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56484",
+    "freq": 3,
+    "question": "Что такое брокер сообщений, зачем он нужен и какие виды брокеров сообщений существуют?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56496",
+    "freq": 3,
+    "question": "Что такое сервис-провайдер в Laravel и зачем он нужен?",
+    "tags": [
+      "backend",
+      "Laravel",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e564d7",
+    "freq": 3,
+    "question": "Что такое ORM?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56726",
+    "freq": 3,
+    "question": "Какие основные типы индексов существуют в PostgreSQL?",
+    "tags": [
+      "database",
+      "PostgreSQL",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143681975b692556e57215",
+    "freq": 3,
+    "question": "Что произойдет при выполнении данного кода?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143686975b692556e58031",
+    "freq": 3,
+    "question": "Как работают механизмы синхронизации в многопоточном программировании?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e5663c",
+    "freq": 2,
+    "question": "Какова временная сложность алгоритма бинарного поиска?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e567d2",
+    "freq": 2,
+    "question": "Что такое персистентный контекст и как он связан с транзакцией?",
+    "tags": [
+      "database",
+      "Hibernate",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e567e5",
+    "freq": 2,
+    "question": "Как происходит валидация токена и какие шаги необходимы для его анализа?",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e565f3",
+    "freq": 2,
+    "question": "Как называется термин, описывающий подход к обеспечению согласованности данных в распределенных транзакциях в микросервисной архитектуре и облачных вычислениях?",
+    "tags": [
+      "architecture",
+      "senior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e565f6",
+    "freq": 2,
+    "question": "В чем разница между ConcurrentHashMap и Collections.synchronizedMap?",
+    "tags": [
+      "data_structures",
+      "Java",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56601",
+    "freq": 2,
+    "question": "Что такое консистентность в распределенных транзакциях, какие подходы к её обеспечению существуют и с какими из них вам приходилось работать на практике?",
+    "tags": [
+      "database",
+      "senior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56606",
+    "freq": 2,
+    "question": "Что такое проблема конкурентного доступа к базе данных со стороны нескольких инстансов приложения и как её решать?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56a57",
+    "freq": 2,
+    "question": "Какие минусы у объектно-ориентированного подхода в программировании?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143681975b692556e56d9d",
+    "freq": 2,
+    "question": "Какие существуют способы распределения сообщений по партициям в Apache Kafka?",
+    "tags": [
+      "backend",
+      "Kafka",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d6e",
+    "freq": 2,
+    "question": "Что такое VACUUM в PostgreSQL?",
+    "tags": [
+      "database",
+      "PostgreSQL",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143681975b692556e57072",
+    "freq": 2,
+    "question": "Чем отличается WHERE от HAVING в SQL?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143681975b692556e57129",
+    "freq": 2,
+    "question": "Какие существуют алгоритмы сортировки?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143684975b692556e57a16",
+    "freq": 2,
+    "question": "В чем разница между асинхронностью и многопоточностью, и в каких случаях лучше применять каждый из этих подходов?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368b975b692556e58aa9",
+    "freq": 2,
+    "question": "Чем отличаются операторы == и is в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f05",
+    "freq": 2,
+    "question": "Как понять, что задача выполнена успешно?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f2c",
+    "freq": 2,
+    "question": "У вас есть ко мне какие-либо вопросы?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5908a",
+    "freq": 2,
+    "question": "В каких случаях блок finally может не выполниться?",
+    "tags": [
+      "language_specific",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d0f",
+    "freq": 1,
+    "question": "Сколько раз необходимо выполнять повторные попытки (retry) при возникновении ошибок?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d12",
+    "freq": 1,
+    "question": "Как бы вы спроектировали данную систему?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d3c",
+    "freq": 1,
+    "question": "Что такое оркестрация?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d3d",
+    "freq": 1,
+    "question": "Что такое хореография в контексте микросервисной архитектуры?",
+    "tags": [
+      "architecture",
+      "senior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d42",
+    "freq": 1,
+    "question": "Какие технологии вы использовали, какие задачи решали и как вы их решали?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d66",
+    "freq": 1,
+    "question": "Что означает, что поток зашел в метод чтения или в метод записи?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d6a",
+    "freq": 1,
+    "question": "В чем заключается реализация паттерна Saga в микросервисной архитектуре?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143681975b692556e56d79",
+    "freq": 1,
+    "question": "Где хранятся параметры функции в памяти?",
+    "tags": [
+      "data_structures",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143681975b692556e57066",
+    "freq": 1,
+    "question": "Как в Apache Kafka обрабатывать невалидные сообщения?",
+    "tags": [
+      "backend",
+      "Kafka",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143681975b692556e57073",
+    "freq": 1,
+    "question": "Зачем нужен default-метод в интерфейсе?",
+    "tags": [
+      "oop",
+      "Java",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143681975b692556e57079",
+    "freq": 1,
+    "question": "Как объявить метод с реализацией по умолчанию в интерфейсе?",
+    "tags": [
+      "oop",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143681975b692556e57082",
+    "freq": 1,
+    "question": "Чем отличается Entity Graph от Join Fetch в JPA?",
+    "tags": [
+      "database",
+      "Java",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d0e",
+    "freq": 1,
+    "question": "Как вы будете проверять, что запрос был успешно создан?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d11",
+    "freq": 1,
+    "question": "Как проверить, был ли отправлен HTTP-запрос после нажатия кнопки?",
+    "tags": [
+      "web",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d3b",
+    "freq": 1,
+    "question": "В чём была роль главного босса?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d4c",
+    "freq": 1,
+    "question": "Как сервисы интегрируются между собой и по каким каналам они обмениваются данными?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d65",
+    "freq": 1,
+    "question": "Какие основные понятия лежат в основе архитектуры Apache Kafka?",
+    "tags": [
+      "backend",
+      "Kafka",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d69",
+    "freq": 1,
+    "question": "Как называется область памяти, где хранятся параметры функции?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d6b",
+    "freq": 1,
+    "question": "Почему сообщения с разными ключами попадают в разные партиции в Kafka?",
+    "tags": [
+      "backend",
+      "Kafka",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d6c",
+    "freq": 1,
+    "question": "Что такое паттерн «Сага» (Saga) в микросервисной архитектуре?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d70",
+    "freq": 1,
+    "question": "Как вы обрабатываете ситуацию, когда происходит сбой при выполнении компенсирующей транзакции в распределенной системе?",
+    "tags": [
+      "architecture",
+      "senior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d13",
+    "freq": 1,
+    "question": "Кем же это обрабатывается?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d1b",
+    "freq": 1,
+    "question": "В чем проблема генерации изображений (одежды) на стороне клиента?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d3a",
+    "freq": 1,
+    "question": "В чем разница между REST API и брокером сообщений?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d5a",
+    "freq": 1,
+    "question": "В каких случаях сообщения в Kafka распределяются по партициям с использованием стратегии Round-Robin?",
+    "tags": [
+      "backend",
+      "Kafka",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d5b",
+    "freq": 1,
+    "question": "Как вы использовали партиционирование в базе данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d5c",
+    "freq": 1,
+    "question": "Как реализовать партиционер для сообщений с разными ключами, чтобы равномерно распределить их по партициям в Kafka?",
+    "tags": [
+      "backend",
+      "Kafka",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d5f",
+    "freq": 1,
+    "question": "Как правильно выбрать партицию для сообщения в Kafka?",
+    "tags": [
+      "backend",
+      "Kafka",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d62",
+    "freq": 1,
+    "question": "Сколько стеков всего в виртуальной машине?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d63",
+    "freq": 1,
+    "question": "Что означает, что Synchronized HashMap полностью блокируется?",
+    "tags": [
+      "concurrency",
+      "Java",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d64",
+    "freq": 1,
+    "question": "Кому принадлежит стек: методу или потоку?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d67",
+    "freq": 1,
+    "question": "Что вы использовали для реализации паттерна Saga: самописное решение или готовые фреймворки?",
+    "tags": [
+      "architecture",
+      "senior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d68",
+    "freq": 1,
+    "question": "На основе чего Kafka принимает решение о распределении сообщений по партициям?",
+    "tags": [
+      "backend",
+      "Kafka",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143680975b692556e56d6d",
+    "freq": 1,
+    "question": "Что это дает в контексте использования базы данных?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143681975b692556e57067",
+    "freq": 1,
+    "question": "Чем отличаются мягкие ссылки от жестких ссылок в файловых системах?",
+    "tags": [
+      "operating_systems",
+      "Linux",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143681975b692556e5706d",
+    "freq": 1,
+    "question": "Есть ли в абстрактном классе конструктор?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143681975b692556e5706b",
+    "freq": 1,
+    "question": "Как повторно прочитать сообщение из Apache Kafka?",
+    "tags": [
+      "backend",
+      "Kafka",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143681975b692556e57075",
+    "freq": 1,
+    "question": "Как выбрать один из двух бинов по умолчанию в Spring Framework?",
+    "tags": [
+      "backend",
+      "Spring",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143687975b692556e58338",
+    "freq": 1,
+    "question": "Как изменения данных должны сохраняться в базе данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143687975b692556e5837a",
+    "freq": 1,
+    "question": "Как осуществляется оптимизация производительности с помощью анализа запросов, кэширования и рефакторинга?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143687975b692556e5837c",
+    "freq": 1,
+    "question": "Что подразумевается под инициативным улучшением процессов, предложениями по CI/CD, мониторингом, архитектурой и качеством кода (code quality)?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143687975b692556e58386",
+    "freq": 1,
+    "question": "Для чего нужны дженерики?",
+    "tags": [
+      "language_specific",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143687975b692556e5838e",
+    "freq": 1,
+    "question": "На какие поля лучше ставить индексы в базе данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143687975b692556e58393",
+    "freq": 1,
+    "question": "Как реализовать авторизацию клиента в системе?",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143687975b692556e58395",
+    "freq": 1,
+    "question": "Что такое Gin в контексте разработки на Go?",
+    "tags": [
+      "backend",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143687975b692556e5839b",
+    "freq": 1,
+    "question": "Чем отличаются пути с тестом?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143687975b692556e583a8",
+    "freq": 1,
+    "question": "Какие проблемы устраняют оптимистичная и пессимистичная блокировки, и как они связаны с уровнями изоляции транзакций?",
+    "tags": [
+      "database",
+      "SQL",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f90",
+    "freq": 1,
+    "question": "Как вы относитесь к вопросам о принадлежности к ЛГБТ-группам на собеседовании?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f92",
+    "freq": 1,
+    "question": "Чем отличается класс от record в C#?",
+    "tags": [
+      "language_specific",
+      "C#",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5903b",
+    "freq": 1,
+    "question": "что тебя сейчас вот вынуждает искать другую работу?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59065",
+    "freq": 1,
+    "question": "Как сборщик мусора (Garbage Collector) понимает, что объекты не нужно удалять?",
+    "tags": [
+      "language_specific",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59067",
+    "freq": 1,
+    "question": "С чего начинается процесс разработки программного обеспечения?",
+    "tags": [
+      "architecture",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59069",
+    "freq": 1,
+    "question": "Для чего это используется?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5906a",
+    "freq": 1,
+    "question": "Сколько стеков используется в процессе выполнения программы?",
+    "tags": [
+      "data_structures",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5906b",
+    "freq": 1,
+    "question": "Где в памяти хранятся переменные и объекты?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5906c",
+    "freq": 1,
+    "question": "Что произойдет, если привести значимый тип (value type) к типу object?",
+    "tags": [
+      "language_specific",
+      "C#",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5906d",
+    "freq": 1,
+    "question": "Могут ли структуры или классы реализовывать интерфейсы?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5906f",
+    "freq": 1,
+    "question": "Что такое наследование в ООП и как классы наследуются друг от друга?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59070",
+    "freq": 1,
+    "question": "Если мы привели объект к интерфейсу, где в памяти будет храниться сам объект?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59072",
+    "freq": 1,
+    "question": "Какие типы называются значимыми (value types), а какие ссылочными (reference types)?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59073",
+    "freq": 1,
+    "question": "Что такое нижний уровень абстракции в программировании и с чего он начинается?",
+    "tags": [
+      "architecture",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59074",
+    "freq": 1,
+    "question": "Какие проблемы возникают при использовании Ahead-of-Time (AOT) компиляции, если в коде используется динамическая типизация?",
+    "tags": [
+      "language_specific",
+      "senior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59075",
+    "freq": 1,
+    "question": "Какие объекты живут дольше всего в контексте управления памятью и сборки мусора?",
+    "tags": [
+      "language_specific",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59076",
+    "freq": 1,
+    "question": "Где хранятся значимые биты (старшие биты) в представлении чисел?",
+    "tags": [
+      "data_structures",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59077",
+    "freq": 1,
+    "question": "Что хранят в себе ссылочные типы данных?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5907a",
+    "freq": 1,
+    "question": "Какие существуют механизмы или практики, которые помогают сборщику мусора (Garbage Collector) работать эффективнее?",
+    "tags": [
+      "language_specific",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5907c",
+    "freq": 1,
+    "question": "Как скомпилировать программу под конкретную архитектуру или операционную систему?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5907d",
+    "freq": 1,
+    "question": "Что произойдет, если в коде возникнет исключение (exception)?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5907e",
+    "freq": 1,
+    "question": "Что означают опции реализации «no inlining»?",
+    "tags": [
+      "language_specific",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5907f",
+    "freq": 1,
+    "question": "Какие существуют типы данных и как они классифицируются?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59080",
+    "freq": 1,
+    "question": "Расскажите про CLR (Common Language Runtime), каковы её основные зоны ответственности и чем она занимается?",
+    "tags": [
+      "language_specific",
+      ".NET",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59081",
+    "freq": 1,
+    "question": "Что произойдет, если исключение возникнет вне блока catch?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59082",
+    "freq": 1,
+    "question": "А по какой причине?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59083",
+    "freq": 1,
+    "question": "К каким последствиям это приведет?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59085",
+    "freq": 1,
+    "question": "Сколько блоков catch может быть в конструкции try-catch?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59086",
+    "freq": 1,
+    "question": "В чем заключается порядок выполнения операций?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59087",
+    "freq": 1,
+    "question": "Может ли значимый тип (value type) храниться в куче?",
+    "tags": [
+      "language_specific",
+      "C#",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59088",
+    "freq": 1,
+    "question": "Будет ли выполнен этот код?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59089",
+    "freq": 1,
+    "question": "Если у нас есть пять блоков catch, означает ли это, что все пять будут выполнены последовательно?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5908b",
+    "freq": 1,
+    "question": "Зачем нужен блок finally в обработке исключений?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5908c",
+    "freq": 1,
+    "question": "Может ли возникнуть такая ситуация?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5908d",
+    "freq": 1,
+    "question": "По какой причине может произойти сбой (падение) системы?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5908e",
+    "freq": 1,
+    "question": "Что означает понятие «блокировка» в контексте многопоточности и как потоки могут блокировать друг друга?",
+    "tags": [
+      "concurrency",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5908f",
+    "freq": 1,
+    "question": "Какое минимальное количество ресурсов необходимо для работы системы?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59090",
+    "freq": 1,
+    "question": "Можно ли передать объект в функцию или метод?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59091",
+    "freq": 1,
+    "question": "Что означает фраза «одинаковые исключения» в контексте обработки ошибок?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59092",
+    "freq": 1,
+    "question": "Что лучше: вывод в консоль или использование логгера?",
+    "tags": [
+      "backend",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59094",
+    "freq": 1,
+    "question": "Что такое параллельные вычисления и как они работают?",
+    "tags": [
+      "concurrency",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59095",
+    "freq": 1,
+    "question": "Какое минимальное количество потоков и ресурсов необходимо для возникновения дедлока?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59096",
+    "freq": 1,
+    "question": "Какие существуют механизмы для реализации этой функциональности?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59097",
+    "freq": 1,
+    "question": "Если в функцию передать null в качестве аргумента, будет ли этот аргумент выбран как значение по умолчанию?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59098",
+    "freq": 1,
+    "question": "Как интерпретатор или компилятор определяет, какой блок кода или функцию необходимо выполнить в конкретной ситуации?",
+    "tags": [
+      "language_specific",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e59099",
+    "freq": 1,
+    "question": "Почему обязательно использовать ссылочный тип данных?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5909a",
+    "freq": 1,
+    "question": "А каким образом это работает?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5909b",
+    "freq": 1,
+    "question": "Какой именно алгоритм или механизм выбора будет использован в данной ситуации?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5909c",
+    "freq": 1,
+    "question": "Как именно механизм блокировки (mutex) сообщает другим потокам о том, что объект занят?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5909d",
+    "freq": 1,
+    "question": "Что определяет этот интерфейс/класс/метод?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e5909e",
+    "freq": 1,
+    "question": "Что с чем сравнивается в данном контексте?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e590a2",
+    "freq": 1,
+    "question": "Не могли бы вы привести значимый пример?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e590a8",
+    "freq": 1,
+    "question": "Какие особенности работы с коллекциями стоит учитывать?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e590aa",
+    "freq": 1,
+    "question": "Есть ли у вас какие-либо вопросы ко мне по итогам нашего общения?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e590b0",
+    "freq": 1,
+    "question": "Расшифруйте принципы SOLID.",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e590c7",
+    "freq": 1,
+    "question": "Расскажите про жизненный цикл запроса в Symfony.",
+    "tags": [
+      "backend",
+      "Symfony",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368e975b692556e590d6",
+    "freq": 1,
+    "question": "Для чего это может быть нужно?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368d975b692556e58e27",
+    "freq": 1,
+    "question": "Что такое паттерн проектирования Dependency Injection и как он работает?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368d975b692556e58e28",
+    "freq": 1,
+    "question": "Как определить переменные окружения в Laravel?",
+    "tags": [
+      "backend",
+      "Laravel",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368d975b692556e58e2a",
+    "freq": 1,
+    "question": "Какие файлы маршрутов по умолчанию существуют в Laravel?",
+    "tags": [
+      "backend",
+      "Laravel",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368d975b692556e58e2b",
+    "freq": 1,
+    "question": "Как работает маршрутизация в Laravel?",
+    "tags": [
+      "backend",
+      "Laravel",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368d975b692556e58e2c",
+    "freq": 1,
+    "question": "Что такое Query Builder в Laravel?",
+    "tags": [
+      "backend",
+      "Laravel",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368d975b692556e58e2e",
+    "freq": 1,
+    "question": "Что такое middleware в контексте Laravel?",
+    "tags": [
+      "backend",
+      "Laravel",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368d975b692556e58e31",
+    "freq": 1,
+    "question": "Что такое внедрение зависимостей (Dependency Injection) в PHP и зачем оно нужно во фреймворках?",
+    "tags": [
+      "backend",
+      "PHP",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a14368d975b692556e58e36",
+    "freq": 1,
+    "question": "Перечислите основные возможности и функции фреймворка Laravel.",
+    "tags": [
+      "backend",
+      "Laravel",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143691975b692556e5945e",
+    "freq": 1,
+    "question": "Какой алгоритм инвалидации кэша вы использовали при внедрении Redis для снижения нагрузки на базу данных, и как именно происходило обновление или удаление данных (по каким событиям)? Приведите пример реализации из вашего проекта.",
+    "tags": [
+      "database",
+      "Redis",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143691975b692556e5945f",
+    "freq": 1,
+    "question": "Какая выгода будет для нашей компании от того, что мы возьмем вас в команду?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143691975b692556e59463",
+    "freq": 1,
+    "question": "Как настроить проект так, чтобы проверка Checkstyle выполнялась автоматически при запуске локальных тестов?",
+    "tags": [
+      "testing",
+      "Java",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143691975b692556e59465",
+    "freq": 1,
+    "question": "Расскажите о задаче по оптимизации производительности: как происходил процесс сбора отчетов и аналитики до вашей доработки, и какие конкретно технические решения вы применили, чтобы ускорить формирование отчетности в четыре раза?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143691975b692556e59466",
+    "freq": 1,
+    "question": "Что привело вас в Java-разработку, когда вы заинтересовались ею и как произошел переход из юриспруденции в IT?",
+    "tags": [
+      "behavioral",
+      "Java",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143691975b692556e59467",
+    "freq": 1,
+    "question": "Что произошло и почему два человека ушли из команды, когда вы упомянули, что она сократилась?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143691975b692556e59468",
+    "freq": 1,
+    "question": "Как в конце самопрезентации структурированно рассказать о технологическом стеке и процессах, включая описание подготовки, оптимизации производительности (например, ускорение отчетности и аналитики в 4 раза) и обоснование выбора инструментов, таких как Docker?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59a7e",
+    "freq": 1,
+    "question": "Выполняется ли код синхронно или асинхронно?",
+    "tags": [
+      "concurrency",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143691975b692556e5946e",
+    "freq": 1,
+    "question": "Что значит написать конфигурацию в стиле Five Ws (5W) и как это выглядит?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143691975b692556e59477",
+    "freq": 1,
+    "question": "Расскажите, как вы оптимизировали производительность системы, какие узкие места обнаружили и что конкретно предприняли для ускорения формирования отчетности? Также опишите, как вы оптимизировали сборку проекта с Gradle и сократили время сборки.",
+    "tags": [
+      "backend",
+      "Gradle",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59a83",
+    "freq": 1,
+    "question": "Что такое том (volume), как он работает и зачем он нужен?",
+    "tags": [
+      "devops",
+      "Docker",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59a84",
+    "freq": 1,
+    "question": "Почему в Dockerfile рекомендуется использовать инструкцию USER и с чем это связано?",
+    "tags": [
+      "devops",
+      "Docker",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59a85",
+    "freq": 1,
+    "question": "Что такое DispatcherServlet в Spring MVC и каков его жизненный цикл обработки запроса?",
+    "tags": [
+      "backend",
+      "Java",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59a87",
+    "freq": 1,
+    "question": "Как создать map со счетчиками в Go?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59a88",
+    "freq": 1,
+    "question": "Как реализовать счетчик количества запросов в контроллере и как сделать это потокобезопасно?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59aa9",
+    "freq": 1,
+    "question": "Что такое шардинг баз данных? Зачем он нужен, в каких случаях применяется и как его можно реализовать?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59aab",
+    "freq": 1,
+    "question": "В чем отличие Мока, бина и спайбина в Spring?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59ab1",
+    "freq": 1,
+    "question": "Вопрос: подпись токена состоит из 3 частей или сам токен состоит из 3 частей?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59ab2",
+    "freq": 1,
+    "question": "Работал ли ты с таким инструментом, как Spring Security?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59ab3",
+    "freq": 1,
+    "question": "Используется ли репликация базы данных исключительно для ускорения чтения, или у неё есть другие цели?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59ab5",
+    "freq": 1,
+    "question": "Что у вас в заголовке лежит?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59ab6",
+    "freq": 1,
+    "question": "Как можно протестировать код, который работает с базой данных?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59ab8",
+    "freq": 1,
+    "question": "Что такое Future в Java и как он используется, когда мы работаем с Callable/«заявками» асинхронно?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59aba",
+    "freq": 1,
+    "question": "Как работает этот алгоритм?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59abe",
+    "freq": 1,
+    "question": "Какие аннотации и библиотеки ты бы использовал для сервисов и приложений в Spring-приложении?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59ac0",
+    "freq": 1,
+    "question": "Какие важные моменты нужно проверить в процессе или алгоритме при проведении code review или тестировании?",
+    "tags": [
+      "algorithms",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59acc",
+    "freq": 1,
+    "question": "Как реализовать rate limiting для нескольких микросервисов одновременно?",
+    "tags": [
+      "architecture",
+      "senior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59ad1",
+    "freq": 1,
+    "question": "Что такое кэш первого уровня (L1) и как он работает?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143693975b692556e59742",
+    "freq": 1,
+    "question": "В чем разница между Spring MVC и Spring WebFlux?",
+    "tags": [
+      "backend",
+      "Java",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143693975b692556e59744",
+    "freq": 1,
+    "question": "Расскажите, пожалуйста, про ваш опыт работы с реактивными приложениями и Spring WebFlux.",
+    "tags": [
+      "backend",
+      "Spring WebFlux",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143693975b692556e59745",
+    "freq": 1,
+    "question": "Как обработать ошибку в реактивном потоке?",
+    "tags": [
+      "backend",
+      "Project Reactor",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143693975b692556e59746",
+    "freq": 1,
+    "question": "Что такое backpressure (обратное давление) в Project Reactor?",
+    "tags": [
+      "backend",
+      "Java",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143693975b692556e5974a",
+    "freq": 1,
+    "question": "Что такое Warface?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143693975b692556e59751",
+    "freq": 1,
+    "question": "Есть ли у вас опыт работы со Spring Framework?",
+    "tags": [
+      "backend",
+      "Java",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59b29",
+    "freq": 1,
+    "question": "Вы в основном занимались разработкой REST API, верно?",
+    "tags": [
+      "backend",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e59b2d",
+    "freq": 1,
+    "question": "Что вернёт в Python выражение a == b (двойное равно)?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143696975b692556e59b37",
+    "freq": 1,
+    "question": "Что можно сказать про типизацию в Python? Какие существуют виды типизации и как с ними работать? Приведите краткие примеры.",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143696975b692556e59b39",
+    "freq": 1,
+    "question": "Какие в Python выделяют группы типов по изменяемости (мутабельные и иммутабельные)? Приведите примеры изменяемых и неизменяемых типов, а также дайте определение типа данных.",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143696975b692556e59b3c",
+    "freq": 1,
+    "question": "Что такое Python и как он работает в целом? Расскажите в общих чертах.",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143696975b692556e59b47",
+    "freq": 1,
+    "question": "Что такое ORM? Что такое QuerySet, как с ним работать и как он связан с выполнением запросов к базе данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143696975b692556e59b4e",
+    "freq": 1,
+    "question": "Какие брокеры сообщений сегодня наиболее популярны? Назови примеры.",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143696975b692556e59b52",
+    "freq": 1,
+    "question": "Какие методы вы используете для решения проблемы N+1 в Django?",
+    "tags": [
+      "backend",
+      "Django",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143696975b692556e59b53",
+    "freq": 1,
+    "question": "Что такое класс в Python?",
+    "tags": [
+      "oop",
+      "Python",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143696975b692556e59b54",
+    "freq": 1,
+    "question": "Для чего нужны веб-фреймворки, такие как Django?",
+    "tags": [
+      "web",
+      "Django",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143696975b692556e59b55",
+    "freq": 1,
+    "question": "Почему Django сам по себе не может реализовать REST API и зачем нужен Django REST framework?",
+    "tags": [
+      "backend",
+      "Django",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143696975b692556e59b58",
+    "freq": 1,
+    "question": "Что такое QuerySet в Django, какой это тип данных и как он работает при выполнении запросов к базе данных?",
+    "tags": [
+      "backend",
+      "Django",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143696975b692556e59b59",
+    "freq": 1,
+    "question": "Расскажите о вашем опыте работы с Django: в каких проектах вы его использовали?",
+    "tags": [
+      "backend",
+      "Django",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143696975b692556e59b5c",
+    "freq": 1,
+    "question": "Что вернет оператор 'is' при сравнении объектов в Python и в чем его отличие от оператора '=='?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143696975b692556e59b5e",
+    "freq": 1,
+    "question": "Как вы подходите к оптимизации производительности приложения: как обнаруживаете проблемы, какие они бывают (например, проблема N+1), почему они возникают и как их устранять?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143696975b692556e59b66",
+    "freq": 1,
+    "question": "Что такое Django и что такое фреймворк?",
+    "tags": [
+      "web",
+      "Django",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143693975b692556e597b5",
+    "freq": 1,
+    "question": "Нужно ли пронумеровать или назвать пары функций от 0 до 9?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143693975b692556e597b7",
+    "freq": 1,
+    "question": "Как реализовать поиск пар элементов, соответствующих друг другу, в заданном наборе данных?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143693975b692556e597b9",
+    "freq": 1,
+    "question": "Что происходит в функции main: как она работает и какова её роль в программе?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143693975b692556e597ba",
+    "freq": 1,
+    "question": "Где на практике может встречаться операция перемножения чисел в цикле?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143693975b692556e597bc",
+    "freq": 1,
+    "question": "Что происходит в базовом случае (base case) рекурсивной функции?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143693975b692556e597c9",
+    "freq": 1,
+    "question": "Как работают аргументы функции и как их правильно передавать?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143697975b692556e59cd0",
+    "freq": 1,
+    "question": "Как найти все уникальные триплеты в массиве, сумма которых равна нулю?",
+    "tags": [
+      "algorithms",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143694975b692556e599a5",
+    "freq": 1,
+    "question": "Какое решение было принято для того, чтобы правильно установить связи между сущностями?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143694975b692556e599a6",
+    "freq": 1,
+    "question": "Вы реализовали решение?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143694975b692556e599a7",
+    "freq": 1,
+    "question": "Какие проблемы возникают при использовании большого количества JOIN-ов в SQL-запросах и как их оптимизировать?",
+    "tags": [
+      "database",
+      "SQL",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143694975b692556e599a8",
+    "freq": 1,
+    "question": "Что вы подразумеваете под «ожидающими» (pending) состояниями?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143694975b692556e599ac",
+    "freq": 1,
+    "question": "Имеет ли смысл создавать составной индекс на два поля для ускорения поиска по связям?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143694975b692556e599af",
+    "freq": 1,
+    "question": "За какое время возвращается итоговый результат?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143694975b692556e599b6",
+    "freq": 1,
+    "question": "Что именно вы определяете?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143694975b692556e599b9",
+    "freq": 1,
+    "question": "Может ли архитектура предусматривать пересмотр структуры таблицы (рефакторинг схемы базы данных)?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-other"
+  },
+  {
+    "id": "q-6a143695975b692556e599fe",
+    "freq": 1,
+    "question": "Что такое ошибка MultiPart?",
+    "tags": [
+      "web",
+      "junior"
+    ],
+    "direction": "backend-other"
+  }
+]

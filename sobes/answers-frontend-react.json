@@ -1,0 +1,1055 @@
+{
+  "answers": [
+    {
+      "id": 18,
+      "answer": "В SPA (single-page application) страница живёт долго — пользователь переходит между экранами без перезагрузки, поэтому всё, что не освобождается при уходе с экрана, накапливается на протяжении всей сессии. В классическом MPA каждая перезагрузка страницы автоматически очищает всю память JS-контекста, и утечка ограничена временем жизни страницы.\n\nКонкретные причины, по которым утечки особенно опасны именно в SPA:\n1. Накопление. Утечка в компоненте, который монтируется/размонтируется много раз, растёт линейно с числом переходов. За сессию в несколько часов память может вырасти до гигабайтов.\n2. Замыкания и подписки. Хуки/эффекты, в которых не отписываются от подписок (RxJS, store, WebSocket, setInterval, addEventListener), удерживают ссылки на компоненты и их данные после размонтирования.\n3. Detached DOM. Если ссылка на DOM-узел сохраняется в JS (в кэше, Map, замыкании), а сам узел удалён из документа, он остаётся в памяти, потому что GC видит ссылку.\n4. Глобальные кэши и сторы без eviction. Map/Set, хранящие данные «навсегда», растут безгранично.\n5. Влияние на UX. Рост памяти → рост GC pauses → рывки в UI; на мобильных — crash по лимиту памяти вкладки.\n6. Сложность обнаружения. Утечка проявляется не сразу, а через часы использования, и не воспроизводится на простом тесте.\n\nПоэтому в SPA критически важны: cleanup в useEffect (`return () => removeEventListener/ unsubscribe/clearInterval`), WeakMap/WeakSet для кэшей по узлам, ручная очистка сторов при выходе из раздела, мониторинг памяти в проде и нагрузочные тесты с многократным mount/unmount.",
+      "explanation": "SPA не перезагружает страницу, поэтому всё не освобождённое при размонтировании копится всю сессию. Утечки в часто монтируемых компонентах растут линейно и приводят к росту памяти, рывкам GC и крашам, особенно на мобильных.",
+      "example": "```jsx\nfunction Chat() {\n  useEffect(() => {\n    const ws = new WebSocket('wss://...');\n    const id = setInterval(() => ws.send('ping'), 30000);\n    ws.onmessage = (e) => setMsgs(m => [...m, e.data]);\n    // cleanup — обязательно, иначе ws и интервал утекут\n    return () => { clearInterval(id); ws.close(); };\n  }, []);\n  return <ul>{msgs.map((m,i)=><li key={i}>{m}</li>)}</ul>;\n}\n```",
+      "key_points": [
+        "SPA не перезагружает страницу — утечка копится всю сессию.",
+        "Главная причина — отсутствие cleanup в эффектах (подписки, таймеры, слушатели).",
+        "Detached DOM и кэши без eviction тоже накапливаются.",
+        "Рост памяти → рывки GC и краши, особенно на мобильных.",
+        "Тестировать многократным mount/unmount и мониторить heap в проде."
+      ],
+      "pitfalls": [
+        "Забытый return-cleanup в useEffect; хранение DOM-узлов в Map без WeakMap; тестирование только одного монтирования не выявит утечку."
+      ],
+      "quality": "good",
+      "quality_note": "",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 25,
+      "answer": "В React взаимодействие с DOM происходит не через прямой императивный доступ (`document.querySelector`, `appendChild`), а через декларативное описание UI и механизм reconciliation. Разработчик описывает, как UI должен выглядеть при данном состоянии, а React сам обновляет реальный DOM.\n\nКак это работает под капотом:\n1. Компонент возвращает JSX — описание дерева элементов (React elements). Это виртуальное описание, не реальные DOM-узлы.\n2. React строит из элементов внутреннее дерево (fiber tree в современном React). Для каждого компонента хранится fiber — узел с состоянием, props, побочными эффектами.\n3. При изменении state (через `setState`/`useState`) React планирует ре-рендер. В React 18+ это может быть прерываемым (concurrent rendering).\n4. Reconciliation: React сравнивает новое дерево элементов с предыдущим. Diffing идёт по типам элементов и ключам (`key`) в списках. Элементы того же типа переиспользуются (с обновлёнными props), другого типа — заменяются целиком.\n5. Применяется минимальный набор изменений к реальному DOM: обновляются только изменившиеся атрибуты, текст, добавляются/удаляются узлы. React сам решает, когда делать commit (синхронно, в фазе commit).\n6. После commit выполняются layout effects (`useLayoutEffect`) синхронно, затем passive effects (`useEffect`) асинхронно.\n\nПрямой доступ к DOM в React возможен через `ref` (`useRef`, `createRef`, `forwardRef`) — например, для фокуса, измерений, интеграции с не-React-библиотеками. Но это исключение, а не основной способ.\n\nКлючевое правило: не мутировать DOM напрямую в обход React — это ломает reconciliation и приводит к рассинхрону виртуального и реального деревьев.",
+      "explanation": "React описывает UI декларативно через JSX; при изменении state строит новое дерево элементов, сравнивает с предыдущим (reconciliation по типам и key), и применяет минимальный патч к реальному DOM. Прямой доступ — через ref, в исключительных случаях.",
+      "example": "```jsx\nfunction Field() {\n  const [val, setVal] = useState('');\n  const inputRef = useRef(null);\n  useEffect(() => {\n    // прямой доступ — только через ref, для императивных задач\n    inputRef.current?.focus();\n  }, []);\n  // value/onChange — декларативное управление DOM-узлом input\n  return <input ref={inputRef} value={val} onChange={e => setVal(e.target.value)} />;\n}\n```",
+      "key_points": [
+        "React управляет DOM декларативно через JSX и reconciliation.",
+        "Diffing идёт по типам элементов и key в списках.",
+        "Применяется минимальный патч к реальному DOM в фазе commit.",
+        "Прямой доступ — через ref (useRef/forwardRef), для императивных задач.",
+        "Не мутировать DOM в обход React — это ломает reconciliation."
+      ],
+      "pitfalls": [
+        "Прямое изменение DOM вне React рассинхронизирует деревья; отсутствие key в списках ведёт к неправильному переиспользованию узлов."
+      ],
+      "quality": "good",
+      "quality_note": "",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 26,
+      "answer": "При вызове `setState` (или setter из `useState`) происходит не немедленное изменение состояния и DOM, а планирование обновления. React намеренно батчит обновления, чтобы избежать лишних рендеров.\n\nШаги под капотом (современный React 18+):\n1. Setter ставит обновление в очередь планировщика. Если вызвать `setState` несколько раз в одном обработчике, они группируются (automatic batching в React 18 — и в обработчиках событий, и в промисах/таймерах).\n2. Если новое состояние — функция (`setN(prev => prev + 1)`), React применяет её к текущему состоянию; если значение — заменяет. Поэтому при нескольких инкрементах в одном тике нужно использовать функциональную форму.\n3. Планировщик решает, когда выполнять ре-рендер. В concurrent mode рендеринг может быть прерываемым: React может приостановить работу, чтобы не блокировать браузер (ввод, анимации), и возобновить.\n4. Render phase: React вызывает компонент, получает новое дерево элементов (JSX). Эта фаза должна быть чистой — без побочных эффектов.\n5. Reconciliation: новое дерево сравнивается с предыдущим (по типам и key), вычисляется минимальный diff.\n6. Commit phase (синхронная, непрерываемая): React применяет изменения к реальному DOM.\n7. Effects: после commit синхронно выполняются `useLayoutEffect`, затем асинхронно — `useEffect`.\n\nВажные нюансы:\n- `setState` асинхронный в том смысле, что чтение state сразу после вызова даст старое значение. Не полагаться на синхронность.\n- В классах `setState` делает shallow merge объекта; в `useState` setter заменяет значение целиком (для объектов нужно сливать вручную или использовать useReducer).\n- Batching: в React 17 вне обработчиков событий (промисы, setTimeout) батчинга не было; в React 18 — automatic batching везде.\n- Для принудительной синхронности измерений после DOM-обновления — `flushSync` (использовать осторожно).",
+      "explanation": "setState планирует обновление, а не выполняет сразу. React батчит вызовы (automatic batching в 18+), затем в render phase строит новое дерево, в reconciliation считает diff, в commit phase синхронно патчит DOM, затем выполняет effects.",
+      "example": "```jsx\nfunction Counter() {\n  const [n, setN] = useState(0);\n  const inc = () => {\n    setN(n + 1); // старое n\n    setN(n + 1); // снова старое n → в итоге +1, а не +2\n    // правильно — функциональная форма:\n    setN(prev => prev + 1);\n    setN(prev => prev + 1); // +2\n    // console.log(n); // старое значение — setState асинхронен\n  };\n  return <button onClick={inc}>{n}</button>;\n}\n```",
+      "key_points": [
+        "setState планирует обновление, а не меняет state синхронно.",
+        "Automatic batching в React 18 группирует вызовы везде (в т.ч. в промисах).",
+        "Несколько инкрементов в одном тике — через функциональную форму setN(prev=>...).",
+        "Render phase чистая; commit phase синхронно патчит DOM; затем effects.",
+        "useState заменяет значение целиком, а не сливает, как классовый setState."
+      ],
+      "pitfalls": [
+        "Читать state сразу после setState и ждать нового значения; мутировать объект состояния вместо замены/иммутабельного обновления."
+      ],
+      "quality": "good",
+      "quality_note": "",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 27,
+      "answer": "В React props доступны только для чтения. Менять их напрямую нельзя по нескольким причинам — и техническим, и архитектурным.\n\n1. Однонаправленный поток данных. Данные идут от родителя к ребёнку через props. Если бы ребёнок мог менять свои props, поток стал бы двунаправленным и неявным: родитель не знал бы, когда и кто изменил данные, а предсказуемость UI исчезла бы.\n\n2. Чистота компонента. Компонент должен быть чистой функцией от props и state: при одинаковых props/state он возвращает одинаковый JSX. Мутация props нарушает эту чистоту — повторный рендер с теми же props дал бы другой результат.\n\n3. Reconciliation. React сравнивает элементы по props. Если мутировать props, React не увидит изменения (та же ссылка/значение) и не пере-рендерит правильно. Обновления должны идти через state и новый объект props от родителя.\n\n4. Контроль источника истины. Если данные принадлежат родителю, только родитель должен их менять (через свой state и колбэки). Ребёнок сообщает о намерении изменить через callback-prop (`onChange`, `onSubmit`), а родитель решает, обновить ли state. Это поднимает состояние вверх (lifting state up) и делает поток явным.\n\nКак правильно «изменить» данные из props:\n- Если значение нужно менять локально — инициализируй из props и храни в state: `useState(() => props.initialValue)`. Не зеркалируй props в state с синхронизацией через useEffect — это антипаттерн.\n- Если значение должно меняться у родителя — вызови callback-prop.\n- Для сложного состояния — useReducer/Context/внешнее хранилище (Zustand, Redux).\n\nReact в dev-режиме явно предупреждает: «Do not mutate props. Props are read-only».",
+      "explanation": "Props read-only, потому что React построен на однонаправленном потоке и чистых компонентах. Мутация props ломает reconciliation и предсказуемость. Изменение данных инициируется через callback-prop, а локальное состояние — через useState, инициализированный из props.",
+      "example": "```jsx\n// ПРАВИЛЬНО: ребёнок сообщает через callback, родитель меняет state\nfunction Child({ value, onChange }) {\n  return <input value={value} onChange={e => onChange(e.target.value)} />;\n}\nfunction Parent() {\n  const [text, setText] = useState('');\n  return <Child value={text} onChange={setText} />;\n}\n\n// Локальное состояние из props — инициализируем один раз:\nfunction Editor({ initial }) {\n  const [val, setVal] = useState(() => initial); // не зеркалировать в effect!\n  return <input value={val} onChange={e => setVal(e.target.value)} />;\n}\n```",
+      "key_points": [
+        "Props read-only — основа однонаправленного потока и чистых компонентов.",
+        "Мутация props ломает reconciliation и предсказуемость UI.",
+        "Изменение у родителя — через callback-prop (onChange и т.п.).",
+        "Локальное состояние из props — useState(() => initial), без зеркалирования в effect.",
+        "Сложное состояние — useReducer/Context/внешнее хранилище."
+      ],
+      "pitfalls": [
+        "Зеркалирование props в state через useEffect (source of truth размывается); попытка мутировать props.children или объекты в props."
+      ],
+      "quality": "good",
+      "quality_note": "",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 180,
+      "answer": "Контролируемые и неконтролируемые компоненты в React — два подхода к работе с формами и вводом данных.\n\nКонтролируемые компоненты (controlled):\n- Значение input контролируется React через state. React — «единственный источник истины».\n- value={state} и onChange={(e) => setState(e.target.value)} — значение из state, изменение обновляет state.\n- Каждое нажатие клавиши → onChange → setState → перерендер → новое value. Полный контроль.\n- Валидация, форматирование, преобразование — на лету в onChange.\n- Пример: <input value={name} onChange={e => setName(e.target.value)} />.\n\nНеконтролируемые компоненты (uncontrolled):\n- Значение input хранится в DOM (как в обычном HTML), React не контролирует значение напрямую.\n- defaultValue (не value) — начальное значение. Доступ к текущему значению — через ref (useRef).\n- React не перерендеривает при вводе. Значение читается при необходимости (submit, blur).\n- Пример: <input defaultValue={initial} ref={inputRef} />, затем inputRef.current.value.\n- Подходит для: простых форм, когда не нужна валидация на лету, интеграция с legacy-кодом, file input (нельзя контролируемый).\n\nРазличия:\n1. Источник истины: контролируемый — React state; неконтролируемый — DOM.\n2. Обновление: контролируемый — при каждом вводе (onChange → setState → rerender); неконтролируемый — DOM сам, React не вмешивается.\n3. Доступ к значению: контролируемый — из state; неконтролируемый — через ref.\n4. Валидация/форматирование: контролируемый — легко на лету; неконтролируемый — при чтении (submit).\n5. Производительность: контролируемый — перерендер при каждом вводе (может быть дорого для больших форм); неконтролируемый — без перерендеров.\n6. Инициализация: контролируемый — value={state}; неконтролируемый — defaultValue.\n\nКогда что использовать:\n- Контролируемый — большинство случаев. Валидация, форматирование, динамическое значение, преобразование. Стандарт React.\n- Неконтролируемый — простые формы, file input, интеграция с non-React-кодом, когда производительность критична и не нужен контроль на лету.\n\nОсобенности:\n- Нельзя одновременно value и defaultValue — warning.\n- value без onChange — readonly (если не readOnly={true}).\n- checkbox/radio — checked вместо value, onChange.\n- textarea — value (не children, как в HTML).\n- select — value (не selected на option).\n- file input — только неконтролируемый (value readonly по соображениям безопасности).\n\nФорма целиком: можно смешивать — часть полей контролируемые, часть неконтролируемые. Но обычно вся форма один подход.\n\nБиблиотеки: React Hook Form, Formik — упрощают работу с формами, часто используют неконтролируемый подход с ref для производительности, но предоставляют валидацию и state-подобный API.",
+      "explanation": "Контролируемый — value из React state, onChange обновляет state, полный контроль, валидация на лету. Неконтролируемый — значение в DOM, defaultValue, доступ через ref, без перерендеров. Контролируемый — стандарт для большинства случаев; неконтролируемый — для простых форм, file input, производительности.",
+      "example": "```jsx\n// Контролируемый\nfunction ControlledForm() {\n  const [name, setName] = useState('');\n  const [email, setEmail] = useState('');\n\n  return (\n    <form onSubmit={e => { e.preventDefault(); console.log(name, email); }}>\n      <input value={name} onChange={e => setName(e.target.value)} placeholder=\"Name\" />\n      <input value={email} onChange={e => setEmail(e.target.value)} placeholder=\"Email\" />\n      <button type=\"submit\">Submit</button>\n    </form>\n  );\n}\n\n// Неконтролируемый\nfunction UncontrolledForm() {\n  const nameRef = useRef();\n  const emailRef = useRef();\n\n  return (\n    <form onSubmit={e => {\n      e.preventDefault();\n      console.log(nameRef.current.value, emailRef.current.value);\n    }}>\n      <input defaultValue=\"\" ref={nameRef} placeholder=\"Name\" />\n      <input defaultValue=\"\" ref={emailRef} placeholder=\"Email\" />\n      <button type=\"submit\">Submit</button>\n    </form>\n  );\n}\n\n// Смешанный (file input — неконтролируемый)\nfunction FileForm() {\n  const [name, setName] = useState('');\n  const fileRef = useRef();\n\n  return (\n    <form onSubmit={e => {\n      e.preventDefault();\n      const file = fileRef.current.files[0];\n      console.log(name, file);\n    }}>\n      <input value={name} onChange={e => setName(e.target.value)} placeholder=\"Name\" />\n      <input type=\"file\" ref={fileRef} />  {/* неконтролируемый */}\n      <button type=\"submit\">Upload</button>\n    </form>\n  );\n}\n```",
+      "key_points": [
+        "Контролируемый — value из state, onChange → setState, полный контроль, валидация на лету.",
+        "Неконтролируемый — значение в DOM, defaultValue, доступ через ref, без перерендеров.",
+        "Контролируемый — стандарт для большинства случаев; неконтролируемый — простые формы, file input.",
+        "Различия: источник истины (state vs DOM), обновление (rerender vs нет), доступ (state vs ref).",
+        "React Hook Form, Formik — упрощают формы, часто неконтролируемый с ref для производительности."
+      ],
+      "pitfalls": [
+        "value без onChange (readonly warning); value и defaultValue вместе; file input как контролируемый (нельзя); перерендеры в больших контролируемых формах."
+      ],
+      "quality": "good",
+      "quality_note": "Категория Frontend React, отвечаю с акцентом на React.",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 206,
+      "answer": "Это поведенческий вопрос о результатах работы. Отвечаю типовым набором метрик для frontend React-разработчика.\n\nМетрики результатов работы frontend React-разработчика:\n\n1. Производительность (Core Web Vitals):\n- LCP (Largest Contentful Paint) — время до самого большого элемента. Цель: < 2.5 сек. Улучшение: оптимизация изображений, SSR/SSG, кэширование, CDN.\n- FID/INP (First Input Delay / Interaction to Next Paint) — отзывчивость. Цель: < 100 мс (INP < 200). Улучшение: code splitting, lazy loading, оптимизация рендеринга.\n- CLS (Cumulative Layout Shift) — стабильность layout. Цель: < 0.1. Улучшение: размеры для изображений/видео, избегать вставок, font-display.\n- TTFB (Time to First Byte) — время до первого байта. Улучшение: CDN, кэширование, SSR.\n- FCP (First Contentful Paint) — время до первого контента.\n- TTI (Time to Interactive) — время до интерактивности.\n\n2. Размер bundle:\n- Размер JS/CSS bundle (gzip, brotli). Цель: минимальный.\n- Tree shaking — удаление неиспользуемого кода.\n- Code splitting — разделение на чанки (React.lazy, dynamic import).\n- Lighthouse — аудит, баллы (Performance, Accessibility, Best Practices, SEO).\n\n3. Качество кода:\n- Покрытие тестами (unit, integration, e2e). Цель: > 70-80% для критичного.\n- Количество багов (из bug tracker), bug rate.\n- Технический долг — задачи, помеченные как debt.\n- Code review — количество, время на review.\n- Статический анализ (ESLint, TypeScript, SonarQube) — количество предупреждений.\n\n4. Пользовательские метрики:\n- Конверсия — доля пользователей, выполнивших целевое действие (покупка, регистрация).\n- Bounce rate — доля ушедших после одной страницы.\n- Время на странице, глубина просмотра.\n- Ошибки в production (Sentry, Bugsnag) — количество, затронутые пользователи.\n- Retention — возвращаемость.\n\n5. Скорость разработки:\n- Lead time — время от задачи до продакшена.\n- Cycle time — время от начала работы до завершения.\n- Количество фич/задач за спринт (velocity).\n- Deployment frequency — частота деплоев.\n\n6. Доступность (a11y):\n- Покрытие accessibility-тестами.\n- Количество нарушений WCAG (Lighthouse, axe).\n- Скринридер-тестирование.\n\n7. SEO:\n- Позиции в поиске, органический трафик.\n- Lighthouse SEO score.\n- Индексация (Search Console).\n\nКак измерять:\n- Lighthouse, PageSpeed Insights — Core Web Vitals, аудит.\n- Web Vitals (библиотека) — реальные метрики пользователей (RUM).\n- Chrome DevTools — Performance, Coverage, Lighthouse.\n- Sentry, Bugsnag — ошибки в production.\n- Google Analytics, Yandex Metrika — пользовательские метрики.\n- Jest, Cypress, Playwright — тесты, coverage.\n- SonarQube, ESLint — качество кода.\n- Jira, Linear — lead/cycle time, velocity.\n\nПримеры результатов:\n- «Улучшил LCP с 4.2 сек до 1.8 сек через SSR и оптимизацию изображений».\n- «Снизил bundle с 800 КБ до 350 КБ через code splitting и tree shaking».\n- «Поднял Lighthouse Performance с 60 до 95».\n- «Увеличил конверсию на 15% через улучшение формы регистрации».\n- «Снизил количество ошибок в production на 80% через тесты и типизацию».\n- «Покрытие тестами с 20% до 75%».\n\nИнтервьюер выясняет: понимание метрик, способность измерять и улучшать, ориентированность на результат (не только «писал код», но и «улучшил X на Y%»).",
+      "explanation": "Метрики frontend React: Core Web Vitals (LCP, INP, CLS), размер bundle (tree shaking, code splitting), качество (тесты, баги, техдолг), пользовательские (конверсия, bounce rate, ошибки в Sentry), скорость (lead/cycle time, velocity), a11y, SEO. Инструменты: Lighthouse, Web Vitals, Sentry, Jest, SonarQube. Интервьюер выясняет ориентированность на результат.",
+      "example": "```text\n«Измерял результаты через несколько метрик:\n\nПроизводительность: Lighthouse, Web Vitals (RUM). Улучшил LCP с 4.2с до 1.8с через SSR (Next.js) и оптимизацию изображений (next/image, WebP). INP с 300мс до 80мс через React.memo, useMemo, code splitting. CLS с 0.25 до 0.05 через размеры изображений и font-display.\n\nBundle: с 800КБ до 350КБ (gzip) через React.lazy для роутов, dynamic import для тяжёлых библиотек (charting), tree shaking.\n\nКачество: покрытие тестами с 20% до 75% (Jest + React Testing Library для unit, Playwright для e2e). Ошибки в production (Sentry) снизил на 80% через типизацию (TypeScript strict) и тесты.\n\nБизнес: конверсия регистрации +15% после редизайна формы (валидация на лету, меньше полей). Bounce rate -10% после ускорения.\n\nСкорость: lead time с 8 дней до 3 через CI/CD (GitHub Actions), code review, small PRs».\n```",
+      "key_points": [
+        "Core Web Vitals: LCP (<2.5с), INP (<200мс), CLS (<0.1) — производительность.",
+        "Bundle: tree shaking, code splitting (React.lazy); Lighthouse для аудита.",
+        "Качество: покрытие тестами (Jest, Playwright), баги (Sentry), техдолг, code review.",
+        "Пользовательские: конверсия, bounce rate, retention; скорость: lead/cycle time, velocity.",
+        "Инструменты: Lighthouse, Web Vitals, Sentry, Google Analytics, SonarQube; ориентированность на результат."
+      ],
+      "pitfalls": [
+        "Перечислять без цифр; не измерять (нет baseline); оптимизировать без метрик; игнорировать бизнес-метрики (конверсия); не связывать технические улучшения с бизнесом."
+      ],
+      "quality": "good",
+      "quality_note": "Поведенческий вопрос о личном опыте. Отвечаю типовым набором метрик для React-разработчика.",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 210,
+      "answer": "React определяет, какой компонент перерендерить, через процесс reconciliation (согласование) и изменения state/props.\n\nОсновные триггеры перерендера:\n1. Изменение state (useState, useReducer, this.setState) — компонент и все его потомки перерендериваются.\n2. Изменение props — если родитель перерендерил и передал новые props, потомок перерендеривает.\n3. Изменение context (useContext) — если значение Context изменилось, все потребители перерендеривают.\n4. Принудительный — forceUpdate (классовые, редко) или ключ (key) изменился — React пересоздаёт компонент.\n\nКак React решает, что перерендерить:\n1. При изменении state/props React помечает компонент как «грязный» (needs render).\n2. React вызывает render (или функцию компонента) — создаёт новое виртуальное дерево (VDOM).\n3. Reconciliation — React сравнивает новое VDOM с предыдущим (diffing). Алгоритм:\n   - Разные типы элементов (div vs span, ComponentA vs ComponentB) — заменяется всё поддерево (старое удаляется, новое создаётся).\n   - Одинаковый тип (DOM-элемент) — обновляются атрибуты/props, рекурсивно сравниваются дети.\n   - Одинаковый тип (компонент) — обновляются props, компонент перерендеривает, рекурсивно сравниваются дети.\n   - Дети — сравнение по позиции (по умолчанию) или по key (если указан). key — стабильная идентификация, React понимает перемещение.\n4. React вычисляет минимальный набор изменений для реального DOM (patch).\n5. Применяет изменения в один батч (batching) — минимизация DOM-мутаций.\n\nПравила reconciliation:\n- Тип элемента определяет, сохранять ли компонент. <Counter /> и <Button /> — разные типы, Counter удаляется, Button создаётся (state теряется).\n- key в списках — для идентификации. Без key — по индексу (проблемы при вставках/удалениях). С key — React перемещает, не пересоздаёт.\n- React.memo — мемоизация компонента. Если props не изменились (shallow compare) — не перерендеривает.\n- shouldComponentUpdate (классовые) — ручной контроль, вернуть false чтобы не перерендеривать.\n\nОптимизация (предотвращение лишних рендеров):\n1. React.memo — мемоизация компонента, не перерендеривает если props не изменились (shallow compare).\n2. useMemo — мемоизация значения, не пересчитывается если deps не изменились.\n3. useCallback — мемоизация функции, не создаётся новая при каждом рендере (важно для React.memo потомков).\n4. Ключи (key) в списках — для стабильной идентификации.\n5. Разделение state — локальный state в листьях, не в общем родителе (меньше перерендеров).\n6. Context — разделять на несколько, чтобы изменения одного не перерендеривали всех потребителей.\n7. Virtualization — для больших списков (react-window, react-virtualized) — рендерить только видимое.\n\nПорядок рендеров: React рендерит сверху вниз (родитель → потомки). Батчинг — несколько state-изменений в одном рендере (React 18 — automatic batching для всех, включая async).\n\nReact Fiber (с React 16) — архитектура VDOM с прерываемым рендерингом. React может приостановить рендер (для приоритетов, Concurrent features), возобновить. Узлы-«волокна» (fibers) с приоритетами. useTransition, useDeferredValue — для приоритизации.",
+      "explanation": "React перерендеривает при изменении state/props/context. Reconciliation: сравнение нового VDOM с предыдущим — разные типы → замена поддерева; одинаковые → обновление props, рекурсивно дети; key для списков. React.memo/useMemo/useCallback — оптимизация. Fiber (React 16) — прерываемый рендеринг, приоритеты.",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 212,
+      "answer": "UseRef — хук React, возвращающий изменяемый (mutable) ref-объект, который сохраняется между рендерами. ref.current — свойство для хранения значения. Изменение ref.current НЕ вызывает перерендер.\n\nСинтаксис: const ref = useRef(initialValue). ref — объект {current: initialValue}. ref.current — доступ к значению.\n\nОсобенности:\n1. Сохраняется между рендерами — один и тот же объект на все рендеры. React создаёт его один раз.\n2. Изменение ref.current — НЕ вызывает перерендер. В отличие от useState (изменение → рендер).\n3. Mutable — можно изменять ref.current напрямую (ref.current = newValue). Не нужно «set» функция.\n4. initialValue — устанавливается один раз (при первом рендере). Последующие рендеры игнорируют initialValue.\n\nДля чего используется:\n1. Доступ к DOM-элементам (template refs):\n   - const inputRef = useRef(null); <input ref={inputRef} />. inputRef.current — DOM-элемент.\n   - Фокус: inputRef.current.focus(). Измерения: inputRef.current.getBoundingClientRect(). Интеграция с non-React библиотеками.\n2. Хранение изменяемых данных без перерендера:\n   - Таймеры, интервалы: const intervalRef = useRef(null); intervalRef.current = setInterval(...). Очистка: clearInterval(intervalRef.current).\n   - Предыдущее значение: const prevRef = useRef(value); useEffect(() => { prevRef.current = value; }, [value]).\n   - Флаги (isMounted, isCancelled): const isMounted = useRef(true).\n3. Хранение идентификаторов (requestAnimationFrame, WebSocket, AbortController):\n   - const wsRef = useRef(null); wsRef.current = new WebSocket(...).\n4. Имитация instance-переменных классовых компонентов:\n   - В классах — this.timerID. В функциональных — useRef.\n5. Передача ref в child (forwardRef):\n   - Родитель создаёт ref, передаёт child через forwardRef. Child прикрепляет к DOM-элементу.\n\nКогда необходим (useRef vs useState):\n- useRef — когда нужно хранить данные, изменение которых НЕ должно вызывать перерендер. Или доступ к DOM.\n- useState — когда изменение данных должно вызывать перерендер (UI зависит от данных).\n- Правило: если значение влияет на UI и должно его обновлять — useState. Если значение «скрыто» от UI (таймер, флаг, DOM) — useRef.\n\nПримеры необходимости:\n- Фокус на input после mount: useEffect(() => inputRef.current.focus(), []). Нужен useRef, не useState (фокус не влияет на UI).\n- Таймер: setInterval, сохранение ID для очистки. useRef, не useState (ID не для UI).\n- Предыдущее значение props/state: useRef + useEffect.\n- isMounted (для предотвращения setState после unmount): useRef.\n- Интеграция с charting-библиотекой (Chart.js): useRef для canvas, библиотека рендерит в canvas.\n\nОсобенности:\n- ref.current — не реактивный. Чтение в render — показывает значение на момент создания, не обновляется при изменении (без перерендера).\n- Изменение ref.current в render — side effect (не делайте, как и любое изменение в render). Используйте useEffect или обработчики.\n- useRef(null) для DOM — React устанавливает current при mount, null при unmount.\n- forwardRef + useImperativeHandle — для управления тем, что экспонирует child через ref (методы, не весь DOM).\n\nНе использовать useRef для:\n- Данных, влияющих на UI (используйте useState).\n- Производных значений (вычисляйте в render или useMemo).\n- Замены state (если нужно перерендер — useState).",
+      "explanation": "useRef — изменяемый ref-объект, сохраняется между рендерами, изменение ref.current НЕ вызывает перерендер. Для: доступа к DOM (фокус, измерения), хранения изменяемых данных без перерендера (таймеры, флаги, prev value), интеграции с non-React библиотеками. useState — для UI-данных (перерендер), useRef — для скрытых данных и DOM.",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 222,
+      "answer": "Props в React — входные данные от родителя, read-only (неизменяемые). React-принцип: props — входные данные, компонент не должен их изменять. Мутирование props напрямую — нарушение этого принципа и источник багов.\n\nПочему нельзя мутировать props напрямую:\n1. Read-only контракт — props предназначены для чтения. React документация: «All React components must act like pure functions with respect to their props.» Компонент — чистая функция от props и state.\n2. Однонаправленный поток данных — данные вниз (props), события вверх (колбэки). Мутирование props — нарушение потока, данные «ползут» вверх неявно.\n3. Непредсказуемость — если потомок мутирует props, родитель не знает об изменении. State родителя и props потомка расходятся, UI неконсистентен.\n4. Перерендер — родитель перерендеривает, передаёт новые props (из своего state). Мутированные потомком props будут перезаписаны — изменения потеряны.\n5. Чистые функции — React ожидает, что компонент — чистая функция от props/state. Мутирование props — побочный эффект, нарушает предсказуемость.\n6. Отладка — сложно отследить, кто изменил данные. С props (read-only) — ясно, изменения через родителя.\n\nКак правильно изменить (если нужно обновить данные из props):\n1. Колбэк (event) — потомок вызывает колбэк из props, родитель обновляет свой state, передаёт новые props.\n   - Родитель: <Child value={value} onChange={setValue} />.\n   - Потомок: <input value={value} onChange={e => onChange(e.target.value)} />.\n   - Это однонаправленный поток: потомок уведомляет, родитель обновляет.\n2. Lifting state up — если данные нужны в родителе и потомке, state в родителе, передаётся как props, обновляется через колбэк.\n3. Локальный state (производное) — если потомок хочет «редактировать» props локально, использовать state, инициализированный из props. Но осторожно: при изменении props state не обновится автоматически (нужно sync через useEffect или key).\n4. Context — для данных, нужных многим компонентам, без prop drilling.\n5. State management (Redux, Zustand) — для глобального состояния.\n\nАнтипаттерны:\n- this.props.value = newValue (классовый) — mutation, не работает.\n- props.value = newValue (функциональный) — mutation, не работает.\n- props.items.push(newItem) — mutation массива из props, родитель не узнает, при перерендере перезапишется.\n- Использовать props как initial state без sync: const [value, setValue] = useState(props.value) — если props.value изменится, state не обновится (только при монтировании). Решение: useEffect для sync, или key для пересоздания, или использовать props напрямую (если не нужно локальное редактирование).\n\nПравильные подходы:\n- Контролируемый компонент — value из props, onChange через колбэк. Родитель — источник истины.\n- Неконтролируемый с defaultValue — для простых форм, локальный state, доступ через ref.\n- Производное состояние — вычислять в render (или useMemo), не хранить в state.\n- key для сброса state при изменении props (если нужно пересоздать компонент).",
+      "explanation": "Props — read-only, компонент — чистая функция от props. Мутировать нельзя: нарушение контракта, однонаправленного потока, непредсказуемость, перезапись при перерендере. Правильно: колбэк (onChange) — потомок уведомляет, родитель обновляет state. Lifting state up, Context, state management. Производное состояние — вычислять, не хранить в state.",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 223,
+      "answer": "Отсутствие ключей (keys) в списках React — приводит к проблемам с reconciliation, производительностью и корректностью state.\n\nПроблемы без keys (или с index как key):\n1. Перемешивание state — при вставке/удалении в середину/начало, React сравнивает по позиции (индексу), не понимает, что элемент переместился. State привязан к позиции, не к элементу. Вставка в начало — state «сдвигается», input с введённым текстом оказывается у другого элемента.\n2. Лишние DOM-мутации — без key React думает, что элементы изменились (по позиции), и обновляет все. С key — понимает перемещение, перемещает существующие элементы, меньше мутаций.\n3. Потеря производительности — без key больше DOM-операций, дольше обновления. С key — минимальные изменения.\n4. Несоответствие state и UI — state компонента (например, ввод в input) «переходит» к другому элементу, UI неконсистентен.\n5. Проблемы с анимациями — transition, FLIP — без key React не понимает перемещение, анимации рвутся.\n6. Ошибки с uncontrolled компонентами — input без value, с defaultValue — state в DOM, при перемещении «следует» за позицией, не за элементом.\n\nПример проблемы:\n- Список [A, B, C], каждый с input (пользователь ввёл текст в A — «hello»).\n- Вставляем X в начало: [X, A, B, C].\n- Без key (по индексу):\n  - React: позиция 0 была A, теперь X — обновляет A на X (но input с «hello» остаётся, DOM переиспользуется).\n  - Позиция 1 была B, теперь A — обновляет B на A.\n  - Результат: input с «hello» теперь у X (позиция 0), A — пустой input. State перемешался.\n- С key={item.id}:\n  - React: A (key=1) переместился с позиции 0 на 1, X (key=4) — новый на 0.\n  - Input A сохраняет «hello» (переместился с A), X — новый пустой input.\n  - State правильно привязан к элементу.\n\nКогда index как key допустим:\n- Список статичен (не меняется порядок, нет вставок/удалений).\n- Элементы не имеют state (простой вывод, без input/local state).\n- В остальных случаях — проблемы.\n\nКак правильно:\n- key={item.id} — уникальный стабильный идентификатор (id из БД, уникальное поле).\n- key уникален среди соседей (в одном списке), не глобально.\n- key — строка или число, стабильный (не меняется между рендерами).\n- Не использовать Math.random() (меняется каждый рендер — React пересоздаёт все, потеря state, производительность).\n- Не использовать Date.now() (аналогично).\n\nReact warning: «Warning: Each child in a list should have a unique \"key\" prop.» — React предупреждает, но не блокирует. Игнорировать — баги.\n\nBest practices:\n- Всегда key для списков (если элементы могут меняться).\n- Уникальный стабильный id.\n- Не index (кроме статичных списков без state).\n- Не Math.random()/Date.now().\n- key среди соседей (в одном .map).\n- key не передаётся как prop (React использует внутренне).",
+      "explanation": "Без keys — перемешивание state (по позиции, не элементу), лишние DOM-мутации, потеря производительности, неконсистентность UI. С key — React понимает перемещение, сохраняет state, минимальные мутации. index допустим только для статичных списков без state. Использовать уникальный стабильный id, не Math.random().",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 235,
+      "answer": "Next.js — React-фреймворк для создания полноценных веб-приложений. Предоставляет server-side rendering (SSR), static site generation (SSG), routing, API routes, оптимизацию производительности и интеграцию с React Server Components.\n\nОсновные возможности Next.js:\n\n1. Рендеринг:\n- SSR (Server-Side Rendering) — рендеринг страницы на сервере при каждом запросе. getServerSideProps (Pages Router) или async компоненты (App Router).\n- SSG (Static Site Generation) — статическая генерация страниц при сборке. getStaticProps, getStaticPaths (Pages Router).\n- ISR (Incremental Static Regeneration) — перегенерация статических страниц в фоне без пересборки.\n- CSR (Client-Side Rendering) — обычный клиентский рендеринг.\n- App Router (с Next.js 13) — React Server Components по умолчанию, async/await для данных, layouts, loading, error UI.\n\n2. Маршрутизация (Routing):\n- Pages Router — файловая система в pages/: pages/index.tsx, pages/about.tsx, pages/blog/[slug].tsx (динамические).\n- App Router (app/) — app/page.tsx, app/layout.tsx, app/[id]/page.tsx, loading.tsx, error.tsx, not-found.tsx.\n- Nested layouts, route groups, parallel routes, intercepting routes.\n\n3. API Routes:\n- pages/api/*.ts — серверные API endpoints (Pages Router).\n- app/api/route.ts — Route Handlers (App Router).\n- Server Actions (App Router) — серверные функции, вызываемые из клиентских компонентов.\n\n4. Оптимизация:\n- Image — автоматическая оптимизация изображений (resize, lazy loading, форматы WebP/AVIF).\n- Script — загрузка сторонних скриптов с приоритетами.\n- Font — @next/font (next/font) — оптимизация шрифтов, предзагрузка.\n- Link — prefetching страниц.\n- Head — управление <head> (мета-теги, SEO).\n\n5. Стили:\n- CSS Modules, Sass, CSS-in-JS (styled-jsx, styled-components, emotion), Tailwind CSS.\n- Global styles в pages/_app.tsx или app/layout.tsx.\n\n6. Middleware:\n- middleware.ts — выполняется перед запросом. Для редиректов, rewrite, аутентификации, A/B-тестов, геолокации.\n\n7. Data fetching:\n- Pages Router: getStaticProps, getServerSideProps, getInitialProps, SWR, React Query.\n- App Router: async page components, fetch (с кэшированием), Server Actions, Route Handlers.\n\n8. Интернационализация (i18n):\n- Встроенная поддержка i18n routing. next.config.js: {i18n: {locales: ['en', 'ru'], defaultLocale: 'en'}}.\n\n9. SEO и Head:\n- next/head (Pages) — управление <head>.\n- Metadata API (App Router) — экспорт metadata в page/layout.\n\n10. Draft Mode и Preview Mode — для CMS preview.\n\nПреимущества Next.js:\n- SEO — SSR/SSG даёт HTML.\n- Производительность — code splitting, image optimization, prefetching.\n- DX — файловая маршрутизация, быстрый HMR, TypeScript.\n- Гибкость — разные стратегии рендеринга в одном проекте.\n- Fullstack — API routes, Server Actions.\n\nNext.js 13+ (App Router) vs Next.js 12 (Pages Router):\n- App Router — React Server Components, layouts, Server Actions, async components, streaming.\n- Pages Router — традиционный SSR/SSG, getServerSideProps/getStaticProps, _app, _document.\n- Оба сосуществуют, но App Router — рекомендуемый для новых проектов.",
+      "explanation": "Next.js — React-фреймворк с SSR, SSG, ISR, App Router, API routes, оптимизацией (Image, Font, Script, Link), middleware, i18n. Next.js 13+ внедряет React Server Components и async components в App Router. Преимущества: SEO, производительность, DX, fullstack.",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 240,
+      "answer": "Проблемы производительности на фронтенде и способы их решения.\n\nОсновные проблемы и решения:\n\n1. Большой bundle size:\n- Диагностика: webpack-bundle-analyzer, source-map-explorer, Rollup/Vite visualizer.\n- Решения: code splitting (React.lazy, dynamic import), tree shaking, удаление неиспользуемых библиотек, замена тяжёлых библиотек лёгкими, lazy loading роутов/компонентов, CDN, gzip/Brotli.\n\n2. Медленный рендеринг (React/Vue):\n- Диагностика: React DevTools Profiler, Vue DevTools Performance.\n- Решения: React.memo/Vue v-once, useMemo/computed, useCallback, разделение state (localize state), ключи (key), virtualization, предотвращение лишних перерендеров.\n\n3. Большие списки/таблицы:\n- Virtualization (react-window, react-virtualized, vue-virtual-scroller) — рендерить только видимое.\n- Пагинация, infinite scroll, плейсхолдеры (skeleton).\n- Web Workers для фильтрации/сортировки.\n\n4. Медленный first load:\n- Code splitting, lazy loading, preload/prefetch critical resources.\n- SSR/SSG (Next.js/Nuxt) для быстрого FCP.\n- Оптимизация изображений (next/image, форматы WebP/AVIF, lazy loading).\n- Minimize render-blocking resources (CSS, шрифты).\n\n5. Layout thrashing (forced reflow):\n- Диагностика: Chrome DevTools Performance.\n- Решения: не чередовать чтение и запись DOM-свойств (offsetHeight, then style.width), batch DOM changes, use requestAnimationFrame, use transform/opacity (они не вызывают reflow).\n\n6. Memory leaks:\n- Диагностика: Chrome DevTools Memory.\n- Решения: cleanup в useEffect/onUnmounted (removeEventListener, clearInterval, abort), снятие подписок, избегать замыканий на большие объекты, WeakMap/WeakSet.\n\n7. Сетевые запросы:\n- Кэширование (React Query/SWR, Service Worker, HTTP cache).\n- Debounce/throttle для input/search.\n- Lazy load данных (pagination), prefetch.\n- Использовать CDN, HTTP/2, Server Push (осторожно).\n\n8. Анимации и скролл:\n- Использовать transform и opacity (GPU-accelerated).\n- Избегать layout properties (width, height, top, left) — они вызывают reflow.\n- will-change, contain (CSS contain).\n- requestAnimationFrame для scroll/animation.\n- Web Workers для тяжёлых вычислений.\n\n9. Тяжёлые вычисления:\n- Web Workers / Worker Threads (Node) для основного потока.\n- useMemo/memoization, кэширование.\n- Разбивка на чанки (time-slicing), requestIdleCallback.\n\n10. Изображения и медиа:\n- Lazy loading, srcset, WebP/AVIF, next/image, responsive images.\n- Preload critical, prefetch below-the-fold.\n\n11. Third-party scripts:\n- Загрузка async/defer, ленивая загрузка (next/script), preload, Critical CSS.\n\nПример кейса:\n- Список 10 000 карточек: virtualization (react-window), пагинация, виртуализация скролла, ключи.\n- Медленный input с фильтрацией: debounce, useMemo для фильтра, Web Worker для тяжёлых вычислений.\n- Большой bundle: code splitting, tree shaking, lazy loading.\n- Подвисает при скролле: virtualization, transform вместо top/left, throttle scroll.\n\nМетрики:\n- Core Web Vitals: LCP (Largest Contentful Paint), FID/INP (Interaction to Next Paint), CLS (Cumulative Layout Shift), TTFB, FCP, TTI.\n- Lighthouse, PageSpeed Insights, WebPageTest, Chrome DevTools.",
+      "explanation": "Проблемы производительности: bundle size, рендеринг, большие списки, first load, layout thrashing, memory leaks, сеть, анимации, тяжёлые вычисления, изображения. Решения: code splitting, lazy loading, virtualization, memoization, Web Workers, HTTP кэш, transform/opacity, debounce/throttle, Core Web Vitals.",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 241,
+      "answer": "Вопрос о зарплатных ожиданиях — стандартный вопрос на интервью. Отвечать нужно честно, но тактично, с учётом рыночной ситуации, опыта, компетенций и уровня компании.\n\nКак правильно отвечать:\n\n1. Подготовьтесь заранее:\n- Исследуйте рынок: зарплатные вилки по стеку, уровню, региону (Levels.fyi, HeadHunter, Indeed, Glassdoor, опросы).\n- Определите свой минимум (ниже которого не готовы рассматривать) и желанную сумму.\n- Учитывайте формат: gross/net, валюта, официальная/неофициальная часть, бонусы, RSU, ДМС, удалёнка, релокация.\n\n2. Дайте диапазон:\n- Назовите вилку, а не конкретную цифру. Например: «рассматриваю позиции от X до Y, в зависимости от задач, грейда и условий».\n- Нижняя граница — ваш минимум; верхняя — идеал.\n\n3. Обоснуйте:\n- Свяжите с рынком, своим опытом, сложностью задач, уровнем.\n- Упомяните, что готовы обсуждать, учитывая полный пакет (бонусы, рост, интересные задачи).\n\n4. Будьте гибкими:\n- «Если задачи интересные и есть перспективы роста, готов обсудить».\n- Не называйте цифру сразу, если не уверены: «Хотел бы узнать бюджет позиции, чтобы быть в рамках возможностей компании».\n\n5. Учитывайте бенефиты:\n- Высокая базовая ЗП + низкие бонусы vs средняя + RSU/бонусы.\n- Удалёнка, ДМС, обучение, техника, гибкий график, отпуск — имеют ценность.\n\n6. Пример ответов:\n- Junior: «Рассматриваю позиции от 80 000 до 120 000 ₽ net, в зависимости от стека и условий».\n- Middle: «Мой диапазон — 180 000–250 000 ₽ net, готов обсудить с учётом задач и бенефитов».\n- Senior: «Рассматриваю позиции от 350 000 ₽ net, готов обсудить полный пакет и RSU».\n\n7. Чего избегать:\n- Не называйте слишком низкую сумму — может навредить переговорам.\n- Не называйте завышенную без обоснования — может отпугнуть работодателя.\n- Не отвечайте «как есть» на первом этапе, если можно оттянуть.\n- Не лгите о текущей зарплате.\n- Не делайте зарплату единственным критерием.\n\n8. Переговоры:\n- Если предложение ниже ожиданий — объясните, почему вы ожидаете больше, упомяните рынок и свой вклад.\n- Можно попросить время подумать.\n- Письменное подтверждение после устной договорённости.",
+      "explanation": "Зарплатные ожидания: исследовать рынок, назвать вилку, обосновать, быть гибким, учитывать бенефиты. Примеры по уровням. Избегать крайностей, лжи, давления. Готовность к обсуждению зависит от задач и условий. Распространённое заблуждение: «Назвать максимально возможную сумму, чтобы не продешевить ни при каких обстоятельствах» — это неверно. Также неверно утверждение: «Отказаться называть цифры и потребовать, чтобы работодатель первым назвал сумму».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 245,
+      "answer": "Teleport (в Vue) и Suspense (в React) — разные концепции, решающие разные задачи.\n\nTeleport (Vue):\n- Компонент <Teleport> позволяет рендерить содержимое в другом месте DOM, независимо от иерархии компонентов.\n- to=\"selector\" — CSS-селектор, куда будет телепортирован контент.\n- use case: модальные окна, toast-уведомления, popovers, dropdowns, tooltips — чтобы избежать проблем с z-index, overflow: hidden, position: relative у родителя.\n- Контент рендерится в target, но логика (state, events) остаётся в исходном компоненте.\n- Vue 3: <Teleport to=\"body\"><Modal /></Teleport>.\n- Можно телепортировать в <div id=\"modals\"></div>.\n- Атрибут disabled отключает телепорт.\n- Несколько Teleport в один target — конкатенируются.\n\nSuspense (React):\n- Компонент <Suspense> позволяет приостановить рендер, пока дочерние компоненты загружаются (lazy loading) или данные не готовы.\n- fallback — что показывать во время ожидания.\n- use case: lazy loading components (React.lazy), data fetching с библиотеками, поддерживающими Suspense (React Query, Relay).\n- Подвешенные (suspended) компоненты могут иметь границу, ближайшая Suspense их ловит.\n- React 18+: используется с Concurrent Features, streaming SSR.\n\nОсновные отличия:\n1. Назначение: Teleport — перемещает DOM; Suspense — приостанавливает рендер до готовности.\n2. Технология: Teleport — Vue; Suspense — React (Vue 3 имеет experimental Suspense).\n3. DOM: Teleport изменяет DOM-позицию; Suspense не меняет DOM, показывает fallback.\n4. Состояние: Teleport сохраняет state в исходном компоненте; Suspense — ожидание данных.",
+      "explanation": "Teleport (Vue) — рендерит контент в другой DOM-узел (модалки, toasts). Suspense (React) — ожидает готовности компонента/данных, показывает fallback (lazy loading, data fetching). Разные задачи. Распространённое заблуждение: «Teleport — для анимации переходов; Suspense — для отложенной загрузки изображений» — это неверно. Также неверно утверждение: «Teleport и Suspense — синонимы для ленивой загрузки компонентов».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 249,
+      "answer": "Контролируемые vs неконтролируемые компоненты в React.\n\nКонтролируемые (controlled):\n- value из React state, onChange обновляет state.\n- State — единственный источник истины.\n- Преимущества: контроль, валидация, форматирование, легко тестировать.\n- Пример: <input value={name} onChange={e => setName(e.target.value)} />.\n\nНеконтролируемые (uncontrolled):\n- DOM управляет значением, defaultValue для начального, ref для доступа.\n- Преимущества: меньше state, file input, интеграция с DOM.\n- Пример: <input defaultValue=\"Alice\" ref={inputRef} />.\n\nКогда что:\n- Controlled — большинство форм, валидация, debounce.\n- Uncontrolled — file input, простые формы, React Hook Form/Formik под капотом.\n\nFile input всегда uncontrolled.",
+      "explanation": "Controlled — value + onChange, React state. Uncontrolled — defaultValue + ref, DOM. Controlled для валидации/форм; uncontrolled для file input и простых случаев. Распространённое заблуждение: «Неконтролируемые — значение в state; контролируемые — значение только в DOM» — это неверно. Также неверно утверждение: «Контролируемые компоненты нельзя валидировать, неконтролируемые — всегда валидны».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 253,
+      "answer": "UseContext перерендеривает всех потребителей, потому что Context.Provider передаёт value, и при изменении value React считает, что всё значение контекста изменилось. useContext подписывает компонент на весь контекст, а не на часть value.\n\nПодробно:\n\n1. Context.Provider value — единый объект.\n- Когда value изменяется (новый объект или изменение поля), React помечает всех потребителей useContext как нуждающихся в перерендере.\n\n2. useContext не селективен.\n- const { theme, user } = useContext(AppContext) — компонент подписан на ВЕСЬ контекст.\n- Если theme не меняется, а user изменился, компонент всё равно перерендерится.\n\n3. Почему так:\n- useContext — простой механизм. React не знает, какую часть value использует компонент.\n- Нет селекторов, как в Redux (useSelector) или Zustand.\n- React не анализирует, какие поля объекта value фактически используются.\n\n4. Проблема с объектом value:\n- Если Provider передаёт новый объект каждый рендер ({ theme, user }), все потребители перерендерятся.\n- Даже если данные не изменились, новая ссылка объекта = изменение value.\n\nКак избежать лишних перерендеров:\n\n1. Разделить контексты.\n- ThemeContext, UserContext, AuthContext — отдельные.\n- Изменение UserContext не перерендеривает потребителей ThemeContext.\n\n2. Разделить value и dispatch.\n- StateContext (value) и DispatchContext (dispatch/setState).\n- Компоненты, которым нужен только dispatch, не перерендериваются при изменении state.\n\n3. useMemo для value.\n- const value = useMemo(() => ({ theme, user }), [theme, user]);\n- Не создавать новый объект каждый рендер.\n\n4. use-context-selector (библиотека).\n- Селективное потребление: useContextSelector(Context, s => s.theme).\n- Перерендер только при изменении theme.\n\n5. Внешние state-менеджеры.\n- Zustand, Jotai, Redux — granular updates, селекторы.\n- Для частых изменений лучше state-менеджер.\n\n6. React.memo.\n- Осторожно: useContext обходит memo, потому что Provider передаёт новые props.\n- React.memo помогает, только если props не меняются.\n\n7. Использовать примитивы в value.\n- Если value — примитив (string/number), сравнение по значению.\n- Но обычно value — объект.\n\nКогда useContext ок:\n- Контексты, которые редко меняются: тема, локализация, настройки, аутентификация.\n- Небольшие приложения.\n\nКогда лучше state-менеджер:\n- Часто меняющиеся данные: корзина, фильтры, real-time.\n- Большие state, где разные компоненты используют разные части.",
+      "explanation": "useContext подписывает компонент на весь Context.value. При изменении value (любая часть) все потребители перерендериваются, потому что useContext не селективен. Решения: разделение контекстов, useMemo, State/Dispatch split, use-context-selector, Zustand/Redux. useContext хорош для редко меняющихся данных.",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 254,
+      "answer": "UseContext решает задачу передачи данных без prop drilling, но он не заменяет state-менеджеры из-за архитектурных ограничений.\n\nЧто умеет useContext:\n- Передача данных вниз по дереву без prop drilling.\n- Глобальные редко меняющиеся данные: тема, локализация, пользователь, настройки.\n\nЧего не хватает useContext:\n\n1. Нет селективности (granular updates):\n- useContext подписан на весь value. Изменение любой части перерендеривает всех потребителей.\n- State-менеджеры (Redux, Zustand, Jotai) позволяют подписываться на конкретные части state.\n\n2. Нет middleware:\n- Redux: thunk, saga, logging, persistence.\n- Zustand: middleware (devtools, persist, immer).\n- useContext — просто value, нет middleware.\n\n3. Нет devtools:\n- Redux DevTools: time travel, просмотр actions, state.\n- React DevTools видит контекст, но не так удобно.\n\n4. Нет организации сложной логики:\n- State-менеджеры помогают структурировать state, actions, reducers.\n- useContext + useState/useReducer — можно, но сложно масштабировать.\n\n5. Проблемы с частыми обновлениями:\n- Корзина, фильтры, real-time — useContext вызовет много перерендеров.\n- State-менеджеры оптимизированы.\n\n6. Нет производных/мемоизированных значений из коробки:\n- В Redux/Zustand — селекторы, computed values.\n- В useContext — нужно compute в потребителе или useMemo.\n\n7. Нет server-state features:\n- React Query/SWR — кэш, инвалидация, рефетч.\n- useContext — только хранение, нет fetching logic.\n\n8. Provider hell:\n- Много вложенных Provider'ов.\n- State-менеджеры обычно один Provider/Context.\n\nКогда useContext достаточно:\n- Тема, локализация, пользователь, небольшие настройки.\n- Маленькие/средние приложения с простым state.\n\nКогда нужен state-менеджер:\n- Сложное состояние с логикой.\n- Частые изменения.\n- Нужны devtools, middleware, persistence.\n- Многие компоненты используют разные части state.\n- Серверное состояние — React Query/SWR.\n\nuseContext vs state-менеджер — не конкуренты, а дополнение:\n- useContext — для редких глобальных данных.\n- State manager — для сложного/частого state.\n- React Query — для server state.\n\nПример:\n- Тема — useContext.\n- Корзина — Zustand/Redux.\n- Список товаров — React Query.",
+      "explanation": "useContext передаёт данные, но не заменяет state-менеджеры. Недостатки: нет селективности, middleware, devtools, плох для частых обновлений, нет server-state features. State-менеджеры нужны для сложного/частого state. useContext — для темы/локализации; state-менеджер — для корзины/фильтров; React Query — для серверных данных.",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 255,
+      "answer": "UseState и useContext — разные хуки для разных задач.\n\nuseState:\n- Локальный state внутри компонента.\n- Значение и setter функция.\n- const [count, setCount] = useState(0).\n- Перерендеривает только компонент, который вызвал setState (и его потомков).\n- Простой и быстрый.\n\nuseContext:\n- Доступ к значению Context, предоставленному Provider'ом где-то выше по дереву.\n- Используется для передачи данных без prop drilling.\n- const value = useContext(MyContext).\n- При изменении value все потребители useContext перерендериваются.\n\nКогда использовать useState:\n- Локальное состояние одного компонента (счётчик, input, toggle).\n- Данные не нужны другим компонентам.\n- Состояние формы, UI state.\n\nКогда использовать useContext:\n- Данные нужны в нескольких компонентах на разных уровнях.\n- Глобальные/полуглобальные данные: тема, пользователь, локализация, настройки.\n- Избежать prop drilling.\n\nКогда НЕ использовать useContext:\n- Локальное state — useState проще.\n- Часто меняющийся state с большим количеством потребителей — перерендеры (использовать Zustand/Redux).\n- Сложная логика с производными — useReducer или state-менеджер.\n\nМожно комбинировать:\n- useState внутри компонента + useContext для общих данных.\n- Context value может содержать useState.\n- const [theme, setTheme] = useState('light'); return <ThemeContext.Provider value={{ theme, setTheme }}>.\n\nСравнение:\n1. Scope: useState — локальный; useContext — глобальный/полуглобальный.\n2. Use case: useState — компонент; useContext — shared data.\n3. Перерендеры: useState — компонент + потомки; useContext — все потребители.\n4. Boilerplate: useState — минимум; useContext — createContext, Provider.\n\nПример:\n```jsx\n// useState — локальный счётчик\nfunction Counter() {\n  const [count, setCount] = useState(0);\n  return <button onClick={() => setCount(c => c + 1)}>{count}</button>;\n}\n\n// useContext — тема\nconst ThemeContext = createContext('light');\nfunction App() {\n  const [theme, setTheme] = useState('light');\n  return (\n    <ThemeContext.Provider value={{ theme, setTheme }}>\n      <Toolbar />\n    </ThemeContext.Provider>\n  );\n}\nfunction Toolbar() {\n  const { theme } = useContext(ThemeContext);  // без prop drilling\n  return <div className={theme}>...</div>;\n}\n```",
+      "explanation": "useState — локальный state компонента. useContext — доступ к shared value из Provider, для передачи данных без prop drilling. useState для локального; useContext для глобальных/редко меняющихся данных (тема, пользователь). Для часто меняющихся/shared сложных state — state-менеджер.",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 257,
+      "answer": "Да, работал с Redux. В современных проектах предпочитаю Redux Toolkit (RTK), а не чистый Redux, потому что RTK снижает boilerplate и предоставляет best practices.\n\nЧистый Redux:\n- Store, actions, reducers — всё пишется вручную.\n- Action types — строковые константы.\n- Action creators — функции возвращающие { type, payload }.\n- Reducer — чистая функция (state, action) => newState.\n- Immutable updates — spread-операторы или Object.assign.\n- Middleware: redux-thunk, redux-saga, redux-logger.\n- Много boilerplate.\n\nRedux Toolkit (RTK):\n- Официальная библиотека от Redux team для упрощения Redux.\n- createSlice — генерирует actions и reducers.\n- createAsyncThunk — async actions (pending, fulfilled, rejected).\n- configureStore — автоматически подключает Redux DevTools и middleware.\n- Immer под капотом — можно писать «mutable» код, но он иммутабельный.\n- RTK Query — встроенный data fetching (аналог React Query).\n- Меньше boilerplate, лучше TypeScript поддержка.\n\nПример чистого Redux:\n```javascript\nconst ADD_TODO = 'ADD_TODO';\nconst addTodo = (text) => ({ type: ADD_TODO, payload: text });\n\nconst initialState = { todos: [] };\nfunction todoReducer(state = initialState, action) {\n  switch (action.type) {\n    case ADD_TODO:\n      return { ...state, todos: [...state.todos, action.payload] };\n    default:\n      return state;\n  }\n}\n```\n\nПример Redux Toolkit:\n```javascript\nimport { createSlice, configureStore } from '@reduxjs/toolkit';\n\nconst todoSlice = createSlice({\n  name: 'todos',\n  initialState: [],\n  reducers: {\n    addTodo: (state, action) => { state.push(action.payload); },  // Immer под капотом\n    toggleTodo: (state, action) => {\n      const todo = state.find(t => t.id === action.payload);\n      if (todo) todo.done = !todo.done;\n    },\n  },\n});\n\nexport const { addTodo, toggleTodo } = todoSlice.actions;\nconst store = configureStore({ reducer: { todos: todoSlice.reducer } });\n```\n\nКогда какой:\n- Чистый Redux — обучение, legacy-проекты, когда нужен максимальный контроль.\n- Redux Toolkit — production, новые проекты, рекомендуемый подход.\n\nПреимущества RTK:\n- Меньше кода.\n- Immer — удобные mutations.\n- createAsyncThunk — стандартизированный async.\n- RTK Query — встроенный data fetching.\n- DevTools из коробки.\n- Лучше TS.\n\nНедостатки RTK:\n- Абстракция может скрывать понимание основ.\n- createAsyncThunk иногда менее гибок, чем saga.\n- Для очень сложных сценариев saga/observables могут быть лучше.\n\nАльтернативы:\n- Zustand — проще, меньше boilerplate.\n- Jotai/Recoil — atomic state.\n- React Query — server state.\n\nМой опыт:\n- Использовал чистый Redux в старых проектах.\n- Перешёл на Redux Toolkit и RTK Query.\n- Для новых проектов предпочитаю Zustand + React Query, если состояние не очень сложное.",
+      "explanation": "Работал с Redux. Предпочитаю Redux Toolkit (RTK) — createSlice, configureStore, Immer, createAsyncThunk, RTK Query, DevTools из коробки. Чистый Redux — больше boilerplate, legacy/обучение. RTK — рекомендуемый для production. Для простых проектов — Zustand; для server state — React Query.",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 259,
+      "answer": "Индекс массива нельзя использовать как key в React (и Vue), потому что он не стабильно идентифицирует элемент. key нужен для reconciliation, чтобы React понимал, какой элемент переместился, изменился или удалился.\n\nПроблемы с index как key:\n\n1. Перемешивание state:\n- При вставке/удалении в середину/начало индексы меняются.\n- React думает, что элементы переместились/изменились по позиции.\n- State компонента (input, expanded, selected) остаётся на позиции, а не на элементе.\n\n2. Лишние DOM-мутации:\n- React переиспользует DOM-узлы по индексу.\n- Вставка нового элемента в начало сдвинет все DOM-узлы, хотя мог бы просто добавить один.\n\n3. Потеря производительности:\n- Больше DOM-операций, больше перерендеров.\n\n4. Несоответствие UI и data:\n- Если ввод был в элементе A на позиции 0, после вставки X в начало ввод окажется у X.\n\n5. Проблемы с анимациями/transition:\n- React не понимает реальное перемещение элементов.\n\nКогда index можно использовать:\n- Список статичен (не меняется порядок, не добавляются/удаляются).\n- Элементы не имеют state (простой вывод).\n- Например, рендер константного списка ['A','B','C'].\n\nКак правильно:\n- Использовать уникальный стабильный идентификатор: item.id, UUID, hash.\n- key должен быть строка/число, стабильный между рендерами.\n- key уникален среди соседей.\n- Не Math.random(), не Date.now() (меняются каждый рендер).\n\nReact warning:\n- «Each child in a list should have a unique key prop.» — игнорировать нельзя.\n\nBest practices:\n- Всегда использовать уникальный id.\n- Если id нет, сгенерировать при создании (но не в render).\n- index допустим только для статичных списков.\n- key среди соседей (в одном .map).",
+      "explanation": "index нельзя использовать как key, потому что он нестабилен при изменении порядка. React использует key для reconciliation: разные/перемещённые индексы приводят к перемешиванию state, лишним DOM-мутациям, потере производительности. Использовать уникальный стабильный id. index допустим только для статичных списков без state.",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 291,
+      "answer": "UseId — React hook (с React 18) для генерации уникальных идентификаторов, стабильных между рендерами.\n\nЗачем:\n- Связать HTML-элементы (label-input, aria-describedby, aria-labelledby).\n- Генерировать уникальные id без конфликтов, особенно в SSR.\n- Избежать использования Math.random() или инкрементальных счётчиков, которые могут не совпадать на сервере и клиенте.\n\nОсобенности:\n- Генерирует строку с двоеточием (например, ':r0:').\n- Стабилен между рендерами.\n- Гарантировано уникален в дереве компонентов.\n- Работает и в SSR, и в клиенте (hydration friendly).\n\nПример:\n```jsx\nimport { useId } from 'react';\n\nfunction Field() {\n  const id = useId();\n  return (\n    <>\n      <label htmlFor={id}>Name</label>\n      <input id={id} type=\"text\" />\n    </>\n  );\n}\n```\n\nВажно:\n- Не использовать useId для ключей списков (key).\n- Не использовать для генерации id, которые должны быть постоянными между сессиями (user id, database id).\n- Можно комбинировать с префиксом: `${id}-name`.\n\nДо React 18:\n- Использовали uuid, nanoid, Math.random, собственный counter.\n\nuseId особенно важен для SSR, чтобы избежать mismatch между server-rendered и client-rendered id.",
+      "explanation": "useId (React 18) — стабильные уникальные id. Для связи label-input, ARIA. Hydration-friendly. Не для list keys или persisted ids. Распространённое заблуждение: «Хук для генерации случайных чисел, которые различаются на сервере и клиенте» — это неверно. Также неверно утверждение: «Хук для получения id текущего пользователя из системы авторизации».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 294,
+      "answer": "React использует reconciliation — процесс сравнения старого и нового VDOM-дерева, чтобы определить минимальные изменения для реального DOM.\n\nАлгоритм:\n1. React строит новое VDOM.\n2. Сравнивает с предыдущим VDOM (fiber tree).\n3. Применяет только различия к DOM.\n\nПравила сравнения:\n\n1. Разные типы элементов:\n- Если `<div>` стал `<span>` — старый узел уничтожается, создаётся новый.\n\n2. Одинаковые типы:\n- Сравниваются props.\n- Обновляются только изменившиеся props.\n\n3. Список дочерних элементов:\n- React использует keys для идентификации.\n- Сравнивает по key: перемещает, добавляет, удаляет.\n- Без key или с index — сложнее определить изменения, могут быть лишние DOM-операции.\n\n4. Virtual DOM vs real DOM:\n- VDOM-дерево лёгкое (JavaScript-объекты).\n- Батчинг — React может сгруппировать изменения.\n- Diff оптимизирован (O(n) вместо O(n^3) за счёт допущений).\n\nFiber:\n- С React 16 — новый reconciler (Fiber).\n- Поддерживает приоритеты, разбиение работы на чанки, concurrent features (React 18).\n\nОптимизации:\n- React.memo — пропускать ререндер при неизменных props.\n- useMemo — кэшировать значения.\n- useCallback — стабильные callback'и.\n- Ключи — помогают reconciliation.\n\nВажно:\n- React не делает полного DOM diff.\n- Эвристики: разные типы = replace, одинаковые = update props, key помогают спискам.",
+      "explanation": "Reconciliation — сравнение VDOM. Разные типы заменяются, одинаковые обновляются, key помогают спискам. React использует эвристики O(n). Fiber для приоритетов. React.memo/useMemo/useCallback — оптимизация. Распространённое заблуждение: «React сравнивает деревья побайтово, что делает процесс очень медленным» — это неверно. Также неверно утверждение: «React не сравнивает деревья, а всегда пересоздаёт весь DOM целиком».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 295,
+      "answer": "Атрибут key в React — идентификатор элемента в списке. Помогает React определить, какие элементы изменились, добавились или переместились.\n\nЗачем нужен:\n- Reconciliation: React сравнивает элементы по key.\n- Без key React сравнивает по позиции (index), что ведёт к лишним DOM-операциям.\n- Сохраняет state компонентов при изменении порядка.\n\nКакие key правильные:\n- Уникальные и стабильные id из данных: item.id, UUID.\n- Не index, не Math.random(), не Date.now().\n\nЧто происходит без key или с index:\n- Вставка в начало сдвигает все DOM-узлы.\n- State может перемешаться.\n- Лишние перерендеры/DOM-операции.\n\nУсловия:\n- key должен быть уникален среди соседей.\n- key должен оставаться постоянным для одного и того же элемента.\n\nПример:\n```jsx\n{items.map(item => (\n  <li key={item.id}>{item.name}</li>  // правильно\n))}\n\n// Плохо\n{items.map((item, i) => (\n  <li key={i}>{item.name}</li>  // нестабильно при изменении порядка\n))}\n```",
+      "explanation": "key — уникальный стабильный id для элементов списка. Помогает reconciliation, сохраняет state, уменьшает DOM-операции. Использовать item.id, не index/random. Распространённое заблуждение: «Атрибут для стилизации элементов списка через CSS-классы» — это неверно. Также неверно утверждение: «Обязательный атрибут, без которого React выдаст ошибку компиляции».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 296,
+      "answer": "Ref в React — способ получить прямую ссылку на DOM-элемент или React-компонент.\n\nЗачем нужен:\n1. Фокус, выделение, scroll.\n2. Интеграция с DOM-библиотеками (canvas, D3, видео).\n3. Измерение размеров (getBoundingClientRect).\n4. Неконтролируемые компоненты (defaultValue + ref).\n5. Анимации, плееры, сторонние виджеты.\n\nКогда НЕ нужен:\n- Для управления данными (state).\n- Для рендера (props).\n\nuseRef:\n```jsx\nimport { useRef } from 'react';\nfunction Input() {\n  const inputRef = useRef(null);\n  const focus = () => inputRef.current.focus();\n  return <input ref={inputRef} />;\n}\n```\n\nforwardRef:\n- Передача ref в дочерний компонент.\n```jsx\nconst FancyInput = forwardRef((props, ref) => (\n  <input ref={ref} className=\"fancy\" />\n));\n```\n\nuseImperativeHandle:\n- Ограничение API, доступного через ref.\n\nВажно:\n- ref.current — мутабельный, но не вызывает ререндер.\n- Не передавать ref как prop (кроме forwardRef).\n- В React 19 ref как prop упростится.\n\nПример с canvas:\n```jsx\nconst canvasRef = useRef(null);\nuseEffect(() => {\n  const ctx = canvasRef.current.getContext('2d');\n  ctx.fillRect(0, 0, 100, 100);\n}, []);\nreturn <canvas ref={canvasRef} />;\n```",
+      "explanation": "ref — прямая ссылка на DOM/компонент. useRef, forwardRef, useImperativeHandle. Используется для фокуса, измерений, интеграции, неуправляемых компонентов. Не для state. Распространённое заблуждение: «ref — единственный способ обновлять содержимое DOM-элементов в React» — это неверно. Также неверно утверждение: «ref нужен для передачи данных между компонентами через props».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 301,
+      "answer": "Если массив без уникальных id и порядок меняется, key подобрать сложнее.\n\nВарианты:\n1. Сгенерировать стабильный id при создании данных.\n- При загрузке/создании добавить id (uuid, nanoid, инкремент).\n- Самый лучший вариант.\n\n2. Использовать уникальную комбинацию полей.\n- Если элементы уникальны по комбинации (name + date + index), можно составить key = `${name}-${date}`.\n\n3. Использовать index, если нет другого выхода.\n- Только для статичных списков без state.\n- Если порядок меняется — index плох.\n\n4. Реактивно генерировать key из содержимого.\n- JSON.stringify(item) — плохо для производительности и больших объектов.\n\n5. Использовать библиотеки:\n- uuid, nanoid для генерации id.\n- Immer для иммутабельных обновлений.\n\nBest practice:\n- Избавляться от ситуации без id на уровне данных: при нормализации, при получении с сервера.\n- Если id невозможно получить — составить стабильный ключ из неизменных полей.\n\nПример:\n```javascript\nimport { nanoid } from 'nanoid';\n\nconst items = rawItems.map(item => ({\n  ...item,\n  id: item.id ?? nanoid(),\n}));\n```\n\nЕсли всё же index:\n```jsx\n// только если список статичен\n{items.map((item, i) => <li key={i}>{item}</li>)}\n```",
+      "explanation": "Без уникальных id: сгенерировать id (uuid/nanoid), использовать уникальную комбинацию полей, index — крайний случай для статичных списков. Лучше договориться с backend о id. Распространённое заблуждение: «Использовать индекс массива как key — это всегда безопасно и правильно» — это неверно. Также неверно утверждение: «Отказаться от рендера списка, если у элементов нет уникальных id».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 306,
+      "answer": "Распределение логики между клиентом и сервером — архитектурный вопрос.\n\nКритерии:\n\n1. Безопасность:\n- Аутентификация, авторизация, валидация критичных данных — только сервер.\n- Секреты, ключи, токены — сервер.\n\n2. Производительность:\n- Тяжёлые вычисления, фильтрация больших данных — сервер или Web Worker.\n- UI-only логика (анимации, валидация форм) — клиент.\n\n3. Доступ к данным:\n- БД, внешние API, файловое хранилище — сервер.\n- Локальный state, кэш — клиент.\n\n4. SEO:\n- SSR (Next.js/Nuxt) для SEO-важных страниц.\n- CSR для интерактивных частей.\n\n5. Сложность и масштабируемость:\n- Бизнес-логика — сервер, в идеале shared между клиентом и сервером.\n- UI-логика — клиент.\n\n6. Real-time:\n- WebSocket/SSE — сервер управляет, клиент отображает.\n\n7. Offline/кэширование:\n- Клиент может кэшировать, но сервер — источник истины.\n\nПример:\n- Корзина: UI — клиент, цены/наличие — сервер, checkout — сервер.\n- Фильтры: простые — клиент, сложные с большими данными — сервер.\n\nBest practices:\n- Валидация на обоих уровнях (client — UX, server — источник истины).\n- Не доверять клиенту.\n- SSR/SSG для SEO и first load.\n- API design важен.\n\nПример ответа:\n\"Решал, где держать логику, по критериям: безопасность, производительность, SEO. Например, валидация форм — клиент для UX + сервер для безопасности. Фильтрация больших списков — сервер. Корзину — оптимистично на клиенте, но расчёт итогов — сервер.\"",
+      "explanation": "Распределение логики: безопасность и валидация — сервер, UI/UX — клиент, тяжёлые вычисления — сервер, SEO — SSR. Валидация на обоих уровнях. Не доверять клиенту. Распространённое заблуждение: «Всю логику всегда размещать на клиенте для скорости работы приложения» — это неверно. Также неверно утверждение: «Всю логику всегда размещать на сервере, клиент должен быть пустым».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 307,
+      "answer": "Инструменты обеспечения качества, которые я внедрял/использовал:\n\n1. Линтинг и форматирование:\n- ESLint, Prettier, Stylelint.\n- Конфиги: Airbnb, Standard, TypeScript-eslint.\n\n2. Pre-commit хуки:\n- husky + lint-staged.\n\n3. Типизация:\n- TypeScript, strict mode.\n\n4. Тестирование:\n- Unit: Jest, Vitest.\n- Integration: React Testing Library.\n- E2E: Cypress, Playwright.\n\n5. CI/CD:\n- GitHub Actions, GitLab CI.\n- Автоматический lint, test, build, deploy.\n\n6. Code review:\n- Pull requests, обязательный review.\n- CODEOWNERS.\n\n7. Мониторинг и ошибки:\n- Sentry, LogRocket, Rollbar.\n\n8. Performance:\n- Lighthouse CI, Web Vitals.\n\n9. Документация:\n- Confluence, Notion, README.\n- Storybook для UI-компонентов.\n\n10. Качество процессов:\n- Definition of Done, checklists.\n- Code standards, ADR.\n\nПример:\n\"Внедрял ESLint + Prettier + husky, GitHub Actions с lint/test/build, Vitest + RTL, Playwright e2e, Sentry, Lighthouse CI. Ввели обязательный code review и DoD. Результат: снизили баги на QA и ускорили delivery.\"\n\nЕсли не внедрял:\n- Упомянуть использование и предложения по улучшению.",
+      "explanation": "QA инструменты: lint, TypeScript, husky, тесты, CI/CD, code review, Sentry, Lighthouse, Storybook, DoD. Показать роль и результат. Распространённое заблуждение: «Инструменты качества не нужны — качество обеспечивается только ручным тестированием» — это неверно. Также неверно утверждение: «Единственный инструмент качества — это внимательность самого разработчика».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 308,
+      "answer": "Вклад в стандарты команды — behavioral.\n\nЧто можно внести:\n1. Code style:\n- Настройка ESLint, Prettier, Stylelint.\n- Руководство по написанию кода (code style guide).\n\n2. Архитектура:\n- Внедрение FSD, atomic design, module boundaries.\n- Правила организации папок.\n\n3. Процессы:\n- Definition of Done, Definition of Ready.\n- Code review checklist.\n- Git workflow (Git Flow, trunk-based).\n\n4. Тестирование:\n- Требования к покрытию, стандарты написания тестов.\n\n5. Документация:\n- README, ADR, вики.\n\n6. Инструменты:\n- Внедрение Storybook, design system.\n\nПример:\n\"Я участвовал в разработке стандартов команды: настроил ESLint/Prettier + husky, внедрил FSD, написал code style guide и ADR по выбору state-менеджера, ввёл обязательный code review и DoD. Проводил onboarding и tech talks.\"\n\nЕсли не вносил напрямую:\n- Упомянуть соблюдение и предложения по улучшению.",
+      "explanation": "Behavioral: вклад в стандарты — code style, архитектура, процессы, тесты, документация. Показать конкретные действия и результат. Распространённое заблуждение: «Сказать, что стандарты команды не нужны и каждый пишет как хочет» — это неверно. Также неверно утверждение: «Указать, что вклад в стандарты — это работа только тимлида, а не разработчика».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 436,
+      "answer": "UseMemo и useCallback — хуки для мемоизации.\n\nuseMemo — кэширует значение.\nuseCallback — кэширует функцию.\n\nuseMemo:\nconst value = useMemo(() => compute(a, b), [a, b]);\n\nuseCallback:\nconst fn = useCallback(() => doSomething(a, b), [a, b]);\n\nРазница:\n- useMemo — результат функции.\n- useCallback — саму функцию.\n\nКогда использовать:\n- Тяжёлые вычисления (useMemo).\n- Передача callback дочерним компонентам, обёрнутым в React.memo (useCallback).\n\nНе использовать для дешёвых операций.",
+      "explanation": "useMemo — кэш значения; useCallback — кэш функции. Использовать для дорогих вычислений и стабильных колбэков. Распространённое заблуждение: «useCallback — мемоизирует значение; useMemo — мемоизирует функцию» — это неверно. Также неверно утверждение: «useMemo и useCallback идентичны и взаимозаменяемы во всех случаях».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 437,
+      "answer": "Хуки — функции, позволяющие использовать state и side effects в функциональных компонентах React.\n\nПравила:\n1. Вызывать только в функциональных компонентах и кастомных хуках.\n2. Вызывать только на верхнем уровне, не внутри if/for/функций.\n3. Имена кастомных хуков начинаются с use.\n\nОсновные хуки: useState, useEffect, useContext, useRef, useMemo, useCallback, useReducer, useId.\n\nНарушение правил приводит к путанице состояния.",
+      "explanation": "Хуки: state/effects в функциях. Только top-level, только React functions/custom hooks, use prefix. Распространённое заблуждение: «Хуки — это классовые методы жизненного цикла для функциональных компонентов» — это неверно. Также неверно утверждение: «Хуки можно вызывать в любом месте кода включая циклы и условия».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 438,
+      "answer": "UseState — хук для локального состояния.\n\nconst [count, setCount] = useState(0);\n\nsetCount обновляет state и вызывает ререндер.\n\nОсобенности:\n- Батчинг обновлений.\n- Асинхронный характер setState.\n- Функциональное обновление: setCount(c => c + 1).\n- Не мутируйте state напрямую.\n\nПример:\nfunction Counter() {\n  const [count, setCount] = useState(0);\n  return <button onClick={() => setCount(c => c + 1)}>{count}</button>;\n}",
+      "explanation": "useState — локальный state, setter. Батчинг, functional update, immutable. Распространённое заблуждение: «useState — хук для выполнения побочных эффектов после рендера» — это неверно. Также неверно утверждение: «useState возвращает только значение без функции для его обновления».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 439,
+      "answer": "UseReducer — хук для управления сложным состоянием через reducer.\n\nПример:\nconst [state, dispatch] = useReducer(reducer, initialState);\n\nКогда использовать вместо useState:\n- Сложное state с взаимосвязанными полями.\n- Много actions.\n- Состояние похоже на Redux.\n- Сложная логика обновления.\n\nПример:\nfunction reducer(state, action) {\n  switch (action.type) {\n    case 'increment': return { count: state.count + 1 };\n    default: return state;\n  }\n}\n\nuseState — простое, useReducer — сложное.",
+      "explanation": "useReducer — reducer pattern. Сложное state, много actions. useState — простое. Распространённое заблуждение: «useReducer — упрощённая версия useState для примитивных значений» — это неверно. Также неверно утверждение: «useReducer используется только для побочных эффектов, не для состояния».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 440,
+      "answer": "Custom hooks — собственные хуки для выноса повторяющейся логики.\n\nПравила:\n- Название начинается с use.\n- Можно вызывать другие хуки.\n- Возвращают state/effects.\n\nПример:\nfunction useCounter(initial) {\n  const [count, setCount] = useState(initial);\n  const increment = () => setCount(c => c + 1);\n  return { count, increment };\n}\n\nfunction Counter() {\n  const { count, increment } = useCounter(0);\n  return <button onClick={increment}>{count}</button>;\n}\n\nПреимущества: переиспользование, чистота.",
+      "explanation": "Custom hooks — use* функции, переиспользование логики. Могут вызывать хуки. Распространённое заблуждение: «Хуки, которые могут использоваться только в одном компоненте» — это неверно. Также неверно утверждение: «Встроенные хуки React, которые нельзя создавать самостоятельно».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 441,
+      "answer": "React Fragment — группировка дочерних элементов без создания лишнего DOM-узла.\n\nПримеры:\n<>\n  <h1>Title</h1>\n  <p>Text</p>\n</>\n\nили\n\n<React.Fragment>\n  <h1>Title</h1>\n  <p>Text</p>\n</React.Fragment>\n\nили с key:\n<React.Fragment key={id}>...</React.Fragment>\n\nЗачем: избежать обёрток div, соблюдать семантику, корректный key.",
+      "explanation": "Fragment: группировка без DOM. Short syntax <></>, with key. Распространённое заблуждение: «Fragment — это способ создания нового DOM-элемента для группировки» — это неверно. Также неверно утверждение: «Fragment нужен для добавления стилей к группе элементов».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 442,
+      "answer": "Portals — рендеринг дочерних элементов в другой DOM-узел, независимо от иерархии компонентов.\n\nЗачем:\n- Модалки, тултипы, toasts.\n- Избежать overflow: hidden, z-index проблем родителя.\n\nПример:\nimport { createPortal } from 'react-dom';\ncreatePortal(<Modal />, document.getElementById('modal-root'));\n\nОсобенности:\n- События всплывают через React-иерархию, не DOM-иерархию.\n- Lifecycle компонента остаётся в родителе.",
+      "explanation": "Portals: render в другой DOM. Модалки, tooltips. События всплывают по React-иерархии. Распространённое заблуждение: «Порталы — способ передачи данных между компонентами через props» — это неверно. Также неверно утверждение: «Порталы рендерят компонент только внутри его родителя».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 443,
+      "answer": "Lazy loading компонентов — загрузка по требованию.\n\nReact.lazy + Suspense:\nconst LazyComponent = React.lazy(() => import('./HeavyComponent'));\n\n<Suspense fallback={<Loading />}>\n  <LazyComponent />\n</Suspense>\n\nПреимущества:\n- Code splitting по роутам/компонентам.\n- Меньше initial bundle.\n\nRoute-based:\n<Route path=\"/about\" element={<About />} />\nгде About = lazy.\n\nОграничения: React.lazy не поддерживает SSR.",
+      "explanation": "React.lazy + Suspense. Dynamic import. Code splitting, route-based. Распространённое заблуждение: «React.lazy — способ отложенного рендеринга без разбиения бандла» — это неверно. Также неверно утверждение: «Ленивая загрузка — это загрузка всех компонентов сразу при старте».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 444,
+      "answer": "Error Boundaries — компоненты, ловящие ошибки рендера в дочерних компонентах.\n\nРеализация (class component):\nclass ErrorBoundary extends React.Component {\n  state = { hasError: false };\n  static getDerivedStateFromError(error) {\n    return { hasError: true };\n  }\n  componentDidCatch(error, info) {\n    logError(error, info);\n  }\n  render() {\n    if (this.state.hasError) return <h1>Error</h1>;\n    return this.props.children;\n  }\n}\n\nНе ловят:\n- Event handlers.\n- Async code.\n- SSR.\n- Внутри себя.\n\nРешение: try/catch в обработчиках, window.onerror.",
+      "explanation": "Error Boundaries: ловят render errors. getDerivedStateFromError, componentDidCatch. Class only. Распространённое заблуждение: «Error Boundaries ловят все ошибки включая асинхронные и в обработчиках» — это неверно. Также неверно утверждение: «Error Boundaries — это способ предотвращения ошибок до их возникновения».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 445,
+      "answer": "Props drilling — передача props через несколько уровней компонентов.\n\nПроблема:\n- Много промежуточных компонентов получают props, им не нужные.\n- Сложность, нечитаемость.\n\nРешения:\n- Context (useContext).\n- State manager (Zustand, Redux).\n- Composition (children).\n- Render props.\n\nПример:\n// плохо\n<Parent data={data}><Child data={data}><GrandChild data={data} /></Child></Parent>\n\n// лучше\n<Context.Provider value={data}><Parent /></Context.Provider>",
+      "explanation": "Props drilling — передача через лишние уровни. Решение: Context, state manager, composition. Распространённое заблуждение: «Props drilling — это передача данных напрямую без промежуточных компонентов» — это неверно. Также неверно утверждение: «Props drilling — лучшая практика для передачи данных на любую глубину».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 446,
+      "answer": "Композиция компонентов — строение UI из маленьких, переиспользуемых компонентов.\n\nВ React — children, slots, composition.\n\nПример:\n<Card header={<Header />} body={<Body />}>\n  <Content />\n</Card>\n\nCard рендерит header, body, children.\n\nПреимущества:\n- Гибкость.\n- Переиспользование.\n- Уменьшение props drilling.",
+      "explanation": "Composition: small components, children, slots. Гибкость, переиспользование. Распространённое заблуждение: «Композиция — это наследование компонентов друг от друга через extends» — это неверно. Также неверно утверждение: «Композиция компонентов запрещена в React — только наследование».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 447,
+      "answer": "Render props — паттерн, при котором компонент получает функцию через prop и вызывает её, передавая данные.\n\nПример:\n<DataProvider render={(data) => <List data={data} />} />\n\nВнутри DataProvider:\nfunction DataProvider({ render }) {\n  const data = useData();\n  return render(data);\n}\n\nПрименение: разделение логики и представления, переиспользование логики.\n\nСейчас часто заменён custom hooks.",
+      "explanation": "Render props: компонент принимает render-функцию. Разделение logic/presentation. Заменён hooks. Распространённое заблуждение: «Render props — это способ передачи только строковых данных в компонент» — это неверно. Также неверно утверждение: «Render props — это обязательный prop, который должен быть у каждого компонента».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 448,
+      "answer": "HOC (Higher-Order Component) — функция, принимающая компонент и возвращающая новый компонент с дополнительными props.\n\nПример:\nfunction withLogger(WrappedComponent) {\n  return function(props) {\n    console.log('render');\n    return <WrappedComponent {...props} />;\n  };\n}\n\nconst LoggedButton = withLogger(Button);\n\nПрименение: переиспользование логики.\n\nПроблемы:\n- Name collision.\n- Wrapper hell.\n- Сейчас — custom hooks.\n\nСовременная альтернатива: custom hooks.",
+      "explanation": "HOC — function taking component, returning enhanced. Reuse logic. Now custom hooks. Распространённое заблуждение: «HOC — это компонент, который может быть использован только один раз» — это неверно. Также неверно утверждение: «HOC — это встроенный хук React для управления состоянием».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 449,
+      "answer": "Reconciliation — процесс сравнения предыдущего и нового VDOM и применения минимальных изменений к DOM.\n\nАлгоритм:\n- Разные типы — замена.\n- Одинаковые типы — обновление props.\n- Списки — сравнение по key.\n\nКлюч (key) важен для эффективного сравнения списков.\n\nReact 16+ использует Fiber — новый reconciler, поддерживает приоритеты, Suspense, concurrent.",
+      "explanation": "Reconciliation: diff VDOM, minimal DOM updates, keys, Fiber. Распространённое заблуждение: «Reconciliation — это процесс полной перерисовки всего DOM при изменении» — это неверно. Также неверно утверждение: «Reconciliation — это синхронизация состояния между компонентами».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 450,
+      "answer": "StrictMode — инструмент для выявления потенциальных проблем.\n\nЧто делает:\n- Рендерит компоненты дважды (detect side effects).\n- Проверяет deprecated API.\n- Проверяет безопасность использования конкурентных фич.\n- Warning о небезопасных side effects.\n\nПример:\n<StrictMode>\n  <App />\n</StrictMode>\n\nЭто development-only, не влияет на production.",
+      "explanation": "StrictMode: double render, deprecations, unsafe warnings. Dev only. Распространённое заблуждение: «StrictMode — это режим, который ускоряет работу React в продакшне» — это неверно. Также неверно утверждение: «StrictMode включает строгую типизацию для всех компонентов».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 451,
+      "answer": "One-way data flow — данные передаются сверху вниз через props, а обратно — через callbacks.\n\nПреимущества:\n- Предсказуемость.\n- Легче отлаживать.\n- Контроль над изменениями.\n\nПример:\nfunction Parent() {\n  const [value, setValue] = useState('');\n  return <Child value={value} onChange={setValue} />;\n}\n\nChild получает value и onChange.\n\nЭто отличает React от двустороннего binding (Vue v-model).",
+      "explanation": "One-way data flow: props down, callbacks up. Predictable, debuggable. Распространённое заблуждение: «Данные текут в обе стороны между родителем и потомком автоматически» — это неверно. Также неверно утверждение: «Потомок может напрямую изменять props родителя для обратной связи».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 452,
+      "answer": "State — данные компонента, изменение которых вызывает ререндер.\n\nУправление:\n- useState — простое локальное state.\n- useReducer — сложное state.\n- Context — shared state.\n- State manager — глобальное state (Zustand, Redux).\n\nПравила:\n- State immutable.\n- Не мутировать.\n- Правильные deps в useEffect.\n\nПример:\nconst [count, setCount] = useState(0);\nsetCount(c => c + 1);",
+      "explanation": "State — данные, влияющие на UI. useState, useReducer, Context, state manager. Immutable. Распространённое заблуждение: «State — это данные, которые никогда не изменяются после создания» — это неверно. Также неверно утверждение: «State можно изменять напрямую без использования setter-функции».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 453,
+      "answer": "Props — данные, передаваемые от родителя к ребёнку.\n\nПередача:\n<Child name=\"Alice\" age={30} onClick={handle} />\n\nВнутри Child:\nfunction Child({ name, age, onClick }) {\n  return <div onClick={onClick}>{name}, {age}</div>;\n}\n\nProps:\n- Только чтение в дочернем компоненте.\n- Могут быть любого типа: primitives, objects, functions.\n- children — особый prop.\n\nDefault values:\nfunction Button({ type = 'button' }) { ... }",
+      "explanation": "Props — read-only данные от родителя. Любые типы, default values. Распространённое заблуждение: «props — это внутреннее состояние компонента, которое он изменяет сам» — это неверно. Также неверно утверждение: «props передаются только от потомка к родителю, а не наоборот».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 454,
+      "answer": "React — JavaScript-библиотека для создания пользовательских интерфейсов.\n\nОсновные особенности:\n- Компонентный подход.\n- Virtual DOM.\n- One-way data flow.\n- Declarative UI.\n- Хуки для state/effects.\n- JSX.\n- Большая экосистема (Next.js, React Native).\n\nПреимущества:\n- Переиспользование.\n- Производительность.\n- Масштабируемость.\n- Сообщество.",
+      "explanation": "React — UI library. Components, VDOM, one-way data, JSX, hooks, ecosystem. Распространённое заблуждение: «React — полноценный фреймворк со встроенным роутингом и state-менеджером» — это неверно. Также неверно утверждение: «React — язык программирования для создания веб-приложений».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 476,
+      "answer": "Redux — это единый store, state read-only через actions, чистые reducers; односторонний поток action→reducer→state→view; devtools и предсказуемость.",
+      "explanation": "Redux — единый store, actions, чистые reducers, односторонний поток. Распространённое заблуждение: «Redux — это библиотека для прямого изменения state в любом месте» — это неверно. Также неверно утверждение: «Redux позволяет изменять state напрямую без использования actions».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 477,
+      "answer": "Actions, reducers и store в Redux — это store — хранилище; actions — {type,payload} что произошло; reducers — чистые (state,action)=>newState; dispatch→reducer→state→подписчики.",
+      "explanation": "Redux: store (состояние), actions (события), reducers (обновление). Распространённое заблуждение: «actions — функции изменения state; reducers — объекты событий; store — компонент» — это неверно. Также неверно утверждение: «store, actions и reducers — синонимы для одного механизма Redux».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 479,
+      "answer": "Next.js и чем он отличается от чистого React — это фреймворк поверх React: SSR/SSG/ISR, файловый роутинг, API routes, оптимизации, серверные компоненты; React — только UI-библиотека.",
+      "explanation": "Next.js: React framework with SSR/SSG, file routing, API routes, ISR, optimization. Распространённое заблуждение: «Next.js — это библиотека для стилизации React-компонентов» — это неверно. Также неверно утверждение: «Next.js и React — синонимы для одной и той же технологии».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 480,
+      "answer": "Гидрация (hydration) — процесс прикрепления JavaScript к статическому HTML.\n\nКак работает:\n- Сервер отдаёт HTML.\n- Браузер загружает JS.\n- React/Vue/Angular навешивают обработчики на уже существующий HTML.\n\nПроблемы:\n- Hydration mismatch: SSR HTML отличается от клиентского.\n- Увеличение TTI.\n\nРешение: consistent initial state, useEffect for browser-only.",
+      "explanation": "Hydration: attach JS to SSR HTML. Mismatch, TTI. Consistent state. Распространённое заблуждение: «Гидрация — это процесс загрузки всех изображений на странице» — это неверно. Также неверно утверждение: «Гидрация — это рендеринг страницы только на сервере без JS».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 482,
+      "answer": "ISR (Incremental Static Regeneration) в Next.js — это обновление статики после сборки: страница из кэша, в фоне перегенерируется по revalidate — скорость статики + свежесть без пересборки.",
+      "explanation": "ISR — статика + фоновая перегенерация по revalidate. Распространённое заблуждение: «ISR — это рендеринг страницы при каждом запросе без кэширования» — это неверно. Также неверно утверждение: «ISR требует полной пересборки сайта при любом изменении данных».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 506,
+      "answer": "React Query (TanStack Query) — библиотека для работы с серверным состоянием.\n\nВозможности:\n- Кэширование.\n- Background refetch.\n- Stale-while-revalidate.\n- Infinite queries.\n- Mutations.\n- Optimistic updates.\n- Dedup.\n- SSR.\n\nПример:\nconst { data } = useQuery({\n  queryKey: ['users'],\n  queryFn: fetchUsers,\n});\n\nПреимущества: меньше boilerplate, чем Redux; больше фич, чем fetch.",
+      "explanation": "React Query: server state, cache, refetch, mutations, optimistic. useQuery. Распространённое заблуждение: «React Query — это state-менеджер для клиентского состояния вроде Redux» — это неверно. Также неверно утверждение: «React Query используется только для маршрутизации в приложении».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 507,
+      "answer": "UseEffect — хук для side effects.\n\nПример:\nuseEffect(() => {\n  const handler = () => console.log('resize');\n  window.addEventListener('resize', handler);\n  return () => window.removeEventListener('resize', handler);\n}, []);\n\nЗависимости:\n- Массив deps.\n- [] — один раз (mount).\n- [value] — при изменении value.\n- Без массива — на каждый рендер.\n\nCleanup: return function.\n\nСравнение: componentDidMount/Update/Unmount.\n\nСовременно: useLayoutEffect, useInsertionEffect.",
+      "explanation": "useEffect: side effects, deps array, cleanup. Mount/update/unmount. Распространённое заблуждение: «useEffect выполняется только один раз и не может перезапускаться» — это неверно. Также неверно утверждение: «Массив зависимостей в useEffect не влияет на его выполнение».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 508,
+      "answer": "Условный рендеринг — показ/скрытие компонентов по условию.\n\nПримеры:\n{isLoading && <Loader />}\n{user ? <Profile /> : <Login />}\n\nТакже:\n- if/return null.\n- Тернарник.\n- switch.\n- early return.\n\nПример:\nfunction Greeting({ isLoggedIn }) {\n  if (isLoggedIn) return <UserGreeting />;\n  return <GuestGreeting />;\n}",
+      "explanation": "Conditional rendering: &&, ternary, if. Show/hide based on state. Распространённое заблуждение: «Условный рендеринг — это отображение всех элементов одновременно» — это неверно. Также неверно утверждение: «В React нельзя условно рендерить элементы — только через CSS».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 509,
+      "answer": "Списки и ключи в React.\n\nДля рендера списка используем map:\n<ul>\n  {items.map(item => <li key={item.id}>{item.name}</li>)}\n</ul>\n\nkey — уникальный и стабильный идентификатор.\n\nЗачем:\n- React определяет, какие элементы изменились/удалились.\n- Эффективный reconciliation.\n\nПлохо:\n- Использовать index как key (при сортировке/фильтрации).\n\nХорошо:\n- Уникальный id.",
+      "explanation": "Lists in React: map, key. key must be unique and stable. Avoid index. Распространённое заблуждение: «Списки в React рендерятся только через цикл for без использования map» — это неверно. Также неверно утверждение: «key — это необязательный атрибут, который не влияет на рендеринг».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 510,
+      "answer": "Формы в React.\n\nКонтролируемые компоненты:\n<input value={value} onChange={e => setValue(e.target.value)} />\n\nНеконтролируемые:\n<input ref={inputRef} defaultValue=\"...\" />\n\nОтправка:\nfunction handleSubmit(e) {\n  e.preventDefault();\n  // send data\n}\n\n<form onSubmit={handleSubmit}>\n  <input value={name} onChange={...} />\n  <button type=\"submit\">Send</button>\n</form>\n\nБиблиотеки: React Hook Form, Formik.",
+      "explanation": "React forms: controlled/uncontrolled. onSubmit, preventDefault. React Hook Form. Распространённое заблуждение: «Формы в React работают только через прямое изменение DOM» — это неверно. Также неверно утверждение: «В React нельзя создавать формы — только через сторонние библиотеки».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 511,
+      "answer": "Lifting state up — перенос state к общему родителю, чтобы делиться им между сиблингами.\n\nПример:\nfunction Parent() {\n  const [value, setValue] = useState('');\n  return (\n    <>\n      <Input value={value} onChange={setValue} />\n      <Display value={value} />\n    </>\n  );\n}\n\nПреимущества: синхронизация, предсказуемость.\n\nАльтернативы: Context, state manager.",
+      "explanation": "Lifting state up: shared state in parent. Sync siblings. Context/state manager alternative. Распространённое заблуждение: «Поднятие состояния — это перемещение state в самый нижний компонент» — это неверно. Также неверно утверждение: «Поднятие состояния — это хранение всех данных в localStorage».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 512,
+      "answer": "React: предпочитает композицию наследованию.\n\nКомпозиция: компоненты вкладываются, передают children, props.\nПример:\n<Card header={<Header />}>\n  <Content />\n</Card>\n\nНаследование: extends Component — антипаттерн в React.\n\nLifting state up — лучше.\n\nПример:\nconst Button = ({ children }) => <button>{children}</button>;",
+      "explanation": "React: composition over inheritance. Props/children vs class extension. Распространённое заблуждение: «React рекомендует наследование компонентов через extends для переиспользования» — это неверно. Также неверно утверждение: «Композиция и наследование в React идентичны и взаимозаменяемы».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 513,
+      "answer": "Children prop в React — это особый prop с вложенным содержимым <Comp>children</Comp>; передача разметки внутрь обёртки — основа композиции для layout и слотов.",
+      "explanation": "children — вложенное содержимое; основа композиции. Распространённое заблуждение: «children — это prop, который может содержать только текст» — это неверно. Также неверно утверждение: «children — это способ передачи данных от потомка к родителю».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 514,
+      "answer": "React Router — библиотека роутинга для React.\n\nПример:\nimport { BrowserRouter, Routes, Route, Link } from 'react-router-dom';\n\n<BrowserRouter>\n  <Link to=\"/\">Home</Link>\n  <Routes>\n    <Route path=\"/\" element={<Home />} />\n    <Route path=\"/about\" element={<About />} />\n  </Routes>\n</BrowserRouter>\n\nХуки: useParams, useNavigate, useLocation.\n\nРежимы: BrowserRouter, HashRouter, MemoryRouter.",
+      "explanation": "React Router: BrowserRouter, Routes, Route, Link, hooks. Client-side routing. Распространённое заблуждение: «React Router — это встроенная часть React, не требующая установки» — это неверно. Также неверно утверждение: «React Router работает только с перезагрузкой страницы при переходе».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 613,
+      "answer": "UseCallback — хук, мемоизирующий функцию.\n\nЗачем:\n- Стабильная ссылка на callback.\n- Предотвращение лишних ререндеров детей, обёрнутых в React.memo.\n- Передача в useEffect deps.\n\nПример:\nconst handleClick = useCallback(() => {\n  doSomething(id);\n}, [id]);\n\nКогда использовать:\n- Передача callback в memo-компоненты.\n- Функция в deps useEffect.\n\nНе использовать:\n- Без React.memo.\n- Для дешёвых функций.",
+      "explanation": "useCallback: memoize function. Use with React.memo and effect deps. Распространённое заблуждение: «useCallback — мемоизирует результат вычисления, а не саму функцию» — это неверно. Также неверно утверждение: «useCallback нужно применять ко всем функциям для оптимизации».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 614,
+      "answer": "React Portals — рендеринг в другой DOM-узел.\n\nЗачем:\n- Модалки, tooltips, toasts.\n- Избежать overflow: hidden/z-index родителя.\n- Accessibility (render в body).\n\nПример:\nimport { createPortal } from 'react-dom';\nreturn createPortal(<Modal />, document.getElementById('modal-root'));\n\nСобытия всплывают по React-дереву, а не DOM.",
+      "explanation": "Portals: render outside parent DOM. Modals, tooltips. Events bubble React tree. Распространённое заблуждение: «Portals — это способ передачи данных между компонентами через props» — это неверно. Также неверно утверждение: «Portals используются для рендеринга компонентов только на сервере».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 631,
+      "answer": "Контролируемые — value/onChange.\nНеконтролируемые — ref/defaultValue.\n\nКонтролируемые:\n<input value={value} onChange={e => setValue(e.target.value)} />\n\nНеконтролируемые:\n<input ref={ref} defaultValue=\"...\" />\n\nПочему контролируемые менее оптимальны:\n- Каждый ввод вызывает rerender.\n- Больше state.\n- Для больших форм — медленнее.\n\nНо дают контроль, валидацию, тестируемость.\n\nReact Hook Form иFormik ускоряют.",
+      "explanation": "Controlled vs uncontrolled. Controlled cause rerenders per input. Распространённое заблуждение: «Неконтролируемые — перерендер при вводе; контролируемые — без перерендеров» — это неверно. Также неверно утверждение: «Контролируемые компоненты всегда оптимальнее неконтролируемых».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 681,
+      "answer": "Основная причина: props — read-only от родителя: мутация нарушает односторонний поток, React не отследит; изменение — родитель обновляет state или потомок просит колбэком.",
+      "explanation": "React props are read-only. Mutations break one-way data flow. Распространённое заблуждение: «props можно мутировать — React автоматически отследит изменения» — это неверно. Также неверно утверждение: «props — это внутреннее состояние компонента, которое он меняет сам».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 684,
+      "answer": "Основная причина: Индекс ломается при перестановке/удалении: элементы получают чужое состояние; для статичных допустимо; лучше стабильный уникальный id.",
+      "explanation": "Index as key breaks on sort/filter/insert. Use stable unique id. Распространённое заблуждение: «Индекс — всегда лучший выбор для key при любом списке» — это неверно. Также неверно утверждение: «Использование индекса как key не влияет на рендеринг».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 685,
+      "answer": "Diffing: разный тип → пересоздание, одинаковый → обновление props, key для списков; эвристики O(n); минимальные изменения DOM.",
+      "explanation": "Reconciliation — diffing по типу и key; O(n); минимум изменений. Распространённое заблуждение: «React сравнивает деревья посимвольно как текст» — это неверно. Также неверно утверждение: «React пересоздаёт весь DOM при любом изменении без сравнения».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 686,
+      "answer": "Refs используют для прямого доступа к DOM-элементу.\n\nКогда:\n- Фокус/выделение.\n- Императивные анимации.\n- Интеграция со сторонними библиотеками.\n- Измерение размеров.\n\nПример:\nconst inputRef = useRef(null);\n<input ref={inputRef} />\ninputRef.current.focus();\n\nНе злоупотреблять: предпочитай declarative React.",
+      "explanation": "React refs: direct DOM access. Focus, animations, measurements. Распространённое заблуждение: «refs — это способ передачи данных между компонентами» — это неверно. Также неверно утверждение: «refs используются для хранения состояния, вызывающего перерендер».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 701,
+      "answer": "UseContext подходит для небольшого глобального состояния, но:\n\n- Все подписчики перерисовываются при изменении.\n- Нет производительной селективной подписки.\n- Сложно управлять асинхронностью.\n- Middleware, devtools, undo, persistence сложны.\n\nСтейт-менеджеры (Redux, Zustand, Jotai, MobX):\n- селективная подписка,\n- производительность,\n- экосистема,\n- производственные паттерны.\n\nuseContext + useState — достаточно для простого.",
+      "explanation": "useContext not for large state. State managers: selective subscription, performance. Распространённое заблуждение: «Стейт-менеджеры не нужны — useContext всегда достаточно» — это неверно. Также неверно утверждение: «useContext имеет селекторы и devtools, как и стейт-менеджеры».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 744,
+      "answer": "React.memo, useMemo/useCallback для стабильности, правильный key, состояние ближе к использованию, разделение контекстов, селекторы.",
+      "explanation": "Avoid re-render: memo, useMemo, deps, stable keys, state colocation. Распространённое заблуждение: «Оборачивать все компоненты в React.memo без исключения» — это неверно. Также неверно утверждение: «Избежать рендеров в React невозможно — они всегда происходят».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 772,
+      "answer": "Next.js — это react-фреймворк: SSR, SSG, ISR, файловый роутинг, API-роуты, оптимизация изображений; для SEO и производительности; App Router.",
+      "explanation": "Next.js — React + SSR/SSG/роутинг/API; для продакшна. Распространённое заблуждение: «Next.js — это библиотека для стилизации React-компонентов» — это неверно. Также неверно утверждение: «Next.js работает только с клиентским рендерингом».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 773,
+      "answer": "Prop drilling — это передача через ненужные промежуточные; избежать — Context, state-менеджеры, композиция (children), поднятие состояния.",
+      "explanation": "Prop drilling: deep props. Avoid with Context or state manager. Распространённое заблуждение: «Prop drilling — это передача данных только напрямую родитель-потомок» — это неверно. Также неверно утверждение: «Prop drilling — рекомендуемый паттерн для всех данных».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 774,
+      "answer": "Higher-Order Component (HOC) в React — это функция: компонент → новый с добавленным поведением (withAuth); для переиспользования логики; заменяются хуками; connect, withRouter.",
+      "explanation": "HOC — компонент→компонент с поведением; → хуки. Распространённое заблуждение: «HOC — это компонент, который не может принимать props» — это неверно. Также неверно утверждение: «HOC — это способ стилизации компонентов».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 775,
+      "answer": "Кастомные хуки в React — это функции use*, переиспользующие логику с состоянием: useLocalStorage, useFetch; выносят логику; композиция хуков; вместо HOC/render props.",
+      "explanation": "Кастомные хуки — use* для переиспользования логики. Распространённое заблуждение: «Кастомные хуки — это встроенные хуки React вроде useState» — это неверно. Также неверно утверждение: «Кастомные хуки не могут использовать другие хуки внутри».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 776,
+      "answer": "Правила хуков (rules of hooks) в React — это только верхний уровень (не в условиях/циклах) и только в функциональных компонентах/хуках; предсказуемый порядок; нарушение — баги.",
+      "explanation": "Правила хуков — верхний уровень, функциональные компоненты. Распространённое заблуждение: «Хуки можно вызывать в любых условиях и циклах» — это неверно. Также неверно утверждение: «Хуки работают только в классовых компонентах».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 777,
+      "answer": "UseEffect и массив зависимостей — это побочные эффекты после рендера: useEffect(fn, deps); [] — раз, [x] — при изменении, без — каждый; cleanup — return; для запросов, подписок.",
+      "explanation": "useEffect — эффекты; deps — когда; cleanup — return. Распространённое заблуждение: «useEffect выполняется до рендера компонента» — это неверно. Также неверно утверждение: «Пустой массив зависимостей означает запуск при каждом рендере».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 780,
+      "answer": "UseContext и Context API в React — это данные вниз без prop drilling: createContext, Provider, useContext; для глобальных (тема, пользователь); все потребители перерендериваются.",
+      "explanation": "Context — Provider + useContext; для глобальных данных. Распространённое заблуждение: «Context — это способ передачи данных только между соседними компонентами» — это неверно. Также неверно утверждение: «useContext — это хук для локального состояния компонента».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 781,
+      "answer": "Жизненный цикл компонента в React — это монтирование, обновление, размонтирование; в функциях — useEffect ([] / deps / cleanup); в классах — DidMount/DidUpdate/WillUnmount.",
+      "explanation": "Жизненный цикл — mount/update/unmount; useEffect. Распространённое заблуждение: «Жизненный цикл — это только монтирование компонента» — это неверно. Также неверно утверждение: «В функциональных компонентах нет жизненного цикла».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 782,
+      "answer": "Ленивая загрузка (lazy loading) и React.lazy — это отложенная загрузка: React.lazy(() => import()) — при первом рендере, Suspense — fallback; code splitting — меньше начальный бандл.",
+      "explanation": "React.lazy — отложенная загрузка; Suspense — fallback. Распространённое заблуждение: «React.lazy — это способ отложенного выполнения функций» — это неверно. Также неверно утверждение: «Lazy loading загружает все компоненты сразу при старте».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 785,
+      "answer": "StrictMode в React — это инструмент разработки: двойной вызов рендеров/эффектов в dev для нечистых функций, предупреждения об устаревшем; только dev, не продакшн.",
+      "explanation": "StrictMode — dev-проверки; двойной вызов; не продакшн. Распространённое заблуждение: «StrictMode — это режим, ускоряющий работу приложения» — это неверно. Также неверно утверждение: «StrictMode влияет на производительность в продакшне».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 804,
+      "answer": "Redux — это предсказуемый state-менеджер: единый store, read-only состояние, чистые reducers по action; single source, immutability; для сложного состояния.",
+      "explanation": "Redux — единый store, actions, чистые reducers. Распространённое заблуждение: «Redux — это способ прямой мутации состояния компонентов» — это неверно. Также неверно утверждение: «Redux позволяет изменять состояние напрямую без actions».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 806,
+      "answer": "Middleware в Redux (thunk, saga) — это слой между dispatch и reducer для побочек: thunk — функции для async, saga — генераторы для сложных потоков; для async, логов, API.",
+      "explanation": "Redux middleware: thunks for async, sagas for complex effects. Распространённое заблуждение: «Middleware в Redux — это способ изменения state напрямую» — это неверно. Также неверно утверждение: «thunk и saga — это компоненты React для отображения данных».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 820,
+      "answer": "Слои app→pages→widgets→features→entities→shared; импорты сверху вниз, слайсы изолированы; папки по слоям, публичные API, линтер границ.",
+      "explanation": "FSD — слои app→shared; импорты сверху вниз; изоляция. Распространённое заблуждение: «FSD — это плоская структура без каких-либо слоёв и правил» — это неверно. Также неверно утверждение: «FSD позволяет импортировать из любого слоя в любой».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 822,
+      "answer": "К основным вариантам относятся: Request Memoization (дедупликация fetch), Data Cache (результаты), Full Route Cache (страницы), Router Cache (навигация); своё время жизни.",
+      "explanation": "Next.js кэш — Request Memoization, Data, Full Route, Router. Распространённое заблуждение: «В Next.js есть только один уровень кэширования — браузерный» — это неверно. Также неверно утверждение: «Next.js не поддерживает кэширование данных».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 861,
+      "answer": "Иммутабельность состояния — это не мутировать, создавать новый: React сравнивает по ссылке; мутация не вызовет перерендер; обновление — spread, map; предсказуемый рендер.",
+      "explanation": "Immutability in React: reference checks, rerenders, concurrency. Распространённое заблуждение: «Иммутабельность — это прямая мутация state на месте» — это неверно. Также неверно утверждение: «React отслеживает мутации state автоматически».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 862,
+      "answer": "Batched updates (батчинг) в React — это группировка setState в один перерендер: React собирает и применяет вместе; в React 18 — автоматический везде; меньше лишних рендеров.",
+      "explanation": "Батчинг — setState в один рендер; React 18 — автоматический. Распространённое заблуждение: «Батчинг — это выполнение каждого setState с отдельным рендером» — это неверно. Также неверно утверждение: «Батчинг в React не существует — каждое обновление рендерит».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 863,
+      "answer": "Controlled — state + onChange (React контролирует): валидация, перерендеры; uncontrolled — DOM + ref: меньше ререндеров; контроль vs простота.",
+      "explanation": "Controlled — state+onChange; uncontrolled — ref. Распространённое заблуждение: «Uncontrolled — state; controlled — DOM через ref» — это неверно. Также неверно утверждение: «Controlled и uncontrolled формы идентичны».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 864,
+      "answer": "Фрагменты (Fragments) в React — это группировка без лишнего DOM-узла: <Fragment> или <>; вернуть несколько элементов без div-обёртки; не создаёт узла.",
+      "explanation": "Fragment — группировка без DOM-узла; <>. Распространённое заблуждение: «Fragment — это дополнительный DOM-элемент для группировки» — это неверно. Также неверно утверждение: «Fragment создаёт видимый контейнер в DOM».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 865,
+      "answer": "JSX — это синтаксис HTML-подобный в JS: <div> → createElement/JSX-runtime; декларативный UI с {}; не HTML — в JS при сборке.",
+      "explanation": "JSX: syntax sugar for React.createElement. Babel transpiles. Распространённое заблуждение: «JSX — это чистый HTML, выполняемый браузером напрямую» — это неверно. Также неверно утверждение: «JSX — это отдельный язык программирования, не связанный с JS».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 867,
+      "answer": "Списки и ключи (keys) в React — это рендер массива через map с key: стабильный уникальный id для diffing; без key — баги; не индекс при меняющемся порядке.",
+      "explanation": "Списки — map + key (стабильный id); не индекс. Распространённое заблуждение: «key — это необязательный атрибут, не влияющий на рендеринг» — это неверно. Также неверно утверждение: «Списки в React рендерятся без использования map».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 869,
+      "answer": "Производное состояние (derived state) в React — это вычисляется из state/props, не хранится: не дублировать, вычислять при рендере или useMemo; избегает рассинхронизации; минимум state.",
+      "explanation": "Derived state: don't duplicate props in state. Compute in render. Распространённое заблуждение: «Производное состояние — это дублирование данных в отдельный state» — это неверно. Также неверно утверждение: «Производное состояние нужно всегда хранить в useState».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 870,
+      "answer": "Refs и forwardRef в React — это ref — доступ к DOM без перерендера (useRef); forwardRef — передача ref к внутреннему элементу; для библиотек; когда декларативного мало.",
+      "explanation": "ref — DOM-доступ; forwardRef — передать ref внутрь. Распространённое заблуждение: «forwardRef — это хук для создания ref в компоненте» — это неверно. Также неверно утверждение: «ref вызывает перерендер при каждом изменении».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 871,
+      "answer": "UseImperativeHandle в React — это настройка ref-значения для родителя: с forwardRef определяет доступные методы; для ограниченного императивного API (focus, scroll).",
+      "explanation": "useImperativeHandle — настройка ref-API; с forwardRef. Распространённое заблуждение: «useImperativeHandle — это хук для управления состоянием» — это неверно. Также неверно утверждение: «useImperativeHandle используется для передачи props».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 872,
+      "answer": "UseLayoutEffect — синхронно после DOM, до paint (блокирует); useEffect — после paint; layout — для измерений без мерцания; обычно useEffect.",
+      "explanation": "useLayoutEffect sync before paint. useEffect async after paint. Распространённое заблуждение: «useEffect — синхронно до paint; useLayoutEffect — асинхронно после» — это неверно. Также неверно утверждение: «useLayoutEffect и useEffect идентичны и взаимозаменяемы».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 873,
+      "answer": "UseId — уникальный id для accessibility, одинаковый сервер/клиент; useSyncExternalStore — подписка на внешние хранилища; для библиотек.",
+      "explanation": "useId for stable ids. useSyncExternalStore for external stores. Распространённое заблуждение: «useId — для подписки на хранилища; useSyncExternalStore — для id» — это неверно. Также неверно утверждение: «useId генерирует разные id на сервере и клиенте».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 874,
+      "answer": "React DevTools — это расширение для отладки: дерево компонентов, props/state/hooks, Profiler для рендеров; находит лишние рендеры; незаменим для разработки.",
+      "explanation": "React DevTools — дерево, props/state, Profiler. Распространённое заблуждение: «React DevTools — это библиотека для написания компонентов» — это неверно. Также неверно утверждение: «React DevTools используется только для стилизации».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 875,
+      "answer": "Profiler в React — это измерение рендеров: <Profiler> или DevTools показывает что и сколько рендерилось; для поиска лишних рендеров; профилировать перед оптимизацией.",
+      "explanation": "Profiler — измерение рендеров; поиск лишних; перед оптимизацией. Распространённое заблуждение: «Profiler — это способ ускорения рендеринга компонентов» — это неверно. Также неверно утверждение: «Profiler используется для стилизации компонентов».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 876,
+      "answer": "Оптимизация производительности в React — это react.memo, useMemo/useCallback, code splitting, виртуализация, правильный key, Profiler; сначала измерить, затем оптимизировать.",
+      "explanation": "React performance: memo, useMemo, lazy, virtualization, transitions. Распространённое заблуждение: «Оптимизация — это оборачивание всех компонентов в memo» — это неверно. Также неверно утверждение: «Оптимизация React не нужна — он всегда быстрый».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 877,
+      "answer": "Тестирование React-компонентов — это react Testing Library (рендер, запросы как пользователь), Jest (раннер, моки); тесты поведения, не реализации; уверенность при изменениях.",
+      "explanation": "React testing: unit, snapshot, e2e. Testing Library approach. Распространённое заблуждение: «Тестирование React — это проверка только внутренней реализации» — это неверно. Также неверно утверждение: «React-компоненты нельзя тестировать автоматически».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 878,
+      "answer": "React Testing Library — это тестирование как пользователь: getByRole, события, проверка видимого; поведение, не реализация; поощряет доступность; стандарт.",
+      "explanation": "RTL — как пользователь; getByRole; поведение, не реализация. Распространённое заблуждение: «RTL — это тестирование внутреннего состояния компонентов» — это неверно. Также неверно утверждение: «RTL поощряет тестирование деталей реализации».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1010,
+      "answer": "UseState — локальное одного компонента; useContext — разделяемое для множества без prop drilling; локально vs глобально; частое — менеджер.",
+      "explanation": "useState — локально; useContext — разделяемое глобально. Распространённое заблуждение: «useContext — для локального состояния; useState — для глобального» — это неверно. Также неверно утверждение: «useState и useContext взаимозаменяемы для любых данных».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1015,
+      "answer": "Основное назначение: Доступ к DOM напрямую без перерендера: фокус, измерения, не-React библиотеки, медиа; когда декларативного мало; useRef + атрибут ref.",
+      "explanation": "refs — DOM-доступ без перерендера; фокус, измерения. Распространённое заблуждение: «refs используются для перерендера компонента при изменении» — это неверно. Также неверно утверждение: «refs — это единственный способ передачи данных между компонентами».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1032,
+      "answer": "Лёгкая копия: diffing виртуальных деревьев, минимальные изменения в реальный; быстрее прямых манипуляций; декларативный UI с эффективными обновлениями.",
+      "explanation": "Виртуальный DOM — diffing, минимум изменений; быстрее. Распространённое заблуждение: «Виртуальный DOM — это полная замена реального DOM» — это неверно. Также неверно утверждение: «Виртуальный DOM медленнее прямых манипуляций с DOM».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1045,
+      "answer": "State/props → render (новое виртуальное дерево) → reconciliation (diffing) → commit (изменения в DOM) → paint; render — вычисление, commit — применение.",
+      "explanation": "Рендеринг — render → reconciliation → commit → paint. Распространённое заблуждение: «React сразу изменяет реальный DOM без виртуального дерева» — это неверно. Также неверно утверждение: «Рендеринг в React — это только вызов функции компонента».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1093,
+      "answer": "React Fiber — это архитектура reconciliation: работа на единицы (fiber), приостановка/возобновление; приоритизация, concurrent, Suspense; прерываемый рендер.",
+      "explanation": "Fiber — прерываемый рендер; приоритизация, concurrent. Распространённое заблуждение: «Fiber — это новый язык для написания React-компонентов» — это неверно. Также неверно утверждение: «Fiber — это способ стилизации компонентов в React».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1094,
+      "answer": "Concurrent Mode и useTransition в React — это прерываемый рендер с приоритетами: срочные прерывают несрочные; useTransition — несрочное обновление, отзывчивый UI; startTransition.",
+      "explanation": "Concurrent — прерываемый рендер; useTransition — несрочное. Распространённое заблуждение: «useTransition — это хук для анимаций переходов между страницами» — это неверно. Также неверно утверждение: «Concurrent Mode делает все обновления синхронными и блокирующими».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1095,
+      "answer": "React Server Components — это компоненты только на сервере: доступ к БД напрямую, ноль JS на клиенте, меньше бандл; не интерактивны; в Next.js App Router.",
+      "explanation": "Server Components — только сервер, ноль JS на клиенте. Распространённое заблуждение: «Server Components — это компоненты, работающие только в браузере» — это неверно. Также неверно утверждение: «Server Components могут использовать useState и useEffect».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1104,
+      "answer": "Zustand — минималистичный хук-based; MobX — реактивный с мутациями; Recoil/Jotai — атомарное; проще Redux, меньше кода.",
+      "explanation": "Zustand — минимальный; MobX — реактивный; Recoil — атомарный. Распространённое заблуждение: «Все state-менеджеры идентичны Redux по сложности и API» — это неверно. Также неверно утверждение: «Zustand и MobX — это библиотеки для стилизации».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1106,
+      "answer": "Render props паттерн в React — это функция в prop для рендера: компонент делится логикой, вызывающий определяет UI; для переиспользования; заменяется хуками.",
+      "explanation": "Render props — функция в prop для рендера; → хуки. Распространённое заблуждение: «Render props — это передача только строк в качестве props» — это неверно. Также неверно утверждение: «Render props — это способ стилизации компонентов».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1585,
+      "answer": "React hooks — это функции для состояния и эффектов: useState, useEffect, useContext, кастомные; правила — верхний уровень, только React-функции; порядок важен.",
+      "explanation": "Hooks — useState, useEffect; правила — верхний уровень. Распространённое заблуждение: «Hooks можно вызывать внутри условий и циклов» — это неверно. Также неверно утверждение: «Hooks работают только в классовых компонентах».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1586,
+      "answer": "UseEffect — это побочные эффекты после рендера: запросы, подписки; зависимости — [] один раз, [dep] при изменении, без — каждый; cleanup для очистки.",
+      "explanation": "useEffect — эффекты после рендера; зависимости; cleanup. Распространённое заблуждение: «useEffect выполняется до рендера компонента» — это неверно. Также неверно утверждение: «Пустой массив зависимостей — эффект при каждом рендере».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1587,
+      "answer": "Контролируемые — значение из state (value + onChange, единый источник); неконтролируемые — в DOM (ref); контроль vs простота.",
+      "explanation": "Контролируемые — state; неконтролируемые — DOM, ref. Распространённое заблуждение: «Неконтролируемые — значение из state; контролируемые — в DOM» — это неверно. Также неверно утверждение: «Контролируемые компоненты не позволяют валидацию».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1621,
+      "answer": "Redux — это предсказуемое состояние: единый store, только чтение, actions и чистые reducers; однонаправленный — action → reducer → состояние; time-travel.",
+      "explanation": "Redux — единый store; actions → reducers; однонаправленный. Распространённое заблуждение: «Redux — это изменение состояния напрямую» — это неверно. Также неверно утверждение: «Reducers в Redux могут иметь побочные эффекты».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1622,
+      "answer": "Context API в React — это передача через дерево без props: Provider, useContext; для тем, локализации, auth; ограничение — перерендер потребителей; не для частых изменений.",
+      "explanation": "Context — Provider/useContext; перерендер; для редких данных. Распространённое заблуждение: «Context — это замена всем state-менеджерам» — это неверно. Также неверно утверждение: «Изменение Context не вызывает перерендер потребителей».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1624,
+      "answer": "Ключи (key) в списках React — это уникальный идентификатор: для идентификации при обновлениях — изменилось, добавилось, удалилось; стабильные (id), не индексы при изменении порядка.",
+      "explanation": "key — идентификатор для reconciliation; стабильные, не индексы. Распространённое заблуждение: «key — это видимый атрибут элемента в DOM» — это неверно. Также неверно утверждение: «Индексы массива — лучший выбор для key всегда».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1625,
+      "answer": "Условный рендеринг в React — это показ по условию: {cond && <Component/>}, тернарный {cond ? A : B}, ранний return null; для разного контента по состоянию.",
+      "explanation": "Условный — &&, тернарный, return null; по состоянию. Распространённое заблуждение: «Условный рендеринг — это всегда показ всех компонентов» — это неверно. Также неверно утверждение: «{condition && <Component/>} показывает компонент при false».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1626,
+      "answer": "Формы и валидация в React — это контролируемые: значения в state, onChange; валидация — при вводе или отправке (react-hook-form, Formik или вручную); сбор и проверка ввода.",
+      "explanation": "Формы — контролируемые; валидация; react-hook-form. Распространённое заблуждение: «Формы в React — только неконтролируемые компоненты» — это неверно. Также неверно утверждение: «Валидация форм возможна только на сервере».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1627,
+      "answer": "React Router и клиентская маршрутизация — это клиентская маршрутизация: URL → компоненты без перезагрузки; Routes, Route, useNavigate, useParams; SPA — один HTML, переключение представлений.",
+      "explanation": "React Router — URL → компоненты; SPA без перезагрузки. Распространённое заблуждение: «React Router — это серверная маршрутизация» — это неверно. Также неверно утверждение: «Клиентская маршрутизация перезагружает страницу при переходе».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1711,
+      "answer": "Next.js — это react-фреймворк для продакшна: SSR, SSG, ISR, файловый роутинг, API routes, оптимизация; App Router с серверными компонентами; для SEO.",
+      "explanation": "Next.js — SSR/SSG/ISR, файловый роутинг, API routes. Распространённое заблуждение: «Next.js — это библиотека только для клиентского рендеринга» — это неверно. Также неверно утверждение: «Next.js не поддерживает статическую генерацию».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1712,
+      "answer": "Серверные компоненты в React (RSC) — это компоненты только на сервере: доступ к БД напрямую, нулевой JS на клиенте, не интерактивны; клиентские ('use client') для интерактивности; меньше бандл.",
+      "explanation": "RSC — только на сервере; нулевой JS; 'use client' для интерактива. Распространённое заблуждение: «Server Components — это компоненты с клиентским JS» — это неверно. Также неверно утверждение: «Server Components могут использовать useState и useEffect».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1713,
+      "answer": "Управление формами в React (react-hook-form) — это библиотека для форм: register для полей, валидация встроенная или Zod, минимум перерендеров; handleSubmit, errors; производительнее контролируемых.",
+      "explanation": "react-hook-form — register, валидация; минимум перерендеров. Распространённое заблуждение: «react-hook-form — это библиотека для маршрутизации» — это неверно. Также неверно утверждение: «react-hook-form использует только контролируемые компоненты».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1714,
+      "answer": "React Query / TanStack Query — это управление серверным состоянием: кэширование, refetch, дедупликация, фоновое обновление; useQuery/useMutation; убирает boilerplate для API-данных.",
+      "explanation": "TanStack Query — серверное состояние; useQuery/useMutation. Распространённое заблуждение: «TanStack Query — это библиотека для клиентского состояния» — это неверно. Также неверно утверждение: «useQuery используется для изменения данных на сервере».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1715,
+      "answer": "Zustand — это минималистичный state-менеджер: хук create для store, без boilerplate (actions, reducers); проще и легче; для средних приложений; меньше кода.",
+      "explanation": "Zustand — минималистичный; create; без boilerplate Redux. Распространённое заблуждение: «Zustand — это более сложная альтернатива Redux» — это неверно. Также неверно утверждение: «Zustand требует actions и reducers как Redux».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 2400,
+      "answer": "React — это библиотека для UI: компоненты для переиспользования, виртуальный DOM, однонаправленный поток; JSX для разметки; для интерактивных — декларативный; экосистема.",
+      "explanation": "React — компоненты, виртуальный DOM; JSX; декларативный. Распространённое заблуждение: «React — это полнофункциональный фреймворк с роутингом» — это неверно. Также неверно утверждение: «React использует двустороннее связывание данных».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 2401,
+      "answer": "Хуки в React (useState, useEffect) — это функции для состояния и эффектов: useState для состояния, useEffect для побочных — в функциональных; правила — верхний уровень, в компонентах; кастомные для логики.",
+      "explanation": "Хуки — useState, useEffect; правила; кастомные. Распространённое заблуждение: «Хуки — это методы классовых компонентов» — это неверно. Также неверно утверждение: «useEffect используется для управления состоянием».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 2402,
+      "answer": "Виртуальный DOM — это представление в памяти: сравнение с предыдущим (diffing) — минимальные в реальном; для эффективности — батчинг; React решает — не ручное; основа производительности.",
+      "explanation": "Виртуальный DOM — в памяти; diffing; для эффективности. Распространённое заблуждение: «Виртуальный DOM — это прямое манипулирование реальным DOM» — это неверно. Также неверно утверждение: «Diffing не используется в виртуальном DOM».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 2403,
+      "answer": "Props — входные (от родителя — неизменяемые); state — внутреннее (изменяемое через setState — для динамики); props вниз, события вверх — однонаправленный; для композиции.",
+      "explanation": "Props — входные; state — внутреннее; однонаправленный. Распространённое заблуждение: «Props — это изменяемые данные внутри компонента» — это неверно. Также неверно утверждение: «State передаётся от родителя к дочернему».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 2404,
+      "answer": "Контекст (Context) в React — это передача без drilling: createContext и useContext — для глобальных (тема, пользователь); Provider для предоставления; для данных глубоко — без всех уровней; не для частых.",
+      "explanation": "Context — без drilling; Provider, useContext; для глобальных. Распространённое заблуждение: «Context — это замена для всех props» — это неверно. Также неверно утверждение: «Context подходит для часто меняющихся данных».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 2405,
+      "answer": "Redux и управление состоянием — это предсказуемое состояние: единый store, actions для изменений, reducers для обновлений — однонаправленный; для сложного — отладка; Toolkit для упрощения; для больших.",
+      "explanation": "Redux — store, actions, reducers; однонаправленный; Toolkit. Распространённое заблуждение: «Redux — это двустороннее связывание данных» — это неверно. Также неверно утверждение: «Reducers могут изменять состояние напрямую».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 2406,
+      "answer": "React Router — это маршрутизация: Route для путей, Link для навигации, useParams для параметров — SPA без перезагрузки; вложенные для layout; декларативная; стандарт для SPA.",
+      "explanation": "Router — Route, Link, useParams; SPA; декларативная. Распространённое заблуждение: «React Router — это серверная маршрутизация» — это неверно. Также неверно утверждение: «Link вызывает перезагрузку страницы».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 2407,
+      "answer": "Next.js — это фреймворк на React: SSR, SSG, ISR для рендеринга — для SEO и производительности; файловая маршрутизация, API routes, изображения; для продакшн — полный стек.",
+      "explanation": "Next.js — SSR, SSG; файловая маршрутизация; полный стек. Распространённое заблуждение: «Next.js — это библиотека только для клиентского рендеринга» — это неверно. Также неверно утверждение: «Next.js не поддерживает серверный рендеринг».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 2412,
+      "answer": "Мемоизация в React (memo, useMemo, useCallback) — это кэширование для оптимизации: memo для компонентов, useMemo для значений, useCallback для функций — против ререндеров; для дорогих и стабильных; не везде — накладные.",
+      "explanation": "Мемоизация — memo, useMemo, useCallback; против ререндеров. Распространённое заблуждение: «Мемоизация — это всегда улучшение производительности» — это неверно. Также неверно утверждение: «useMemo используется для мемоизации функций».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 2414,
+      "answer": "Controlled — состояние в React (value, onChange — контроль); uncontrolled — в DOM (ref — меньше кода); controlled для валидации, uncontrolled для простых; по контролю.",
+      "explanation": "Controlled — в React; uncontrolled — в DOM; по контролю. Распространённое заблуждение: «Controlled — это компоненты без управления состоянием» — это неверно. Также неверно утверждение: «Uncontrolled компоненты используют value и onChange».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 2415,
+      "answer": "Refs — это доступ к DOM: useRef для ссылок — без ререндера; для фокуса, измерений, интеграции; forwardRef для передачи; не для данных — для императивного; escape hatch.",
+      "explanation": "Refs — useRef; для DOM; без ререндера; forwardRef. Распространённое заблуждение: «Refs — это механизм для управления состоянием» — это неверно. Также неверно утверждение: «Изменение ref вызывает ререндер компонента».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 2417,
+      "answer": "Portals в React — это рендеринг вне иерархии: createPortal в другой узел — для модалок, тултипов; события по React-дереву, не DOM; для выхода из z-index и overflow; для overlay.",
+      "explanation": "Portals — вне иерархии; для модалок; события по React. Распространённое заблуждение: «Portals — это рендеринг внутри родительского элемента» — это неверно. Также неверно утверждение: «События в portals всплывают по DOM-дереву».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 2418,
+      "answer": "Suspense и concurrent features — это ожидание асинхронного: fallback при загрузке — для lazy и данных; concurrent — прерываемый (startTransition для несрочных); для UX — приоритеты; React 18+.",
+      "explanation": "Suspense — fallback; concurrent — startTransition; React 18. Распространённое заблуждение: «Suspense — это компонент для синхронного рендеринга» — это неверно. Также неверно утверждение: «startTransition используется для срочных обновлений».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 2419,
+      "answer": "Server Components в React — это рендеринг на сервере: без JS на клиент — для меньшего бандла и серверных ресурсов; композиция с клиентскими — 'use client'; для производительности; в Next.js App Router.",
+      "explanation": "Server Components — на сервере; без JS; 'use client'. Распространённое заблуждение: «Server Components — это компоненты с JS на клиенте» — это неверно. Также неверно утверждение: «Server Components не могут обращаться к базе данных».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 3429,
+      "answer": "Да: кортеж хранит ссылки на объекты; сам кортеж неизменяем, но внутренности mutable-элемента (list/dict) менять можно; такой кортеж нехешируемый.",
+      "explanation": "Кортеж immutable, но содержит ссылки; mutable-элементы можно менять; нехешируем. Распространённое заблуждение: «Нет, кортеж не может содержать изменяемые объекты» — это неверно. Также неверно утверждение: «Можно, но только если внутри кортежа нет словарей, только списки».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 4516,
+      "answer": "В актуальном Next.js App Router различают Request Memoization в пределах одного серверного рендера, Data Cache для результатов fetch/unstable_cache, Full Route Cache для сгенерированного HTML и RSC payload, а также клиентский Router Cache. Отдельно браузер и CDN могут кешировать HTTP-ответы согласно заголовкам.",
+      "explanation": "SSG, SSR и ISR — режимы рендеринга и ревалидации, а не полный перечень уровней кеша. Динамические APIs, cache/revalidate и invalidation через tags или paths определяют, какие уровни используются. Распространённое заблуждение: «В Next.js есть только один уровень кэширования — браузерный» — это неверно. Также неверно утверждение: «Next.js не поддерживает кэширование данных».",
+      "options": [],
+      "correctIndex": null
+    }
+  ]
+}

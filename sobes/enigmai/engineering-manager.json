@@ -1,0 +1,414 @@
+[
+  {
+    "id": "q-6a14368c975b692556e58d67",
+    "freq": 3,
+    "question": "Расскажите о вашем опыте работы на предыдущем месте.",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143680975b692556e565ef",
+    "freq": 2,
+    "question": "Какие методологии управления проектами вы знаете?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a32",
+    "freq": 1,
+    "question": "Какие термины должны фигурировать в упражнении?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a33",
+    "freq": 1,
+    "question": "Как рассчитать бюджет проекта?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a34",
+    "freq": 1,
+    "question": "Что такое Jarvis?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a36",
+    "freq": 1,
+    "question": "Может ли алгоритм или система реагировать на ключевые слова?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a42",
+    "freq": 1,
+    "question": "Тестируете ли вы AI-ассистентов?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a44",
+    "freq": 1,
+    "question": "Какие основные вехи (milestones) проекта?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a62",
+    "freq": 1,
+    "question": "Что такое PnL (Profit and Loss)?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a14368d975b692556e58dbf",
+    "freq": 1,
+    "question": "Do you prefer to conduct the interview in English or Japanese?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a14368f975b692556e5917a",
+    "freq": 1,
+    "question": "Как аргументировать бизнесу необходимость рефакторинга и работы с техническим долгом?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a14368f975b692556e5917c",
+    "freq": 1,
+    "question": "Какой у вас опыт интеграции CI/CD практик и работы с облачными инфраструктурами?",
+    "tags": [
+      "devops",
+      "middle"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a14368f975b692556e59182",
+    "freq": 1,
+    "question": "Как вы приоритизируете задачи при ограниченных ресурсах?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a14368f975b692556e59189",
+    "freq": 1,
+    "question": "Какой у вас был опыт работы с GitLab CI/CD?",
+    "tags": [
+      "devops",
+      "GitLab CI/CD",
+      "middle"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a14368f975b692556e59199",
+    "freq": 1,
+    "question": "Как реализовать механизм, при котором после загрузки страницы поверх основного контента автоматически открывается модальное окно?",
+    "tags": [
+      "frontend",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a14368f975b692556e5919a",
+    "freq": 1,
+    "question": "Можно ли использовать поиск по товарам для реализации полнотекстового поиска в системе?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a14368f975b692556e5919b",
+    "freq": 1,
+    "question": "Как реализован поиск на бэкенде?",
+    "tags": [
+      "backend",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a14368f975b692556e591a6",
+    "freq": 1,
+    "question": "Как спроектировать систему, которая получает цены на товары через внешнее API?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143695975b692556e59a41",
+    "freq": 1,
+    "question": "Как была выстроена коммуникация с отделом байинга?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143695975b692556e59a42",
+    "freq": 1,
+    "question": "Как происходила постановка и контроль задач: менеджмент ставил задачи или вы сами генерировали идеи? Как именно осуществлялся контроль выполнения задач?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143695975b692556e59a44",
+    "freq": 1,
+    "question": "Расскажите о случаях возникновения конфликтов или спорных моментов с руководством (менеджментом)?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143691975b692556e5947c",
+    "freq": 1,
+    "question": "Как вы понимаете роль менеджера проекта?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143695975b692556e59ad0",
+    "freq": 1,
+    "question": "Какие будут ваши действия в ситуации, когда руководитель не хочет переносить созвон с пятницы на среду, аргументируя это тем, что так было всегда и команде удобно в пятницу?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143691975b692556e594ff",
+    "freq": 1,
+    "question": "Чем отличаются roguelike и roguelite игры?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143692975b692556e595b5",
+    "freq": 1,
+    "question": "Насколько вы готовы к тому, что в задачу добавят функционал отбора трендов или видео для креативов, и насколько вам это интересно?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143692975b692556e595b6",
+    "freq": 1,
+    "question": "Как вы видите процесс координации работы команды с помощью портала и других инструментов?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143692975b692556e595b8",
+    "freq": 1,
+    "question": "Как вы используете нейросети в своей работе и с какими инструментами или моделями вам доводилось работать?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143692975b692556e595b9",
+    "freq": 1,
+    "question": "Когда вам предоставили техническое задание?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143692975b692556e595ba",
+    "freq": 1,
+    "question": "Расскажите о проекте с командой из 6 человек, в котором вы участвовали: почему он закончился именно так?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143692975b692556e595e7",
+    "freq": 1,
+    "question": "Расскажите, в каких проектах лучше использовать Kanban, а в каких — Scrum?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143692975b692556e595f3",
+    "freq": 1,
+    "question": "Как вы понимаете, что такое иерархическая структура задач?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143692975b692556e595fb",
+    "freq": 1,
+    "question": "Расскажите подробнее, какие инструменты вы использовали в своей работе?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143697975b692556e59cf8",
+    "freq": 1,
+    "question": "У вас есть опыт в HR-Tech: какие методы управления продуктом вы использовали и почему считаете их эффективными?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143694975b692556e5995b",
+    "freq": 1,
+    "question": "Что такое режим?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143694975b692556e5996b",
+    "freq": 1,
+    "question": "Резюмируйте ключевые результаты и что удалось сделать за время работы в компании.",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143694975b692556e5996d",
+    "freq": 1,
+    "question": "Почему вы ушли из Traffic Shark и что сейчас ищете?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143694975b692556e5996e",
+    "freq": 1,
+    "question": "Что вы сейчас ищете и какие у вас критерии ценности при выборе нового места работы?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143694975b692556e59979",
+    "freq": 1,
+    "question": "Как у вас в целом устроен регулярный менеджмент с командой: как проходят взаимодействия и комфортно ли вам работать в таком формате?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143694975b692556e59981",
+    "freq": 1,
+    "question": "От чего вы отталкиваетесь, чтобы понять, что вам комфортно в рабочей среде?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143694975b692556e59984",
+    "freq": 1,
+    "question": "Расскажите о вашем карьерном пути: чем вы занимались и какие проекты вам удалось успешно реализовать?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "engineering-manager"
+  },
+  {
+    "id": "q-6a143695975b692556e59a3e",
+    "freq": 1,
+    "question": "Расскажите о вашем опыте работы в команде: были ли случаи, когда руководитель единолично принимал решения, или когда команда и вы сами активно генерировали гипотезы и идеи?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "engineering-manager"
+  }
+]

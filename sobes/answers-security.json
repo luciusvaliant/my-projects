@@ -1,0 +1,38 @@
+{
+  "answers": [
+    {
+      "id": 114,
+      "answer": "OWASP Top 10 — список десяти наиболее критичных рисков безопасности веб-приложений, обновляемый OWASP. Последняя версия — OWASP Top 10:2021. Цель — повысить осведомлённость и направить усилия по защите.\n\nOWASP Top 10:2021:\n\n1. A01 Broken Access Control — нарушение контроля доступа. IDOR (изменение id в URL для чужого заказа), пропуск проверки авторизации, privilege escalation. Защита: проверка прав на сервере для каждого запроса, deny by default, least privilege.\n\n2. A02 Cryptographic Failures — криптографические ошибки. Передача/хранение чувствительных данных без шифрования, слабые алгоритмы, жёстко закодированные ключи. Защита: TLS, шифрование at rest, bcrypt/argon2 для паролей.\n\n3. A03 Injection — инъекции (объединил SQLi, command injection; XSS включён сюда в 2021). Внедрение кода через ввод пользователя. Защита: параметризованные запросы (prepared statements), ORM, валидация/эскейпинг.\n\n4. A04 Insecure Design — небезопасный дизайн. Архитектурные недостатки, отсутствие threat modeling. Новый пункт 2021. Защита: secure by design, threat modeling, secure design patterns.\n\n5. A05 Security Misconfiguration — небезопасная конфигурация. Дефолтные пароли, debug-режимы, ненужные функции, устаревшие версии. Защита: hardening, security headers (CSP, HSTS, X-Frame-Options).\n\n6. A06 Vulnerable and Outdated Components — уязвимые и устаревшие компоненты. Зависимости с известными уязвимостями. Защита: SBOM, сканирование (Snyk, Dependabot, Trivy), обновления.\n\n7. A07 Identification and Authentication Failures — ошибки идентификации и аутентификации. Слабые пароли, уязвимости сессий, отсутствие MFA. Защита: MFA, bcrypt/argon2, короткоживущие токены + refresh, защита от brute force.\n\n8. A08 Software and Data Integrity Failures — нарушения целостности ПО и данных. Новый 2021. CI/CD без проверки целостности, небезопасная десериализация. Защита: подписи, защищённый CI/CD.\n\n9. A09 Security Logging and Monitoring Failures — недостаточное логирование и мониторинг. Защита: логирование security-событий, SIEM, алерты, incident response.\n\n10. A10 Server-Side Request Forgery (SSRF) — подделка запросов от сервера. Новый 2021. Сервер делает запрос на URL, контролируемый атакующим. Защита: whitelist хостов, блокировка внутренних IP.\n\nXSS (Cross-Site Scripting) — в 2021 включён в A03 Injection, но остаётся критичным: внедрение скрипта в страницу. Защита: эскейпинг вывода, CSP, HttpOnly cookies.",
+      "explanation": "OWASP Top 10:2021 — список десяти критичных рисков веб-безопасности: Broken Access Control, Cryptographic Failures, Injection, Insecure Design, Security Misconfiguration, Vulnerable Components, Auth Failures, Integrity Failures, Logging Failures, SSRF. Цель — осведомлённость и направление защиты.",
+      "example": "```text\nA01 Broken Access Control: GET /api/orders/998 → чужой заказ (IDOR).\n  Защита: проверка owner(user_id, order_id) на сервере.\nA03 Injection (SQLi): login=' OR '1'='1 → обход аутентификации.\n  Защита: prepared statements: WHERE login=? AND password=?\nA05 Misconfiguration: debug=true в проде, X-Powered-By: Express.\n  Защита: helmet.js, NODE_ENV=production, security headers.\nA10 SSRF: fetch(userUrl) → http://169.254.169.254 (metadata AWS).\n  Защита: whitelist хостов, блокировка 169.254.0.0/16.\n```",
+      "key_points": [
+        "OWASP Top 10:2021 — список десяти критичных рисков веб-безопасности.",
+        "A01 Broken Access Control — нарушение контроля доступа (IDOR, privilege escalation).",
+        "A03 Injection — SQLi, command injection; A02 Cryptographic Failures — TLS, bcrypt.",
+        "Новые в 2021: A04 Insecure Design, A08 Integrity Failures, A10 SSRF.",
+        "Защита: secure by design, параметризованные запросы, MFA, security headers, сканирование зависимостей, логирование."
+      ],
+      "pitfalls": [
+        "Проверять права только на клиенте; хранить пароли в MD5/plain; использовать конкатенацию строк для SQL; игнорировать обновления зависимостей."
+      ],
+      "quality": "good",
+      "quality_note": "",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1502,
+      "answer": "OWASP Top 10 — это список критичных уязвимостей: инъекции, сломанная аутентификация, утечки, XSS, конфигурация, устаревшие компоненты; ориентир для безопасности.",
+      "explanation": "OWASP Top 10 — критичные уязвимости; инъекции, XSS. Распространённое заблуждение: «OWASP Top 10 — это список лучших практик производительности» — это неверно. Также неверно утверждение: «OWASP не включает инъекции в список уязвимостей».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 3572,
+      "answer": "MITRE ATT&CK — это база знаний тактик и техник атак; threat modeling, red team, detection rules, SOC.",
+      "explanation": "MITRE ATT&CK — тактики/техники атак. Распространённое заблуждение: «MITRE ATT&CK — язык программирования» — это неверно. Также неверно утверждение: «MITRE ATT&CK — база уязвимостей CVE».",
+      "options": [],
+      "correctIndex": null
+    }
+  ]
+}

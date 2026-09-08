@@ -1,0 +1,300 @@
+[
+  {
+    "id": "q-6a143680975b692556e565f7",
+    "freq": 2,
+    "question": "Что такое бизнес-процесс компании?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a143687975b692556e5836e",
+    "freq": 2,
+    "question": "Что такое воронка продаж?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a14368f975b692556e5913c",
+    "freq": 1,
+    "question": "Какие типичные этапы можно включить в воронку продаж и как они соотносятся с вашим процессом продаж?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a14368f975b692556e59141",
+    "freq": 1,
+    "question": "Что дает интеграция телефонии с AmoCRM для работы со звонками и контактами?",
+    "tags": [
+      "backend",
+      "AmoCRM",
+      "junior"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a14368f975b692556e59146",
+    "freq": 1,
+    "question": "Какими способами удобнее создавать задачи по клиентам?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a14368f975b692556e5914d",
+    "freq": 1,
+    "question": "Как подключать источники заявок в AmoCRM и что нужно для базовой настройки почты?",
+    "tags": [
+      "backend",
+      "AmoCRM",
+      "junior"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a14368f975b692556e59151",
+    "freq": 1,
+    "question": "Зачем подключать мессенджеры к CRM и что такое WhatsApp Business API?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a14368f975b692556e59154",
+    "freq": 1,
+    "question": "Чем сущность «Сделка» отличается от «Контакта» и «Компании» в AmoCRM?",
+    "tags": [
+      "backend",
+      "AmoCRM",
+      "junior"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a14368f975b692556e59155",
+    "freq": 1,
+    "question": "Какие основные функции сейлс-бота и где они применимы?",
+    "tags": [
+      "backend",
+      "junior"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a14368f975b692556e59172",
+    "freq": 1,
+    "question": "Как вы проектируете воронку продаж в B2B для нового клиента, если у него нет четко описанных бизнес-процессов?",
+    "tags": [
+      "system_design",
+      "senior"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a143690975b692556e592cc",
+    "freq": 1,
+    "question": "Какая аналитика доступна в CRM-системах?",
+    "tags": [
+      "backend",
+      "junior"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a143690975b692556e592ce",
+    "freq": 1,
+    "question": "Нужно ли моделировать бизнес-процессы перед тем, как настраивать CRM-систему?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a143690975b692556e592d0",
+    "freq": 1,
+    "question": "Что такое триггеры в базе данных и для чего они нужны?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a143690975b692556e592d1",
+    "freq": 1,
+    "question": "Что такое бизнес-процесс компании? Можно ли сказать, что это этапы воронки, и всегда ли бизнес-процесс связан напрямую с получением прибыли?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a143690975b692556e592d2",
+    "freq": 1,
+    "question": "Как настроить права пользователей и для чего это делается?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a143690975b692556e592d3",
+    "freq": 1,
+    "question": "В чем отличие между API и вебхуками (webhooks)?",
+    "tags": [
+      "web",
+      "junior"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a143690975b692556e592d5",
+    "freq": 1,
+    "question": "Что такое селсбот (salesbot) и для чего он нужен? В чем его отличие от триггеров?",
+    "tags": [
+      "backend",
+      "CRM",
+      "junior"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a143690975b692556e592d6",
+    "freq": 1,
+    "question": "Какие источники данных можно подключить к воронке продаж (для сделок) и как технически реализуется процесс интеграции?",
+    "tags": [
+      "backend",
+      "CRM",
+      "middle"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a143690975b692556e592e3",
+    "freq": 1,
+    "question": "В чем отличие воронок в AmoCRM: «Сделки» и «Покупатели»?",
+    "tags": [
+      "backend",
+      "AmoCRM",
+      "junior"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a143693975b692556e5971f",
+    "freq": 1,
+    "question": "Какова структура первоначальных инвестиций и где вы планируете их взять?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a143693975b692556e5972d",
+    "freq": 1,
+    "question": "Какую проблему целевой аудитории решает amoCRM?",
+    "tags": [
+      "backend",
+      "AmoCRM",
+      "junior"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a143693975b692556e59738",
+    "freq": 1,
+    "question": "Какие онлайн-инструменты можно использовать для успешного продвижения себя как системного интегратора?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a143693975b692556e5973c",
+    "freq": 1,
+    "question": "Что такое устойчивая сортировка?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a143693975b692556e5973f",
+    "freq": 1,
+    "question": "Что делать с клиентами, которым не удалось ничего продать?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a143693975b692556e5975e",
+    "freq": 1,
+    "question": "Какой план работы?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a143693975b692556e59760",
+    "freq": 1,
+    "question": "Как минимизировать сопротивление сотрудников при внедрении новой системы?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a143693975b692556e59762",
+    "freq": 1,
+    "question": "Что такое установочная встреча (kick-off meeting)?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a143693975b692556e59763",
+    "freq": 1,
+    "question": "Как будет проходить экзамен: сначала бриф 1,5 минуты, а затем демонстрация настроенного аккаунта в течение 10 минут?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "low-code-integrator"
+  },
+  {
+    "id": "q-6a143693975b692556e5976e",
+    "freq": 1,
+    "question": "Для чего необходимо оценивать риски на проекте?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "low-code-integrator"
+  }
+]

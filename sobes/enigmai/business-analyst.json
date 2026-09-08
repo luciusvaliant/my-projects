@@ -1,0 +1,1091 @@
+[
+  {
+    "id": "q-6a143680975b692556e563a3",
+    "freq": 9,
+    "question": "Что такое SQL?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143680975b692556e56493",
+    "freq": 4,
+    "question": "Какие сторонние или внутренние интеграции вы реализовывали на своем проекте?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143680975b692556e56456",
+    "freq": 3,
+    "question": "Что такое внешний ключ (foreign key) и чем он отличается от первичного ключа (primary key)?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143680975b692556e5673d",
+    "freq": 3,
+    "question": "Что такое BPMN?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143680975b692556e5675f",
+    "freq": 3,
+    "question": "Как можно оптимизировать SQL-запросы?",
+    "tags": [
+      "database",
+      "SQL",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143682975b692556e574a1",
+    "freq": 3,
+    "question": "Расскажите о вашем опыте работы с Kubernetes.",
+    "tags": [
+      "devops",
+      "Kubernetes",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368c975b692556e58da8",
+    "freq": 3,
+    "question": "Можете привести пример?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143680975b692556e564db",
+    "freq": 2,
+    "question": "Что такое А/Б-тестирование?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143680975b692556e564fc",
+    "freq": 2,
+    "question": "Что такое дисперсия?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143680975b692556e565a0",
+    "freq": 2,
+    "question": "Сколько будет 7 + 2?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143680975b692556e56722",
+    "freq": 2,
+    "question": "В чем отличие t-теста от z-теста?",
+    "tags": [
+      "algorithms",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143680975b692556e56787",
+    "freq": 2,
+    "question": "Как это реализовать?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143680975b692556e56c42",
+    "freq": 2,
+    "question": "Что такое ER-диаграммы и для чего они используются?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143680975b692556e566fe",
+    "freq": 2,
+    "question": "Чем вы занимаетесь?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143680975b692556e5671a",
+    "freq": 2,
+    "question": "Что такое ошибки первого и второго рода?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143680975b692556e56b4c",
+    "freq": 2,
+    "question": "Чем отличается оператор HAVING от WHERE в SQL?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143682975b692556e572fe",
+    "freq": 2,
+    "question": "Какие виды требований к программному обеспечению вы знаете?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143683975b692556e5789c",
+    "freq": 2,
+    "question": "Что такое UML?",
+    "tags": [
+      "architecture",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143686975b692556e581d9",
+    "freq": 2,
+    "question": "Для какой задачи вы использовали Apache Kafka?",
+    "tags": [
+      "backend",
+      "Kafka",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143687975b692556e5833e",
+    "freq": 2,
+    "question": "Какие операторы существуют в SQL?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143687975b692556e5836e",
+    "freq": 2,
+    "question": "Что такое воронка продаж?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368c975b692556e58da2",
+    "freq": 2,
+    "question": "Что для вас важно при выборе нового места работы и какие критерии являются приоритетными?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143680975b692556e5680f",
+    "freq": 1,
+    "question": "Как вы реализовали это решение?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e57228",
+    "freq": 1,
+    "question": "Как реализуется логическая операция исключающее ИЛИ (XOR)?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e57229",
+    "freq": 1,
+    "question": "Что такое отложенные запросы и как они работают?",
+    "tags": [
+      "database",
+      "SQL",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e5723f",
+    "freq": 1,
+    "question": "Какие нотации для отрисовки бизнес-процессов выявили?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e57240",
+    "freq": 1,
+    "question": "Какие эксклюзы вы знаете?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e57241",
+    "freq": 1,
+    "question": "Какие события добавляете и используете в BPMN?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e57245",
+    "freq": 1,
+    "question": "Какие основные элементы вы используете в BPMN для адресации?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e57247",
+    "freq": 1,
+    "question": "Как рисуется логический элемент OR?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e57248",
+    "freq": 1,
+    "question": "Кому добавили этот документ разработчику?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e5724a",
+    "freq": 1,
+    "question": "Что такое CDP, ASR и DTC системы?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e57250",
+    "freq": 1,
+    "question": "Где является правильный ключ, а где является функция?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e57251",
+    "freq": 1,
+    "question": "Вы работаете с базой данных?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143682975b692556e572d0",
+    "freq": 1,
+    "question": "Перечислите известные вам методы HTTP-запроса.",
+    "tags": [
+      "networking",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143682975b692556e572d1",
+    "freq": 1,
+    "question": "Знакомы ли вы с подходом сбора требований по принципу 5W?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143682975b692556e572d4",
+    "freq": 1,
+    "question": "Читали ли вы книгу Карла Виггерса «Разработка требований к ПО»?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143682975b692556e572d5",
+    "freq": 1,
+    "question": "Какие виды UML-диаграмм вы знаете?",
+    "tags": [
+      "architecture",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143682975b692556e572de",
+    "freq": 1,
+    "question": "Какие интеграционные протоколы и подходы к интеграционному взаимодействию вы знаете?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143682975b692556e572df",
+    "freq": 1,
+    "question": "Какие виды документов на разработку ПО вы формировали?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e5722b",
+    "freq": 1,
+    "question": "В чем разница между user story и use case?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e5722c",
+    "freq": 1,
+    "question": "Что входило именно в ваши обязанности в рамках проектирования базы данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e5722d",
+    "freq": 1,
+    "question": "Что являлось ключевым показателем выполнения работы?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e5722e",
+    "freq": 1,
+    "question": "Что означает термин «структурированные данные» в контексте работы с базами данных?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e5722f",
+    "freq": 1,
+    "question": "Кто определял, как вы это делаете и каким образом?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e57230",
+    "freq": 1,
+    "question": "Как формируется единая структура данных в системе?",
+    "tags": [
+      "architecture",
+      "senior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e57231",
+    "freq": 1,
+    "question": "Какая была глубина проработки задачи?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e57249",
+    "freq": 1,
+    "question": "Какие еще методы, помимо ПМН, вы знаете?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e5724c",
+    "freq": 1,
+    "question": "Как проверяли потом, насколько корректно было нормализовано?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143681975b692556e5724f",
+    "freq": 1,
+    "question": "Правильно ли он сделал пас данных?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143682975b692556e572cf",
+    "freq": 1,
+    "question": "Какие форматы данных используются в REST, а какие в SOAP?",
+    "tags": [
+      "web",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143686975b692556e581d4",
+    "freq": 1,
+    "question": "Как новая задача или фича повлияет на ключевые метрики продукта?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143686975b692556e581d5",
+    "freq": 1,
+    "question": "Чего вам не хватает для перехода на следующий уровень компетенций бизнес-аналитика?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143686975b692556e581d7",
+    "freq": 1,
+    "question": "Какая была потребность в использовании этого сервиса?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143686975b692556e581d8",
+    "freq": 1,
+    "question": "Какие виды оплаты используют исполнители?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143686975b692556e581da",
+    "freq": 1,
+    "question": "Расскажите о вашей команде в целом.",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143686975b692556e581dc",
+    "freq": 1,
+    "question": "Есть ли в вашей команде системные аналитики, или вы отвечаете полностью за аналитику и сразу передаете требования в разработку?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143686975b692556e581e0",
+    "freq": 1,
+    "question": "Как вы взаимодействовали с метриками и продуктовой аналитикой на вашем проекте?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143687975b692556e581e9",
+    "freq": 1,
+    "question": "Для какой задачи какую диаграмму UML вы подбираете?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143687975b692556e58234",
+    "freq": 1,
+    "question": "Какие метрики используются в Авито?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143687975b692556e58237",
+    "freq": 1,
+    "question": "Что такое бизнес-аналитика?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143687975b692556e5835e",
+    "freq": 1,
+    "question": "Какие метрики считаются самыми важными?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143687975b692556e58360",
+    "freq": 1,
+    "question": "Как можно оптимизировать код на Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143687975b692556e58361",
+    "freq": 1,
+    "question": "Что такое конверсия?",
+    "tags": [
+      "web",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143687975b692556e58362",
+    "freq": 1,
+    "question": "Что вы делаете, если данных недостаточно для принятия решения или выполнения задачи?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143687975b692556e58365",
+    "freq": 1,
+    "question": "Что вы будете делать, если конверсия внезапно упала?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143687975b692556e58366",
+    "freq": 1,
+    "question": "Что такое Z-тест?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143687975b692556e58371",
+    "freq": 1,
+    "question": "Как бы вы подошли к выполнению А/Б-теста?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143687975b692556e583b8",
+    "freq": 1,
+    "question": "Как рассчитать Retention Rate с помощью Python?",
+    "tags": [
+      "data_structures",
+      "Python",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143686975b692556e581e4",
+    "freq": 1,
+    "question": "Расскажите о самом сложном техническом кейсе, которым вам приходилось заниматься.",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143687975b692556e581e8",
+    "freq": 1,
+    "question": "Что подразумевается под проваленным демо в контексте разработки?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143687975b692556e583c5",
+    "freq": 1,
+    "question": "Какое математическое ожидание у одного броска честного шестигранного кубика?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143687975b692556e583c7",
+    "freq": 1,
+    "question": "Что такое ошибка второго рода?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143688975b692556e58441",
+    "freq": 1,
+    "question": "Какая стратегия максимизирует число очков при однократном броске честного шестигранного кубика?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143688975b692556e5849b",
+    "freq": 1,
+    "question": "Что такое T-тест?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143688975b692556e5849d",
+    "freq": 1,
+    "question": "Зачем вообще нужен t-тест?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143688975b692556e584a8",
+    "freq": 1,
+    "question": "Как рассчитать t-критерий Стьюдента?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143688975b692556e584ab",
+    "freq": 1,
+    "question": "В каком порядке выполняются команды (логический порядок выполнения) в SQL-запросе?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143688975b692556e58539",
+    "freq": 1,
+    "question": "Что такое ошибка первого рода и как она связана с проверкой статистических гипотез?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143688975b692556e5853a",
+    "freq": 1,
+    "question": "Как отфильтровать пользователей с нулевым количеством заказов в SQL-запросе?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143688975b692556e5853b",
+    "freq": 1,
+    "question": "Что такое p-value простыми словами и почему мы смотрим на него после проведения статистического теста?",
+    "tags": [
+      "algorithms",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143689975b692556e58701",
+    "freq": 1,
+    "question": "Как снизить долю false positive в системе?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143688975b692556e5853e",
+    "freq": 1,
+    "question": "Какие факторы влияют на величину p-значения?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368c975b692556e58d91",
+    "freq": 1,
+    "question": "Какие направления развития искусственного интеллекта вы знаете?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368c975b692556e58d96",
+    "freq": 1,
+    "question": "На какой уровень заработной платы вы ориентируетесь и какая сумма является для вас комфортной?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368c975b692556e58d98",
+    "freq": 1,
+    "question": "Что такое OKR?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368c975b692556e58d9c",
+    "freq": 1,
+    "question": "Какие у вас сильные стороны в работе? Можете выделить две?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368c975b692556e58d9d",
+    "freq": 1,
+    "question": "Какие основные тенденции наблюдаются в развитии AI-систем?",
+    "tags": [
+      "architecture",
+      "AI",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368c975b692556e58d9f",
+    "freq": 1,
+    "question": "Какими IT-продуктами и инструментами вы пользуетесь в своей работе?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368c975b692556e58da0",
+    "freq": 1,
+    "question": "Какие языковые модели сейчас наиболее востребованы, на ваш взгляд?",
+    "tags": [
+      "backend",
+      "AI/ML",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368c975b692556e58da4",
+    "freq": 1,
+    "question": "Что такое сквозной процесс?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368c975b692556e58da5",
+    "freq": 1,
+    "question": "Что такое управление контекстом (context management) в программировании?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368c975b692556e58da9",
+    "freq": 1,
+    "question": "Чем отличается e-автоматизация от e-агента?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368c975b692556e58dad",
+    "freq": 1,
+    "question": "Какие направления развития искусственного интеллекта вы считаете наиболее перспективными?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368c975b692556e58db1",
+    "freq": 1,
+    "question": "Чем CloudCode отличается от обычных AI-ассистентов?",
+    "tags": [
+      "backend",
+      "CloudCode",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368f975b692556e5915e",
+    "freq": 1,
+    "question": "В чат написать то, что вы сейчас сказали?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368f975b692556e59166",
+    "freq": 1,
+    "question": "Как бы вы реализовали данную задачу?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368f975b692556e59167",
+    "freq": 1,
+    "question": "А меня видно по видео?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368f975b692556e5916a",
+    "freq": 1,
+    "question": "Включаются ли премии, предусмотренные системой оплаты труда, в расчет среднего заработка?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368f975b692556e5916d",
+    "freq": 1,
+    "question": "Как получить ответ на вопрос, используя только предоставленный текст?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368f975b692556e59183",
+    "freq": 1,
+    "question": "Расскажите, что не получилось в проекте и почему всё затянулось на четыре месяца?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368f975b692556e59184",
+    "freq": 1,
+    "question": "В чем заключался продукт и какую бизнес-задачу он решал для ваших потенциальных клиентов?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368f975b692556e59186",
+    "freq": 1,
+    "question": "Расскажите о вашем опыте продаж или о том, как вы продавали свои идеи/решения?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368f975b692556e5918c",
+    "freq": 1,
+    "question": "В чем заключалась суть продукта, над которым вы работали?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368f975b692556e5918e",
+    "freq": 1,
+    "question": "Какие сейчас самые популярные языковые модели?",
+    "tags": [
+      "backend",
+      "AI/ML",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a14368f975b692556e59192",
+    "freq": 1,
+    "question": "Какова была ваша роль в процессе продаж: вы самостоятельно искали клиентов или работали с лидами, переданными отделом маркетинга автодилера/автопроизводителя, и обсуждали условия сделки?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "business-analyst"
+  },
+  {
+    "id": "q-6a143690975b692556e592e0",
+    "freq": 1,
+    "question": "Расскажите про метод merge для объединения таблиц в библиотеке pandas в Python.",
+    "tags": [
+      "data_structures",
+      "Python",
+      "junior"
+    ],
+    "direction": "business-analyst"
+  }
+]

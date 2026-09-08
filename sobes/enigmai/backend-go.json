@@ -1,0 +1,3518 @@
+[
+  {
+    "id": "q-6a143680975b692556e56399",
+    "freq": 23,
+    "question": "С какими базами данных вы работали?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e5636c",
+    "freq": 20,
+    "question": "Что такое микросервисы?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e5638d",
+    "freq": 20,
+    "question": "Что такое Kubernetes?",
+    "tags": [
+      "devops",
+      "Kubernetes",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e56423",
+    "freq": 20,
+    "question": "Расскажите про уровни изоляции транзакций в базах данных.",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e56379",
+    "freq": 15,
+    "question": "Как работает сборщик мусора?",
+    "tags": [
+      "language_specific",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e563d5",
+    "freq": 11,
+    "question": "Чем вы занимались на предыдущем месте работы?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e563b5",
+    "freq": 10,
+    "question": "Что такое горутина и как она работает?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e563bd",
+    "freq": 10,
+    "question": "Какие инструменты вы используете в своей работе?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e56702",
+    "freq": 10,
+    "question": "Как работает сборщик мусора (Garbage Collector)?",
+    "tags": [
+      "language_specific",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e56386",
+    "freq": 9,
+    "question": "Что такое race condition (состояние гонки)?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e563a3",
+    "freq": 9,
+    "question": "Что такое SQL?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e563a0",
+    "freq": 8,
+    "question": "В чем разница между массивом и слайсом в Go?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e5639a",
+    "freq": 7,
+    "question": "Что такое Java?",
+    "tags": [
+      "language_specific",
+      "Java",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e5639b",
+    "freq": 7,
+    "question": "Что такое чистая функция?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e5639f",
+    "freq": 7,
+    "question": "Будет ли это реализовано на Java?",
+    "tags": [
+      "language_specific",
+      "Java",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e563ad",
+    "freq": 7,
+    "question": "Что такое слайсы в Go и что вы можете о них рассказать?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e56693",
+    "freq": 7,
+    "question": "Какова временная и пространственная сложность данного алгоритма?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e564b1",
+    "freq": 7,
+    "question": "С какими брокерами сообщений вы работали?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e563e0",
+    "freq": 6,
+    "question": "Что такое слайс в Go?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e563f1",
+    "freq": 6,
+    "question": "Как это работает?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143681975b692556e56eb3",
+    "freq": 6,
+    "question": "Расскажите о вашем опыте работы.",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e563d1",
+    "freq": 5,
+    "question": "Что такое gRPC?",
+    "tags": [
+      "networking",
+      "gRPC",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e5641c",
+    "freq": 5,
+    "question": "Как устроены массивы в памяти?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e5649b",
+    "freq": 5,
+    "question": "В чем заключаются преимущества и недостатки микросервисной архитектуры?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e56562",
+    "freq": 4,
+    "question": "Что такое каналы в Go?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e5640d",
+    "freq": 4,
+    "question": "Работали ли вы с Docker и Bash?",
+    "tags": [
+      "devops",
+      "Docker",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e56417",
+    "freq": 4,
+    "question": "Расскажите о сложном техническом конфликте в команде, с которым вы сталкивались: что именно произошло, какую роль вы играли и как вы в итоге пришли к решению?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e56433",
+    "freq": 4,
+    "question": "Для чего нужен этот инструмент или технология?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143681975b692556e5700a",
+    "freq": 4,
+    "question": "Для чего используется контекст (context) в Go?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e56591",
+    "freq": 3,
+    "question": "Расскажите про примитивы синхронизации.",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e5666f",
+    "freq": 3,
+    "question": "Важен ли порядок полей в составном индексе базы данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e566b6",
+    "freq": 3,
+    "question": "Для чего еще может быть использована семантическая разметка в веб-разработке?",
+    "tags": [
+      "frontend",
+      "HTML",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e56720",
+    "freq": 3,
+    "question": "Был ли у тебя опыт работы с высоконагруженными системами?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e56463",
+    "freq": 3,
+    "question": "Как реализовать обмен информацией между родительским сайтом и встроенным сторонним виджетом (iframe), например, передачу данных пользователя?",
+    "tags": [
+      "frontend",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e5647c",
+    "freq": 3,
+    "question": "Сколько будет два плюс два?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e56b1e",
+    "freq": 3,
+    "question": "Какие существуют способы взаимодействия между микросервисами?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e564be",
+    "freq": 3,
+    "question": "Дана строка из латинских букв. Нужно найти первый символ, который встречается в строке ровно один раз. Расскажите, как бы вы это решали и какова временная и пространственная сложность вашего решения?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e56af8",
+    "freq": 3,
+    "question": "Чем HTTP/1.1 отличается от HTTP/2?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e566a0",
+    "freq": 3,
+    "question": "Что такое декораторы в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143683975b692556e578cf",
+    "freq": 3,
+    "question": "Что такое структура данных map и как она работает?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e5666c",
+    "freq": 2,
+    "question": "Для чего нужны очереди?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e566b4",
+    "freq": 2,
+    "question": "Какие еще сущности или компоненты существуют в протоколе HTTP помимо запросов, ответов и статусов ответа?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e56708",
+    "freq": 2,
+    "question": "В чём разница между конкурентностью и параллелизмом?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e564dd",
+    "freq": 2,
+    "question": "Профилировал ли ты когда-нибудь приложение или запросы?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e56766",
+    "freq": 2,
+    "question": "Что такое Mutex в Go и как он работает?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e5650f",
+    "freq": 2,
+    "question": "Почему React выдает предупреждение, если использовать хуки внутри условий или циклов?",
+    "tags": [
+      "frontend",
+      "React",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e5657e",
+    "freq": 2,
+    "question": "Что такое Shell?",
+    "tags": [
+      "backend",
+      "Linux",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e56a4c",
+    "freq": 2,
+    "question": "Что такое map в Go?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e566e4",
+    "freq": 2,
+    "question": "Был ли у вас опыт разработки Telegram-ботов?",
+    "tags": [
+      "backend",
+      "Python",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e5672f",
+    "freq": 2,
+    "question": "Как Docker запускает контейнеры?",
+    "tags": [
+      "devops",
+      "Docker",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e567d0",
+    "freq": 2,
+    "question": "Как дождаться завершения выполнения 10 горутин и только после этого продолжить работу?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e56806",
+    "freq": 2,
+    "question": "Какой язык программирования вы предпочитаете и почему?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143680975b692556e56beb",
+    "freq": 2,
+    "question": "Что такое data race?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143682975b692556e575f2",
+    "freq": 2,
+    "question": "Для чего вы используете хук useEffect в React?",
+    "tags": [
+      "frontend",
+      "React",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143686975b692556e57fc3",
+    "freq": 2,
+    "question": "Какие преимущества у асинхронного взаимодействия над синхронным?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143687975b692556e58385",
+    "freq": 2,
+    "question": "Что произойдет, если попытаться прочитать данные из закрытого канала в Go?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143687975b692556e583c4",
+    "freq": 2,
+    "question": "Что такое B-дерево?",
+    "tags": [
+      "data_structures",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143688975b692556e58438",
+    "freq": 2,
+    "question": "Расскажите про базы данных.",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143688975b692556e585fd",
+    "freq": 2,
+    "question": "В чем разница между многозадачностью и многопоточностью?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58ac3",
+    "freq": 2,
+    "question": "Какие проблемы могут возникнуть при использовании индексов в базе данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58b7e",
+    "freq": 2,
+    "question": "Был ли у вас опыт проектирования микросервисной архитектуры?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368a975b692556e58a09",
+    "freq": 2,
+    "question": "Какие существуют способы представления графа в памяти, например, списки смежности и матрицы смежности, и в чем их различия?",
+    "tags": [
+      "data_structures",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368f975b692556e5926a",
+    "freq": 2,
+    "question": "Чем отличается map от sync.Map в языке Go?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368f975b692556e59280",
+    "freq": 2,
+    "question": "На каком уровне изоляции транзакций отсутствует проблема «грязного чтения»?",
+    "tags": [
+      "database",
+      "SQL",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e59438",
+    "freq": 2,
+    "question": "Что такое семафор?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bb0",
+    "freq": 2,
+    "question": "Какова алгоритмическая сложность вставки элемента в слайс (slice) в Go?",
+    "tags": [
+      "data_structures",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143692975b692556e5960e",
+    "freq": 2,
+    "question": "Что такое алгоритм быстрой сортировки (Quicksort)?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143692975b692556e59614",
+    "freq": 2,
+    "question": "Что такое язык программирования Go (Golang)?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143682975b692556e575e2",
+    "freq": 1,
+    "question": "Какие в TypeScript есть встроенные утилитарные типы, такие как Omit, Pick и другие?",
+    "tags": [
+      "language_specific",
+      "TypeScript",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143683975b692556e576c9",
+    "freq": 1,
+    "question": "Как можно бороться с пробрасыванием пропсов (prop drilling) в React?",
+    "tags": [
+      "frontend",
+      "React",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143683975b692556e576cf",
+    "freq": 1,
+    "question": "Что такое пробрасывание пропсов (prop drilling) в React?",
+    "tags": [
+      "frontend",
+      "React",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143683975b692556e576d1",
+    "freq": 1,
+    "question": "В чем заключается смысл использования useEffect и какие аргументы он принимает?",
+    "tags": [
+      "frontend",
+      "React",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143683975b692556e576d7",
+    "freq": 1,
+    "question": "Как работает условный рендеринг элементов в React?",
+    "tags": [
+      "frontend",
+      "React",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143683975b692556e576df",
+    "freq": 1,
+    "question": "Назовите причины, по которым компонент React перерисовывается?",
+    "tags": [
+      "frontend",
+      "React",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143683975b692556e576e0",
+    "freq": 1,
+    "question": "В чем разница между useCallback и useMemo?",
+    "tags": [
+      "frontend",
+      "React",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57aea",
+    "freq": 1,
+    "question": "Do I need to create a new controller in Spring?",
+    "tags": [
+      "backend",
+      "Spring",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57af0",
+    "freq": 1,
+    "question": "How to reverse a list in Java?",
+    "tags": [
+      "data_structures",
+      "Java",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b05",
+    "freq": 1,
+    "question": "Что такое useEffect и useLayoutEffect, и в чем разница между их синхронным и асинхронным выполнением?",
+    "tags": [
+      "frontend",
+      "React",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b0b",
+    "freq": 1,
+    "question": "Кратко опишите, как устроен Redux и как он работает?",
+    "tags": [
+      "frontend",
+      "Redux",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b17",
+    "freq": 1,
+    "question": "Какие базовые понятия есть в Redux?",
+    "tags": [
+      "frontend",
+      "Redux",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b57",
+    "freq": 1,
+    "question": "Можно ли получить доступ к куки на клиенте в браузере?",
+    "tags": [
+      "web",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b5b",
+    "freq": 1,
+    "question": "Какие особенности браузеров важно учитывать при разработке фронтенда?",
+    "tags": [
+      "frontend",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b5d",
+    "freq": 1,
+    "question": "Какие стадии проходит процесс рендеринга контента в браузере?",
+    "tags": [
+      "frontend",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b5e",
+    "freq": 1,
+    "question": "У вас был опыт работы с CSS-in-JS, например, в JS-фреймворках, и как вы применяли его для реализации адаптивной верстки с учетом мобильных и десктопных устройств?",
+    "tags": [
+      "frontend",
+      "CSS",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b5f",
+    "freq": 1,
+    "question": "Какие методы HTTP, такие как PUT и DELETE, используются в REST API и как они работают?",
+    "tags": [
+      "web",
+      "REST",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b60",
+    "freq": 1,
+    "question": "Что такое куки и как они используются в контексте HTTP и REST API?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b61",
+    "freq": 1,
+    "question": "Как на фронтенде можно взаимодействовать с куки для хранения и получения данных?",
+    "tags": [
+      "frontend",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b63",
+    "freq": 1,
+    "question": "Доводилось ли вам работать с куки в контексте HTTP и REST API, и можете ли вы объяснить, что такое куки и для чего они нужны?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b65",
+    "freq": 1,
+    "question": "Какие еще существуют компоненты или артефакты в REST API помимо запросов и ответов?",
+    "tags": [
+      "web",
+      "REST",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b66",
+    "freq": 1,
+    "question": "Как реализовать адаптивную верстку блоков, чтобы они сужались и расширялись в мобильной версии?",
+    "tags": [
+      "frontend",
+      "CSS",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b67",
+    "freq": 1,
+    "question": "Какие особенности при разработке с использованием редактора кода могут влиять на уязвимости фронтенда?",
+    "tags": [
+      "security",
+      "Frontend",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b69",
+    "freq": 1,
+    "question": "Как вы обеспечиваете адаптивную верстку в своих проектах?",
+    "tags": [
+      "frontend",
+      "CSS",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b6a",
+    "freq": 1,
+    "question": "Был ли у вас опыт работы с мобильной версткой ранее?",
+    "tags": [
+      "frontend",
+      "CSS",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b6b",
+    "freq": 1,
+    "question": "Как реализовать адаптивную верстку блоков с помощью Flexbox или CSS Grid?",
+    "tags": [
+      "frontend",
+      "CSS",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b6c",
+    "freq": 1,
+    "question": "Как реализовать адаптивную верстку с помощью CSS, чтобы различать мобильную и десктопную версии, например, для карточек и карусели?",
+    "tags": [
+      "frontend",
+      "CSS",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b70",
+    "freq": 1,
+    "question": "Какие еще существуют уязвимости на стороне фронтенда?",
+    "tags": [
+      "security",
+      "Frontend",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b76",
+    "freq": 1,
+    "question": "Как реализовать различия между мобильным и десктопным дизайном в веб-разработке?",
+    "tags": [
+      "frontend",
+      "CSS",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b7a",
+    "freq": 1,
+    "question": "Как реализовать адаптивную верстку, при которой на мобильных устройствах отображаются карточки, а на десктопе — карусель?",
+    "tags": [
+      "frontend",
+      "CSS",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b7b",
+    "freq": 1,
+    "question": "Какими способами можно вызвать перерисовку компонента в React?",
+    "tags": [
+      "frontend",
+      "React",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b7f",
+    "freq": 1,
+    "question": "Влияет ли изменение ключа (key) на повторный рендер компонента в React?",
+    "tags": [
+      "frontend",
+      "React",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b85",
+    "freq": 1,
+    "question": "Как реализовать условную логику в React-компоненте, чтобы возвращать разные элементы в зависимости от условий?",
+    "tags": [
+      "frontend",
+      "React",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b8c",
+    "freq": 1,
+    "question": "Почему в консоли браузера появляется предупреждение или ошибка, и как это исправить?",
+    "tags": [
+      "frontend",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b8d",
+    "freq": 1,
+    "question": "С какими трудностями вы сталкивались при реализации передачи данных, таких как username или другие параметры, между родительским сайтом и встроенным виджетом?",
+    "tags": [
+      "frontend",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b8f",
+    "freq": 1,
+    "question": "Как встроить сторонний виджет, например, калькулятор или другую интерактивную функцию, на сайт?",
+    "tags": [
+      "frontend",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b93",
+    "freq": 1,
+    "question": "В каких случаях может потребоваться улучшение доступности веб-сайта для людей с ограниченными возможностями?",
+    "tags": [
+      "frontend",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b95",
+    "freq": 1,
+    "question": "Как встроить сторонний виджет, например, игру или другой элемент, на сайт?",
+    "tags": [
+      "frontend",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57b98",
+    "freq": 1,
+    "question": "Доводилось ли вам работать с реализацией обмена информацией между родительским сайтом и встроенным сторонним виджетом, например, игрой или калькулятором?",
+    "tags": [
+      "web",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143683975b692556e5795f",
+    "freq": 1,
+    "question": "Как избежать утечек памяти в JavaScript-приложениях?",
+    "tags": [
+      "frontend",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143683975b692556e57961",
+    "freq": 1,
+    "question": "В чем отличие свойства transition от animation в CSS?",
+    "tags": [
+      "frontend",
+      "CSS",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143683975b692556e5796e",
+    "freq": 1,
+    "question": "В каких сценариях применяются вспомогательные функции jest.mock, jest.fn и jest.spyOn?",
+    "tags": [
+      "testing",
+      "Jest",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143684975b692556e57bfd",
+    "freq": 1,
+    "question": "У вас есть доступ к общему документу или к странице кода, которая находится в приглашении на виртуальное интервью в Google?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143685975b692556e57f1b",
+    "freq": 1,
+    "question": "Как можно достичь скорости ответа 5 секунд, если у нас есть 5 внешних сервисов, каждый из которых отвечает по одной секунде?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143686975b692556e58096",
+    "freq": 1,
+    "question": "Сталкивались ли вы с какими-либо платформами в своей работе?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143686975b692556e5809f",
+    "freq": 1,
+    "question": "Как работает управление памятью в Java?",
+    "tags": [
+      "language_specific",
+      "Java",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143686975b692556e580e7",
+    "freq": 1,
+    "question": "Расскажите подробнее о вашем опыте работы на проекте: какие задачи вы решали и какова была ваша роль?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143686975b692556e580f0",
+    "freq": 1,
+    "question": "Как вы реализовали пространственный геоиндекс в вашем проекте?",
+    "tags": [
+      "data_structures",
+      "senior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143685975b692556e57e78",
+    "freq": 1,
+    "question": "Как читать план выполнения SQL-запроса?",
+    "tags": [
+      "database",
+      "SQL",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143685975b692556e57e79",
+    "freq": 1,
+    "question": "Назовите и опишите типы индексов B-tree, GIN и GiST в PostgreSQL.",
+    "tags": [
+      "database",
+      "PostgreSQL",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143685975b692556e57e7b",
+    "freq": 1,
+    "question": "Каков ваш подход к оптимизации медленных SQL-запросов?",
+    "tags": [
+      "database",
+      "SQL",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143685975b692556e57e7d",
+    "freq": 1,
+    "question": "Что такое Exchange Types в RabbitMQ?",
+    "tags": [
+      "backend",
+      "RabbitMQ",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143685975b692556e57e7e",
+    "freq": 1,
+    "question": "Как работает цепочка наследования таблиц в PostgreSQL?",
+    "tags": [
+      "database",
+      "PostgreSQL",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143685975b692556e57e7f",
+    "freq": 1,
+    "question": "Как работают миграции баз данных и как выполнить их откат?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143685975b692556e57e80",
+    "freq": 1,
+    "question": "Что такое паттерн Unit of Work и зачем он нужен?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143685975b692556e57e81",
+    "freq": 1,
+    "question": "Объясните слои контроллера, сервиса и репозитория и зачем их разделять?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143685975b692556e57e83",
+    "freq": 1,
+    "question": "В чем разница между Go и PHP в контексте конкурентности?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143685975b692556e57e84",
+    "freq": 1,
+    "question": "Как реализовать middleware в Symfony?",
+    "tags": [
+      "backend",
+      "Symfony",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143685975b692556e57e87",
+    "freq": 1,
+    "question": "Зачем нужны генераторы в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143685975b692556e57e89",
+    "freq": 1,
+    "question": "В чем разница между DQL и Query Builder?",
+    "tags": [
+      "database",
+      "Doctrine",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143685975b692556e57e8a",
+    "freq": 1,
+    "question": "Когда следует использовать паттерн «Стратегия» вместо конструкции if-else?",
+    "tags": [
+      "oop",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143685975b692556e57e8d",
+    "freq": 1,
+    "question": "Как работает консоль Doctrine ORM?",
+    "tags": [
+      "backend",
+      "PHP",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143685975b692556e57f14",
+    "freq": 1,
+    "question": "Как называется файл, который используется для сборки Docker-образа?",
+    "tags": [
+      "devops",
+      "Docker",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143686975b692556e58087",
+    "freq": 1,
+    "question": "Какие проекты и какие задачи вы решали в своей работе на Java?",
+    "tags": [
+      "language_specific",
+      "Java",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143686975b692556e58097",
+    "freq": 1,
+    "question": "Как работает Spring Framework?",
+    "tags": [
+      "backend",
+      "Java",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143687975b692556e583fe",
+    "freq": 1,
+    "question": "Что такое атомарные операции (атомики) в программировании?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143687975b692556e58403",
+    "freq": 1,
+    "question": "Что еще позволяет сделать контекст в Go?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143687975b692556e58404",
+    "freq": 1,
+    "question": "Что такое проекция в контексте баз данных?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143687975b692556e58409",
+    "freq": 1,
+    "question": "Что такое транзакции в базе данных и как в них объединяются несколько операций?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143687975b692556e58412",
+    "freq": 1,
+    "question": "За счет чего это работает?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143688975b692556e58453",
+    "freq": 1,
+    "question": "Что дают локальные очереди в контексте многопоточности или распределенных систем?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143688975b692556e58454",
+    "freq": 1,
+    "question": "Владеете ли вы какими-либо другими языками программирования?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143688975b692556e5845f",
+    "freq": 1,
+    "question": "Зачем вообще существуют локальные очереди?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143688975b692556e58462",
+    "freq": 1,
+    "question": "Есть ли у тебя публичный профиль на GitHub?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143688975b692556e58463",
+    "freq": 1,
+    "question": "Как вы оцениваете свои знания языка Go?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143688975b692556e58465",
+    "freq": 1,
+    "question": "Вы писали только на Go?",
+    "tags": [
+      "general",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143688975b692556e58469",
+    "freq": 1,
+    "question": "Вы сами разрабатывали архитектуру монолита с нуля и полностью её прорабатывали?",
+    "tags": [
+      "architecture",
+      "senior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143688975b692556e5846e",
+    "freq": 1,
+    "question": "Где можно найти примеры вашего кода, чтобы техническая команда могла их изучить?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143688975b692556e58472",
+    "freq": 1,
+    "question": "Был ли у тебя опыт работы с GORM?",
+    "tags": [
+      "backend",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143688975b692556e58479",
+    "freq": 1,
+    "question": "Как вы изучаете новые веяния и обновления в языке программирования Go?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143688975b692556e5847b",
+    "freq": 1,
+    "question": "Какие пет-проекты вы делаете сейчас?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143688975b692556e5847e",
+    "freq": 1,
+    "question": "Какие ресурсы вы используете для изучения новых веяний и обновлений в языке программирования Go?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143689975b692556e58677",
+    "freq": 1,
+    "question": "Какой у вас опыт работы с языками JavaScript, PHP и Go?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143689975b692556e587ed",
+    "freq": 1,
+    "question": "Как бы вы подошли к решению задачи по созданию данной механики?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368d975b692556e58eae",
+    "freq": 1,
+    "question": "Имеете ли вы опыт интеграции платежных систем, например, Робокассы?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368d975b692556e58eb1",
+    "freq": 1,
+    "question": "Есть ли у вас какое-то качество, которое мешает вам справляться с трудностями?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368d975b692556e58eb2",
+    "freq": 1,
+    "question": "Расскажите о самой сложной или интересной ошибке, которую вы допустили в своей работе, и как вы её исправили?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368d975b692556e58eb3",
+    "freq": 1,
+    "question": "Сколько времени в день вы выделяете на обучение или выполнение рабочих задач?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368d975b692556e58eb4",
+    "freq": 1,
+    "question": "Опишите, пожалуйста, комфортную для вас рабочую среду.",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368d975b692556e58eb6",
+    "freq": 1,
+    "question": "Можно ли оцифровать важные признаки качества продукта и как это сделать (например, через дашборд)? Назовите три примера таких метрик.",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368d975b692556e58eb9",
+    "freq": 1,
+    "question": "Расскажите о ситуации, когда вам приходилось сталкиваться с подобной проблемой, и как вы на нее отреагировали?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368d975b692556e58eba",
+    "freq": 1,
+    "question": "Расскажите о продукте, над которым вы работали, и о составе команды.",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368d975b692556e58ebd",
+    "freq": 1,
+    "question": "Вы реализовывали это самостоятельно?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58b7f",
+    "freq": 1,
+    "question": "Как проектировать систему, если изначально закладывать в неё синхронность?",
+    "tags": [
+      "architecture",
+      "senior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58b84",
+    "freq": 1,
+    "question": "Как определить оптимальное количество одновременных соединений при подключении к базе данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58b87",
+    "freq": 1,
+    "question": "Для чего нужен Gorm Connection Pool?",
+    "tags": [
+      "database",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58b96",
+    "freq": 1,
+    "question": "Как меняется сложность системы при её масштабировании?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58b97",
+    "freq": 1,
+    "question": "Как организовано взаимодействие между вашими сервисами?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58b98",
+    "freq": 1,
+    "question": "Что делает библиотека GORM (или Gorm Pool) в контексте работы с базами данных?",
+    "tags": [
+      "database",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58b9c",
+    "freq": 1,
+    "question": "Стоит ли использовать монолитную архитектуру?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368a975b692556e589fd",
+    "freq": 1,
+    "question": "Если это не очевидно, объясните, что это такое в контексте реализации алгоритма?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368a975b692556e58a02",
+    "freq": 1,
+    "question": "Можете ли вы объяснить, что делает функция и как она используется в реализации алгоритма?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368a975b692556e58a05",
+    "freq": 1,
+    "question": "Что такое диграф в контексте реализации графов?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368a975b692556e58a06",
+    "freq": 1,
+    "question": "Можно ли использовать графы, содержащие циклы, в реализации?",
+    "tags": [
+      "algorithms",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368a975b692556e58a07",
+    "freq": 1,
+    "question": "Это будет реализовано не только на языке программирования, правильно?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368a975b692556e58a0a",
+    "freq": 1,
+    "question": "Вы собираетесь реализовать это на Java?",
+    "tags": [
+      "language_specific",
+      "Java",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368a975b692556e58a16",
+    "freq": 1,
+    "question": "Что такое вершина и ребро в теории графов?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368c975b692556e58c27",
+    "freq": 1,
+    "question": "Что представляет собой ссылка на слайс в языке Go и как она работает?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368c975b692556e58c3d",
+    "freq": 1,
+    "question": "Как работает интернет?",
+    "tags": [
+      "networking",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368c975b692556e58c40",
+    "freq": 1,
+    "question": "Что такое процесс в операционной системе?",
+    "tags": [
+      "concurrency",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368c975b692556e58c47",
+    "freq": 1,
+    "question": "Что такое конкурентность?",
+    "tags": [
+      "concurrency",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368c975b692556e58c51",
+    "freq": 1,
+    "question": "Расскажите про работу со строками в программировании: как они устроены в памяти, какие есть особенности реализации и на что стоит обратить внимание?",
+    "tags": [
+      "data_structures",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a47",
+    "freq": 1,
+    "question": "Какой будет стек после выполнения данных операций?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a48",
+    "freq": 1,
+    "question": "Какие операции можно выполнять с числами в программировании?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a49",
+    "freq": 1,
+    "question": "Какова пространственная сложность (space complexity) данного алгоритмического решения?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a4b",
+    "freq": 1,
+    "question": "Какой тип данных используется для хранения текста индекса в базе данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a4c",
+    "freq": 1,
+    "question": "В каких случаях и при каких входных данных алгоритм или система могут работать некорректно?",
+    "tags": [
+      "algorithms",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a4f",
+    "freq": 1,
+    "question": "Сколько элементов в стеке было в конце?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a50",
+    "freq": 1,
+    "question": "Что вы делали с Go 1.2?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a51",
+    "freq": 1,
+    "question": "Что происходит с символом '7' в строке при выполнении операций?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a52",
+    "freq": 1,
+    "question": "Какие два числа вы возьмете, когда встретите операцию умножения?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a53",
+    "freq": 1,
+    "question": "Есть ли в Go встроенная функция для приведения строки к верхнему или нижнему регистру?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a54",
+    "freq": 1,
+    "question": "Какая будет сложность алгоритма по памяти?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a55",
+    "freq": 1,
+    "question": "Что делать, если символы не совпадают при сравнении строк или алгоритмической обработке?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a56",
+    "freq": 1,
+    "question": "В каких случаях при использовании двух указателей (two pointers) происходит смещение первого указателя?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a58",
+    "freq": 1,
+    "question": "Сколько максимум элементов может лежать в стеке?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a59",
+    "freq": 1,
+    "question": "Как работают индексы в базе данных и как они меняются при операциях вставки, обновления и удаления данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a5a",
+    "freq": 1,
+    "question": "Из каких чисел состоит стек?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a5b",
+    "freq": 1,
+    "question": "Почему в алгоритме поиска подстроки или работы со строками достаточно условия, при котором первый указатель достигает длины строки?",
+    "tags": [
+      "algorithms",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a5c",
+    "freq": 1,
+    "question": "Какие проблемы могут возникнуть при обработке строк, если мы рассматриваем только ASCII?",
+    "tags": [
+      "algorithms",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a63",
+    "freq": 1,
+    "question": "Как работают указатели и как происходит их перемещение в памяти?",
+    "tags": [
+      "language_specific",
+      "C++",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a66",
+    "freq": 1,
+    "question": "Как принимается решение о том, что именно возвращать: true или false в методе или функции?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368d975b692556e58dbe",
+    "freq": 1,
+    "question": "Как реализовать распределенный GET-запрос?",
+    "tags": [
+      "architecture",
+      "senior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368e975b692556e59002",
+    "freq": 1,
+    "question": "Какие особенности разработки мобильных приложений вы можете выделить?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368e975b692556e59007",
+    "freq": 1,
+    "question": "С чем были связаны продукты, над которыми вы работали?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368e975b692556e59008",
+    "freq": 1,
+    "question": "Расскажите про принципы и стратегии кэширования.",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368e975b692556e59009",
+    "freq": 1,
+    "question": "Какие статусы HTTP-запросов вы знаете?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368e975b692556e5900a",
+    "freq": 1,
+    "question": "Имеете ли вы опыт работы с Docker и развертыванием приложений?",
+    "tags": [
+      "devops",
+      "Docker",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368e975b692556e5900b",
+    "freq": 1,
+    "question": "Как реализовать чат с использованием WebSocket?",
+    "tags": [
+      "web",
+      "WebSocket",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a14368e975b692556e5900c",
+    "freq": 1,
+    "question": "Используете ли вы нейронные сети или AI-инструменты для ускорения своей работы?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e592de",
+    "freq": 1,
+    "question": "Чем Ruby отличается от Go?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e592e4",
+    "freq": 1,
+    "question": "Как работает конкурентность в Go?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e592f0",
+    "freq": 1,
+    "question": "Что такое slice of bytes в языке Go?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e59327",
+    "freq": 1,
+    "question": "Как спроектировать и реализовать сервис аутентификации?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e593ef",
+    "freq": 1,
+    "question": "Какое покрытие тестами было в проекте LMS?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e593f2",
+    "freq": 1,
+    "question": "Расскажите о вашем опыте работы с индексами в базах данных и о том, как вы их оптимизировали.",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e593f3",
+    "freq": 1,
+    "question": "Доводилось ли вам писать триггеры и хранимые процедуры?",
+    "tags": [
+      "database",
+      "SQL",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e593f4",
+    "freq": 1,
+    "question": "Что такое архитектура баз данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e593f7",
+    "freq": 1,
+    "question": "Расскажите о вашем последнем проекте: что это было и чем именно вы там занимались?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e593f8",
+    "freq": 1,
+    "question": "Вы были задействованы на трех проектах параллельно или работали над ними по очереди?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e593fc",
+    "freq": 1,
+    "question": "К какому из этих фреймворков у вас лежит душа больше всего?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e593fd",
+    "freq": 1,
+    "question": "Расскажите о задачах, которые вы решали с использованием этой технологии.",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e59400",
+    "freq": 1,
+    "question": "В чем разница между использованием ORM и написанием SQL-запросов напрямую?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e59406",
+    "freq": 1,
+    "question": "Может ли размер стека у горутины быть больше, чем размер системного потока?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e59407",
+    "freq": 1,
+    "question": "Как работает планировщик горутин в Go runtime и на чем основан механизм планирования?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "senior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e59409",
+    "freq": 1,
+    "question": "Зачем в языке Go нужны компоненты G, M и P в планировщике?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e5940c",
+    "freq": 1,
+    "question": "Можно ли читать из закрытого канала в Go?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e5940d",
+    "freq": 1,
+    "question": "Что такое Stop-the-World фаза в Garbage Collector, когда она наступает и что именно происходит в этот момент?",
+    "tags": [
+      "language_specific",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e59412",
+    "freq": 1,
+    "question": "Как обрабатываются сетевые системные вызовы в контексте планировщика Go (runtime)?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "senior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e59413",
+    "freq": 1,
+    "question": "Как устроен мьютекс изнутри и из чего он состоит?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143690975b692556e5941e",
+    "freq": 1,
+    "question": "Какие параметры Garbage Collector в Go можно настраивать и что именно означают переменные окружения GOGC и GOMEMLIMIT?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e5941f",
+    "freq": 1,
+    "question": "Сколько времени обычно проходит с момента принятия оффера до выхода на первый рабочий день?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e59420",
+    "freq": 1,
+    "question": "Можете ли вы рассказать что-то на уровне теории?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e59421",
+    "freq": 1,
+    "question": "Как вы принимаете решение при выборе между несколькими офферами, если вам нужно время на сравнение?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e59424",
+    "freq": 1,
+    "question": "Расскажите о вашем опыте реализации задач, связанных с безопасностью, например, авторизацией и регистрацией пользователей.",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e59425",
+    "freq": 1,
+    "question": "В чём проявлялась токсичность в коллективе и как вы с этим работали?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e59427",
+    "freq": 1,
+    "question": "Какие статические анализаторы кода вы используете в своей работе?",
+    "tags": [
+      "devops",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e59428",
+    "freq": 1,
+    "question": "Используете ли вы какой-либо оркестратор на уровне инфраструктуры?",
+    "tags": [
+      "devops",
+      "Kubernetes",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e59435",
+    "freq": 1,
+    "question": "Можно ли закрывать уже закрытый канал в Go?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e59439",
+    "freq": 1,
+    "question": "Зачем нужны линтеры и инструменты статического анализа кода (SAST)? Могут ли они выявлять уязвимости, и если да, то как это происходит на практике?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e5943c",
+    "freq": 1,
+    "question": "На каком этапе жизненного цикла разработки (SDLC) лучше всего внедрять линтеры и инструменты статического анализа кода (SAST), чтобы эффективно выявлять ошибки на ранних стадиях?",
+    "tags": [
+      "devops",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e5943f",
+    "freq": 1,
+    "question": "Какие основные виды уязвимостей в веб-приложениях вы знаете, помимо раскрытия информации (information disclosure)?",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e59449",
+    "freq": 1,
+    "question": "Приходилось ли вам настраивать правила линтера или статического анализатора, добавлять или удалять их?",
+    "tags": [
+      "devops",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e59461",
+    "freq": 1,
+    "question": "Как происходит процесс деплоя приложения в Kubernetes: как именно обрабатывается манифест и какие компоненты Kubernetes задействованы в этом процессе?",
+    "tags": [
+      "devops",
+      "Kubernetes",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e59462",
+    "freq": 1,
+    "question": "За что отвечает каждый компонент в архитектуре системы?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e59464",
+    "freq": 1,
+    "question": "Что вам не нравится в реализации этой функции обработки запроса?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e5946d",
+    "freq": 1,
+    "question": "Как реализовать авторизацию на эндпоинте и как проверять JWT-токены?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e5946f",
+    "freq": 1,
+    "question": "Есть ли у вас опыт работы со средствами контейнеризации, например с Docker или Kubernetes?",
+    "tags": [
+      "devops",
+      "Docker",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e59470",
+    "freq": 1,
+    "question": "Проведите ревью представленного кода: что в нем реализовано неоптимально, какие есть проблемы с безопасностью и как бы вы его улучшили?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e59471",
+    "freq": 1,
+    "question": "Какими фреймворками вы пользуетесь для разработки REST API и работы с ORM?",
+    "tags": [
+      "backend",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143691975b692556e59478",
+    "freq": 1,
+    "question": "Какой у вас опыт работы с open source проектами: вы в основном создавали проекты с нуля или занимались контрибьютингом в существующие форки?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143692975b692556e59664",
+    "freq": 1,
+    "question": "Чем отличается массив от связного списка? Назови два ключевых отличия.",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143692975b692556e59665",
+    "freq": 1,
+    "question": "Чем отличаются массивы от слайсов в Go: назовите ключевые отличия и объясните, когда что использовать?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143692975b692556e5968b",
+    "freq": 1,
+    "question": "В каком порядке выполняются defer-вызовы в Go?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143692975b692556e596d8",
+    "freq": 1,
+    "question": "Как реализовано наследование в языке Go?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143692975b692556e596fd",
+    "freq": 1,
+    "question": "Как реализована реконструкция GC (Garbage Collector)?",
+    "tags": [
+      "language_specific",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143693975b692556e5970b",
+    "freq": 1,
+    "question": "Можно ли отправить скриншот?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59ba7",
+    "freq": 1,
+    "question": "Какие существуют уровни изоляции транзакций и какие аномалии при этом возникают? Перечислите их без подробного раскрытия.",
+    "tags": [
+      "database",
+      "SQL",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59ba8",
+    "freq": 1,
+    "question": "Нужен ли здесь мьютекс?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59ba9",
+    "freq": 1,
+    "question": "Почему в языке Go примитив синхронизации называется «канал» (channel)?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59baa",
+    "freq": 1,
+    "question": "Приходилось ли вам работать с геоданными или чем-то подобным?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bab",
+    "freq": 1,
+    "question": "Зачем нужны мьютексы (mutex) и чем они отличаются от других примитивов синхронизации?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bac",
+    "freq": 1,
+    "question": "Расскажите про планировщик в Go: какие сущности в нем существуют и за что они отвечают?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bad",
+    "freq": 1,
+    "question": "Есть ли какие-либо проблемы в данном коде или архитектурном решении?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59baf",
+    "freq": 1,
+    "question": "Какова временная сложность вставки элемента в slice в Go в начало, в середину и в конец?",
+    "tags": [
+      "data_structures",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bb1",
+    "freq": 1,
+    "question": "Зачем вы используете мьютекс (mutex) в данном случае?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bb2",
+    "freq": 1,
+    "question": "Нужен ли мьютекс в данном фрагменте кода и как обосновать его отсутствие, опираясь на теорию и анализ конкретного примера?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bb3",
+    "freq": 1,
+    "question": "Какие методы есть у структуры sync.WaitGroup в языке Go?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bb4",
+    "freq": 1,
+    "question": "Как реализовать механизм прерывания длительных запросов?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bb5",
+    "freq": 1,
+    "question": "Есть ли какое-то правило, по которому определяется архитектура системы?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bb6",
+    "freq": 1,
+    "question": "Что такое канал (channel) в контексте конкурентного программирования?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bb7",
+    "freq": 1,
+    "question": "Как долго вы пишете на Go?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bb8",
+    "freq": 1,
+    "question": "Как вы обеспечивали работу сервисов в условиях высокой нагрузки?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bb9",
+    "freq": 1,
+    "question": "Расскажите о других проектах или сервисах, над которыми вы работали, помимо Сбера?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bba",
+    "freq": 1,
+    "question": "Как вы планируете привести данные к этой структуре?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bbb",
+    "freq": 1,
+    "question": "Как можно восстановить данные после их удаления?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bbc",
+    "freq": 1,
+    "question": "Расскажите подробнее про то, как устроены интерфейсы в Go «под капотом»?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bbd",
+    "freq": 1,
+    "question": "Почему в данном коде ничего не выводится? Объясните, основываясь на теории.",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bbe",
+    "freq": 1,
+    "question": "Как устроены слайсы в Go под капотом и что происходит при их работе?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143693975b692556e59811",
+    "freq": 1,
+    "question": "Как обрабатывать ошибки в Go?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bc6",
+    "freq": 1,
+    "question": "Как найти синтаксические ошибки, связанные с расстановкой скобок в коде?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bc7",
+    "freq": 1,
+    "question": "Как вы осуществляли поддержку и обслуживание своих сервисов в продакшене?",
+    "tags": [
+      "devops",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bcb",
+    "freq": 1,
+    "question": "Сколько байт в памяти занимает указатель и как он устроен на уровне архитектуры процессора?",
+    "tags": [
+      "language_specific",
+      "C",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bcc",
+    "freq": 1,
+    "question": "В чем отличие двух утилит?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bd1",
+    "freq": 1,
+    "question": "Расскажите, приходилось ли вам когда-нибудь выполнять операцию VACUUM для таблиц в базе данных?",
+    "tags": [
+      "database",
+      "PostgreSQL",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bd2",
+    "freq": 1,
+    "question": "Опишите, как это работает под капотом?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bd3",
+    "freq": 1,
+    "question": "Как вы настраивали создание индексов при выполнении миграции базы данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bd4",
+    "freq": 1,
+    "question": "Как бы вы спроектировали индекс для данной задачи?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bd6",
+    "freq": 1,
+    "question": "Можно ли по индексу определить или найти мертвые строки в базе данных?",
+    "tags": [
+      "database",
+      "PostgreSQL",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bd7",
+    "freq": 1,
+    "question": "Как вы работаете с миграциями базы данных в проектах?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bd9",
+    "freq": 1,
+    "question": "Что нужно делать в ситуации, когда из-за раздувания индекса появляются мертвые строки (bloat): нужно ли делать REINDEX и является ли это частой практикой?",
+    "tags": [
+      "database",
+      "PostgreSQL",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59bf4",
+    "freq": 1,
+    "question": "Как бы вы пошагово искали причину деградации сервиса под нагрузкой и что бы вы проверяли в первую очередь?",
+    "tags": [
+      "system_design",
+      "senior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143692975b692556e5960d",
+    "freq": 1,
+    "question": "Как настроить захват звука в приложении Enigma для наушников?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143692975b692556e59611",
+    "freq": 1,
+    "question": "Что делать, если интервьюер не читает мой код или ответ — можно ли переспросить?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143692975b692556e5961c",
+    "freq": 1,
+    "question": "Какие существуют режимы работы в данной технологии?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143693975b692556e5982e",
+    "freq": 1,
+    "question": "Сколько миллионов рублей понадобится, чтобы воссоздать жирафа размером с Луну на Земле?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143693975b692556e59836",
+    "freq": 1,
+    "question": "Что означает название языка программирования C++ и почему он так называется?",
+    "tags": [
+      "language_specific",
+      "C++",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59c63",
+    "freq": 1,
+    "question": "Расскажите про PostgreSQL.",
+    "tags": [
+      "database",
+      "PostgreSQL",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59c71",
+    "freq": 1,
+    "question": "Расскажите про Docker.",
+    "tags": [
+      "devops",
+      "Docker",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59c75",
+    "freq": 1,
+    "question": "Расскажите про процесс запуска тест-кейса.",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143696975b692556e59c7b",
+    "freq": 1,
+    "question": "Что такое логирование и типизация?",
+    "tags": [
+      "backend",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e599e8",
+    "freq": 1,
+    "question": "Почему не рекомендуется передавать поток (stream), полученный сервисом, напрямую в декодер?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e599ea",
+    "freq": 1,
+    "question": "Кто именно формулировал и выдавал задачи на проекте: тимлид, техлид или другой руководитель?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e599eb",
+    "freq": 1,
+    "question": "Расскажите подробнее о вашем опыте работы на предыдущем проекте, особенно в контексте высоконагруженных систем.",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e599ec",
+    "freq": 1,
+    "question": "Был ли у вас опыт дежурства на предыдущем месте работы в рамках данного направления или команды?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e599ed",
+    "freq": 1,
+    "question": "Что такое ленивая загрузка (lazy loading) и когда следует запрашивать данные у системы по факту?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e599ee",
+    "freq": 1,
+    "question": "В чем именно будет проседать производительность?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e599ef",
+    "freq": 1,
+    "question": "На проекте аналитики помогали с проработкой задач — это был технический ресерч или это делали именно разработчики?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e599f0",
+    "freq": 1,
+    "question": "Ваши идеи до полной реализации строились так, как вы описали, или процесс курировался кем-то на верхнем уровне?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e599f1",
+    "freq": 1,
+    "question": "Что использовать для того, чтобы выполнить задачу один раз, закешировать результат и гарантировать его получение?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e599f2",
+    "freq": 1,
+    "question": "Как выполнить код один раз за всё время жизни приложения?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e599f3",
+    "freq": 1,
+    "question": "Как создаются запросы в базе данных: нужно ли явно создавать объект запроса перед тем, как его выполнить?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e599f5",
+    "freq": 1,
+    "question": "Как ограничить время выполнения запроса 5 секундами и лимитировать количество одновременных запросов до 20?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e599f6",
+    "freq": 1,
+    "question": "В чем разница между RWMutex и обычным Mutex в Go? Могут ли 10 горутин одновременно прочитать одну переменную под RWMutex или они должны ждать?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e599f7",
+    "freq": 1,
+    "question": "Что вы знаете о функции init в языке Go?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e599f9",
+    "freq": 1,
+    "question": "Как вы будете работать с данной задачей или проблемой?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e599fa",
+    "freq": 1,
+    "question": "В чем заключается проблематика данного подхода?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e599fb",
+    "freq": 1,
+    "question": "Как дождаться завершения выполнения 10 запущенных горутин перед тем, как продолжить выполнение основной программы?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e599fc",
+    "freq": 1,
+    "question": "Используете ли вы этот инструмент или подход во всех своих проектах?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e599fd",
+    "freq": 1,
+    "question": "Как дождаться завершения всех запущенных горутин перед тем, как продолжить выполнение программы?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e599ff",
+    "freq": 1,
+    "question": "В чем разница между defer и WaitGroup в Go и в каких случаях что лучше использовать?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e59a01",
+    "freq": 1,
+    "question": "Все ли хорошо в этом коде или что-то в нём плохо?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e59a03",
+    "freq": 1,
+    "question": "Как давно вы работаете с Go? С какой версии начинали и на какой версии сейчас?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e59a07",
+    "freq": 1,
+    "question": "Как подключить и скомпилировать пакет в Go, если он находится вне модуля main и из функции main не вызывается ни один его метод?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e59a0b",
+    "freq": 1,
+    "question": "Что такое анонимные импорты в Go и зачем они используются?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e59a0e",
+    "freq": 1,
+    "question": "Для чего применяются транзакции в базах данных?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e59a0f",
+    "freq": 1,
+    "question": "В каких ситуациях возникает deadlock (взаимная блокировка) в базе данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e59a15",
+    "freq": 1,
+    "question": "Какие бывают виды и типы каналов в языке программирования Go?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e59a16",
+    "freq": 1,
+    "question": "В чём отличие горутин от системных потоков (OS threads)?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e59a17",
+    "freq": 1,
+    "question": "Существует ли в языке Go наследование?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e59a18",
+    "freq": 1,
+    "question": "Гарантирован ли порядок доставки сообщений в Apache Kafka?",
+    "tags": [
+      "backend",
+      "Kafka",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e59a19",
+    "freq": 1,
+    "question": "Для чего нужны линтеры и какие вы можете назвать?",
+    "tags": [
+      "backend",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e59a1a",
+    "freq": 1,
+    "question": "Расскажите о вашем опыте работы с Docker и Kubernetes: приходилось ли вам самостоятельно создавать Dockerfile, собирать контейнеры, выполнять задачи DevOps или вносить правки в конфигурации?",
+    "tags": [
+      "devops",
+      "Docker, Kubernetes",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e59a1d",
+    "freq": 1,
+    "question": "На каком этапе сейчас находится ваш поиск работы: есть ли у вас уже финальные офферы или процесс только начался, и как обстоят дела с вашим текущим проектом?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e59a1f",
+    "freq": 1,
+    "question": "Какие еще критерии, помимо интереса к продукту и специфики команды, вы учитываете при выборе нового места работы?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e59a21",
+    "freq": 1,
+    "question": "От какого уровня оффера вы будете рассматривать предложения?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e59a22",
+    "freq": 1,
+    "question": "Есть ли у вас военный билет на руках и готовы ли вы предоставить справку о воинском учёте для отдела кадров?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e59a27",
+    "freq": 1,
+    "question": "С какими базами данных вы работали и в каких случаях они использовались как основная база данных, а в каких — как вспомогательная?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-go"
+  },
+  {
+    "id": "q-6a143695975b692556e59a2d",
+    "freq": 1,
+    "question": "Что такое фреймворки?",
+    "tags": [
+      "architecture",
+      "junior"
+    ],
+    "direction": "backend-go"
+  }
+]

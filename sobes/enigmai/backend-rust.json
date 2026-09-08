@@ -1,0 +1,1549 @@
+[
+  {
+    "id": "q-6a143680975b692556e56375",
+    "freq": 24,
+    "question": "Расскажите, как работает Event Loop?",
+    "tags": [
+      "backend",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143680975b692556e5636e",
+    "freq": 23,
+    "question": "Что такое REST API и какие существуют HTTP-методы?",
+    "tags": [
+      "web",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143680975b692556e56380",
+    "freq": 20,
+    "question": "Что такое идемпотентность?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143680975b692556e56396",
+    "freq": 20,
+    "question": "В чем разница между var, let и const в JavaScript?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143680975b692556e5638a",
+    "freq": 16,
+    "question": "В чем основное отличие между протоколами TCP и UDP?",
+    "tags": [
+      "networking",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143680975b692556e56397",
+    "freq": 15,
+    "question": "В чем основные отличия между монолитной и микросервисной архитектурой?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143680975b692556e56386",
+    "freq": 9,
+    "question": "Что такое race condition (состояние гонки)?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56eb3",
+    "freq": 6,
+    "question": "Расскажите о вашем опыте работы.",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143680975b692556e5648c",
+    "freq": 5,
+    "question": "В чем разница между ключевыми словами var, let и const при объявлении переменных в JavaScript?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143680975b692556e567db",
+    "freq": 4,
+    "question": "Что такое GIL (Global Interpreter Lock) в Python, зачем он нужен и как он связан с многопоточностью?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143680975b692556e56472",
+    "freq": 3,
+    "question": "Что такое паттерн проектирования «Синглтон» (Singleton) и в каких случаях его использование оправдано?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143680975b692556e56488",
+    "freq": 3,
+    "question": "Что вы можете рассказать про модель OSI?",
+    "tags": [
+      "networking",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143680975b692556e56bf2",
+    "freq": 3,
+    "question": "Что такое PEP 8?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143680975b692556e56617",
+    "freq": 3,
+    "question": "Работали ли вы с Apache Kafka?",
+    "tags": [
+      "backend",
+      "Kafka",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143680975b692556e56524",
+    "freq": 2,
+    "question": "Что вы будете делать, если продакшн упал в пятницу вечером?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143680975b692556e56520",
+    "freq": 2,
+    "question": "Какие библиотеки в Python существуют для работы с валютой и денежными суммами?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143680975b692556e566ee",
+    "freq": 2,
+    "question": "Что это означает?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143680975b692556e566fa",
+    "freq": 2,
+    "question": "Как из массива промиссов дождаться выполнения всех промисов?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143680975b692556e56be8",
+    "freq": 2,
+    "question": "Чем отличается List от Tuple в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143680975b692556e56bea",
+    "freq": 2,
+    "question": "Что такое GIL (Global Interpreter Lock)?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143680975b692556e56bf1",
+    "freq": 2,
+    "question": "Как обойти GIL в Python?",
+    "tags": [
+      "concurrency",
+      "Python",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143680975b692556e56d72",
+    "freq": 2,
+    "question": "Работал ли ты с системами мониторинга?",
+    "tags": [
+      "devops",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56e46",
+    "freq": 2,
+    "question": "Что такое микросервисная архитектура?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143686975b692556e57fe2",
+    "freq": 2,
+    "question": "Как работает репликация в базах данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143686975b692556e57fef",
+    "freq": 2,
+    "question": "Как проверить права доступа пользователя в системе?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56e1d",
+    "freq": 1,
+    "question": "В чем отличие между let и var в JavaScript?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56e43",
+    "freq": 1,
+    "question": "С чем приходится работать разработчику TypeScript?",
+    "tags": [
+      "language_specific",
+      "TypeScript",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56e4c",
+    "freq": 1,
+    "question": "Что такое производительность ядра?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56e79",
+    "freq": 1,
+    "question": "Что такое циклические зависимости модулей в Node.js?",
+    "tags": [
+      "backend",
+      "Node.js",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56e7b",
+    "freq": 1,
+    "question": "В чем разница между module.exports и exports в Node.js?",
+    "tags": [
+      "backend",
+      "Node.js",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56e7d",
+    "freq": 1,
+    "question": "Как реализовано в Node.js, что каждый файл имеет свой собственный экземпляр exports, require и модуль, хотя они доступны глобально в каждом файле?",
+    "tags": [
+      "backend",
+      "Node.js",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56e80",
+    "freq": 1,
+    "question": "Что такое стек вызовов и является ли он частью движка V8?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56e81",
+    "freq": 1,
+    "question": "Что такое цикл событий (Event Loop) и является ли он частью движка V8?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56e83",
+    "freq": 1,
+    "question": "Что будет делать Node.js, когда стек вызовов и очереди цикла событий окажутся пустыми?",
+    "tags": [
+      "backend",
+      "Node.js",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56e93",
+    "freq": 1,
+    "question": "Можно ли запустить процесс Node.js без движка V8?",
+    "tags": [
+      "backend",
+      "Node.js",
+      "senior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56e95",
+    "freq": 1,
+    "question": "Какие еще внешние зависимости есть у Node.js?",
+    "tags": [
+      "backend",
+      "Node.js",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ec2",
+    "freq": 1,
+    "question": "Что вы имеете в виду под финализацией?",
+    "tags": [
+      "language_specific",
+      "Java",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ec9",
+    "freq": 1,
+    "question": "Как реализовать асинхронность в коде и для каких задач она необходима?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ecd",
+    "freq": 1,
+    "question": "Насколько у вас глубокий опыт работы с React, в частности, в вопросах оптимизации производительности?",
+    "tags": [
+      "frontend",
+      "React",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ed2",
+    "freq": 1,
+    "question": "Как происходит процесс исполнения ордеров в торговых системах?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ed6",
+    "freq": 1,
+    "question": "Как микросервисы взаимодействуют между собой с использованием gRPC?",
+    "tags": [
+      "architecture",
+      "gRPC",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ef1",
+    "freq": 1,
+    "question": "Есть ли у вас опыт создания промисов?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ef4",
+    "freq": 1,
+    "question": "Для чего используется Promise.race?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56e4f",
+    "freq": 1,
+    "question": "Как работает VGS (Very Good Security) в контексте обеспечения безопасности данных?",
+    "tags": [
+      "security",
+      "VGS",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56e51",
+    "freq": 1,
+    "question": "Как работает микроархитектура процессора?",
+    "tags": [
+      "architecture",
+      "senior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56e52",
+    "freq": 1,
+    "question": "Как работает Node.js?",
+    "tags": [
+      "backend",
+      "Node.js",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56e55",
+    "freq": 1,
+    "question": "Какой стек технологий вы бы выбрали при создании веб-приложения на JavaScript?",
+    "tags": [
+      "web",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56e78",
+    "freq": 1,
+    "question": "Почему переменные верхнего уровня в модулях не являются глобальными?",
+    "tags": [
+      "language_specific",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ebd",
+    "freq": 1,
+    "question": "В чем разница между Promise и setTimeout с точки зрения работы событийного цикла (Event Loop) в JavaScript?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ebf",
+    "freq": 1,
+    "question": "В каком порядке выполняются операции в JavaScript (Event Loop, микрозадачи и макрозадачи)?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ec1",
+    "freq": 1,
+    "question": "Какие еще темы стоит обсудить в контексте Node.js?",
+    "tags": [
+      "backend",
+      "Node.js",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56eca",
+    "freq": 1,
+    "question": "Какие встроенные утилитарные типы TypeScript, такие как Extract и ReturnType, вы используете для работы с типами?",
+    "tags": [
+      "language_specific",
+      "TypeScript",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ece",
+    "freq": 1,
+    "question": "Работали ли вы с базами данных типа Redis?",
+    "tags": [
+      "database",
+      "Redis",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ecf",
+    "freq": 1,
+    "question": "Как микросервисы взаимодействуют между собой с использованием REST?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ed0",
+    "freq": 1,
+    "question": "В чем разница между синхронным и асинхронным кодом в Node.js?",
+    "tags": [
+      "backend",
+      "Node.js",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ed3",
+    "freq": 1,
+    "question": "Вы пишете и фронтенд, и бэкенд?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ed4",
+    "freq": 1,
+    "question": "Какие фреймворки использовались поверх базы данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ed7",
+    "freq": 1,
+    "question": "Является ли console.log в конструкторе Promise синхронным или асинхронным кодом?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ef2",
+    "freq": 1,
+    "question": "Что такое тип данных array (массив)?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ef6",
+    "freq": 1,
+    "question": "Что такое тип данных List в JavaScript?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56f02",
+    "freq": 1,
+    "question": "Мы перечислили все эмоции?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56f04",
+    "freq": 1,
+    "question": "Как в JavaScript сделать объект неизменяемым?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56f05",
+    "freq": 1,
+    "question": "Приходилось ли вам создавать свой Promise с использованием конструктора new Promise?",
+    "tags": [
+      "frontend",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56f07",
+    "freq": 1,
+    "question": "Какая база данных использовалась для выгрузки данных?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56f08",
+    "freq": 1,
+    "question": "Как сделать задержку перед выполнением console.log, не используя промисы или коллбэки?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56e41",
+    "freq": 1,
+    "question": "Что такое растение?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56e57",
+    "freq": 1,
+    "question": "В чем разница между Next.js и NestJS и в каких случаях лучше использовать каждый из них?",
+    "tags": [
+      "web",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ea4",
+    "freq": 1,
+    "question": "Напишите функцию для обработки списка привычек.",
+    "tags": [
+      "backend",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ea8",
+    "freq": 1,
+    "question": "Напишите функцию для проверки числа на делимость на другое число.",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56eab",
+    "freq": 1,
+    "question": "Какой основной стек технологий вы используете: Python, C# или Node.js?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ec3",
+    "freq": 1,
+    "question": "Как осуществляется взаимодействие с блокчейном?",
+    "tags": [
+      "architecture",
+      "Blockchain",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ec4",
+    "freq": 1,
+    "question": "В чем разница между микротасками и макротасками в JavaScript?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ec5",
+    "freq": 1,
+    "question": "Что подразумевается под термином «все, что квотируется»?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ec6",
+    "freq": 1,
+    "question": "Почему Promise выполняется раньше, чем setTimeout?",
+    "tags": [
+      "frontend",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ec8",
+    "freq": 1,
+    "question": "Как написать функцию, которая дожидается одну секунду, используя промисы?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ecb",
+    "freq": 1,
+    "question": "В чем разница между интеграционными тестами и юнит-тестами?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ecc",
+    "freq": 1,
+    "question": "Зачем в разработке программного обеспечения используются паттерны проектирования типа Finder (Data Mapper/Repository)?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ed1",
+    "freq": 1,
+    "question": "Зачем нужны промисы и асинхронный код в JavaScript?",
+    "tags": [
+      "frontend",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ed5",
+    "freq": 1,
+    "question": "Какие модули или инструменты вы использовали в Node.js?",
+    "tags": [
+      "backend",
+      "Node.js",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ed9",
+    "freq": 1,
+    "question": "Имеете ли вы опыт разработки API на Express.js или аналогичных фреймворках?",
+    "tags": [
+      "backend",
+      "Node.js",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56eda",
+    "freq": 1,
+    "question": "Вы пишете на чистом JavaScript или на TypeScript?",
+    "tags": [
+      "language_specific",
+      "TypeScript",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56edb",
+    "freq": 1,
+    "question": "Как вы оцениваете свой уровень владения TypeScript? Насколько глубоко вы разбираетесь в дженериках, условных типах (infer) и других продвинутых концепциях языка?",
+    "tags": [
+      "language_specific",
+      "TypeScript",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ede",
+    "freq": 1,
+    "question": "Расскажите о вашем опыте разработки сложных middleware на бэкенде.",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ee1",
+    "freq": 1,
+    "question": "Вы писали что-нибудь чисто бэкендовое на Node.js?",
+    "tags": [
+      "backend",
+      "Node.js",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ee6",
+    "freq": 1,
+    "question": "Вы реализовывали аутентификацию самостоятельно или использовали NextAuth.js?",
+    "tags": [
+      "web",
+      "Next.js",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56ee9",
+    "freq": 1,
+    "question": "Какой специальный тип используется для объявления переменной, к которой трудно обратиться?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143681975b692556e56f13",
+    "freq": 1,
+    "question": "В чем разница между передачей объектов по ссылке и примитивов по значению в JavaScript?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e576fd",
+    "freq": 1,
+    "question": "Как бы вы реализовали изменение полей заявки для разных типов клиентов (физическое лицо vs банк) при проектировании REST API: создали бы новый метод или модернизировали существующий?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e576fe",
+    "freq": 1,
+    "question": "Использовали ли вы веб-сокеты в своих проектах?",
+    "tags": [
+      "networking",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e576ff",
+    "freq": 1,
+    "question": "Существуют ли IDE для Rust, аналогичные Eclipse?",
+    "tags": [
+      "language_specific",
+      "Rust",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57700",
+    "freq": 1,
+    "question": "Как спроектировать архитектуру системы для обработки длительных запросов на генерацию отчетов, чтобы обеспечить отзывчивость интерфейса для пользователя?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57701",
+    "freq": 1,
+    "question": "Какие подходы и техники применяются при проектировании API, если объем данных слишком велик для передачи в одном ответе?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57702",
+    "freq": 1,
+    "question": "Имеете ли вы опыт работы с Swagger?",
+    "tags": [
+      "web",
+      "Swagger",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57703",
+    "freq": 1,
+    "question": "Как узнать, что сообщение не доставилось в распределенной системе?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57704",
+    "freq": 1,
+    "question": "Можешь написать пример асинхронной программы на Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57705",
+    "freq": 1,
+    "question": "На каком языке программирования написана библиотека easyOCR?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57706",
+    "freq": 1,
+    "question": "Как спроектировать REST API для сущности «оценочный отчет»?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57707",
+    "freq": 1,
+    "question": "Когда оправдано использование микросервисной архитектуры, а когда это является избыточным?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57708",
+    "freq": 1,
+    "question": "Вы работали в компании «Лютик»?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57709",
+    "freq": 1,
+    "question": "Как реализован процесс сохранения отчетов в формате PDF?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e5770a",
+    "freq": 1,
+    "question": "Какие существуют альтернативы протоколу WebSocket?",
+    "tags": [
+      "networking",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e5770b",
+    "freq": 1,
+    "question": "Как реализовать отправку данных через WebSocket?",
+    "tags": [
+      "web",
+      "WebSocket",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e5770d",
+    "freq": 1,
+    "question": "Насколько хорошо вы знаете Django?",
+    "tags": [
+      "backend",
+      "Django",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57712",
+    "freq": 1,
+    "question": "Какие сильные стороны у PostgreSQL по сравнению с MySQL?",
+    "tags": [
+      "database",
+      "PostgreSQL",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57714",
+    "freq": 1,
+    "question": "Расскажите об архитектуре самого сложного сервиса, который вам доводилось проектировать или разрабатывать.",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57715",
+    "freq": 1,
+    "question": "Как бы вы отслеживали и диагностировали деградацию производительности системы?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57716",
+    "freq": 1,
+    "question": "Есть ли у вас опыт работы с системами CI/CD?",
+    "tags": [
+      "devops",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57717",
+    "freq": 1,
+    "question": "Можешь написать Dockerfile?",
+    "tags": [
+      "devops",
+      "Docker",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57718",
+    "freq": 1,
+    "question": "Как подключиться к запущенному Docker-контейнеру?",
+    "tags": [
+      "devops",
+      "Docker",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57719",
+    "freq": 1,
+    "question": "С какими основными техническими или организационными вызовами вы столкнулись на этом проекте?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e5771a",
+    "freq": 1,
+    "question": "Нужно ли уметь писать SQL-запросы?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e5771c",
+    "freq": 1,
+    "question": "В чем разница между Yandex Cloud и AWS?",
+    "tags": [
+      "architecture",
+      "Cloud Computing",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e5771d",
+    "freq": 1,
+    "question": "У вас есть опыт работы с Яндекс Облаком?",
+    "tags": [
+      "devops",
+      "Yandex Cloud",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e5771e",
+    "freq": 1,
+    "question": "Зачем нужны volumes в Docker?",
+    "tags": [
+      "devops",
+      "Docker",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e5771f",
+    "freq": 1,
+    "question": "Как бы вы организовали процесс массовой генерации отчетов в системе?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57721",
+    "freq": 1,
+    "question": "Как бы вы спроектировали хранение статусов обработки заявок в базе данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57722",
+    "freq": 1,
+    "question": "Какие архитектурные паттерны используются в фреймворке Django?",
+    "tags": [
+      "web",
+      "Django",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57723",
+    "freq": 1,
+    "question": "Есть ли у вас опыт работы с ролевой моделью доступа (RBAC)?",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57724",
+    "freq": 1,
+    "question": "Как защитить API от повторной отправки запроса?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57725",
+    "freq": 1,
+    "question": "Как реализовать валидацию данных на бэкенде, если форма состоит из нескольких шагов, где набор обязательных полей меняется в зависимости от текущего шага?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57726",
+    "freq": 1,
+    "question": "Почему очередь задач может начать потреблять избыточное количество памяти?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57727",
+    "freq": 1,
+    "question": "Что делать, если пользователь слишком часто отправляет запросы и нагружает систему?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57728",
+    "freq": 1,
+    "question": "Как спроектировать структуру данных для системы обработки заявок?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e5772b",
+    "freq": 1,
+    "question": "Как можно масштабировать Celery?",
+    "tags": [
+      "backend",
+      "Celery",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e5772c",
+    "freq": 1,
+    "question": "Чем отличается синхронный воркер от асинхронного воркера?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e5772e",
+    "freq": 1,
+    "question": "Что такое паттерн «Стратегия» и чем он отличается от паттерна «Спецификация»?",
+    "tags": [
+      "oop",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e57736",
+    "freq": 1,
+    "question": "Чем отличается очередь сообщений (Message Queue) от шины событий (Event Bus)?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e576c8",
+    "freq": 1,
+    "question": "Какие виды строк существуют в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e576ca",
+    "freq": 1,
+    "question": "Можно ли изменить отдельный символ внутри строки в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e5775e",
+    "freq": 1,
+    "question": "Как пометить, что ответы на определенные поля формы обязательны?",
+    "tags": [
+      "frontend",
+      "HTML",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e576d4",
+    "freq": 1,
+    "question": "Чем отличается Django от Flask?",
+    "tags": [
+      "backend",
+      "Python",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e576d5",
+    "freq": 1,
+    "question": "Что такое FastAPI, каковы его основные особенности и какой у вас опыт работы с этим фреймворком?",
+    "tags": [
+      "backend",
+      "Python",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e576ee",
+    "freq": 1,
+    "question": "Сможешь ли ты разработать и внедрить API в одиночку?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e576f3",
+    "freq": 1,
+    "question": "Что важно учесть при проектировании REST API?",
+    "tags": [
+      "web",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e576f4",
+    "freq": 1,
+    "question": "Как проверить корректность введенных пользователем данных?",
+    "tags": [
+      "backend",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e576f5",
+    "freq": 1,
+    "question": "Как правильно обрабатывать ошибки ввода данных пользователем?",
+    "tags": [
+      "backend",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e576f6",
+    "freq": 1,
+    "question": "Расскажите о вашем опыте проектирования архитектуры REST API.",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e576f7",
+    "freq": 1,
+    "question": "Можно ли использовать специализированные библиотеки для работы с валютой в Python, чтобы избежать ошибок округления?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e576fa",
+    "freq": 1,
+    "question": "Что произойдет в Python, если передать аргумент типа, отличного от указанного в аннотации типов?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143683975b692556e576fb",
+    "freq": 1,
+    "question": "Почему в Python нельзя сделать строгую статическую типизацию?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143686975b692556e57fb5",
+    "freq": 1,
+    "question": "Какие ошибки вы видите в данном коде?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143686975b692556e57feb",
+    "freq": 1,
+    "question": "В какой момент мы получаем JWT-токен?",
+    "tags": [
+      "web",
+      "junior"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143686975b692556e57fee",
+    "freq": 1,
+    "question": "Как AmoCRM понимает, что заявка создана?",
+    "tags": [
+      "backend",
+      "AmoCRM",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143686975b692556e57ff0",
+    "freq": 1,
+    "question": "Куда бы вы стали копать, если не получается авторизоваться в системе админки?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143686975b692556e57ff6",
+    "freq": 1,
+    "question": "Что происходит в системе после успешного создания заявки?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143686975b692556e57ff9",
+    "freq": 1,
+    "question": "Что должно произойти, если при втором обращении к endpoint создаётся дублирующая заявка в базе данных?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  },
+  {
+    "id": "q-6a143686975b692556e57ffb",
+    "freq": 1,
+    "question": "Где хранится JWT-токен?",
+    "tags": [
+      "web",
+      "middle"
+    ],
+    "direction": "backend-rust"
+  }
+]

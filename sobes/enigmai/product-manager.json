@@ -1,0 +1,123 @@
+[
+  {
+    "id": "q-6a143680975b692556e564cd",
+    "freq": 3,
+    "question": "Что такое C++?",
+    "tags": [
+      "language_specific",
+      "C++",
+      "junior"
+    ],
+    "direction": "product-manager"
+  },
+  {
+    "id": "q-6a143680975b692556e56571",
+    "freq": 2,
+    "question": "What does your company do?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "product-manager"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fd3",
+    "freq": 1,
+    "question": "Why do you not have clients yet?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "product-manager"
+  },
+  {
+    "id": "q-6a14368d975b692556e58dc0",
+    "freq": 1,
+    "question": "Расскажите, как вас зовут?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "product-manager"
+  },
+  {
+    "id": "q-6a14368d975b692556e58dc2",
+    "freq": 1,
+    "question": "Расскажите про свой опыт работы с дорожной картой (roadmap) проекта.",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "product-manager"
+  },
+  {
+    "id": "q-6a14368f975b692556e5926e",
+    "freq": 1,
+    "question": "Why did you decide to address construction and supply operations?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "product-manager"
+  },
+  {
+    "id": "q-6a143691975b692556e59573",
+    "freq": 1,
+    "question": "Почему вы решили уйти с прежнего места работы и каковы ваши профессиональные цели и направления развития, которые вы хотели бы реализовать в нашей компании?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "product-manager"
+  },
+  {
+    "id": "q-6a143691975b692556e59579",
+    "freq": 1,
+    "question": "Почему вы проводите тесты нечасто: из-за того, что аудитория небольшая, или по другой причине?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "product-manager"
+  },
+  {
+    "id": "q-6a143691975b692556e59580",
+    "freq": 1,
+    "question": "Что именно подразумевается под миллионами: заказы, аудитория или другие метрики?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "product-manager"
+  },
+  {
+    "id": "q-6a143691975b692556e59584",
+    "freq": 1,
+    "question": "Расскажите подробнее о вашем последнем месте работы: чем вы занимались и над какими задачами работали?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "product-manager"
+  },
+  {
+    "id": "q-6a143691975b692556e59585",
+    "freq": 1,
+    "question": "Расскажите, в каком направлении вы работаете: это часть старого бизнеса или новый проект? Что именно делает ваша команда?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "product-manager"
+  },
+  {
+    "id": "q-6a143692975b692556e59609",
+    "freq": 1,
+    "question": "What do you want?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "product-manager"
+  }
+]

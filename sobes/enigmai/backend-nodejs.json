@@ -1,0 +1,505 @@
+[
+  {
+    "id": "q-6a143680975b692556e56370",
+    "freq": 33,
+    "question": "В чем разница между абстрактным классом и интерфейсом, и в каких случаях следует использовать каждый из них?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143680975b692556e563a7",
+    "freq": 16,
+    "question": "Что такое индексы в базе данных, зачем они нужны и как они работают?",
+    "tags": [
+      "database",
+      "SQL",
+      "middle"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143680975b692556e56383",
+    "freq": 11,
+    "question": "Что такое замыкание и как их можно использовать?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143680975b692556e563a6",
+    "freq": 9,
+    "question": "Какие типы индексов существуют в базах данных и в чем их принципиальное различие?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143680975b692556e563c0",
+    "freq": 6,
+    "question": "Сколько будет 2 + 2?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143680975b692556e563e7",
+    "freq": 5,
+    "question": "Что такое атомарность?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143686975b692556e57fbe",
+    "freq": 3,
+    "question": "Что такое представление (view) в базе данных?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143680975b692556e56582",
+    "freq": 2,
+    "question": "Можете рассказать про суть этого инструмента: что именно в нем можно увидеть и как он работает?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143680975b692556e56614",
+    "freq": 2,
+    "question": "Расскажите о вашем последнем месте работы.",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143680975b692556e56734",
+    "freq": 2,
+    "question": "Что такое TypeScript?",
+    "tags": [
+      "language_specific",
+      "TypeScript",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143680975b692556e56d26",
+    "freq": 2,
+    "question": "Чем вы пользуетесь из AI-инструментов в своей работе?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143682975b692556e5736a",
+    "freq": 2,
+    "question": "Расскажите про индексы в базах данных.",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143686975b692556e58008",
+    "freq": 2,
+    "question": "Для чего существует API?",
+    "tags": [
+      "architecture",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a14368d975b692556e58e90",
+    "freq": 2,
+    "question": "Какие вопросы стоит задать интервьюеру в конце собеседования?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143686975b692556e581de",
+    "freq": 1,
+    "question": "Чем отличается Redis от PostgreSQL?",
+    "tags": [
+      "database",
+      "PostgreSQL",
+      "middle"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143687975b692556e58256",
+    "freq": 1,
+    "question": "Какие модели машинного обучения вы использовали в последнее время?",
+    "tags": [
+      "backend",
+      "Machine Learning",
+      "middle"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143687975b692556e5825b",
+    "freq": 1,
+    "question": "Как реализовать параллельный запуск мультиагентной системы?",
+    "tags": [
+      "concurrency",
+      "senior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143687975b692556e5825c",
+    "freq": 1,
+    "question": "Какими инструментами на базе ИИ вы пользуетесь в работе и какие из них вам нравятся больше всего?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143687975b692556e5825e",
+    "freq": 1,
+    "question": "Нужно ли читать и править чужой код вручную, или это не является обязательной частью работы?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143687975b692556e58267",
+    "freq": 1,
+    "question": "Вы еще пишете код сами или уже нет необходимости?",
+    "tags": [
+      "behavioral",
+      "senior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143687975b692556e581eb",
+    "freq": 1,
+    "question": "Является ли JavaScript синхронным или однопоточным языком?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143687975b692556e581ed",
+    "freq": 1,
+    "question": "Что такое Primary Key?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a14368d975b692556e58dcc",
+    "freq": 1,
+    "question": "What is a subcap?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a14368d975b692556e58dd4",
+    "freq": 1,
+    "question": "Что такое субтехнологии?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a14368d975b692556e58ddc",
+    "freq": 1,
+    "question": "What are the core elements of object-oriented programming?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a14368d975b692556e58dde",
+    "freq": 1,
+    "question": "Что такое SAP-технологии?",
+    "tags": [
+      "architecture",
+      "SAP",
+      "middle"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a14368f975b692556e59274",
+    "freq": 1,
+    "question": "Каких видов бывают представления (views) в базах данных?",
+    "tags": [
+      "database",
+      "SQL",
+      "middle"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a14368f975b692556e59278",
+    "freq": 1,
+    "question": "Будет ли использоваться составной индекс в базе данных, если в запросе используется фильтрация только по одной из колонок, входящих в этот индекс?",
+    "tags": [
+      "database",
+      "SQL",
+      "middle"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a14368f975b692556e59279",
+    "freq": 1,
+    "question": "В чем разница между операциями INSERT и SAVE в контексте работы с базами данных или ORM?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a14368f975b692556e5927b",
+    "freq": 1,
+    "question": "Кроме разработки в роли RM, доводилось ли тебе писать запросы к БД или через API самостоятельно?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a14368f975b692556e5927c",
+    "freq": 1,
+    "question": "Что такое интерфейс в контексте ООП и какие функции он выполняет как контракт?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a14368f975b692556e5927d",
+    "freq": 1,
+    "question": "Чем отличается обычный B-Tree индекс от полнотекстового индекса?",
+    "tags": [
+      "database",
+      "SQL",
+      "middle"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a14368f975b692556e5927e",
+    "freq": 1,
+    "question": "Почему нельзя создать экземпляр абстрактного класса напрямую?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a14368f975b692556e5928a",
+    "freq": 1,
+    "question": "Какие бывают виды middleware в Express.js и какие существуют альтернативы morgan?",
+    "tags": [
+      "web",
+      "Express.js",
+      "middle"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a14368f975b692556e5928c",
+    "freq": 1,
+    "question": "Чем Express отличается от NestJS?",
+    "tags": [
+      "backend",
+      "Node.js",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143693975b692556e59756",
+    "freq": 1,
+    "question": "Как бы вы оптимизировали работу сотрудников?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143693975b692556e59758",
+    "freq": 1,
+    "question": "Какой у вас есть опыт оптимизации баз данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143693975b692556e59785",
+    "freq": 1,
+    "question": "На что вы обращаете внимание во время проведения собеседования?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143693975b692556e59787",
+    "freq": 1,
+    "question": "Расскажите, как у вас проходила рабочая неделя: с чего вы начинали в понедельник и чем заканчивали в пятницу (с деталями по процессу)?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143693975b692556e59788",
+    "freq": 1,
+    "question": "Занимались ли вы наймом сотрудников?",
+    "tags": [
+      "behavioral",
+      "senior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143693975b692556e59789",
+    "freq": 1,
+    "question": "Расскажите, что именно вам интересно в знакомстве с людьми и что вы от этого получаете?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143693975b692556e5978a",
+    "freq": 1,
+    "question": "Как правильно хранить баланс партнера в базе данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143693975b692556e5978b",
+    "freq": 1,
+    "question": "Что бы вы сделали по-другому в ситуации с разработчиком, которого вы наняли, если возникли проблемы: почему возникла эта ситуация и что бы вы изменили сейчас?",
+    "tags": [
+      "behavioral",
+      "senior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143693975b692556e5978c",
+    "freq": 1,
+    "question": "Расскажите про ваш последний проект: что вы делали сами и что делала команда?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143693975b692556e59790",
+    "freq": 1,
+    "question": "Расскажите о вашей зоне ответственности в последнем проекте: что именно вы делали и за что отвечали в рамках бэкенд-разработки?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143693975b692556e59792",
+    "freq": 1,
+    "question": "Какие конкретные задачи вы решали самостоятельно и что именно реализовывали своими руками?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143693975b692556e59793",
+    "freq": 1,
+    "question": "По десятибалльной шкале, насколько это сложно?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143693975b692556e59795",
+    "freq": 1,
+    "question": "Расскажите о ситуации, когда вы совершили ошибку как разработчик или как лидер: что произошло и какие выводы вы сделали?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "backend-nodejs"
+  },
+  {
+    "id": "q-6a143693975b692556e5979b",
+    "freq": 1,
+    "question": "Расскажите о своей мотивации: что вам особенно нравится в работе, к чему вы стремитесь и что вас вдохновляет?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "backend-nodejs"
+  }
+]

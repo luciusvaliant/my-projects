@@ -1,0 +1,86 @@
+[
+  {
+    "id": "q-6a143680975b692556e5656f",
+    "freq": 2,
+    "question": "Что такое двустороннее связывание данных (two-way data binding)?",
+    "tags": [
+      "frontend",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "frontend-vue"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fa1",
+    "freq": 1,
+    "question": "Что такое computed свойства в Vue.js и как они работают?",
+    "tags": [
+      "frontend",
+      "Vue.js",
+      "junior"
+    ],
+    "direction": "frontend-vue"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fa5",
+    "freq": 1,
+    "question": "Стоит ли так делать?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "frontend-vue"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fa6",
+    "freq": 1,
+    "question": "Вам что-то мешает в работе или всё идёт нормально?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "frontend-vue"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fa9",
+    "freq": 1,
+    "question": "Расскажите о ситуации, когда вы столкнулись с подобной проблемой?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "frontend-vue"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fae",
+    "freq": 1,
+    "question": "Что такое связывание (binding) в программировании?",
+    "tags": [
+      "language_specific",
+      "middle"
+    ],
+    "direction": "frontend-vue"
+  },
+  {
+    "id": "q-6a14368e975b692556e58faf",
+    "freq": 1,
+    "question": "Что такое пропсы (props) во Vue.js?",
+    "tags": [
+      "frontend",
+      "Vue.js",
+      "junior"
+    ],
+    "direction": "frontend-vue"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fb0",
+    "freq": 1,
+    "question": "Что такое Pinia во Vue.js и как вы с ним работали?",
+    "tags": [
+      "frontend",
+      "Vue.js",
+      "middle"
+    ],
+    "direction": "frontend-vue"
+  }
+]

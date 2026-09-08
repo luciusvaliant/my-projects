@@ -1,0 +1,6358 @@
+[
+  {
+    "id": "q-6a143680975b692556e5636b",
+    "freq": 50,
+    "question": "Что такое Docker и как он работает?",
+    "tags": [
+      "devops",
+      "Docker",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5636f",
+    "freq": 38,
+    "question": "Что такое тестирование программного обеспечения и каковы основные этапы этого процесса?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56370",
+    "freq": 33,
+    "question": "В чем разница между абстрактным классом и интерфейсом, и в каких случаях следует использовать каждый из них?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56371",
+    "freq": 31,
+    "question": "Что такое объектно-ориентированное программирование (ООП)?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5637b",
+    "freq": 28,
+    "question": "Что такое принципы SOLID и в чем заключается суть каждого из них?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56372",
+    "freq": 24,
+    "question": "Какие существуют техники тест-дизайна и для чего они используются?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5636e",
+    "freq": 23,
+    "question": "Что такое REST API и какие существуют HTTP-методы?",
+    "tags": [
+      "web",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5637d",
+    "freq": 22,
+    "question": "Что такое Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5638b",
+    "freq": 21,
+    "question": "В чем принципиальное различие между RabbitMQ и Apache Kafka?",
+    "tags": [
+      "architecture",
+      "Kafka",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56380",
+    "freq": 20,
+    "question": "Что такое идемпотентность?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e563ab",
+    "freq": 18,
+    "question": "Расскажите о себе.",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56384",
+    "freq": 17,
+    "question": "Назовите и опишите основные принципы объектно-ориентированного программирования (ООП).",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5638a",
+    "freq": 16,
+    "question": "В чем основное отличие между протоколами TCP и UDP?",
+    "tags": [
+      "networking",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56379",
+    "freq": 15,
+    "question": "Как работает сборщик мусора?",
+    "tags": [
+      "language_specific",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5638e",
+    "freq": 15,
+    "question": "Какие существуют базовые принципы тестирования программного обеспечения?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56397",
+    "freq": 15,
+    "question": "В чем основные отличия между монолитной и микросервисной архитектурой?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e563ff",
+    "freq": 15,
+    "question": "Что такое модель OSI?",
+    "tags": [
+      "networking",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56389",
+    "freq": 14,
+    "question": "В чем разница между идентификацией, аутентификацией и авторизацией?",
+    "tags": [
+      "security",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56388",
+    "freq": 13,
+    "question": "Какие типы данных существуют в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56387",
+    "freq": 12,
+    "question": "Что такое API?",
+    "tags": [
+      "web",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e563bf",
+    "freq": 12,
+    "question": "В чем отличие REST от gRPC?",
+    "tags": [
+      "networking",
+      "gRPC",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5644a",
+    "freq": 12,
+    "question": "Что такое REST API?",
+    "tags": [
+      "web",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56a07",
+    "freq": 12,
+    "question": "Что такое ООП?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56385",
+    "freq": 11,
+    "question": "Что такое клиент-серверная архитектура?",
+    "tags": [
+      "architecture",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e563d5",
+    "freq": 11,
+    "question": "Чем вы занимались на предыдущем месте работы?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e563a5",
+    "freq": 10,
+    "question": "В чем основные различия между методами HTTP-запросов GET и POST?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e563b2",
+    "freq": 10,
+    "question": "Что такое Apache Kafka?",
+    "tags": [
+      "architecture",
+      "Kafka",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56420",
+    "freq": 10,
+    "question": "Какие существуют типы баз данных?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56391",
+    "freq": 9,
+    "question": "Что такое генератор и подгенератор в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56474",
+    "freq": 8,
+    "question": "Что такое CI/CD?",
+    "tags": [
+      "devops",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e563aa",
+    "freq": 7,
+    "question": "Что такое контекстный менеджер в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e563b0",
+    "freq": 7,
+    "question": "Как называются гайдлайны для разработки интерфейсов у Apple и Android?",
+    "tags": [
+      "frontend",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e563c2",
+    "freq": 7,
+    "question": "Что такое регрессионное тестирование?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e563f7",
+    "freq": 7,
+    "question": "Что такое HTTP-запрос и из чего он состоит?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56409",
+    "freq": 7,
+    "question": "Чем отличается git merge от git rebase?",
+    "tags": [
+      "devops",
+      "Git",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5650d",
+    "freq": 7,
+    "question": "Что такое REST?",
+    "tags": [
+      "web",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e563a9",
+    "freq": 6,
+    "question": "Что такое CORS и зачем он нужен?",
+    "tags": [
+      "web",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e563c9",
+    "freq": 6,
+    "question": "Какие типы данных существуют в Java и как они называются?",
+    "tags": [
+      "language_specific",
+      "Java",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e563be",
+    "freq": 5,
+    "question": "Что такое функциональное тестирование?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e563c4",
+    "freq": 5,
+    "question": "Как вывести последний элемент массива или списка в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e563c8",
+    "freq": 5,
+    "question": "Расскажите про основные техники тест-дизайна.",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e563ca",
+    "freq": 5,
+    "question": "Как умножить двумерный массив, содержащий вложенные массивы [1, 2, 3], на число 3 в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e563d1",
+    "freq": 5,
+    "question": "Что такое gRPC?",
+    "tags": [
+      "networking",
+      "gRPC",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56649",
+    "freq": 5,
+    "question": "Что означает ключевое слово final в Java?",
+    "tags": [
+      "language_specific",
+      "Java",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56491",
+    "freq": 5,
+    "question": "В чем разница между командами git fetch и git pull?",
+    "tags": [
+      "backend",
+      "Git",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e564a5",
+    "freq": 5,
+    "question": "Что такое пирамида тестирования, как этот паттерн применяется на практике?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56654",
+    "freq": 5,
+    "question": "Что такое первичный и вторичный ключи в базе данных?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e563e1",
+    "freq": 4,
+    "question": "Что такое куки (cookies) и как они работают?",
+    "tags": [
+      "web",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e563e6",
+    "freq": 4,
+    "question": "Что такое stack trace?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e565be",
+    "freq": 4,
+    "question": "Чем отличается образ Docker от контейнера?",
+    "tags": [
+      "devops",
+      "Docker",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56408",
+    "freq": 4,
+    "question": "Как реализовать добавление свойства 'has_trailer', отражающего наличие прицепа, в дочерний класс NewCar, наследуемый от базового класса автомобиля?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5640d",
+    "freq": 4,
+    "question": "Работали ли вы с Docker и Bash?",
+    "tags": [
+      "devops",
+      "Docker",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56417",
+    "freq": 4,
+    "question": "Расскажите о сложном техническом конфликте в команде, с которым вы сталкивались: что именно произошло, какую роль вы играли и как вы в итоге пришли к решению?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5641d",
+    "freq": 4,
+    "question": "Как реализовать добавление наценки 35% к стоимости автомобиля при наличии трейлера или прицепа в методе getFinalPrice?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e566f3",
+    "freq": 4,
+    "question": "Что такое HTTP-заголовки (headers)?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56486",
+    "freq": 4,
+    "question": "Какие у вас зарплатные ожидания?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56625",
+    "freq": 4,
+    "question": "Что такое полиморфизм в объектно-ориентированном программировании и как он реализуется через разные классы объектов?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56b48",
+    "freq": 4,
+    "question": "Что такое инкапсуляция в объектно-ориентированном программировании?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57baa",
+    "freq": 4,
+    "question": "Из каких частей состоит HTTP-запрос?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56500",
+    "freq": 3,
+    "question": "Существует ли контракт между методами equals и hashCode в Java?",
+    "tags": [
+      "language_specific",
+      "Java",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5664b",
+    "freq": 3,
+    "question": "Что означает ключевое слово static в Java и для чего его можно применять?",
+    "tags": [
+      "language_specific",
+      "Java",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56672",
+    "freq": 3,
+    "question": "Приходилось ли вам работать с Git?",
+    "tags": [
+      "general",
+      "Git",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568fd",
+    "freq": 3,
+    "question": "Какие этапы существуют в CI/CD?",
+    "tags": [
+      "devops",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56436",
+    "freq": 3,
+    "question": "Что такое паттерн «Декоратор» в объектно-ориентированном программировании и как он работает?",
+    "tags": [
+      "oop",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56441",
+    "freq": 3,
+    "question": "Какие методы HTTP вы знаете?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56449",
+    "freq": 3,
+    "question": "What is the difference between functional and non-functional testing, and how do you approach each type?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56453",
+    "freq": 3,
+    "question": "Зачем нужен Docker и с какой целью вы его используете?",
+    "tags": [
+      "devops",
+      "Docker",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56459",
+    "freq": 3,
+    "question": "Что такое Content-Type и как он используется в веб-разработке?",
+    "tags": [
+      "web",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5645d",
+    "freq": 3,
+    "question": "Как выявить и объяснить несоответствия в коде после анализа условий?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5645e",
+    "freq": 3,
+    "question": "Что такое баг?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56469",
+    "freq": 3,
+    "question": "Что такое Rest Assured?",
+    "tags": [
+      "testing",
+      "Java",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56489",
+    "freq": 3,
+    "question": "Как вывести каждый второй элемент списка или массива в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5648e",
+    "freq": 3,
+    "question": "Что такое ключевое слово 'super' в объектно-ориентированном программировании, как оно используется и чем отличается от прямого вызова метода родительского класса?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56495",
+    "freq": 3,
+    "question": "Что такое LRU-кэш и как он применяется?",
+    "tags": [
+      "data_structures",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56499",
+    "freq": 3,
+    "question": "Как с помощью ключевого слова 'super' в объектно-ориентированном программировании можно расширить реализацию метода родительского класса при определенных условиях?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56532",
+    "freq": 3,
+    "question": "Что такое Selenium?",
+    "tags": [
+      "testing",
+      "Selenium",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56617",
+    "freq": 3,
+    "question": "Работали ли вы с Apache Kafka?",
+    "tags": [
+      "backend",
+      "Kafka",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56636",
+    "freq": 3,
+    "question": "В чем отличие между класс-методом и статическим методом в объектно-ориентированном программировании?",
+    "tags": [
+      "oop",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5715e",
+    "freq": 3,
+    "question": "Расскажите об основных принципах и особенностях языка Python.",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57a47",
+    "freq": 3,
+    "question": "Чем верификация отличается от валидации?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57abf",
+    "freq": 3,
+    "question": "Что такое JWT-токен?",
+    "tags": [
+      "web",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5653c",
+    "freq": 2,
+    "question": "Что такое магические методы в объектно-ориентированном программировании и как они работают внутри классов, например, при определении длины объекта?",
+    "tags": [
+      "oop",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56543",
+    "freq": 2,
+    "question": "Как происходит сравнение объектов в памяти в объектно-ориентированном программировании?",
+    "tags": [
+      "oop",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56545",
+    "freq": 2,
+    "question": "Как работает метод add при работе с базой данных в ORM и чем он отличается от написания SQL-запросов напрямую?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56548",
+    "freq": 2,
+    "question": "Можно ли добавлять дополнительные поля метаданных в модели через field при сериализации или десериализации JSON в тестировании?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e565b8",
+    "freq": 2,
+    "question": "Как реализовать систему отслеживания местоположения грузовиков и персонала с отображением их на карте в режиме реального времени?",
+    "tags": [
+      "system_design",
+      "senior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56607",
+    "freq": 2,
+    "question": "В чем разница между ручным и автоматизированным тестированием?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56616",
+    "freq": 2,
+    "question": "Как реализовать расчет стоимости услуг по часовой ставке в приложении для смарт-часов и его интеграцию с основным приложением?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56624",
+    "freq": 2,
+    "question": "Что такое абстрактный класс и абстрактный метод в Python и для чего они нужны?",
+    "tags": [
+      "oop",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5662d",
+    "freq": 2,
+    "question": "Что такое соглашение об именовании атрибутов в контексте реализации инкапсуляции в Python и как оно используется?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5662f",
+    "freq": 2,
+    "question": "Как реализовать возврат итоговой стоимости с учетом наценок в методе getFinalPrice, если у автомобиля отсутствует трейлер?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56630",
+    "freq": 2,
+    "question": "Что такое магические методы в объектно-ориентированном программировании?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56638",
+    "freq": 2,
+    "question": "В чем заключается основная суть использования одного интерфейса с множеством разных реализаций в объектно-ориентированном программировании?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56639",
+    "freq": 2,
+    "question": "Как переопределить метод getFinalPrice в дочернем классе NewCar, чтобы учитывать наличие прицепа?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56643",
+    "freq": 2,
+    "question": "Что делает команда env?",
+    "tags": [
+      "devops",
+      "Linux",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5664f",
+    "freq": 2,
+    "question": "Как работает SQLAlchemy через ORM-модели и чем это отличается от написания низкоуровневых SQL-запросов через конструкции Core (Select и другие)?",
+    "tags": [
+      "database",
+      "SQLAlchemy",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56669",
+    "freq": 2,
+    "question": "Как в Python с помощью классов пишутся тесты и как связать тесты внутри класса с конкретной ручкой или функционалом, например, с ручкой по созданию пользователя?",
+    "tags": [
+      "testing",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e566a2",
+    "freq": 2,
+    "question": "Что такое callback и postback в контексте веб-разработки?",
+    "tags": [
+      "web",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e566a6",
+    "freq": 2,
+    "question": "Какие алгоритмы сортировки вы можете вспомнить и описать?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e566b7",
+    "freq": 2,
+    "question": "Как реализовать отправку сообщения в очередь из микросервиса?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e566bd",
+    "freq": 2,
+    "question": "Как вы анализировали логи при возникновении инцидента, где искали информацию и к каким выводам пришли?",
+    "tags": [
+      "devops",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e566e1",
+    "freq": 2,
+    "question": "Какие существуют паттерны автоматизации тестирования?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e567be",
+    "freq": 2,
+    "question": "Расскажите основные принципы работы библиотек pytest и unittest.",
+    "tags": [
+      "testing",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e564bc",
+    "freq": 2,
+    "question": "Можете привести пример кейса для анализа зависимостей между фичами?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e564c0",
+    "freq": 2,
+    "question": "Можно ли обеспечить стабильную работу одного сервера при значительном увеличении нагрузки?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e564ca",
+    "freq": 2,
+    "question": "Какие типы данных можно использовать в качестве ключа в словаре (map/hash table)?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56746",
+    "freq": 2,
+    "question": "Почему пирамида тестирования выглядит именно так?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e567a5",
+    "freq": 2,
+    "question": "С какими видами API вам приходилось работать и каков ваш опыт их использования?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56d32",
+    "freq": 2,
+    "question": "Что такое Dockerfile?",
+    "tags": [
+      "devops",
+      "Docker",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5650a",
+    "freq": 2,
+    "question": "Что такое WebSocket и как его тестировать?",
+    "tags": [
+      "networking",
+      "WebSocket",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56549",
+    "freq": 2,
+    "question": "Что такое CPX и как он отличается от requests в контексте выполнения асинхронных запросов?",
+    "tags": [
+      "backend",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56a29",
+    "freq": 2,
+    "question": "Как осуществляется мониторинг перемещений людей на большой территории предприятия?",
+    "tags": [
+      "system_design",
+      "senior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e565a4",
+    "freq": 2,
+    "question": "Почему сервер перестает справляться с увеличенной нагрузкой и как можно решить эту проблему?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e565a6",
+    "freq": 2,
+    "question": "Как провести нагрузочное тестирование системы, чтобы убедиться, что она обрабатывает N запросов в минуту, и что для этого необходимо?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e565a8",
+    "freq": 2,
+    "question": "Как реализовать авторизацию при выполнении HTTP-запроса?",
+    "tags": [
+      "web",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e565a9",
+    "freq": 2,
+    "question": "Какие существуют виды и подвиды тестирования производительности?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e565ac",
+    "freq": 2,
+    "question": "Каким образом осуществляется управление доступом различных потребителей к API или данным?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e565b4",
+    "freq": 2,
+    "question": "Что такое SQL и как он используется для работы с базами данных?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e565e4",
+    "freq": 2,
+    "question": "Как получить первый элемент массива (списка) в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56626",
+    "freq": 2,
+    "question": "Как можно использовать GPT для генерации задач по теме ООП и классов без предоставления решений?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56627",
+    "freq": 2,
+    "question": "Что означает возможность реализации как абстрактных, так и обычных методов в абстрактных классах в Python для обеспечения общей логики?",
+    "tags": [
+      "oop",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56628",
+    "freq": 2,
+    "question": "Что означает требование реализации абстрактных методов в дочерних классах при наследовании от абстрактного базового класса в Python?",
+    "tags": [
+      "oop",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5662e",
+    "freq": 2,
+    "question": "Как правильно определить и реализовать дочерний класс NewCar, который будет наследоваться от базового класса в объектно-ориентированном программировании?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56635",
+    "freq": 2,
+    "question": "Как реализовать метод внутри класса, который проверяет, соответствует ли цвет автомобиля переданному значению, и в зависимости от результата изменяет его цену?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56c04",
+    "freq": 2,
+    "question": "Какие принципы входят в SOLID?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e566a4",
+    "freq": 2,
+    "question": "Что такое CORS (Cross-Origin Resource Sharing)?",
+    "tags": [
+      "web",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e566e8",
+    "freq": 2,
+    "question": "В чем разница между файлами формата WAR и EAR в Java EE?",
+    "tags": [
+      "backend",
+      "Java",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56709",
+    "freq": 2,
+    "question": "Какие коллекции существуют в Java Collections Framework и от чего они наследуются?",
+    "tags": [
+      "data_structures",
+      "Java",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5670d",
+    "freq": 2,
+    "question": "Как устроена структура данных Map и почему важно понимать принципы её работы?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56716",
+    "freq": 2,
+    "question": "Какие два типа исключений существуют в Java и в чем их основные различия?",
+    "tags": [
+      "language_specific",
+      "Java",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e567a2",
+    "freq": 2,
+    "question": "Какой у вас опыт работы и чем вы занимались?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56af3",
+    "freq": 2,
+    "question": "Работали ли вы с брокерами сообщений?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5701e",
+    "freq": 2,
+    "question": "Что такое наследование в объектно-ориентированном программировании?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5701f",
+    "freq": 2,
+    "question": "Что произойдет в Python, если не реализовать абстрактный метод в дочернем классе при попытке его инстанцирования?",
+    "tags": [
+      "oop",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57177",
+    "freq": 2,
+    "question": "Что означает команда chmod +x?",
+    "tags": [
+      "devops",
+      "Linux",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57144",
+    "freq": 2,
+    "question": "Как работает протокол HTTPS?",
+    "tags": [
+      "networking",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e574a7",
+    "freq": 2,
+    "question": "Насколько вы знакомы с Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143683975b692556e57937",
+    "freq": 2,
+    "question": "Приходилось ли вам работать с gRPC?",
+    "tags": [
+      "networking",
+      "gRPC",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143687975b692556e5822b",
+    "freq": 2,
+    "question": "Каков жизненный цикл бага?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57df8",
+    "freq": 2,
+    "question": "Что будет выведено в консоль при выполнении данного кода?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57e43",
+    "freq": 2,
+    "question": "Что такое итераторы и генераторы, и в чем между ними отличие?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143688975b692556e5847d",
+    "freq": 2,
+    "question": "С какими реляционными базами данных вы работали?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143688975b692556e58499",
+    "freq": 2,
+    "question": "Расскажите об объектно-ориентированном программировании.",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143689975b692556e5866b",
+    "freq": 2,
+    "question": "Как устроено тестирование в вашей компании?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f73",
+    "freq": 2,
+    "question": "Может ли метод GET удалять данные?",
+    "tags": [
+      "web",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f74",
+    "freq": 2,
+    "question": "Можно ли передать тело запроса в HTTP-методе GET?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f87",
+    "freq": 2,
+    "question": "Считается ли метод PATCH идемпотентным?",
+    "tags": [
+      "web",
+      "HTTP",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368c975b692556e58d93",
+    "freq": 2,
+    "question": "Что такое транзакции в базах данных и какие у них есть свойства?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56864",
+    "freq": 1,
+    "question": "Какую техническую документацию вы обычно пишете и какая документация была доступна на ваших последних двух проектах?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56867",
+    "freq": 1,
+    "question": "Какой процент чек-листов уже готов?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56870",
+    "freq": 1,
+    "question": "Как в вашей команде ведётся документация и какие инструменты для этого используются?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568c6",
+    "freq": 1,
+    "question": "Расскажите, пожалуйста, про артефакты тестирования.",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568c7",
+    "freq": 1,
+    "question": "Какие основные критерии, помимо технического задания, используются при копировании старого конфигурационного файла?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568cb",
+    "freq": 1,
+    "question": "Как устроен процесс тестирования на текущем проекте, какая методология используется и какова ваша роль в команде?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568cc",
+    "freq": 1,
+    "question": "В какой момент требования синхронизируются с задачами в процессе работы?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568d0",
+    "freq": 1,
+    "question": "Какие существуют критерии завершения тестирования, помимо соответствия требованиям технического задания?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568d9",
+    "freq": 1,
+    "question": "Какие артефакты тестирования вы знаете и чем пользуетесь в своей работе?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568e7",
+    "freq": 1,
+    "question": "Можно ли при увеличенной нагрузке на сервер проводить оптимизацию кода для повышения его производительности?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568e8",
+    "freq": 1,
+    "question": "Что подразумевается под «нужным потоком» (thread) в контексте нагрузочного тестирования?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568e9",
+    "freq": 1,
+    "question": "Как провести нагрузочное тестирование системы, чтобы убедиться, что она обрабатывает заданное количество запросов?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568ea",
+    "freq": 1,
+    "question": "Как убедиться, что система продолжает обрабатывать запросы в течение еще одной минуты после получения сигнала на завершение работы?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568eb",
+    "freq": 1,
+    "question": "Что такое тестирование производительности?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568ec",
+    "freq": 1,
+    "question": "Что такое нагрузочное тестирование в контексте проверки обработки 1000 запросов в минуту?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568ef",
+    "freq": 1,
+    "question": "Что означает масштабировать сервер или систему в контексте повышения её надежности и производительности?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568f2",
+    "freq": 1,
+    "question": "Сколько времени потребуется на тестирование этой фичи?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568f3",
+    "freq": 1,
+    "question": "Что такое анализ зависимостей между фичами?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568f5",
+    "freq": 1,
+    "question": "Как у вас устроен процесс тестирования в интеграционной среде или контуре?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568f9",
+    "freq": 1,
+    "question": "Как с помощью stack trace можно локализовать баг или понять причину бага?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568fa",
+    "freq": 1,
+    "question": "Что обычно называют нагрузочным тестированием в контексте тестирования производительности?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568fb",
+    "freq": 1,
+    "question": "Что нужно подготовить для тестирования функциональности формы регистрации и логина?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568fc",
+    "freq": 1,
+    "question": "Что такое стресс-тестирование и чем оно отличается от нагрузочного тестирования в контексте проверки системы за границами её возможностей?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568ff",
+    "freq": 1,
+    "question": "Какие системы контроля версий или инструменты автоматизации вы используете в процессе разработки, например, OpenShift или Jenkins?",
+    "tags": [
+      "devops",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56900",
+    "freq": 1,
+    "question": "Что такое stack trace и как он помогает при анализе ошибок в логах?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56901",
+    "freq": 1,
+    "question": "Как мы будем забирать данные в соответствии с заданной схемой?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56902",
+    "freq": 1,
+    "question": "Как можно реализовать получение данных о расписании работы магазинов из системы сети супермаркетов?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56906",
+    "freq": 1,
+    "question": "Что делать, если при авторизации через HTTP-запрос не используется токен?",
+    "tags": [
+      "networking",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5690e",
+    "freq": 1,
+    "question": "Какие существуют методы масштабирования серверов?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56911",
+    "freq": 1,
+    "question": "Какие существуют методы HTTP и что означает метод GET?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56917",
+    "freq": 1,
+    "question": "Как осуществляется мониторинг персонала и транспорта в системе?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56919",
+    "freq": 1,
+    "question": "Как реализовать отслеживание перемещения объектов, таких как люди или автомобили, в системе мониторинга транспорта?",
+    "tags": [
+      "system_design",
+      "senior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5691a",
+    "freq": 1,
+    "question": "Что такое API 2GIS и как организована продажа доступа к нему в рамках вашей системы?",
+    "tags": [
+      "architecture",
+      "2GIS",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5691e",
+    "freq": 1,
+    "question": "Какие стратегии масштабирования существуют для решения проблем с увеличенной нагрузкой на серверы?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5699f",
+    "freq": 1,
+    "question": "Можно ли заблокировать пространство имен (namespace) в Kubernetes, чтобы никто не мог туда попасть?",
+    "tags": [
+      "devops",
+      "Kubernetes",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568f1",
+    "freq": 1,
+    "question": "Что такое тестирование формы регистрации и логина с использованием некорректного e-mail и корректного пароля, и какие сценарии это подразумевает?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56903",
+    "freq": 1,
+    "question": "Что такое негативное тестирование при проверке форм регистрации и логина?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56907",
+    "freq": 1,
+    "question": "Зачем нужно CI/CD и какие его основные преимущества?",
+    "tags": [
+      "devops",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5690a",
+    "freq": 1,
+    "question": "Можно ли использовать GET-запрос для авторизации при выполнении HTTP-запросов?",
+    "tags": [
+      "web",
+      "HTTP",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5690b",
+    "freq": 1,
+    "question": "Что такое вертикальное масштабирование и как оно связано с увеличением ресурсов у одного сервера?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5690c",
+    "freq": 1,
+    "question": "Вы использовали GitLab для реализации CI/CD процессов?",
+    "tags": [
+      "devops",
+      "GitLab",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5690d",
+    "freq": 1,
+    "question": "Можно ли увеличить производительность сервера, выбрав более мощный процессор?",
+    "tags": [
+      "system_design",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5691b",
+    "freq": 1,
+    "question": "Как можно использовать собственный API для получения данных от внешних потребителей?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e569a2",
+    "freq": 1,
+    "question": "Как переключаться между вопросами?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56b7d",
+    "freq": 1,
+    "question": "Как работает конструкция if-else в программировании?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56bb3",
+    "freq": 1,
+    "question": "Что такое функция len() в Python и как её использовать?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56a2a",
+    "freq": 1,
+    "question": "Какие методы используются для определения потери сигнала и восстановления трека в системе мониторинга перемещений на предприятии?",
+    "tags": [
+      "architecture",
+      "senior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e56e7f",
+    "freq": 1,
+    "question": "Как реализовать функционал чек-листов в приложении для смарт-часов и обеспечить их синхронизацию с основным мобильным приложением?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e56e82",
+    "freq": 1,
+    "question": "Какие внутренние задачи можно реализовать в приложении для смарт-часов и как их интегрировать с основным приложением?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e56e89",
+    "freq": 1,
+    "question": "Как реализовать интеграцию приложения для смарт-часов с основным мобильным приложением для получения детальных отчетов?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e56ffd",
+    "freq": 1,
+    "question": "Считается ли абстрактный класс обычным классом в Python, если он реализован без импорта модуля abc?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e56fff",
+    "freq": 1,
+    "question": "Что означает, что абстрактный класс в Python защищает контракт на уровне языка?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57007",
+    "freq": 1,
+    "question": "Как использовать абстрактный класс в Python, чтобы избежать дублирования логики в дочерних классах?",
+    "tags": [
+      "oop",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57016",
+    "freq": 1,
+    "question": "Можно ли использовать один класс для создания множества объектов в контексте шаблонов и экземпляров?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57017",
+    "freq": 1,
+    "question": "Зачем нужны геттеры и сеттеры в контексте реализации инкапсуляции в Python?",
+    "tags": [
+      "oop",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57019",
+    "freq": 1,
+    "question": "Что такое класс и как он определяет структуру объекта?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5701c",
+    "freq": 1,
+    "question": "Что такое объект в контексте шаблона и экземпляра?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57030",
+    "freq": 1,
+    "question": "Что означает использование декоратора @abstractmethod в Python, и почему методы с этим декоратором обычно содержат только pass?",
+    "tags": [
+      "oop",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57042",
+    "freq": 1,
+    "question": "Как с помощью ключевого слова 'super' в объектно-ориентированном программировании можно избежать дублирования кода и реализовать повторное использование методов базового класса?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57044",
+    "freq": 1,
+    "question": "В чем заключается удобство полиморфизма в объектно-ориентированном программировании и как оно связано с созданием общего интерфейса?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57045",
+    "freq": 1,
+    "question": "Как реализовать объекты, которые реализуют протокол контекстного менеджера, и как они работают внутри себя?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57046",
+    "freq": 1,
+    "question": "Почему удобно использовать полиморфизм в объектно-ориентированном программировании, чтобы не проверять типы объектов?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56b99",
+    "freq": 1,
+    "question": "Как импортировать модуль в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56ba1",
+    "freq": 1,
+    "question": "Как получить доступ к последнему элементу массива, используя его длину?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568f0",
+    "freq": 1,
+    "question": "Можно ли отнести нагрузочное тестирование к тестированию производительности?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568f8",
+    "freq": 1,
+    "question": "На что нужно обращать внимание при работе с требованиями?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56905",
+    "freq": 1,
+    "question": "Что делать, если при возникновении ошибки в логах отсутствует сообщение об ошибке?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56909",
+    "freq": 1,
+    "question": "Зачем мы используем брокеры сообщений в архитектуре приложений?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5691d",
+    "freq": 1,
+    "question": "Как осуществляется доступ внешних потребителей к административной панели системы для получения данных или управления ими?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57047",
+    "freq": 1,
+    "question": "Что такое контекстный менеджер в Python и как реализовать его с помощью методов __enter__ и __exit__?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5704a",
+    "freq": 1,
+    "question": "Как полиморфизм позволяет работать с объектами разных классов через общий интерфейс?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5704c",
+    "freq": 1,
+    "question": "Что такое метод класса в объектно-ориентированном программировании?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5704d",
+    "freq": 1,
+    "question": "Как правильно умножить значение базовой цены на коэффициент 0.35 и вернуть обновленное значение self в методе класса?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5704e",
+    "freq": 1,
+    "question": "Как правильно реализовать прибавление базовой цены к текущему значению price с помощью оператора += и атрибута self в объектно-ориентированном программировании?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57051",
+    "freq": 1,
+    "question": "Как правильно передавать хост-трейлер в конструктор объекта при создании автомобиля?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57052",
+    "freq": 1,
+    "question": "Как с помощью наследования и вызова super() инициализировать атрибуты родительского класса в дочернем классе, чтобы избежать дублирования кода?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57053",
+    "freq": 1,
+    "question": "Зачем мы определили базовый класс, если при этом не используем его нигде в коде?",
+    "tags": [
+      "oop",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57054",
+    "freq": 1,
+    "question": "Как правильно применить коэффициент 0.35 вместо 1.35 для расчета итоговой стоимости автомобиля с учетом трейлера?",
+    "tags": [
+      "backend",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57055",
+    "freq": 1,
+    "question": "Как код, работающий с любым объектом, который поддерживает нужный интерфейс, обеспечивает гибкость и расширяемость в объектно-ориентированном программировании?",
+    "tags": [
+      "oop",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57056",
+    "freq": 1,
+    "question": "Что означает атрибут error в контексте создания нового автомобиля (new car)?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57059",
+    "freq": 1,
+    "question": "Как с помощью метода super в объектно-ориентированном программировании можно вызвать реализацию метода родительского класса и избежать дублирования кода?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57065",
+    "freq": 1,
+    "question": "Как в методе getFinalPrice в переопределяемом классе учесть наличие трейлера и добавить 35% к базовой цене, если он присутствует?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57069",
+    "freq": 1,
+    "question": "Как правильно определить и реализовать метод внутри класса в объектно-ориентированном программировании?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56a37",
+    "freq": 1,
+    "question": "Какие методы используются для определения шумов в системе мониторинга перемещений на предприятии?",
+    "tags": [
+      "architecture",
+      "senior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56b9b",
+    "freq": 1,
+    "question": "Можно ли в Python использовать конструкции if и else?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56b9c",
+    "freq": 1,
+    "question": "Как умножить все элементы массива на 3 в Python и какой будет результат?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56b9d",
+    "freq": 1,
+    "question": "Что такое двумерный массив и как его использовать в программировании?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56ba2",
+    "freq": 1,
+    "question": "В чем разница между обычными строками и f-строками в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56bb0",
+    "freq": 1,
+    "question": "Что такое многострочные строки в Python и как их объявить?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56bb1",
+    "freq": 1,
+    "question": "Чем отличаются строки в одинарных, двойных и тройных кавычках в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568d2",
+    "freq": 1,
+    "question": "На чем вы специализируетесь в области фронтенд-разработки и есть ли у вас другие технические области, в которых вы работаете?",
+    "tags": [
+      "frontend",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568de",
+    "freq": 1,
+    "question": "Кто отвечает за перенос требований в Confluence?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568e1",
+    "freq": 1,
+    "question": "Расскажите подробнее о процессе тестирования: с чего вы начинаете и чем заканчиваете?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e568f7",
+    "freq": 1,
+    "question": "На какие характеристики требований нужно обращать внимание, чтобы понять, является ли требование качественным или оно требует доработки?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56904",
+    "freq": 1,
+    "question": "Какие существуют подходы к получению и обновлению расписания работы магазинов в системе сети супермаркетов: интеграция по договору или парсинг открытых источников?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56908",
+    "freq": 1,
+    "question": "Какая роль у тестировщика при проведении A/B-тестирования?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5690f",
+    "freq": 1,
+    "question": "Что такое горизонтальное масштабирование и как оно связано с увеличением количества копий серверов?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5691c",
+    "freq": 1,
+    "question": "Что такое технические ключи KPI и как они используются в системе?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e5691f",
+    "freq": 1,
+    "question": "Как осуществляется продление доступа внешних потребителей к системе или API?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56920",
+    "freq": 1,
+    "question": "Как можно реализовать отображение всех грузовиков на карте одновременно в системе мониторинга транспорта?",
+    "tags": [
+      "system_design",
+      "senior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56924",
+    "freq": 1,
+    "question": "Можно ли удалять данные с помощью GET-запроса?",
+    "tags": [
+      "web",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56927",
+    "freq": 1,
+    "question": "Как осуществляется выдача и управление ключами доступа к API для различных внешних потребителей?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56929",
+    "freq": 1,
+    "question": "Можете рассказать подробнее о GIS-платформе и о том, как она используется в автоматизации команд?",
+    "tags": [
+      "architecture",
+      "GIS",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e56e8d",
+    "freq": 1,
+    "question": "Как реализовать сбор и отображение детальных отчетов по состоянию здоровья пользователя в приложении для смарт-часов?",
+    "tags": [
+      "architecture",
+      "senior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e569a0",
+    "freq": 1,
+    "question": "Откуда регрессионное тестирование берет эталонные данные для сравнения результатов?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56b90",
+    "freq": 1,
+    "question": "Как объявить функцию в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56b98",
+    "freq": 1,
+    "question": "Зачем нужна конструкция try-except в программировании?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56ba0",
+    "freq": 1,
+    "question": "Чем отличается конкатенация строк от использования метода форматирования в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56ba4",
+    "freq": 1,
+    "question": "Как развернуть список в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143680975b692556e56baa",
+    "freq": 1,
+    "question": "Как сделать разворот списка через срез в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e56fe5",
+    "freq": 1,
+    "question": "Есть ли какая-либо информация о том, что делают шопперы в текущем релизе Limit+?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e56ffc",
+    "freq": 1,
+    "question": "Есть ли какие-то вопросы по третьему модулю?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5700d",
+    "freq": 1,
+    "question": "Для чего нужен setter в контексте реализации инкапсуляции в Python?",
+    "tags": [
+      "oop",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5700e",
+    "freq": 1,
+    "question": "Что означает реализация абстрактного класса без импорта модуля abc в Python и как она связана с ручной имитацией контракта?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5700f",
+    "freq": 1,
+    "question": "Что такое SOLID в контексте объектно-ориентированного программирования?",
+    "tags": [
+      "oop",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57013",
+    "freq": 1,
+    "question": "Что такое сокрытие атрибутов (инкапсуляция) в объектно-ориентированном программировании?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5701a",
+    "freq": 1,
+    "question": "Могут ли в Python абстрактные классы содержать обычные методы без использования декоратора @abstractmethod?",
+    "tags": [
+      "oop",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5701d",
+    "freq": 1,
+    "question": "Как изменения в классе влияют на все созданные объекты в контексте шаблонов и экземпляров?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57022",
+    "freq": 1,
+    "question": "Как реализовать контроль над данными и защиту от некорректного использования атрибутов в объектно-ориентированном программировании?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5702b",
+    "freq": 1,
+    "question": "Что означает, что у абстрактного класса в Python есть абстрактный метод?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5702e",
+    "freq": 1,
+    "question": "В чем основное отличие абстрактного метода от обычного метода в Python при наследовании от абстрактного класса?",
+    "tags": [
+      "oop",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5703d",
+    "freq": 1,
+    "question": "Как можно сравнивать значения объектов в Python, если по умолчанию объекты сравниваются по адресу в памяти?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57040",
+    "freq": 1,
+    "question": "Для чего нужны статические методы внутри класса в объектно-ориентированном программировании?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57048",
+    "freq": 1,
+    "question": "Что возвращает метод, если в конце указано 'return self.base_price'?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5704f",
+    "freq": 1,
+    "question": "Для чего нужна концепция super в объектно-ориентированном программировании?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5706f",
+    "freq": 1,
+    "question": "Что такое АУП?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57000",
+    "freq": 1,
+    "question": "Что означает использование модуля abc для создания абстрактных базовых классов в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5701b",
+    "freq": 1,
+    "question": "Как можно реализовать инкапсуляцию в Python?",
+    "tags": [
+      "oop",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57024",
+    "freq": 1,
+    "question": "Что такое скрытие реализации (инкапсуляция) в объектно-ориентированном программировании и как оно связано с тестированием?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57025",
+    "freq": 1,
+    "question": "Что означает, что от абстрактного класса в Python нельзя создать экземпляр?",
+    "tags": [
+      "oop",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57026",
+    "freq": 1,
+    "question": "Что означает использование двойного подчеркивания в начале имени атрибута в Python и как это связано с механизмом name mangling?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5703b",
+    "freq": 1,
+    "question": "Что такое equals в контексте объектно-ориентированного программирования?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e5703e",
+    "freq": 1,
+    "question": "Что такое конструкция with в Python и как она связана с контекстным менеджером?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57041",
+    "freq": 1,
+    "question": "Какие декораторы в объектно-ориентированном программировании вы знаете и как они помогают расширять функциональность?",
+    "tags": [
+      "oop",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57049",
+    "freq": 1,
+    "question": "Как правильно передавать параметры в конструктор дочернего класса при наследовании от базового класса?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57050",
+    "freq": 1,
+    "question": "Как реализовать в классе метод, который добавляет 35% от базовой цены при наличии прицепа (трейлера)?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143681975b692556e57058",
+    "freq": 1,
+    "question": "Как реализовать класс с двумя свойствами: Color и Price?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57308",
+    "freq": 1,
+    "question": "Что такое тело запроса и как оно используется при формировании HTTP-запросов?",
+    "tags": [
+      "networking",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57309",
+    "freq": 1,
+    "question": "Как осуществляется десериализация JSON через модель при обработке HTTP-запросов?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5730a",
+    "freq": 1,
+    "question": "Как реализовать автоматическую валидацию типа данных при распаковке ответа в тестировании, чтобы проверить соответствие полученного значения ожидаемому типу или формату?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5730c",
+    "freq": 1,
+    "question": "Почему для валидации данных в Python используют библиотеку Pydantic и в чем заключаются её основные преимущества?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5730d",
+    "freq": 1,
+    "question": "Как при преобразовании данных через модель происходит валидация типов, которые пришли на вход?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5730f",
+    "freq": 1,
+    "question": "Как работает CI/CD pipeline при проверке кода и запуске PyTest в проекте?",
+    "tags": [
+      "devops",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57310",
+    "freq": 1,
+    "question": "Что такое teardown в контексте тестирования и как он используется?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57311",
+    "freq": 1,
+    "question": "Зачем хранить автотесты в одном репозитории с исходным кодом проекта?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57313",
+    "freq": 1,
+    "question": "Как в Python с помощью pytest реализуются блокировки при тестировании?",
+    "tags": [
+      "testing",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57314",
+    "freq": 1,
+    "question": "Что такое package в контексте тестирования и зачем он используется, если его редко применяют?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57315",
+    "freq": 1,
+    "question": "Какие области видимости (scopes) фикстур существуют в pytest?",
+    "tags": [
+      "testing",
+      "pytest",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57317",
+    "freq": 1,
+    "question": "Что такое автоматическая валидация при распаковке ответа и как она реализуется в тестировании?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57318",
+    "freq": 1,
+    "question": "Что такое граничные значения в контексте тестирования и как они используются для проверки программного обеспечения?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57319",
+    "freq": 1,
+    "question": "Какие типы данных могут использоваться в теле HTTP-запроса при взаимодействии с API?",
+    "tags": [
+      "web",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5731b",
+    "freq": 1,
+    "question": "Для чего нужна маркировка (тегирование) в тестировании?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5731c",
+    "freq": 1,
+    "question": "Что такое yield в фикстуре при тестировании и как он используется для отдачи данных?",
+    "tags": [
+      "testing",
+      "pytest",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5731d",
+    "freq": 1,
+    "question": "Для чего используется pytest?",
+    "tags": [
+      "testing",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5731e",
+    "freq": 1,
+    "question": "Для чего нужна параметризация в тестировании?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5731f",
+    "freq": 1,
+    "question": "Что такое setup и teardown в тестировании и как они используются?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57320",
+    "freq": 1,
+    "question": "Что происходит после yield в фикстуре при тестировании и как это связано с завершением тестов?",
+    "tags": [
+      "testing",
+      "pytest",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57322",
+    "freq": 1,
+    "question": "Для чего используется API-метод (ручка) создания пользователя в тестировании?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57326",
+    "freq": 1,
+    "question": "Что такое scope уровня function, session и class в контексте тестирования (например, в Pytest) и как они используются?",
+    "tags": [
+      "testing",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5732d",
+    "freq": 1,
+    "question": "Зачем используются фикстуры в тестировании?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5732e",
+    "freq": 1,
+    "question": "Что такое HTTPX и чем он отличается от библиотеки requests?",
+    "tags": [
+      "web",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57334",
+    "freq": 1,
+    "question": "Можете рассказать подробнее о pytest и его особенностях?",
+    "tags": [
+      "testing",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57335",
+    "freq": 1,
+    "question": "В чем заключается основное использование SQLAlchemy в разработке и чем она отличается от других библиотек для работы с базами данных?",
+    "tags": [
+      "database",
+      "SQLAlchemy",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57337",
+    "freq": 1,
+    "question": "Для чего используются готовые SQL-запросы в папке с миграциями и как они применяются в проекте?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57338",
+    "freq": 1,
+    "question": "Что такое результаты автотеста и как они хранятся в системе автоматизированного тестирования?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57339",
+    "freq": 1,
+    "question": "Что такое тест-кейс и как он хранится в системе автоматизированного тестирования?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5733a",
+    "freq": 1,
+    "question": "В чем разница между библиотеками для работы с SQL (например, ORM и Query Builder) и как они отличаются в использовании?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5733b",
+    "freq": 1,
+    "question": "Как реализуется хранение тестов и отчетов в Allure в контексте автоматизированного тестирования?",
+    "tags": [
+      "testing",
+      "Allure",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5733d",
+    "freq": 1,
+    "question": "Что лучше использовать: ORM-модели или чистые SQL-запросы?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5733f",
+    "freq": 1,
+    "question": "В чем заключается отличие между библиотекой Psycopg и другими библиотеками для работы с PostgreSQL, и почему Psycopg считается ориентированным на низкоуровневые запросы?",
+    "tags": [
+      "database",
+      "PostgreSQL",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57341",
+    "freq": 1,
+    "question": "Как осуществляется процесс коммита и пуша изменений в проекте при работе с Git?",
+    "tags": [
+      "general",
+      "Git",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57342",
+    "freq": 1,
+    "question": "Что такое DOM и какие две библиотеки использовались в контексте работы с ним?",
+    "tags": [
+      "frontend",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57343",
+    "freq": 1,
+    "question": "Какие библиотеки используются для работы с SQL в Python и чем они отличаются друг от друга?",
+    "tags": [
+      "database",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57344",
+    "freq": 1,
+    "question": "Что такое ORM (Object-Relational Mapping) и как классы используются для отображения таблиц базы данных?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57348",
+    "freq": 1,
+    "question": "Как работают методы add и commit в ORM для работы с базой данных и чем они отличаются от выполнения низкоуровневых SQL-запросов?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5738e",
+    "freq": 1,
+    "question": "Что такое X-Forwarded-For?",
+    "tags": [
+      "networking",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57392",
+    "freq": 1,
+    "question": "В чем отличие команд JITPOOL от JITPUSH?",
+    "tags": [
+      "language_specific",
+      "Java",
+      "senior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5739e",
+    "freq": 1,
+    "question": "Какие команды Git вы используете чаще всего?",
+    "tags": [
+      "devops",
+      "Git",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e573a3",
+    "freq": 1,
+    "question": "Что такое XPath selector?",
+    "tags": [
+      "web",
+      "HTML/XML",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e573a4",
+    "freq": 1,
+    "question": "Какие стадии жизненного цикла Activity существуют в Android?",
+    "tags": [
+      "mobile",
+      "Android",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57462",
+    "freq": 1,
+    "question": "Почему вы считаете, что у Т-Банка справочник реализован правильно?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57463",
+    "freq": 1,
+    "question": "Как получить доступ к справочнику внешней системы, чтобы реализовать собственный справочник и настроить маппинг данных?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57464",
+    "freq": 1,
+    "question": "Как часто приходится переделывать архитектуру или код, если изначально всё правильно запланировать?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57473",
+    "freq": 1,
+    "question": "Когда планируется рефакторинг Order Service?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57634",
+    "freq": 1,
+    "question": "По каким критериям можно прекратить тестирование?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57636",
+    "freq": 1,
+    "question": "Какова основная цель автоматизации тестирования?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57638",
+    "freq": 1,
+    "question": "Какие ключевые слова существуют в Java?",
+    "tags": [
+      "language_specific",
+      "Java",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57639",
+    "freq": 1,
+    "question": "Назовите этапы жизненного цикла бага.",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5763a",
+    "freq": 1,
+    "question": "Что такое JDK, JRE, JVM и Java, и как они взаимодействуют между собой?",
+    "tags": [
+      "language_specific",
+      "Java",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5763b",
+    "freq": 1,
+    "question": "Когда можно прекратить тестирование?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5763c",
+    "freq": 1,
+    "question": "Как вы работаете с Git и как решаете возникающие конфликты?",
+    "tags": [
+      "devops",
+      "Git",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5763d",
+    "freq": 1,
+    "question": "Как можно избежать хранения токенов и паролей в исходном коде?",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57641",
+    "freq": 1,
+    "question": "Был ли у тебя опыт работы с Linux?",
+    "tags": [
+      "devops",
+      "Linux",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57646",
+    "freq": 1,
+    "question": "Существует ли предобработка пакетов в сетевом стеке?",
+    "tags": [
+      "networking",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5764f",
+    "freq": 1,
+    "question": "Что обозначает команда export в Linux?",
+    "tags": [
+      "devops",
+      "Linux",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57651",
+    "freq": 1,
+    "question": "Что обозначает команда grep?",
+    "tags": [
+      "networking",
+      "Linux",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57655",
+    "freq": 1,
+    "question": "Какие основные отличия iOS от Android?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e5765e",
+    "freq": 1,
+    "question": "Какие существуют основные принципы ООП в Java?",
+    "tags": [
+      "oop",
+      "Java",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57660",
+    "freq": 1,
+    "question": "Какие преимущества и недостатки имеет XPath как локатор?",
+    "tags": [
+      "testing",
+      "Selenium",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143682975b692556e57663",
+    "freq": 1,
+    "question": "В чем заключается разница между тестированием на реальном устройстве, эмуляторе и симуляторе?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57b6d",
+    "freq": 1,
+    "question": "Как обеспечить взаимодействие двух микросервисов с использованием брокеров сообщений, таких как Kafka или RabbitMQ?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57b72",
+    "freq": 1,
+    "question": "Как протестировать реализованную отправку данных или сообщений?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57b74",
+    "freq": 1,
+    "question": "Как вы тестировали отправку сообщений в микросервисной архитектуре?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57b7d",
+    "freq": 1,
+    "question": "Как реализовать запись или передачу звука с использованием двух микрофонов?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57b82",
+    "freq": 1,
+    "question": "Как протестировать отправку сообщения в очередь из микросервиса?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57b83",
+    "freq": 1,
+    "question": "Как протестировать функционал загрузки файлов?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57b84",
+    "freq": 1,
+    "question": "Как протестировать функционал перезагрузки системы или приложения?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57b86",
+    "freq": 1,
+    "question": "Как протестировать работу с файловой системой?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57b96",
+    "freq": 1,
+    "question": "Что ты знаешь про WebSockets?",
+    "tags": [
+      "networking",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57b97",
+    "freq": 1,
+    "question": "Какие методы HTTP бывают?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57b99",
+    "freq": 1,
+    "question": "Что такое постбек (postback)?",
+    "tags": [
+      "web",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57b9a",
+    "freq": 1,
+    "question": "Какие методы анонимизации данных вы знаете при тестировании платежных систем?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143683975b692556e5798b",
+    "freq": 1,
+    "question": "На каком фреймворке или библиотеке основан фронтенд, если речь идет о Vue.js?",
+    "tags": [
+      "frontend",
+      "Vue.js",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143683975b692556e57990",
+    "freq": 1,
+    "question": "Какой инструмент используется для написания статей и технической документации?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57bc0",
+    "freq": 1,
+    "question": "В чем разница между LocalStorage и SessionStorage?",
+    "tags": [
+      "web",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57bcd",
+    "freq": 1,
+    "question": "Сколько регрессионных и интеграционных тестов было в вашем опыте работы?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57bcf",
+    "freq": 1,
+    "question": "Какими видами тестирования вы занимались в рамках распределенного тестирования?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57bd0",
+    "freq": 1,
+    "question": "Это у вас было веб-приложение или мобильное приложение?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57bd1",
+    "freq": 1,
+    "question": "Как вы организуете работу тестировщика, если вы единственный специалист на проекте?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57bd4",
+    "freq": 1,
+    "question": "У вас был опыт разработки десктопного или мобильного приложения?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57bd5",
+    "freq": 1,
+    "question": "Какие инструменты и методы вы использовали для логирования и мониторинга в вашем проекте, например, с использованием Grafana?",
+    "tags": [
+      "devops",
+      "Grafana",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57bd6",
+    "freq": 1,
+    "question": "Какие платежные методы провайдеров вы можете назвать?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57bd7",
+    "freq": 1,
+    "question": "Что такое зона теста в контексте вашего опыта тестирования?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57bd8",
+    "freq": 1,
+    "question": "Если вы единственный тестировщик на проекте, какие будут ваши действия и план по организации процесса тестирования?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57bda",
+    "freq": 1,
+    "question": "Чем отличаются верификация и валидация в контексте тестирования программного обеспечения?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57be1",
+    "freq": 1,
+    "question": "Какое окружение вы использовали для тестирования, например, staging или pre-production среды?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57a56",
+    "freq": 1,
+    "question": "Расскажите про S2S (server-to-server) взаимодействие.",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57a58",
+    "freq": 1,
+    "question": "Что такое курсы в контексте образовательных платформ?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57d42",
+    "freq": 1,
+    "question": "Что такое endpoint и как он используется в архитектуре системы?",
+    "tags": [
+      "architecture",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57d44",
+    "freq": 1,
+    "question": "Что такое паттерн «Одиночка» (Singleton) в контексте использования конфигурационного объекта?",
+    "tags": [
+      "oop",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57d45",
+    "freq": 1,
+    "question": "Что такое модели в контексте архитектуры системы и как они используются?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57d4d",
+    "freq": 1,
+    "question": "Что такое класс endpoint и как он используется в архитектуре системы, если он хранит request-модель, response-модель и относительный URL?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57d62",
+    "freq": 1,
+    "question": "В каком порядке вызываются фикстуры в зависимости от их иерархии?",
+    "tags": [
+      "testing",
+      "pytest",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57d68",
+    "freq": 1,
+    "question": "Как реализовать добавление номера телефона в систему?",
+    "tags": [
+      "architecture",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57d6a",
+    "freq": 1,
+    "question": "Как правильно прочитать условия задачи и проанализировать код во время технического собеседования?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57d75",
+    "freq": 1,
+    "question": "Каков порядок выполнения фикстур в зависимости от их иерархии в pytest?",
+    "tags": [
+      "testing",
+      "pytest",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57a7e",
+    "freq": 1,
+    "question": "Что такое курсы?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57a86",
+    "freq": 1,
+    "question": "Расскажите про CORS в протоколе HTTP?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57aba",
+    "freq": 1,
+    "question": "Что такое Content-Type в контексте HTTP-заголовков?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57abc",
+    "freq": 1,
+    "question": "Чем JWT токен отличается от Bearer токена в контексте аутентификации и авторизации?",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57ea0",
+    "freq": 1,
+    "question": "Как можно посмотреть логи мобильного приложения на iOS и Android?",
+    "tags": [
+      "testing",
+      "Mobile",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57ea5",
+    "freq": 1,
+    "question": "Как можно устанавливать бета-версии приложений на iOS и Android?",
+    "tags": [
+      "mobile",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57ea7",
+    "freq": 1,
+    "question": "Как можно подменить ответ сервера?",
+    "tags": [
+      "networking",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57ea9",
+    "freq": 1,
+    "question": "Какими инструментами можно отправить HTTP-запросы?",
+    "tags": [
+      "networking",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57eaa",
+    "freq": 1,
+    "question": "Как локализовать ошибку и понять, какой именно сервис ответственен за неё в распределенной системе?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57abe",
+    "freq": 1,
+    "question": "Какие метрики качества программного обеспечения вы знаете в тестировании?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57ac0",
+    "freq": 1,
+    "question": "Какие виды тестирования вы знаете в контексте разработки программного обеспечения?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57ac4",
+    "freq": 1,
+    "question": "Какие заголовки есть у HTTP-запросов?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57ac5",
+    "freq": 1,
+    "question": "Какие виды токенов бывают в контексте аутентификации и авторизации?",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57ac6",
+    "freq": 1,
+    "question": "Чем Basic-аутентификация отличается от Bearer-токена в контексте аутентификации и авторизации?",
+    "tags": [
+      "web",
+      "HTTP",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143684975b692556e57ac7",
+    "freq": 1,
+    "question": "Чем GVT-токен отличается от обычного биржевого токена?",
+    "tags": [
+      "backend",
+      "Blockchain",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143686975b692556e58146",
+    "freq": 1,
+    "question": "Какие основные признаки будет иметь объект «котик» в контексте объектно-ориентированного программирования?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143686975b692556e58148",
+    "freq": 1,
+    "question": "Какие ресурсы или платформы вы порекомендуете для решения задач по программированию онлайн?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143686975b692556e58156",
+    "freq": 1,
+    "question": "От какого класса наследуется List в Java Collections Framework?",
+    "tags": [
+      "data_structures",
+      "Java",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143686975b692556e58162",
+    "freq": 1,
+    "question": "Является ли «Летающий» абстрактным классом или интерфейсом?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143686975b692556e58164",
+    "freq": 1,
+    "question": "Когда мне стоит использовать интерфейс?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143686975b692556e58165",
+    "freq": 1,
+    "question": "Является ли Animal абстрактным классом или интерфейсом?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143686975b692556e58166",
+    "freq": 1,
+    "question": "Какие поля могут быть в абстрактном классе и интерфейсе?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143686975b692556e58168",
+    "freq": 1,
+    "question": "Зачем в Java нужны методы equals() и hashCode(), если сравнение по хэш-коду происходит быстрее?",
+    "tags": [
+      "language_specific",
+      "Java",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143686975b692556e58169",
+    "freq": 1,
+    "question": "Какова была логика ваших действий в данной ситуации?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143686975b692556e5816a",
+    "freq": 1,
+    "question": "Есть ли у Set реализация HashSet?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143686975b692556e5816c",
+    "freq": 1,
+    "question": "От какого базового класса или интерфейса наследуется Map в Java?",
+    "tags": [
+      "data_structures",
+      "Java",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143686975b692556e5816d",
+    "freq": 1,
+    "question": "Что такое база данных и является ли она поведением?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143686975b692556e58178",
+    "freq": 1,
+    "question": "Как реализовать методы без тела в интерфейсах и абстрактных классах и остаются ли они без тела?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143686975b692556e5817b",
+    "freq": 1,
+    "question": "Какой модификатор доступа в интерфейсе отвечает за видимость методов?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143686975b692556e5817c",
+    "freq": 1,
+    "question": "Зачем нужен хэш-код?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143686975b692556e58180",
+    "freq": 1,
+    "question": "Как проверяется уникальность элементов в Set?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57e13",
+    "freq": 1,
+    "question": "Расскажите об архитектуре системы, если мы на собеседовании?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57eab",
+    "freq": 1,
+    "question": "В чем разница между val и var в Kotlin?",
+    "tags": [
+      "language_specific",
+      "Kotlin",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57eac",
+    "freq": 1,
+    "question": "Как можно протестировать прерывание сетевого соединения в условиях плохой сети на iOS и Android?",
+    "tags": [
+      "testing",
+      "mobile",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57eaf",
+    "freq": 1,
+    "question": "Что такое гайдлайны Apple (Human Interface Guidelines)?",
+    "tags": [
+      "frontend",
+      "iOS",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57eb0",
+    "freq": 1,
+    "question": "Как реализован паттерн синглтон в Kotlin, и с помощью каких языковых конструкций?",
+    "tags": [
+      "language_specific",
+      "Kotlin",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57eb7",
+    "freq": 1,
+    "question": "Что такое API в контексте клиент-серверного взаимодействия?",
+    "tags": [
+      "web",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143685975b692556e57ec5",
+    "freq": 1,
+    "question": "Чем отличаются классы, перечисления (enum) и структуры?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143686975b692556e58170",
+    "freq": 1,
+    "question": "От какого интерфейса наследуется интерфейс Collection в Java?",
+    "tags": [
+      "data_structures",
+      "Java",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143686975b692556e58171",
+    "freq": 1,
+    "question": "Могут ли быть методы с реализацией (телом) в абстрактном классе?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143686975b692556e58173",
+    "freq": 1,
+    "question": "Какой тип значения возвращает метод hashCode?",
+    "tags": [
+      "language_specific",
+      "Java",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143688975b692556e584e4",
+    "freq": 1,
+    "question": "Что хранится в Local Storage?",
+    "tags": [
+      "web",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143688975b692556e584f9",
+    "freq": 1,
+    "question": "Расскажите об основных вкладках в Chrome DevTools и их назначении.",
+    "tags": [
+      "frontend",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143689975b692556e586bc",
+    "freq": 1,
+    "question": "Что мы должны были получить в результате выполнения этой задачи?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143689975b692556e586bd",
+    "freq": 1,
+    "question": "Можно ли обучить модель, задавая правила, чтобы она автоматически определяла язык текста?",
+    "tags": [
+      "backend",
+      "Machine Learning",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143689975b692556e586ec",
+    "freq": 1,
+    "question": "Что такое паттерн Page Object?",
+    "tags": [
+      "testing",
+      "Selenium",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143688975b692556e585f6",
+    "freq": 1,
+    "question": "Как происходит процесс код-ревью?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143688975b692556e58602",
+    "freq": 1,
+    "question": "Какие существуют основные правила и лучшие практики проектирования REST API эндпоинтов?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143688975b692556e58603",
+    "freq": 1,
+    "question": "Что возвращает успешный HTTP-запрос?",
+    "tags": [
+      "networking",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143688975b692556e58608",
+    "freq": 1,
+    "question": "Какой HTTP-код ответа следует возвращать при попытке доступа к ресурсу без авторизации?",
+    "tags": [
+      "web",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143688975b692556e5860a",
+    "freq": 1,
+    "question": "Какой HTTP-код ответа следует возвращать, если запрашиваемая страница не найдена?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143688975b692556e5860b",
+    "freq": 1,
+    "question": "У вас есть опыт автоматизации?",
+    "tags": [
+      "devops",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143688975b692556e5860e",
+    "freq": 1,
+    "question": "Как вы называете ветки в Git?",
+    "tags": [
+      "devops",
+      "Git",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143688975b692556e58611",
+    "freq": 1,
+    "question": "Как протестировать API, если документации еще нет, а бэкенд уже готов?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143689975b692556e587b9",
+    "freq": 1,
+    "question": "Какие методы тестирования API вы знаете?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143689975b692556e587ba",
+    "freq": 1,
+    "question": "Для чего в тестировании используют SQL?",
+    "tags": [
+      "testing",
+      "SQL",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143689975b692556e587be",
+    "freq": 1,
+    "question": "Какими характеристиками должен обладать хороший автотест?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143689975b692556e587bf",
+    "freq": 1,
+    "question": "Как UI-автотесты находят элементы на странице?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143689975b692556e587c7",
+    "freq": 1,
+    "question": "Что находится в верхней части пирамиды тестирования?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143689975b692556e587ca",
+    "freq": 1,
+    "question": "Что такое Page Object Model?",
+    "tags": [
+      "testing",
+      "Selenium",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143689975b692556e587cb",
+    "freq": 1,
+    "question": "Что такое кэш и куки?",
+    "tags": [
+      "web",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f15",
+    "freq": 1,
+    "question": "Расскажите, как вы пишете автотесты для API?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f17",
+    "freq": 1,
+    "question": "Назовите признаки хорошего автотеста.",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f18",
+    "freq": 1,
+    "question": "Как добавить REST Assured в проект, если вы используете Gradle?",
+    "tags": [
+      "testing",
+      "Java",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f57",
+    "freq": 1,
+    "question": "Вы продолжаете заниматься ручным тестированием в какой-то степени?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f5a",
+    "freq": 1,
+    "question": "Как вы подходите к анализу задачи перед написанием автотестов, чтобы избежать слепого переписывания требований в код?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f5b",
+    "freq": 1,
+    "question": "Как бы вы действовали в данной ситуации и какие шаги предприняли?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f5e",
+    "freq": 1,
+    "question": "Как избежать дублирования проверок данных, если они выполняются и на уровне API (GET-запросы), и на уровне базы данных?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f60",
+    "freq": 1,
+    "question": "Может, что-то одно оставим или и то, и то сделаем?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f61",
+    "freq": 1,
+    "question": "Что такое спринт в методологии Scrum и как организован процесс работы в течение двухнедельного спринта?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f62",
+    "freq": 1,
+    "question": "Она тоже после курсов, либо у нее уже был какой-то опыт?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f63",
+    "freq": 1,
+    "question": "Как вы оцениваете обучение в Яндекс Практикуме?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f64",
+    "freq": 1,
+    "question": "Вы вдвоем занимаетесь автотестами?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f65",
+    "freq": 1,
+    "question": "Расскажите о сценарии, который вы разработали и автоматизировали.",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f69",
+    "freq": 1,
+    "question": "Используете ли вы стандартные инструменты управления проектами, такие как Jira?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f6c",
+    "freq": 1,
+    "question": "Как вы привлекаете разработчиков к процессу код-ревью?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f6f",
+    "freq": 1,
+    "question": "Как вы организуете структуру пакетов в проекте?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f77",
+    "freq": 1,
+    "question": "Вы используете JOIN для объединения таблиц или выполняете отдельные SELECT-запросы по идентификаторам?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f78",
+    "freq": 1,
+    "question": "Является ли первичный ключ всегда идентификатором?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f79",
+    "freq": 1,
+    "question": "В каких случаях следует использовать оператор GROUP BY в SQL?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f7a",
+    "freq": 1,
+    "question": "Для чего нужны primary key в таблицах базы данных?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f7b",
+    "freq": 1,
+    "question": "Как происходит процесс автоматизации тестирования и как устроены автотесты?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f7c",
+    "freq": 1,
+    "question": "В чем разница между методами HTTP PUT, PATCH и DELETE, и в каких случаях они используются?",
+    "tags": [
+      "web",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a77",
+    "freq": 1,
+    "question": "Что такое CIL (Common Intermediate Language)?",
+    "tags": [
+      "language_specific",
+      "C#",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f7d",
+    "freq": 1,
+    "question": "У вас один репозиторий на все сервисы (монорепозиторий) или под каждый сервис выделен отдельный репозиторий?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f7e",
+    "freq": 1,
+    "question": "Являются ли методы DELETE, PATCH и GET идемпотентными?",
+    "tags": [
+      "web",
+      "HTTP",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f7f",
+    "freq": 1,
+    "question": "Для чего нужна Apache Kafka и какие задачи она решает?",
+    "tags": [
+      "backend",
+      "Kafka",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f80",
+    "freq": 1,
+    "question": "Что произойдет с объектом в базе данных в обоих случаях?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f81",
+    "freq": 1,
+    "question": "Что бы вы сделали в первую очередь: обратились к базе данных или проверили данные с помощью GET-запроса?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f82",
+    "freq": 1,
+    "question": "Что подразумевается под понятием «недолго» в контексте выполнения операций или блокировок, и кто или что ограничивает это время?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f83",
+    "freq": 1,
+    "question": "Для чего мы пишем автотесты?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f84",
+    "freq": 1,
+    "question": "Являются ли данные проверки исчерпывающими для этого сценария?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f85",
+    "freq": 1,
+    "question": "Как primary key влияет на целостность данных?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f86",
+    "freq": 1,
+    "question": "Какие проверки вы реализовали в данном коде?",
+    "tags": [
+      "backend",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f88",
+    "freq": 1,
+    "question": "Что такое идемпотентность? Является ли метод DELETE идемпотентным?",
+    "tags": [
+      "web",
+      "HTTP",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f89",
+    "freq": 1,
+    "question": "Означает ли использование метода POST, что запрос является идемпотентным или работоспособным?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f8a",
+    "freq": 1,
+    "question": "В чем разница между методами GET и POST, и как определить, какой из них работает некорректно?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f91",
+    "freq": 1,
+    "question": "В чем разница между этими двумя случаями и какой будет результат выполнения в каждом из них?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f94",
+    "freq": 1,
+    "question": "Какие типы данных и форматы дат вы будете проверять при валидации?",
+    "tags": [
+      "backend",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f96",
+    "freq": 1,
+    "question": "Какие граничные значения дат следует проверять при тестировании и какие даты считаются некорректными?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f97",
+    "freq": 1,
+    "question": "Можете ли вы напомнить, что делает данный метод (ручка) и за что он отвечает?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f98",
+    "freq": 1,
+    "question": "На чем основывается механизм проверки периода (тайм-аута) в данной системе?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f99",
+    "freq": 1,
+    "question": "Что должно находиться в базе данных при её инициализации: должна ли она быть полностью пустой или содержать какие-то начальные данные?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f9a",
+    "freq": 1,
+    "question": "Для чего мы пишем тесты?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f9b",
+    "freq": 1,
+    "question": "Как проверить, был ли успешно создан пост в базе данных?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f9d",
+    "freq": 1,
+    "question": "Как реализовать логику работы с календарем в приложении?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f9e",
+    "freq": 1,
+    "question": "Что вы имеете в виду под этим форматом даты?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58f9f",
+    "freq": 1,
+    "question": "Можете привести примеры валидных данных?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fa0",
+    "freq": 1,
+    "question": "В чем заключается отличие Revit от аналогичного программного обеспечения?",
+    "tags": [
+      "architecture",
+      "Revit",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fa2",
+    "freq": 1,
+    "question": "Считается ли это ограниченным или нет?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fa3",
+    "freq": 1,
+    "question": "Что такое пара ключ-значение (key-value) и где она используется?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fa4",
+    "freq": 1,
+    "question": "Что ожидается в таблице базы данных при выполнении запроса или проектировании схемы?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fac",
+    "freq": 1,
+    "question": "Что вы подразумеваете под кодом? Приведите, пожалуйста, пример.",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fe6",
+    "freq": 1,
+    "question": "Из чего состоит сообщение в сетевом протоколе?",
+    "tags": [
+      "networking",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368f975b692556e59237",
+    "freq": 1,
+    "question": "Что означает ошибка 404?",
+    "tags": [
+      "networking",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a14368f975b692556e59248",
+    "freq": 1,
+    "question": "Что означает ошибка 200 в HTTP?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e59369",
+    "freq": 1,
+    "question": "Для чего используются подмены трафика (map local/map remote) в Charles Proxy и какие сценарии тестирования они позволяют реализовать?",
+    "tags": [
+      "testing",
+      "Charles Proxy",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e5936e",
+    "freq": 1,
+    "question": "Какими инструментами вы пользовались для тестирования веб-приложений (фронтенда)?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e59372",
+    "freq": 1,
+    "question": "Чем отличаются HTTP-методы POST, PUT и PATCH?",
+    "tags": [
+      "web",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e59373",
+    "freq": 1,
+    "question": "Что такое Docker и Kubernetes и зачем они нужны в разработке?",
+    "tags": [
+      "devops",
+      "Docker",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e59374",
+    "freq": 1,
+    "question": "Зачем нужен Kubernetes, если уже есть Docker-контейнеры?",
+    "tags": [
+      "devops",
+      "Kubernetes",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e59375",
+    "freq": 1,
+    "question": "Вы тестировали приложение на эмуляторах, симуляторах или на реальных устройствах?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e59376",
+    "freq": 1,
+    "question": "Как воспроизвести ошибки 401 и 403 для тестирования обработки ошибок в приложении?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e59378",
+    "freq": 1,
+    "question": "В чем заключается процесс подготовки двух тестовых стендов с точки зрения тестирования: какие этапы и действия необходимо выполнить для их подготовки?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e5937a",
+    "freq": 1,
+    "question": "Какой Git-flow использовался на вашем предыдущем проекте?",
+    "tags": [
+      "devops",
+      "Git",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e5937b",
+    "freq": 1,
+    "question": "На каком окружении проходит тестирование: что это за окружение и какие у него существуют подтипы?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e5937d",
+    "freq": 1,
+    "question": "Кто отвечал за поддержку стендов в рабочем состоянии и как был организован этот процесс?",
+    "tags": [
+      "devops",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e5937e",
+    "freq": 1,
+    "question": "Какие существуют виды баз данных, например, реляционные и нереляционные?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e5937f",
+    "freq": 1,
+    "question": "Как происходит процесс обсуждения, декомпозиции и оценки бизнес-требований в вашей команде?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e59380",
+    "freq": 1,
+    "question": "Сколько человек было в вашей команде разработки?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e59382",
+    "freq": 1,
+    "question": "На каком этапе процесса разработки происходит тестирование задачи и как новому сотруднику начать тестировать на вашем проекте?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e59383",
+    "freq": 1,
+    "question": "Как вы описываете тестовую документацию на проекте: используете чек-листы или тест-кейсы? Как выглядит тест-кейс (в формате сценария/интеграции или отдельно по компонентам)?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e59386",
+    "freq": 1,
+    "question": "Что такое rebase веток и как он работает?",
+    "tags": [
+      "general",
+      "Git",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e59387",
+    "freq": 1,
+    "question": "Как организовать тестирование на одном стенде, если одновременно дорабатываются два микросервиса разными разработчиками и оба сервиса меняются?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e5938e",
+    "freq": 1,
+    "question": "Расскажите, как в вашей команде был устроен процесс работы над задачами: какую методологию вы использовали, как ставились задачи, какие стадии жизненного цикла они проходили и что являлось финальным результатом?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e59393",
+    "freq": 1,
+    "question": "Какие ваши действия при получении новой задачи на тестирование и с чего вы начинаете процесс тестирования?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e593a4",
+    "freq": 1,
+    "question": "Какой у вас был стек технологий на бэкенде и фронтенде?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e593d2",
+    "freq": 1,
+    "question": "Можете вспомнить самый сложный или интересный баг, который вы нашли?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e593d4",
+    "freq": 1,
+    "question": "В чем разница между severity (серьезностью) и priority (приоритетом) в тестировании?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e593d6",
+    "freq": 1,
+    "question": "В чем разница между severity (серьезностью) и priority (приоритетом) бага?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143690975b692556e5940e",
+    "freq": 1,
+    "question": "Как документировать API с помощью Swagger и кто обычно занимается написанием документации?",
+    "tags": [
+      "web",
+      "Swagger",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59a58",
+    "freq": 1,
+    "question": "Куда вы планируете развиваться профессионально после позиции тестировщика?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59a5d",
+    "freq": 1,
+    "question": "Где вы территориально находитесь?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59a5f",
+    "freq": 1,
+    "question": "Чем вас больше всего привлекает дальнейшее развитие в тестировании?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59a61",
+    "freq": 1,
+    "question": "Расскажите подробнее про процессы тестирования в разработке ПО.",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59a63",
+    "freq": 1,
+    "question": "Расскажите о вашем профессиональном пути за последние 7 лет: как вы начинали работу в банке и как развивалась ваша карьера на протяжении этого времени?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59a65",
+    "freq": 1,
+    "question": "Расскажите немного о вашем опыте: чем вы занимались и что тестировали на проектах? Что такое короткая презентация (elevator pitch) и что в ней самое главное?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59a67",
+    "freq": 1,
+    "question": "Сколько лет составляет ваш общий опыт работы в тестировании?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59a68",
+    "freq": 1,
+    "question": "Расскажите, как бы вы тестировали простое API для получения данных из массива?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59a69",
+    "freq": 1,
+    "question": "Как проходило ваше погружение в тестирование: начинали ли вы с ручного тестирования, а затем постепенно перешли к автоматизации?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59a6e",
+    "freq": 1,
+    "question": "Какие критерии и подходы следует использовать при подборе подходящих проектов для кандидата на основе имеющихся вакансий?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59a6f",
+    "freq": 1,
+    "question": "Как организовано тестирование в жизненном цикле разработки ПО, и по каким фазам и этапам оно происходит?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59a75",
+    "freq": 1,
+    "question": "Расскажите о вашем профессиональном опыте: над какими проектами вы работали и как был организован ваш рабочий процесс?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59ac1",
+    "freq": 1,
+    "question": "Как реализуется алгоритм сортировки пузырьком?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59ac2",
+    "freq": 1,
+    "question": "Какие встроенные декораторы есть в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59ac3",
+    "freq": 1,
+    "question": "Расскажите про декораторы в Python: какие бывают (встроенные и собственные), что они из себя представляют и для чего они нужны?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59ac4",
+    "freq": 1,
+    "question": "Что такое изменяемые (mutable) и неизменяемые (immutable) типы данных в Python, в чем между ними разница и какие примеры можно привести?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59ac5",
+    "freq": 1,
+    "question": "Расскажите про алгоритмы сортировки.",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59ac6",
+    "freq": 1,
+    "question": "Изменится ли содержимое объекта при передаче его в функцию?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59ac7",
+    "freq": 1,
+    "question": "Какие шаблоны проектирования вы применяли в своей практике?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59ac9",
+    "freq": 1,
+    "question": "Что такое принцип наследования?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59aca",
+    "freq": 1,
+    "question": "Что такое инкапсуляция и как она реализуется в Python?",
+    "tags": [
+      "oop",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59ace",
+    "freq": 1,
+    "question": "Что такое типизация и какие существуют типы данных?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59ad3",
+    "freq": 1,
+    "question": "С 2021 года по текущий момент все занимались распилом монолита?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143695975b692556e59aeb",
+    "freq": 1,
+    "question": "Какие существуют типы scope для фикстур в pytest?",
+    "tags": [
+      "testing",
+      "pytest",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143691975b692556e59552",
+    "freq": 1,
+    "question": "С какими командами (технологиями) вы работали?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143692975b692556e595c4",
+    "freq": 1,
+    "question": "Как вы структурируете API автотесты?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e5988d",
+    "freq": 1,
+    "question": "Расскажите основные принципы работы библиотеки Requests в Python.",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59896",
+    "freq": 1,
+    "question": "Расскажите, как вы использовали библиотеки Pytest или Requests в своих проектах?",
+    "tags": [
+      "testing",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e5989b",
+    "freq": 1,
+    "question": "Что такое словарь в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e5989e",
+    "freq": 1,
+    "question": "Как сделать словарь неизменяемым в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e598a0",
+    "freq": 1,
+    "question": "Можно ли использовать словарь в качестве ключа в словаре и как это реализовать?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e598a1",
+    "freq": 1,
+    "question": "Что такое образ в Docker и из чего он состоит?",
+    "tags": [
+      "devops",
+      "Docker",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e598a3",
+    "freq": 1,
+    "question": "Какие виды тестирования невозможно или нецелесообразно проводить вручную?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e598a6",
+    "freq": 1,
+    "question": "Какой командой можно читать из файла в реальном времени строки, которые содержат слово Error?",
+    "tags": [
+      "devops",
+      "Linux",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e598a8",
+    "freq": 1,
+    "question": "В чем преимущества и недостатки автоматизации тестирования?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e598a9",
+    "freq": 1,
+    "question": "Что такое базовые типы данных в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e598ad",
+    "freq": 1,
+    "question": "Как классифицируются типы данных, такие как int, float, string и bool?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e598ae",
+    "freq": 1,
+    "question": "Что делает команда docker inspect?",
+    "tags": [
+      "devops",
+      "Docker",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e598d8",
+    "freq": 1,
+    "question": "Что произойдет, если в bash-скрипте не указан shebang?",
+    "tags": [
+      "devops",
+      "Linux",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e598d9",
+    "freq": 1,
+    "question": "Что такое shebang в bash-скриптах?",
+    "tags": [
+      "backend",
+      "Bash",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e598db",
+    "freq": 1,
+    "question": "Вы начали заниматься автоматизацией на этом месте работы или раньше?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e598dc",
+    "freq": 1,
+    "question": "В каком соотношении у вас сейчас находится ручное и автоматизированное тестирование?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143697975b692556e59d05",
+    "freq": 1,
+    "question": "Расскажите про тестовый фреймворк, который вы используете на проекте: какая там методология или подход к тестированию и как именно проверяются сущности?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143697975b692556e59d07",
+    "freq": 1,
+    "question": "Чем различаются явные и неявные ожидания в тестировании (какие бывают типы ожиданий)?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143697975b692556e59d08",
+    "freq": 1,
+    "question": "Расскажите об основах Java, в частности о классах: что это такое и насколько важно глубокое понимание ООП по сравнению с прикладными техническими вопросами?",
+    "tags": [
+      "language_specific",
+      "Java",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143697975b692556e59d09",
+    "freq": 1,
+    "question": "Расскажите о ситуации, когда вы столкнулись с критическим ограничением: если проверка не проходила, вы блокировали процесс или просто фиксировали проблему?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143697975b692556e59d0a",
+    "freq": 1,
+    "question": "Как вы тестируете приложение на платформах iOS и Android: это было автоматизировано или нет?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143697975b692556e59d0b",
+    "freq": 1,
+    "question": "Какие существуют механизмы локаторов в автоматизированном тестировании?",
+    "tags": [
+      "testing",
+      "Selenium",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e5995f",
+    "freq": 1,
+    "question": "Расскажите о вашем опыте работы с Git: клонирование репозиториев, внесение изменений, коммиты, пуши, создание веток и Pull Request'ов.",
+    "tags": [
+      "backend",
+      "Git",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59961",
+    "freq": 1,
+    "question": "Из каких этапов состоял пайплайн и какие job’ы запускались при выполнении CI-тестов?",
+    "tags": [
+      "devops",
+      "CI/CD",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59963",
+    "freq": 1,
+    "question": "У вас запускается весь флоу пайплайнов на разных тестовых окружениях или только его часть, и в какой момент это происходит?",
+    "tags": [
+      "devops",
+      "CI/CD",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59964",
+    "freq": 1,
+    "question": "Был ли у вас опыт разрешения конфликтов в Git и в каких ситуациях они чаще всего возникали?",
+    "tags": [
+      "backend",
+      "Git",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59965",
+    "freq": 1,
+    "question": "Расскажите про словари в Python: что это такое и как они работают? Приведите пример.",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59966",
+    "freq": 1,
+    "question": "Как вы решали ситуацию, когда вы изменили функцию в основной ветке, а параллельно ваш коллега тоже внес изменения — чье решение должно было остаться и как вы приходили к финальному варианту?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59967",
+    "freq": 1,
+    "question": "Какие парадигмы программирования существуют в целом и какие из них вы применяли на практике?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59969",
+    "freq": 1,
+    "question": "Какая парадигма программирования используется в JavaScript и чем она характеризуется?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59970",
+    "freq": 1,
+    "question": "Был ли у вас опыт работы с C++ или похожими языками программирования?",
+    "tags": [
+      "language_specific",
+      "C++",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59971",
+    "freq": 1,
+    "question": "Какие бывают виды ожиданий (assertions/waits) в автотестах при работе с элементами интерфейса?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59973",
+    "freq": 1,
+    "question": "Чем отличаются списки, кортежи и словари в Python? Как они записываются и для чего каждый из них используется?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59974",
+    "freq": 1,
+    "question": "Расскажите о вашем опыте работы с Python.",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59983",
+    "freq": 1,
+    "question": "Как бы вы подошли к тимлиду и что бы вы ему сказали в ситуации конфликта или получения неприятного ответа со стороны напарника?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59985",
+    "freq": 1,
+    "question": "Что вы будете делать, если на ревью документации аналитик говорит, что изменение затрагивает логику функциональности другой команды и это не его зона ответственности?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59986",
+    "freq": 1,
+    "question": "Что вы будете делать в ситуации, когда коллега слишком быстро проходит тестирование своей части фичи, и вы находите критичный баг, который не был им зарегистрирован, при этом его тест-кейсы отмечены как пройденные?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59989",
+    "freq": 1,
+    "question": "Был ли у вас опыт работы с лямбда-функциями в Python? Как они записываются и для чего используются?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e5998d",
+    "freq": 1,
+    "question": "Что такое параметр self, который передается первым аргументом при объявлении метода класса в Python, и для чего он используется?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e5998e",
+    "freq": 1,
+    "question": "Как выстроить взаимодействие с коллегой, который агрессивно реагирует на замечания о дефектах в его коде и утверждает, что лучше знает функциональность?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e5998f",
+    "freq": 1,
+    "question": "Какие ваши конкретные действия на ретроспективе, если вы видите, что тестировщики систематически задерживают тестирование задач?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59990",
+    "freq": 1,
+    "question": "Для чего используются функции в программировании, зачем они нужны и что они делают?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59991",
+    "freq": 1,
+    "question": "Что вы будете делать, если в конце спринта большая часть задач остаётся в очереди на тестирование, и как вы будете разбираться с этой ситуацией?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59992",
+    "freq": 1,
+    "question": "Как перейти от ручного тестирования к автоматизированному и проверить, что заказ был успешно оформлен?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59995",
+    "freq": 1,
+    "question": "Какие инструменты вы сейчас используете в работе и какие новые технологии хотели бы попробовать?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59996",
+    "freq": 1,
+    "question": "В какую сторону вы хотите развиваться дальше: в административную работу, в техническую или в глубокое погружение в бизнес-логику продукта?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59997",
+    "freq": 1,
+    "question": "Расскажите, что такое оператор SELECT в SQL и чем он отличается от SELECT с использованием условий (например, с WHERE)?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59998",
+    "freq": 1,
+    "question": "Как вы относитесь к выполнению тестового задания (написание тестов в Jira и БК, офлайн)?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e59999",
+    "freq": 1,
+    "question": "На примере вашего проекта: накидайте список тестов для системы отзывов на маркетплейсе (оценка/рейтинг, текстовый комментарий и возможное добавление фотографии).",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e5999a",
+    "freq": 1,
+    "question": "На примере системы отзывов составьте список тестов: от высокоуровневых сценариев до конкретных техник тестирования.",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e5999b",
+    "freq": 1,
+    "question": "В чём отличие пакетов и модулей в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e5999c",
+    "freq": 1,
+    "question": "Какие существуют подходы к хранению или получению адреса в коде: хранение в памяти, генерация на лету или другие методы?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e5999d",
+    "freq": 1,
+    "question": "Как вы будете действовать на ретроспективе, если видите, что задачи в тестировании постоянно задерживаются?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e5999e",
+    "freq": 1,
+    "question": "Можешь уточнить, что ты имеешь в виду под словом «побьешь»?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e5999f",
+    "freq": 1,
+    "question": "Как в ваших командах организована работа системного аналитика: есть ли выделенный системный аналитик на команду или он закрепляется на фичи, сервисы или крупные доработки?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e599a0",
+    "freq": 1,
+    "question": "Где и как вы храните переменные окружения в проекте (локально, в Docker, в CI/CD) и как вы настраиваете их управление?",
+    "tags": [
+      "devops",
+      "Docker",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e599a1",
+    "freq": 1,
+    "question": "На каком уровне вы работали с базами данных, например, с написанием запросов? Расскажите подробнее.",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e599a2",
+    "freq": 1,
+    "question": "Что делать на ретроспективе, если команда попыталась внедрить написание тест-кейсов, но ситуация с очередями не улучшилась?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e599a4",
+    "freq": 1,
+    "question": "Почему вы решили остаться именно в тестировании?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e599a9",
+    "freq": 1,
+    "question": "Расскажите про тестирование уровней выше юнит-тестирования: какие существуют виды и подходы, и как вы их применяете?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e599aa",
+    "freq": 1,
+    "question": "Расскажите про процессы в команде: что вам в них нравилось, что не нравилось и что хотелось бы улучшить?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e599ab",
+    "freq": 1,
+    "question": "Расскажите в двух словах о своем предыдущем проекте, над которым вы работали.",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e599b2",
+    "freq": 1,
+    "question": "Как у вас устроен процесс разработки, когда поступает новая задача, например, на реализацию фичи?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  },
+  {
+    "id": "q-6a143694975b692556e599b5",
+    "freq": 1,
+    "question": "Как бы вы подошли к выполнению задачи по сбору отчета о страницах и связанных ресурсах, которые отдают ошибку 404, и какие уточняющие вопросы вы бы задали для определения требований к отчету?",
+    "tags": [
+      "web",
+      "middle"
+    ],
+    "direction": "qa-automation"
+  }
+]

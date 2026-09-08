@@ -1,0 +1,701 @@
+[
+  {
+    "id": "q-6a143680975b692556e563ab",
+    "freq": 18,
+    "question": "Расскажите о себе.",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143680975b692556e563d4",
+    "freq": 10,
+    "question": "Что такое race condition?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143680975b692556e5641b",
+    "freq": 6,
+    "question": "Какой стек технологий вы используете?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143680975b692556e56d35",
+    "freq": 6,
+    "question": "Какая была ваша роль в этом проекте?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143680975b692556e5645b",
+    "freq": 4,
+    "question": "Из каких основных компонентов состоит архитектура RAG (Retrieval-Augmented Generation)?",
+    "tags": [
+      "architecture",
+      "AI",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143680975b692556e56652",
+    "freq": 4,
+    "question": "Что такое градиентный бустинг и как он устроен?",
+    "tags": [
+      "algorithms",
+      "Machine Learning",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143680975b692556e564d9",
+    "freq": 3,
+    "question": "Как работает RAG (Retrieval-Augmented Generation)?",
+    "tags": [
+      "architecture",
+      "AI",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143680975b692556e56722",
+    "freq": 2,
+    "question": "В чем отличие t-теста от z-теста?",
+    "tags": [
+      "algorithms",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143680975b692556e5678e",
+    "freq": 2,
+    "question": "Какие метрики используются для оценки качества моделей классификации?",
+    "tags": [
+      "algorithms",
+      "Machine Learning",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143680975b692556e567a4",
+    "freq": 2,
+    "question": "Что это даст?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143680975b692556e567c5",
+    "freq": 2,
+    "question": "Из чего состоит React и как он работает?",
+    "tags": [
+      "frontend",
+      "React",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143680975b692556e564cb",
+    "freq": 2,
+    "question": "Был ли у вас опыт написания тестов и участия в код-ревью, и как это было связано с процессом тестирования?",
+    "tags": [
+      "testing",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143680975b692556e567cc",
+    "freq": 2,
+    "question": "Расскажите про линейную регрессию.",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143680975b692556e569e2",
+    "freq": 2,
+    "question": "Как объединить массивы?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a14368f975b692556e59180",
+    "freq": 2,
+    "question": "Как устроен метод collect в PySpark?",
+    "tags": [
+      "data_structures",
+      "PySpark",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143694975b692556e59920",
+    "freq": 2,
+    "question": "Расскажите, как проводить последовательные A/B-тесты.",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143694975b692556e59925",
+    "freq": 2,
+    "question": "Опишите вашу самую сложную задачу на предыдущем месте работы.",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143694975b692556e59935",
+    "freq": 2,
+    "question": "Расскажите, какой стек технологий использовался на вашем предыдущем месте работы?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143684975b692556e57a1f",
+    "freq": 1,
+    "question": "Опишите, как вы подходили к решению задачи, где данных мало.",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143684975b692556e57a23",
+    "freq": 1,
+    "question": "Как бы вы оценили качество чат-бота для клиентского сервиса?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143684975b692556e57a26",
+    "freq": 1,
+    "question": "Какие методы используются для уменьшения шума в изображении?",
+    "tags": [
+      "algorithms",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143684975b692556e57a28",
+    "freq": 1,
+    "question": "Как бы вы организовали процесс сбора (парсинга) данных?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143684975b692556e57a29",
+    "freq": 1,
+    "question": "Какие фильтры вы применяли в своей работе?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143684975b692556e57a2c",
+    "freq": 1,
+    "question": "Какие преимущества у YOLO перед другими алгоритмами детекции объектов?",
+    "tags": [
+      "algorithms",
+      "YOLO",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143684975b692556e57a4e",
+    "freq": 1,
+    "question": "Какие методы и инструменты логирования вы использовали в своей работе?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a14368f975b692556e59181",
+    "freq": 1,
+    "question": "Чем градиентный бустинг лучше случайного леса?",
+    "tags": [
+      "algorithms",
+      "Machine Learning",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a14368f975b692556e59187",
+    "freq": 1,
+    "question": "Расскажите про основные типы JOIN в SQL.",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143690975b692556e59415",
+    "freq": 1,
+    "question": "Что вы ищете в работе и какими задачами хотели бы заниматься?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143690975b692556e59417",
+    "freq": 1,
+    "question": "Насколько сильно вас привлекали к разработке на этом проекте?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143690975b692556e59418",
+    "freq": 1,
+    "question": "Расскажите, пожалуйста, о проекте, на стыке каких технологий или областей он был реализован?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143691975b692556e5942f",
+    "freq": 1,
+    "question": "Откуда оптимизатор базы данных знает количество строк в таблице и на основе чего он это определяет?",
+    "tags": [
+      "database",
+      "SQL",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143691975b692556e59430",
+    "freq": 1,
+    "question": "Нужно ли запускать сбор статистики в базе данных и зачем?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143691975b692556e59433",
+    "freq": 1,
+    "question": "Как вы будете искать нужный элемент в списке данных, если вам необходимо оптимизировать процесс поиска?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143691975b692556e59434",
+    "freq": 1,
+    "question": "Почему доступ к элементам словаря (хеш-таблицы) осуществляется за константное время O(1)?",
+    "tags": [
+      "data_structures",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143691975b692556e5943d",
+    "freq": 1,
+    "question": "Что в этом плохого?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143691975b692556e5943e",
+    "freq": 1,
+    "question": "Что делают оптимизаторы запросов в базах данных и какие факторы влияют на выбор плана выполнения?",
+    "tags": [
+      "database",
+      "SQL",
+      "senior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143691975b692556e59441",
+    "freq": 1,
+    "question": "Вам приходилось решать задачи на оптимизацию на ваших проектах?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143691975b692556e59442",
+    "freq": 1,
+    "question": "Почему оптимизатор выбирает тот или иной тип соединения (например, Nested Loop Join vs Hash Join) и как это влияет на скорость выполнения запроса?",
+    "tags": [
+      "database",
+      "SQL",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143691975b692556e59445",
+    "freq": 1,
+    "question": "Почему и в каких случаях используется тип данных Date?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143692975b692556e59694",
+    "freq": 1,
+    "question": "Был ли у вас опыт проведения мероприятий, митапов или конференций внутри компании? Если да, расскажите об этом, а также о вашем внешнем опыте в подобных активностях.",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143692975b692556e59695",
+    "freq": 1,
+    "question": "Как вы выстраивали взаимодействие с внутренними и внешними командами? С какими командами вам было комфортно работать, а с какими возникали сложности?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143692975b692556e59696",
+    "freq": 1,
+    "question": "Как внутри команды вы использовали методологии разработки: какие процессы и подходы применяли?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143692975b692556e59697",
+    "freq": 1,
+    "question": "Расскажите о вашем опыте работы: какие интересные проекты вы реализовали за последние 4 года и какие из них можно описать без сильной привязки к конкретному технологическому стеку?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143692975b692556e5969b",
+    "freq": 1,
+    "question": "Расскажите, был ли у вас опыт менторства? Опишите, как проходило наставничество и каких результатов удалось достичь.",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143692975b692556e596a2",
+    "freq": 1,
+    "question": "Когда вы планируете переезжать?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143692975b692556e596a4",
+    "freq": 1,
+    "question": "Как вы оцениваете свой уровень квалификации: junior, middle или senior?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143692975b692556e596a6",
+    "freq": 1,
+    "question": "Каким стеком технологий вы пользуетесь при работе с CI/CD (Continuous Integration/Continuous Deployment)?",
+    "tags": [
+      "devops",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143692975b692556e596ab",
+    "freq": 1,
+    "question": "Сколько обычно времени требуется на выход на работу после получения оффера?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143692975b692556e596bf",
+    "freq": 1,
+    "question": "В каких технологиях из вашего стека вы чувствуете себя неуверенно или с чем бы вы не хотели больше работать?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143692975b692556e596cb",
+    "freq": 1,
+    "question": "В какой технологии из вашего стека вы чувствуете себя максимально уверенно?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143693975b692556e59754",
+    "freq": 1,
+    "question": "Расскажите на примере вашего опыта работы в проекте такси: какие задачи вы решали и чем занимались?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143693975b692556e59759",
+    "freq": 1,
+    "question": "Работаете ли вы с данными инструментами или технологиями на реальных проектах, или используете их только в экспериментальных целях?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143693975b692556e5975b",
+    "freq": 1,
+    "question": "Зачем нужно контролирование версий?",
+    "tags": [
+      "devops",
+      "Git",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143693975b692556e5975d",
+    "freq": 1,
+    "question": "Какие архитектуры нейронных сетей сейчас наиболее актуальны и используются в компьютерном зрении?",
+    "tags": [
+      "architecture",
+      "Computer Vision",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143693975b692556e5975f",
+    "freq": 1,
+    "question": "Почему в данном подходе не используются деревья?",
+    "tags": [
+      "data_structures",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143693975b692556e59761",
+    "freq": 1,
+    "question": "Какую метрику вы использовали для оценки эффективности решения?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143693975b692556e59764",
+    "freq": 1,
+    "question": "Какие существуют методы борьбы с переобучением модели?",
+    "tags": [
+      "algorithms",
+      "Machine Learning",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143693975b692556e59765",
+    "freq": 1,
+    "question": "Расскажите, какие задачи вы решали в области машинного обучения, связанные с классификацией и регрессией, и напомните основные метрики для оценки качества этих моделей.",
+    "tags": [
+      "algorithms",
+      "Machine Learning",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143693975b692556e59768",
+    "freq": 1,
+    "question": "Какие проблемы могут возникнуть при обучении модели, если признаки (features) являются зависимыми (мультиколлинеарность)?",
+    "tags": [
+      "algorithms",
+      "Machine Learning",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143693975b692556e59773",
+    "freq": 1,
+    "question": "Расскажите про легализацию кода: какие варианты или подходы существуют?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143694975b692556e5991a",
+    "freq": 1,
+    "question": "Какие задачи решает NLP?",
+    "tags": [
+      "backend",
+      "Python",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143694975b692556e59922",
+    "freq": 1,
+    "question": "Как проводить последовательный A/B тест и когда его можно остановить: по прошествии времени или при наступлении заранее определённого события?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143694975b692556e5992b",
+    "freq": 1,
+    "question": "Какая была задача сама по себе?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143694975b692556e5992c",
+    "freq": 1,
+    "question": "Расскажите о вашем опыте и приведите пример одной интересной задачи, которую вы решали.",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143694975b692556e5992d",
+    "freq": 1,
+    "question": "Расскажите, в каком сценарии вы использовали [технология/инструмент] на предыдущем месте работы?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143694975b692556e59936",
+    "freq": 1,
+    "question": "Расскажите про интересную задачу с применением машинного обучения на предыдущем месте работы.",
+    "tags": [
+      "backend",
+      "Machine Learning",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143694975b692556e59968",
+    "freq": 1,
+    "question": "Какие способы решения данного дифференциального уравнения вы знаете?",
+    "tags": [
+      "algorithms",
+      "middle"
+    ],
+    "direction": "data-scientist"
+  },
+  {
+    "id": "q-6a143694975b692556e5996c",
+    "freq": 1,
+    "question": "Расскажите, что такое GEP-модель (Gene Expression Programming)?",
+    "tags": [
+      "algorithms",
+      "senior"
+    ],
+    "direction": "data-scientist"
+  }
+]

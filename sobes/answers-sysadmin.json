@@ -1,0 +1,25 @@
+{
+  "answers": [
+    {
+      "id": 3501,
+      "answer": "DNS — это система преобразования доменов в IP: root, TLD, authoritative; записи A/AAAA/CNAME/MX/NS/TXT; кэширование.",
+      "explanation": "DNS — домен -> IP, иерархия, записи. Распространённое заблуждение: «DNS — протокол прикладного уровня для передачи файлов» — это неверно.",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 3811,
+      "answer": "SUID — выполнение от имени владельца; SGID — от группы/наследование; sticky — только владелец удаляет.",
+      "explanation": "SUID/SGID/sticky: special file permissions.",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 3919,
+      "answer": "К основным вариантам относятся: A, AAAA, CNAME, MX, TXT, NS, PTR, SOA, SRV, CAA.",
+      "explanation": "DNS record types.",
+      "options": [],
+      "correctIndex": null
+    }
+  ]
+}

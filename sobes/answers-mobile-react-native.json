@@ -1,0 +1,11 @@
+{
+  "answers": [
+    {
+      "id": 3764,
+      "answer": "React Native — мобильные приложения, нативные компоненты, JS/React; React — веб DOM.",
+      "explanation": "React Native: мобильный, нативные компоненты. Распространённое заблуждение: «React и React Native несовместимы по синтаксису» — это неверно.",
+      "options": [],
+      "correctIndex": null
+    }
+  ]
+}

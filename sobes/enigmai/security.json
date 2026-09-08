@@ -1,0 +1,252 @@
+[
+  {
+    "id": "q-6a143681975b692556e56eb9",
+    "freq": 10,
+    "question": "Почему вы решили уйти с предыдущего места работы?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a143680975b692556e56430",
+    "freq": 5,
+    "question": "Что такое OWASP Top 10 и какие основные уязвимости из этого списка вы можете назвать?",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a143680975b692556e5678b",
+    "freq": 3,
+    "question": "Что такое MITRE ATT&CK?",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a143680975b692556e56583",
+    "freq": 3,
+    "question": "Какие мероприятия необходимо проводить в соответствии с 98-ФЗ «О коммерческой тайне»?",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a143680975b692556e56542",
+    "freq": 2,
+    "question": "Как вы моделируете угрозы?",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a143690975b692556e5929d",
+    "freq": 2,
+    "question": "Какие мероприятия необходимо провести для обеспечения соответствия требованиям 152-ФЗ «О персональных данных»?",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a14368a975b692556e588c4",
+    "freq": 1,
+    "question": "Что вы можете рассказать о своих функциях как специалиста по организации обработки персональных данных?",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a14368a975b692556e588ca",
+    "freq": 1,
+    "question": "Почему вы говорите, что существует три уровня защищённости?",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f5d",
+    "freq": 1,
+    "question": "Расскажите про модель CI (Continuous Integration).",
+    "tags": [
+      "devops",
+      "junior"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a14368e975b692556e590bb",
+    "freq": 1,
+    "question": "Что такое персональные данные и какие существуют основные требования к их обработке?",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a14368f975b692556e59194",
+    "freq": 1,
+    "question": "Какие существуют основные угрозы информационной безопасности?",
+    "tags": [
+      "security",
+      "junior"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a14368f975b692556e59197",
+    "freq": 1,
+    "question": "Какие существуют угрозы информационной безопасности и что входит в список OWASP Top 10?",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a14368f975b692556e591aa",
+    "freq": 1,
+    "question": "Что такое риск в контексте управления проектами или разработки ПО?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a14368f975b692556e591af",
+    "freq": 1,
+    "question": "Что такое OWASP Top 10?",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a14368f975b692556e591b1",
+    "freq": 1,
+    "question": "Как работает протокол аутентификации Kerberos?",
+    "tags": [
+      "security",
+      "senior"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a14368f975b692556e591b3",
+    "freq": 1,
+    "question": "Что такое угроза в контексте информационной безопасности?",
+    "tags": [
+      "security",
+      "junior"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a14368f975b692556e59291",
+    "freq": 1,
+    "question": "Какие базовые вещи вы имеете в виду?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a14368f975b692556e59293",
+    "freq": 1,
+    "question": "Чем занимаются организации?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a143690975b692556e59299",
+    "freq": 1,
+    "question": "Что означает пункт «разработка и внедрение локальной нормативной документации» и к чему он относится в контексте 152-ФЗ?",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a143690975b692556e592a1",
+    "freq": 1,
+    "question": "Кто в вашей команде занимается вопросами информационной безопасности?",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a143690975b692556e592aa",
+    "freq": 1,
+    "question": "В резюме указано: «организовал закрытие тринадцати уязвимостей» — расскажите, как именно это было реализовано организационно и какой процесс был выстроен для их устранения?",
+    "tags": [
+      "security",
+      "middle"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a143690975b692556e592be",
+    "freq": 1,
+    "question": "Как обеспечить режим коммерческой тайны в соответствии с Федеральным законом № 98-ФЗ?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a143694975b692556e598a2",
+    "freq": 1,
+    "question": "Что именно подразумевается под фразой «безопасность искусственного интеллекта»?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a143694975b692556e598a7",
+    "freq": 1,
+    "question": "Как выстроить процесс взаимодействия с большим количеством крупных заказчиков (около 20)?",
+    "tags": [
+      "behavioral",
+      "senior"
+    ],
+    "direction": "security"
+  },
+  {
+    "id": "q-6a143694975b692556e598b2",
+    "freq": 1,
+    "question": "Как выстроить взаимодействие между командами продаж и производства: кто является точкой контакта (фронтом), какие процессы и подходы использовать, каков ритм взаимодействия, и как должна быть организована работа аккаунт-менеджера при коммуникации с производством?",
+    "tags": [
+      "architecture",
+      "senior"
+    ],
+    "direction": "security"
+  }
+]

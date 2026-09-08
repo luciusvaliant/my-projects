@@ -1,0 +1,147 @@
+[
+  {
+    "id": "q-6a143680975b692556e566bc",
+    "freq": 5,
+    "question": "Можно ли использовать кортеж, внутри которого в качестве элемента находится список или словарь?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "frontend-react"
+  },
+  {
+    "id": "q-6a143681975b692556e56fe1",
+    "freq": 4,
+    "question": "Какие метрики вы отслеживали в своих проектах?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "frontend-react"
+  },
+  {
+    "id": "q-6a143680975b692556e56479",
+    "freq": 3,
+    "question": "Как вы измеряли результаты своей работы?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "frontend-react"
+  },
+  {
+    "id": "q-6a143680975b692556e5658b",
+    "freq": 2,
+    "question": "Как вы принимали решение о распределении логики между клиентом и сервером?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "frontend-react"
+  },
+  {
+    "id": "q-6a143680975b692556e567bb",
+    "freq": 2,
+    "question": "Какие инструменты обеспечения качества (QA) вы внедряли в процессы разработки?",
+    "tags": [
+      "testing",
+      "middle"
+    ],
+    "direction": "frontend-react"
+  },
+  {
+    "id": "q-6a143680975b692556e567b3",
+    "freq": 2,
+    "question": "Какие проблемы производительности вы решали?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "frontend-react"
+  },
+  {
+    "id": "q-6a143680975b692556e567cf",
+    "freq": 2,
+    "question": "Какие архитектурные решения вы принимали лично?",
+    "tags": [
+      "architecture",
+      "senior"
+    ],
+    "direction": "frontend-react"
+  },
+  {
+    "id": "q-6a143680975b692556e567a3",
+    "freq": 2,
+    "question": "Какой вклад вы внесли в разработку стандартов команды?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "frontend-react"
+  },
+  {
+    "id": "q-6a143680975b692556e567a6",
+    "freq": 2,
+    "question": "На какую сумму вы рассчитываете, чтобы принять оффер?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "frontend-react"
+  },
+  {
+    "id": "q-6a143694975b692556e599ad",
+    "freq": 1,
+    "question": "Как реализовать FSD (Feature-Sliced Design) архитектуру?",
+    "tags": [
+      "architecture",
+      "Frontend",
+      "middle"
+    ],
+    "direction": "frontend-react"
+  },
+  {
+    "id": "q-6a143694975b692556e599d2",
+    "freq": 1,
+    "question": "Какие уровни кеширования существуют во фронтенд-части Next.js приложения?",
+    "tags": [
+      "web",
+      "Next.js",
+      "middle"
+    ],
+    "direction": "frontend-react"
+  },
+  {
+    "id": "q-6a143694975b692556e599d5",
+    "freq": 1,
+    "question": "Расскажите про ваш проект на Next.js: какие задачи вы выполняли самостоятельно, а какие делегировали или определяли как тимлид/технический руководитель?",
+    "tags": [
+      "web",
+      "Next.js",
+      "senior"
+    ],
+    "direction": "frontend-react"
+  },
+  {
+    "id": "q-6a143695975b692556e599da",
+    "freq": 1,
+    "question": "Как бы вы оптимизировали клиентскую производительность в Next.js-приложении?",
+    "tags": [
+      "frontend",
+      "Next.js",
+      "middle"
+    ],
+    "direction": "frontend-react"
+  },
+  {
+    "id": "q-6a143695975b692556e599de",
+    "freq": 1,
+    "question": "Какие позиции для себя рассматриваете и на что обращаете внимание при выборе компании?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "frontend-react"
+  }
+]

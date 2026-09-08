@@ -1,0 +1,374 @@
+[
+  {
+    "id": "q-6a143680975b692556e567d4",
+    "freq": 2,
+    "question": "Как работает RPC под капотом?",
+    "tags": [
+      "networking",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143695975b692556e59a95",
+    "freq": 1,
+    "question": "Что такое диспетчеризация и какие существуют её типы?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143695975b692556e59a96",
+    "freq": 1,
+    "question": "Расскажите про диспетчеризацию методов.",
+    "tags": [
+      "oop",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143695975b692556e59a97",
+    "freq": 1,
+    "question": "Как метод swizzling связан с диспетчеризацией методов в Objective-C?",
+    "tags": [
+      "language_specific",
+      "Objective-C",
+      "senior"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143695975b692556e59a98",
+    "freq": 1,
+    "question": "Что такое метод swizzling?",
+    "tags": [
+      "language_specific",
+      "Objective-C",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143695975b692556e59a99",
+    "freq": 1,
+    "question": "Какой тип dispatch используется в протоколах в Swift?",
+    "tags": [
+      "language_specific",
+      "Swift",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143695975b692556e59a9a",
+    "freq": 1,
+    "question": "Как работает диспетчеризация методов при расширении протокола?",
+    "tags": [
+      "language_specific",
+      "Swift",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143695975b692556e59a9b",
+    "freq": 1,
+    "question": "Какой механизм диспетчеризации методов используется в протоколах?",
+    "tags": [
+      "language_specific",
+      "Swift",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143695975b692556e59aa0",
+    "freq": 1,
+    "question": "Что такое модель акторов (Actor Model)?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143695975b692556e59aa2",
+    "freq": 1,
+    "question": "Как работает механизм dispatch для методов, определенных в extension протокола в Swift, если они не были переопределены в реализации типа?",
+    "tags": [
+      "language_specific",
+      "Swift",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143695975b692556e59aa3",
+    "freq": 1,
+    "question": "Что такое метод dispatch?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143695975b692556e59aa5",
+    "freq": 1,
+    "question": "Что вы можете сказать про протоколы и как в них работает dispatch?",
+    "tags": [
+      "language_specific",
+      "Swift",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143695975b692556e59ac8",
+    "freq": 1,
+    "question": "Как работает автоматический подсчет ссылок (reference counting) под капотом?",
+    "tags": [
+      "language_specific",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143695975b692556e59acb",
+    "freq": 1,
+    "question": "Расскажите подробно про сайд-эффекты (side effects) в программировании.",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143695975b692556e59ad7",
+    "freq": 1,
+    "question": "Как гарантировать, что при выполнении кода вывод всегда будет 1 2 3?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b72",
+    "freq": 1,
+    "question": "Какие именно анимации вы реализовывали и какие свойства элементов изменялись в процессе анимации?",
+    "tags": [
+      "frontend",
+      "CSS",
+      "junior"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b76",
+    "freq": 1,
+    "question": "Приходилось ли вам в рамках проекта заниматься написанием технической документации, например, создавать блок-схемы или описывать архитектуру классов и интерфейсов?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b7b",
+    "freq": 1,
+    "question": "Как организовать кэширование в системе и что именно стоит кэшировать?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b7c",
+    "freq": 1,
+    "question": "Какие еще структуры данных вы использовали на практике, помимо тех, что уже обсуждали (например, бинарных деревьев)?",
+    "tags": [
+      "data_structures",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b7d",
+    "freq": 1,
+    "question": "Что такое принципы SOLID? Расскажите подробнее про принцип открытости/закрытости (Open-Closed Principle) и принцип разделения интерфейса (Interface Segregation Principle).",
+    "tags": [
+      "oop",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b7e",
+    "freq": 1,
+    "question": "Как с помощью горутин в Go дождаться завершения выполнения нескольких задач, например загрузки пяти файлов, и выполнить дальнейшие действия после их завершения с учетом обработки ошибок?",
+    "tags": [
+      "concurrency",
+      "Go",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b7f",
+    "freq": 1,
+    "question": "Как реализовать механизм получения ленты новостей?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b80",
+    "freq": 1,
+    "question": "Сколько данных следует запрашивать за один раз и почему именно так?",
+    "tags": [
+      "backend",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b81",
+    "freq": 1,
+    "question": "В какой момент жизненного цикла UIViewController вызывается метод viewDidLoad и когда именно он срабатывает?",
+    "tags": [
+      "language_specific",
+      "iOS",
+      "junior"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b82",
+    "freq": 1,
+    "question": "Что такое документация кода и какие основные элементы она должна содержать, например, описание классов и методов?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b83",
+    "freq": 1,
+    "question": "Какую минимальную версию операционной системы вы не поддерживаете?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b84",
+    "freq": 1,
+    "question": "Какой у вас опыт работы с протоколами клиент-серверного взаимодействия, в частности, есть ли опыт работы с WebSocket в дополнение к HTTP?",
+    "tags": [
+      "networking",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b85",
+    "freq": 1,
+    "question": "Какие структуры данных существуют в языке Go?",
+    "tags": [
+      "data_structures",
+      "Go",
+      "junior"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b86",
+    "freq": 1,
+    "question": "Как вы выбрали именно число 14?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b89",
+    "freq": 1,
+    "question": "Как можно избежать race condition (состояния гонки) и как от него защититься?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b8a",
+    "freq": 1,
+    "question": "В чем разница между interface{}, any и nil в языке Go?",
+    "tags": [
+      "language_specific",
+      "Go",
+      "junior"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b8c",
+    "freq": 1,
+    "question": "Сколько iOS-разработчиков в команде и насколько комфортно работать в связке с ними?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b8d",
+    "freq": 1,
+    "question": "Как вы будете искать проблему, когда в приложении начинаются просадки производительности, и на что будете обращать внимание?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b90",
+    "freq": 1,
+    "question": "Что ты выберешь для реализации этого компонента и на каких технологиях будешь его строить?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b91",
+    "freq": 1,
+    "question": "Как работает механизм передачи крутящего момента от двигателя к рабочим органам комбайна?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  },
+  {
+    "id": "q-6a143696975b692556e59b93",
+    "freq": 1,
+    "question": "Какие паттерны проектирования вы используете в разработке (за исключением архитектурных) и можете ли рассказать о них подробнее?",
+    "tags": [
+      "oop",
+      "middle"
+    ],
+    "direction": "mobile-ios"
+  }
+]

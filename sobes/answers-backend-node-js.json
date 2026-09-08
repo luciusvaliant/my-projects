@@ -1,0 +1,116 @@
+{
+  "answers": [
+    {
+      "id": 923,
+      "answer": "Node.js — это среда JS вне браузера на V8: серверы, API, CLI; неблокирующий I/O и event loop; один язык для фронта и бэка.",
+      "explanation": "Node.js — JS на сервере (V8); неблокирующий I/O. Распространённое заблуждение: «Node.js — это фреймворк для создания веб-интерфейсов» — это неверно. Также неверно утверждение: «Node.js работает только внутри браузера».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 924,
+      "answer": "Express.js — это минималистичный веб-фреймворк: роутинг (app.get/post), middleware, запросы/ответы, статика; стандарт для REST API на Node.",
+      "explanation": "Express — роутинг + middleware для Node; REST API. Распространённое заблуждение: «Express — это база данных для Node.js» — это неверно. Также неверно утверждение: «Express используется только для фронтенд-разработки».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 925,
+      "answer": "Middleware в Express.js — это функции в цепочке: (req,res,next) — логика (логи, auth, парсинг), next() дальше или ответ; конвейер между запросом и обработчиком.",
+      "explanation": "Express middleware — (req,res,next); конвейер обработки. Распространённое заблуждение: «Middleware — это финальный обработчик маршрута» — это неверно. Также неверно утверждение: «Middleware в Express не может изменять запрос или ответ».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1649,
+      "answer": "Express.js — это веб-фреймворк для Node: маршрутизация, middleware — функции в цепочке (req, res, next); для логирования, парсинга, auth; порядок важен.",
+      "explanation": "Express — маршрутизация, middleware (req, res, next). Распространённое заблуждение: «Middleware — это функции только для обработки ошибок» — это неверно. Также неверно утверждение: «Express — это полнофункциональный фреймворк с ORM».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1651,
+      "answer": "CommonJS — require/module.exports (синхронная, исторический); ES — import/export (статическая, стандарт); оба поддерживаются; ES — современный выбор.",
+      "explanation": "CommonJS — require; ES — import/export; ES современнее. Распространённое заблуждение: «ES-модули — это require/module.exports» — это неверно. Также неверно утверждение: «CommonJS поддерживает статический анализ и tree-shaking».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1652,
+      "answer": "Потоки (streams) в Node.js — это обработка по частям: без загрузки всего в память; Readable, Writable, Duplex, Transform; для больших файлов; pipe() для соединения.",
+      "explanation": "Streams — по частям; Readable/Writable; pipe(). Распространённое заблуждение: «Streams — это загрузка всех данных в память сразу» — это неверно. Также неверно утверждение: «pipe() используется для создания новых потоков».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 1653,
+      "answer": "Кластеризация и worker threads в Node.js — это cluster — процессы по ядрам CPU (масштабирование); worker threads — потоки внутри процесса (CPU-bound без блокировки); масштаб vs вычисления.",
+      "explanation": "Cluster — процессы по ядрам; workers — для CPU-bound. Распространённое заблуждение: «Cluster — это потоки внутри одного процесса» — это неверно. Также неверно утверждение: «Worker threads используются для масштабирования по ядрам».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 2347,
+      "answer": "Node.js — это javaScript на сервере: V8, event loop для асинхронности — неблокирующий I/O; для API и real-time — один язык; npm для пакетов; однопоточный для I/O-bound.",
+      "explanation": "Node.js — JS на сервере; event loop; для I/O-bound. Распространённое заблуждение: «Node.js — это многопоточная платформа» — это неверно. Также неверно утверждение: «Event loop в Node.js блокирует при I/O».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 2348,
+      "answer": "Event loop в Node.js — это цикл событий: фазы для таймеров, I/O, callbacks — неблокирующая; process.nextTick и setImmediate для отложенного; конкурентность без потоков; фазы для предсказуемости.",
+      "explanation": "Event loop — фазы; nextTick, setImmediate; неблокирующий. Распространённое заблуждение: «Event loop — это многопоточный механизм» — это неверно. Также неверно утверждение: «process.nextTick выполняется после setImmediate».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 3012,
+      "answer": "Event loop в Node.js — это цикл событий: для неблокирующего I/O — обработка событий и колбэков; фазы — timers, I/O, poll, check; для конкурентности без потоков — один поток; основа асинхронности.",
+      "explanation": "Event loop — цикл событий; фазы; неблокирующий; основа. Распространённое заблуждение: «Event loop — это многопоточная модель в Node.js» — это неверно. Также неверно утверждение: «Event loop использует блокирующий I/O».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 3013,
+      "answer": "Express.js и middleware — это веб-фреймворк для Node: минималистичный — для API и веб; middleware — функции в цепочке (аутентификация, логирование, парсинг); app.use для регистрации — порядок важен; гибкая.",
+      "explanation": "Express — минималистичный; middleware — цепочка; app.use. Распространённое заблуждение: «Express — это полнофункциональный фреймворк с батарейками» — это неверно. Также неверно утверждение: «Middleware не используются в Express».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 3014,
+      "answer": "Npm и package.json — это пакетный менеджер: для установки и управления — npm install, npm run; package.json — манифест (зависимости, скрипты — воспроизводимость); package-lock для фиксации; стандарт.",
+      "explanation": "npm — пакетный менеджер; package.json — манифест; lock. Распространённое заблуждение: «npm — это инструмент только для запуска скриптов» — это неверно. Также неверно утверждение: «package.json не содержит информацию о зависимостях».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 3015,
+      "answer": "Streams в Node.js — это потоковая обработка: для больших по частям — не всё в память; типы — Readable, Writable, Duplex, Transform; pipe для соединения; для файлов, сети — эффективное; основа I/O.",
+      "explanation": "Streams — по частям; Readable, Writable; pipe; для больших. Распространённое заблуждение: «Streams — это загрузка всех данных в память сразу» — это неверно. Также неверно утверждение: «pipe не используется для соединения потоков».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 3016,
+      "answer": "Cluster — множество процессов (для всех ядер — форк для параллелизма); worker threads — потоки внутри (для CPU-bound — shared memory); cluster для масштабирования, workers для вычислений.",
+      "explanation": "Cluster — процессы; workers — потоки; для ядер и CPU. Распространённое заблуждение: «Cluster — это потоки внутри одного процесса» — это неверно. Также неверно утверждение: «Worker threads не подходят для CPU-bound задач».",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 3687,
+      "answer": "TypeScript — это надмножество JavaScript со статической типизацией; компилируется в JS; interfaces, generics, enum.",
+      "explanation": "TypeScript — типизированный JS, компилируется в JS.",
+      "options": [],
+      "correctIndex": null
+    },
+    {
+      "id": 3688,
+      "answer": "Основное назначение: Контракт взаимодействия между системами; интеграция, модульность, безопасность; REST/GraphQL/gRPC.",
+      "explanation": "API — контракт, интеграция. Распространённое заблуждение: «API — это только графический интерфейс» — это неверно.",
+      "options": [],
+      "correctIndex": null
+    }
+  ]
+}

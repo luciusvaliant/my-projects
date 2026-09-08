@@ -1,0 +1,506 @@
+[
+  {
+    "id": "q-6a143680975b692556e56397",
+    "freq": 15,
+    "question": "В чем основные отличия между монолитной и микросервисной архитектурой?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a143680975b692556e56702",
+    "freq": 10,
+    "question": "Как работает сборщик мусора (Garbage Collector)?",
+    "tags": [
+      "language_specific",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a143680975b692556e563c7",
+    "freq": 9,
+    "question": "Как работает Event Loop в JavaScript?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a143680975b692556e563f7",
+    "freq": 7,
+    "question": "Что такое HTTP-запрос и из чего он состоит?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a143681975b692556e56eb3",
+    "freq": 6,
+    "question": "Расскажите о вашем опыте работы.",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a143680975b692556e563e4",
+    "freq": 5,
+    "question": "В чем разница между null и undefined в JavaScript?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a143680975b692556e56432",
+    "freq": 5,
+    "question": "В чем заключается разница между useEffect и useLayoutEffect?",
+    "tags": [
+      "frontend",
+      "React",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a143680975b692556e5649b",
+    "freq": 5,
+    "question": "В чем заключаются преимущества и недостатки микросервисной архитектуры?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a143680975b692556e56435",
+    "freq": 3,
+    "question": "Что такое WebSocket?",
+    "tags": [
+      "networking",
+      "junior"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a143680975b692556e56740",
+    "freq": 2,
+    "question": "Что лучше: микросервисы или монолит, и в чем заключаются особенности их масштабирования?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a143680975b692556e56d07",
+    "freq": 2,
+    "question": "Что происходит при вводе URL в адресную строку браузера?",
+    "tags": [
+      "networking",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a143686975b692556e581df",
+    "freq": 2,
+    "question": "Что такое прогрессивный рендеринг?",
+    "tags": [
+      "frontend",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a143686975b692556e58036",
+    "freq": 2,
+    "question": "Какой у вас стек технологий?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a143686975b692556e58121",
+    "freq": 2,
+    "question": "Приведите пример паттерна проектирования.",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fcb",
+    "freq": 2,
+    "question": "Есть ли у вас военный билет?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a143689975b692556e58669",
+    "freq": 1,
+    "question": "Как создается паттерн Factory в JavaScript?",
+    "tags": [
+      "oop",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a143689975b692556e58674",
+    "freq": 1,
+    "question": "Какие существуют основные паттерны проектирования в программировании?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a143689975b692556e58684",
+    "freq": 1,
+    "question": "Сколько потоков в JavaScript?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "junior"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368a975b692556e5889c",
+    "freq": 1,
+    "question": "Что входит в структуру HTTP-запроса и HTTP-ответа?",
+    "tags": [
+      "networking",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368a975b692556e588a1",
+    "freq": 1,
+    "question": "В чем разница между синхронными и асинхронными функциями?",
+    "tags": [
+      "concurrency",
+      "junior"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368a975b692556e588a2",
+    "freq": 1,
+    "question": "Как сделать элемент фиксированным при прокрутке страницы?",
+    "tags": [
+      "frontend",
+      "CSS",
+      "junior"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368a975b692556e588a3",
+    "freq": 1,
+    "question": "Как работают хуки в React?",
+    "tags": [
+      "frontend",
+      "React",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368a975b692556e588a5",
+    "freq": 1,
+    "question": "Какая технология для фронтенд-разработки будет наиболее популярна в ближайшем будущем?",
+    "tags": [
+      "frontend",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368a975b692556e588a6",
+    "freq": 1,
+    "question": "Как работает роутинг в SPA (Single Page Application)?",
+    "tags": [
+      "frontend",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368a975b692556e588a8",
+    "freq": 1,
+    "question": "Почему важно очищать кэш?",
+    "tags": [
+      "architecture",
+      "junior"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368a975b692556e588aa",
+    "freq": 1,
+    "question": "В чем разница между Promise, Promise.all, Promise.any и Promise.race?",
+    "tags": [
+      "frontend",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368a975b692556e588ab",
+    "freq": 1,
+    "question": "Какие существуют флаги у HTTP-куки и за что они отвечают?",
+    "tags": [
+      "web",
+      "HTTP",
+      "junior"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368a975b692556e588af",
+    "freq": 1,
+    "question": "Какие фреймворки поддерживают этот подход?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368a975b692556e588b0",
+    "freq": 1,
+    "question": "Какие существуют примеры хуков в React?",
+    "tags": [
+      "frontend",
+      "React",
+      "junior"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368a975b692556e588b2",
+    "freq": 1,
+    "question": "Какие методы оптимизации CSS вы знаете и как они применяются?",
+    "tags": [
+      "frontend",
+      "CSS",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368a975b692556e588b3",
+    "freq": 1,
+    "question": "Как можно очистить кэш?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368a975b692556e588b7",
+    "freq": 1,
+    "question": "Что такое декларативное программирование?",
+    "tags": [
+      "architecture",
+      "junior"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368a975b692556e58919",
+    "freq": 1,
+    "question": "Почему поток был завершен?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368a975b692556e5891c",
+    "freq": 1,
+    "question": "Что будет являться левой таблицей в операции LEFT JOIN?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368a975b692556e58921",
+    "freq": 1,
+    "question": "Как написать условие в JOIN, чтобы связать таблицу авторов по ID?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fbe",
+    "freq": 1,
+    "question": "Какую роль Event Loop играет в Node.js?",
+    "tags": [
+      "backend",
+      "Node.js",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fc0",
+    "freq": 1,
+    "question": "Из чего состоит архитектура системы и как она работает?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fc1",
+    "freq": 1,
+    "question": "Как в Node.js реализована многопоточность?",
+    "tags": [
+      "backend",
+      "Node.js",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fc2",
+    "freq": 1,
+    "question": "Как React работает с виртуальным DOM?",
+    "tags": [
+      "frontend",
+      "React",
+      "junior"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fc3",
+    "freq": 1,
+    "question": "Что происходит в памяти при создании замыкания?",
+    "tags": [
+      "language_specific",
+      "JavaScript",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fc4",
+    "freq": 1,
+    "question": "Почему не рекомендуется использовать индекс элемента массива в качестве ключа (key) при рендеринге списков в React?",
+    "tags": [
+      "frontend",
+      "React",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fc6",
+    "freq": 1,
+    "question": "В чем разница между массивом и списком?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fca",
+    "freq": 1,
+    "question": "Как работает батчинг (batching) в React?",
+    "tags": [
+      "frontend",
+      "React",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a14368e975b692556e58fd0",
+    "freq": 1,
+    "question": "Как происходит процесс рендеринга в React? Опишите всю цепочку рендера и задействованные механизмы.",
+    "tags": [
+      "frontend",
+      "React",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a143690975b692556e592a8",
+    "freq": 1,
+    "question": "Какой язык программирования стоит выбрать для изучения?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a143690975b692556e592bb",
+    "freq": 1,
+    "question": "Как вы поступите, если в процессе разработки обнаружите критическое упущение в техническом задании: будете молча создавать задачу на доработку или инициируете обсуждение с командой и стейкхолдерами?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a143697975b692556e59d01",
+    "freq": 1,
+    "question": "Расскажите о ваших главных профессиональных достижениях, которыми вы гордитесь.",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "fullstack"
+  },
+  {
+    "id": "q-6a143697975b692556e59d02",
+    "freq": 1,
+    "question": "По каким KPI оценивается ваша эффективность?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "fullstack"
+  }
+]

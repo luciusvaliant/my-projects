@@ -1,0 +1,1355 @@
+[
+  {
+    "id": "q-6a143680975b692556e56423",
+    "freq": 20,
+    "question": "Расскажите про уровни изоляции транзакций в базах данных.",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143680975b692556e56481",
+    "freq": 15,
+    "question": "Какие существуют виды JOIN в SQL?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143680975b692556e563a6",
+    "freq": 9,
+    "question": "Какие типы индексов существуют в базах данных и в чем их принципиальное различие?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143680975b692556e563b7",
+    "freq": 7,
+    "question": "Что такое итератор?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143680975b692556e563c0",
+    "freq": 6,
+    "question": "Сколько будет 2 + 2?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143680975b692556e567db",
+    "freq": 4,
+    "question": "Что такое GIL (Global Interpreter Lock) в Python, зачем он нужен и как он связан с многопоточностью?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143680975b692556e56625",
+    "freq": 4,
+    "question": "Что такое полиморфизм в объектно-ориентированном программировании и как он реализуется через разные классы объектов?",
+    "tags": [
+      "oop",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143680975b692556e564ed",
+    "freq": 3,
+    "question": "Что выведет функция print в данном коде?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143680975b692556e56671",
+    "freq": 3,
+    "question": "Что такое лямбда-выражения?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143680975b692556e56783",
+    "freq": 3,
+    "question": "Есть ли у вас еще какие-нибудь вопросы?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143680975b692556e56445",
+    "freq": 3,
+    "question": "Как вы относитесь к переработкам?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143680975b692556e56492",
+    "freq": 3,
+    "question": "Работал ли ты с многопоточностью?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143680975b692556e564ad",
+    "freq": 3,
+    "question": "Что такое декоратор?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143680975b692556e5674c",
+    "freq": 3,
+    "question": "В чем разница между генератором и итератором?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143680975b692556e56774",
+    "freq": 3,
+    "question": "Может быть, у тебя есть какие-то вопросы?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143687975b692556e58329",
+    "freq": 3,
+    "question": "Как работают индексы в базах данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368c975b692556e58d81",
+    "freq": 3,
+    "question": "Есть ли у вас вопросы к нам?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368c975b692556e58da8",
+    "freq": 3,
+    "question": "Можете привести пример?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143680975b692556e5656b",
+    "freq": 2,
+    "question": "Если первая задача упадет со второй, что произойдет?",
+    "tags": [
+      "concurrency",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143680975b692556e567dc",
+    "freq": 2,
+    "question": "Напишите SQL-запрос для поиска дубликатов в таблице по заданной комбинации полей и объясните, как его использовать для вывода и проверки результатов.",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143680975b692556e564ce",
+    "freq": 2,
+    "question": "Расскажите, пожалуйста, про оконные функции в SQL.",
+    "tags": [
+      "database",
+      "SQL",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143680975b692556e5677d",
+    "freq": 2,
+    "question": "Сколько будет 3 + 3?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143680975b692556e56932",
+    "freq": 2,
+    "question": "Сколько будет 5 + 6?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143680975b692556e56d6e",
+    "freq": 2,
+    "question": "Что такое VACUUM в PostgreSQL?",
+    "tags": [
+      "database",
+      "PostgreSQL",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143687975b692556e5841c",
+    "freq": 2,
+    "question": "На какой операционной системе вы работаете?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58ab7",
+    "freq": 2,
+    "question": "Расскажите о своём опыте: с каким стеком технологий вы работали?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58ac3",
+    "freq": 2,
+    "question": "Какие проблемы могут возникнуть при использовании индексов в базе данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f2c",
+    "freq": 2,
+    "question": "У вас есть ко мне какие-либо вопросы?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143692975b692556e595a9",
+    "freq": 2,
+    "question": "Расскажите, пожалуйста, чем вы занимались на предыдущем месте работы?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58ab4",
+    "freq": 1,
+    "question": "Какой примерно объем данных?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58ac7",
+    "freq": 1,
+    "question": "Как в языке программирования реализована операция инкремента?",
+    "tags": [
+      "language_specific",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58ac9",
+    "freq": 1,
+    "question": "Зачем нужна статистика?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58aca",
+    "freq": 1,
+    "question": "Что показывает план запроса в PostgreSQL?",
+    "tags": [
+      "database",
+      "PostgreSQL",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58acb",
+    "freq": 1,
+    "question": "Как вы создавали индекс в базе данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58acc",
+    "freq": 1,
+    "question": "Какие трансформации в Apache Spark вы использовали в своей практике?",
+    "tags": [
+      "data_structures",
+      "Apache Spark",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58acd",
+    "freq": 1,
+    "question": "На что влияет первичный ключ в базе данных?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58ace",
+    "freq": 1,
+    "question": "На что влияет количество партиций при загрузке данных в ClickHouse?",
+    "tags": [
+      "database",
+      "ClickHouse",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58acf",
+    "freq": 1,
+    "question": "Вы использовали PySpark или Scala для написания кода?",
+    "tags": [
+      "backend",
+      "Apache Spark",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58ad0",
+    "freq": 1,
+    "question": "Какие операции может оптимизировать база данных с помощью индексов?",
+    "tags": [
+      "database",
+      "SQL",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58ad1",
+    "freq": 1,
+    "question": "Будет ли больше частей?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58ad2",
+    "freq": 1,
+    "question": "Что вы имеете в виду под поиском?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58ad4",
+    "freq": 1,
+    "question": "Что означает состояние, когда источники (resources) успешно загрузились?",
+    "tags": [
+      "web",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58ad6",
+    "freq": 1,
+    "question": "У вас ClickHouse развернут на одной ноде или в виде кластера?",
+    "tags": [
+      "database",
+      "ClickHouse",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58ad7",
+    "freq": 1,
+    "question": "На что влияет этот параметр?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58ad9",
+    "freq": 1,
+    "question": "Какими движками поддерживается создание локальных таблиц в ClickHouse?",
+    "tags": [
+      "database",
+      "ClickHouse",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58adb",
+    "freq": 1,
+    "question": "Как вы обрабатываете ситуацию, когда ETL-процесс завершается с ошибкой и требуется перезагрузка партиций или дозагрузка данных?",
+    "tags": [
+      "data_structures",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58adc",
+    "freq": 1,
+    "question": "Какие существуют правила и рекомендации по выбору ключа сортировки?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368d975b692556e58ef3",
+    "freq": 1,
+    "question": "Почему вы хотите сменить текущее место работы?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368d975b692556e58ef9",
+    "freq": 1,
+    "question": "Почему использование JOIN не является оптимальным решением в данной задаче?",
+    "tags": [
+      "database",
+      "SQL",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368d975b692556e58efa",
+    "freq": 1,
+    "question": "В чём заключается проблема?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368d975b692556e58efd",
+    "freq": 1,
+    "question": "Как по результату запроса понять, был ли он успешным или возникли ошибки?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368d975b692556e58efe",
+    "freq": 1,
+    "question": "Напишите код для решения задачи.",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f02",
+    "freq": 1,
+    "question": "Что такое индексы в базе данных и как они влияют на производительность при работе с таблицами?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f0b",
+    "freq": 1,
+    "question": "Как в вашей команде или компании разделены зоны ответственности между аналитиками и разработчиками?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f10",
+    "freq": 1,
+    "question": "Какие виды джойнов (JOIN) вы знаете в SQL?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f26",
+    "freq": 1,
+    "question": "Сколько строк может получиться в результате выполнения запроса?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368d975b692556e58f41",
+    "freq": 1,
+    "question": "Сколько будет 3 + 4?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a7f",
+    "freq": 1,
+    "question": "Какие ограничения (constraints) можно наложить на поля в базе данных?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a81",
+    "freq": 1,
+    "question": "В чем принципиальные различия между таблицами orders и order_items?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a82",
+    "freq": 1,
+    "question": "Какие существуют ограничения по стоимости (ценовые ограничения) при использовании данной технологии или сервиса?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a88",
+    "freq": 1,
+    "question": "Какие ограничения могут возникнуть при работе с сущностями orders и order items в базе данных?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a8b",
+    "freq": 1,
+    "question": "Какая связь существует между таблицей клиентов и таблицей заказов в базе данных?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368b975b692556e58a8c",
+    "freq": 1,
+    "question": "Как должны быть связаны сущности orders и order items в базе данных и как они должны взаимодействовать?",
+    "tags": [
+      "database",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590d7",
+    "freq": 1,
+    "question": "Напишите лямбда-функцию, которая возвращает произведение двух чисел.",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590d8",
+    "freq": 1,
+    "question": "Что такое Map и Reduce и как они работают?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590db",
+    "freq": 1,
+    "question": "Что является более оптимальным с точки зрения потребления памяти?",
+    "tags": [
+      "algorithms",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590dc",
+    "freq": 1,
+    "question": "Что такое планирование в контексте операционных систем или управления проектами?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590e0",
+    "freq": 1,
+    "question": "Откуда поступали задачи?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590e1",
+    "freq": 1,
+    "question": "Использовали ли вы Jira для трекинга времени выполнения задач?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590e2",
+    "freq": 1,
+    "question": "Какова последовательность выполнения SQL-операторов в плане запроса?",
+    "tags": [
+      "database",
+      "SQL",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590e3",
+    "freq": 1,
+    "question": "Какова временная сложность обращения к элементу в структуре данных?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590e6",
+    "freq": 1,
+    "question": "Это вы сейчас рассказали про Python или про Apache Spark?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590e9",
+    "freq": 1,
+    "question": "Какие существуют типы сенсоров в мобильных устройствах?",
+    "tags": [
+      "mobile",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590ec",
+    "freq": 1,
+    "question": "Для чего это всё делается?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590ed",
+    "freq": 1,
+    "question": "Можете ли вы привести пару примеров?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590f0",
+    "freq": 1,
+    "question": "Тебе приходилось когда-нибудь работать с Docker?",
+    "tags": [
+      "devops",
+      "Docker",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590f1",
+    "freq": 1,
+    "question": "В чем заключается основное отличие между стеком и кучей, и как они работают с памятью?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590f3",
+    "freq": 1,
+    "question": "В каких случаях целесообразно использовать данное решение?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590f4",
+    "freq": 1,
+    "question": "Каковы основные преимущества и недостатки формата Apache Parquet?",
+    "tags": [
+      "data_structures",
+      "Apache Parquet",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590f6",
+    "freq": 1,
+    "question": "Что такое управляемость (maintainability) в контексте разработки программного обеспечения?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590f8",
+    "freq": 1,
+    "question": "Что произойдет, если ничего не настраивать?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590f9",
+    "freq": 1,
+    "question": "Как можно регулировать это поведение?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590fa",
+    "freq": 1,
+    "question": "Что именно запускается в Docker-контейнерах и как это оркестрируется в Kubernetes?",
+    "tags": [
+      "devops",
+      "Kubernetes",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590fb",
+    "freq": 1,
+    "question": "Как можно структурировать данные или проект? Приходилось ли вам заниматься проектированием структуры?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590fc",
+    "freq": 1,
+    "question": "К каким последствиям может привести данная ситуация?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590fd",
+    "freq": 1,
+    "question": "Расскажите, что происходит при выполнении HTTP-запроса в браузере?",
+    "tags": [
+      "networking",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590fe",
+    "freq": 1,
+    "question": "Приходилось ли вам работать с HDFS?",
+    "tags": [
+      "data_structures",
+      "Hadoop",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e590ff",
+    "freq": 1,
+    "question": "Для чего используется Amazon S3?",
+    "tags": [
+      "backend",
+      "AWS",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e59100",
+    "freq": 1,
+    "question": "Используете ли вы в работе небольшие структуры данных?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e59101",
+    "freq": 1,
+    "question": "Что вы можете рассказать о своем опыте?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e59102",
+    "freq": 1,
+    "question": "Расскажите о ситуациях, когда вы сталкивались с серьезными техническими проблемами в работе, и как вы их решали?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e59103",
+    "freq": 1,
+    "question": "Как работает управление памятью в Python?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e59104",
+    "freq": 1,
+    "question": "Что вернет в качестве результата выполнение данного фрагмента кода?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368e975b692556e59106",
+    "freq": 1,
+    "question": "На чём у вас развёрнут Apache Spark?",
+    "tags": [
+      "data_structures",
+      "Apache Spark",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368f975b692556e59108",
+    "freq": 1,
+    "question": "Используется ли в проекте Hadoop или какая-то другая технология для обработки больших данных?",
+    "tags": [
+      "architecture",
+      "Hadoop",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368f975b692556e5910a",
+    "freq": 1,
+    "question": "Расскажите про Amazon S3.",
+    "tags": [
+      "architecture",
+      "AWS",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368f975b692556e5910c",
+    "freq": 1,
+    "question": "Возможно ли, что при переполнении диска нода вышла из строя, и что происходило с подами (экзекьютерами), которые на ней были?",
+    "tags": [
+      "devops",
+      "Kubernetes",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368f975b692556e5910d",
+    "freq": 1,
+    "question": "Какие еще операции существуют в данном контексте?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368f975b692556e5910f",
+    "freq": 1,
+    "question": "Какие еще операции существуют в модели MapReduce, помимо Map и Reduce?",
+    "tags": [
+      "algorithms",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368f975b692556e5911d",
+    "freq": 1,
+    "question": "Почему я успел за 50 минут?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368f975b692556e59121",
+    "freq": 1,
+    "question": "Что делает команда cat в Linux?",
+    "tags": [
+      "backend",
+      "Linux",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368f975b692556e5912d",
+    "freq": 1,
+    "question": "Насколько глубоко вы владеете Linux и как часто вам приходится работать с ним в повседневных задачах?",
+    "tags": [
+      "devops",
+      "Linux",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a14368f975b692556e59130",
+    "freq": 1,
+    "question": "Кто занимается процессом выкатки кода в продакшн: отдельные люди или разработчики?",
+    "tags": [
+      "devops",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59bde",
+    "freq": 1,
+    "question": "Какие условия вы используете для выбора технологий или архитектурных решений в проекте?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59bdf",
+    "freq": 1,
+    "question": "Может ли быть такое, что у одного клиента есть несколько версий имени в один и тот же момент времени?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59be1",
+    "freq": 1,
+    "question": "Может ли в системе возникнуть ситуация, при которой для двух разных клиентов будут пересекаться диапазоны дат начала и окончания?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59be2",
+    "freq": 1,
+    "question": "Что такое договор ГПХ и каковы его особенности?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59be3",
+    "freq": 1,
+    "question": "С точки зрения стека и задач, которые вы хотели бы выполнять: как вы это видите — чем вам интереснее заниматься (больше погружаться в аналитику, прототипировать, общаться с заказчиками или, например, строить/разрабатывать что-то ещё)?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59be4",
+    "freq": 1,
+    "question": "Какие процессы оптимизации вы бы внедрили в компании и что именно, по вашему мнению, можно оптимизировать в промышленном контуре?",
+    "tags": [
+      "devops",
+      "senior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59be5",
+    "freq": 1,
+    "question": "Какими задачами вам нравится заниматься на работе и что для вас является идеальным рабочим процессом?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59be6",
+    "freq": 1,
+    "question": "В какой момент времени запись о клиенте считается неактивной или завершенной?",
+    "tags": [
+      "database",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59be7",
+    "freq": 1,
+    "question": "Как действовать в ситуации, когда заказчиком выступает один из руководителей филиала?",
+    "tags": [
+      "behavioral",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59bea",
+    "freq": 1,
+    "question": "Какие пайплайны на Python для обработки данных вы разрабатывали и как была организована их эксплуатация: локальный запуск или развертывание в целевом окружении?",
+    "tags": [
+      "backend",
+      "Python",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59b97",
+    "freq": 1,
+    "question": "Какой максимальный объем данных вам приходилось обрабатывать в своих проектах?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59bc3",
+    "freq": 1,
+    "question": "Какие вопросы могут появиться на собеседовании?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59bcd",
+    "freq": 1,
+    "question": "Напишите SQL-запрос с использованием оконной функции для таблицы «параметры». Используйте произвольную СУБД и пример данных.",
+    "tags": [
+      "database",
+      "SQL",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59bce",
+    "freq": 1,
+    "question": "Расскажите, как вы использовали библиотеку pandas в своих проектах?",
+    "tags": [
+      "language_specific",
+      "Python",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59bcf",
+    "freq": 1,
+    "question": "Чем отличается Hive от PostgreSQL?",
+    "tags": [
+      "database",
+      "PostgreSQL",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59bd5",
+    "freq": 1,
+    "question": "Что в таблице «Клиенты» можно выбрать в качестве первичного ключа?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59bda",
+    "freq": 1,
+    "question": "Что такое хороший (приличный) ключ в контексте баз данных или хеш-таблиц?",
+    "tags": [
+      "data_structures",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59bdb",
+    "freq": 1,
+    "question": "Почему у нас используется имя как атрибут?",
+    "tags": [
+      "architecture",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59bdc",
+    "freq": 1,
+    "question": "Почему вы хотите уйти из Академии наук?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59bed",
+    "freq": 1,
+    "question": "Расскажите о своем опыте: в каких компаниях вы работали, над какими проектами, чем занимались и какие подходы или роли использовали в работе?",
+    "tags": [
+      "behavioral",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59bf5",
+    "freq": 1,
+    "question": "Что подразумевается под «существенным» в контексте критериев или показателей?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59bf6",
+    "freq": 1,
+    "question": "Как организовать хранение данных, если в распоряжении есть только имена файлов, без использования общего облачного хранилища?",
+    "tags": [
+      "system_design",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59bff",
+    "freq": 1,
+    "question": "Если у клиента нет ни одной транзакции, должен ли он попасть в отчет согласно текущей логике скрипта?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59c06",
+    "freq": 1,
+    "question": "Если взять 5 строк и сделать LEFT JOIN с 10 строками, сколько строк получится на выходе?",
+    "tags": [
+      "database",
+      "SQL",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59c08",
+    "freq": 1,
+    "question": "Можно ли ставки, выделенные как сеньорские, разделить на несколько джуниорских позиций?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143696975b692556e59c0e",
+    "freq": 1,
+    "question": "Какие условия предлагаются на позициях уровня Junior?",
+    "tags": [
+      "general",
+      "junior"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143695975b692556e599d8",
+    "freq": 1,
+    "question": "Какие новые разработки и тренды существуют в данной области?",
+    "tags": [
+      "general",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  },
+  {
+    "id": "q-6a143695975b692556e599dd",
+    "freq": 1,
+    "question": "Расскажите, пожалуйста, про inline-функции в языке C.",
+    "tags": [
+      "language_specific",
+      "C",
+      "middle"
+    ],
+    "direction": "data-engineer"
+  }
+]
