@@ -60,8 +60,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,sans-
 }
 .q-answer-label{font-size:.82rem;color:var(--green);font-weight:700;margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px}
 .q-answer-text{font-size:1rem;line-height:1.6;color:var(--text);white-space:pre-line}
-.q-explanation{margin-top:14px;padding-top:14px;border-top:1px solid var(--card2);font-size:.9rem;color:var(--muted);line-height:1.5}
+.q-explanation{margin-top:14px;padding-top:14px;border-top:1px solid var(--card2);font-size:.9rem;color:var(--muted);line-height:1.5;white-space:pre-line}
 .q-explanation strong{color:var(--text)}
+.q-examples{margin-top:14px;padding:14px;background:#0b1120;border-radius:8px;border:1px solid var(--card2);font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:.85rem;line-height:1.55;color:#c4b5fd;white-space:pre-wrap;overflow-x:auto}
+.q-examples-label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:.78rem;color:var(--primary);font-weight:700;margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px}
 
 .q-nav{margin-top:24px;display:flex;gap:12px}
 .btn-nav{
@@ -315,7 +317,7 @@ document.getElementById('btn-show').addEventListener('click', function() {
 
   var answerLabel = document.createElement('div');
   answerLabel.className = 'q-answer-label';
-  answerLabel.textContent = 'Ответ';
+  answerLabel.textContent = 'Краткий ответ';
   answerBox.appendChild(answerLabel);
 
   var answerText = document.createElement('div');
@@ -327,10 +329,21 @@ document.getElementById('btn-show').addEventListener('click', function() {
     var explanation = document.createElement('div');
     explanation.className = 'q-explanation';
     var explanationLabel = document.createElement('strong');
-    explanationLabel.textContent = 'Пояснение: ';
+    explanationLabel.textContent = 'Подробнее: ';
     explanation.appendChild(explanationLabel);
     explanation.appendChild(document.createTextNode(q.explanation));
     answerBox.appendChild(explanation);
+  }
+
+  if (q.examples && q.examples.trim()) {
+    var examples = document.createElement('div');
+    examples.className = 'q-examples';
+    var examplesLabel = document.createElement('div');
+    examplesLabel.className = 'q-examples-label';
+    examplesLabel.textContent = 'Примеры';
+    examples.appendChild(examplesLabel);
+    examples.appendChild(document.createTextNode(q.examples));
+    answerBox.appendChild(examples);
   }
 
   container.appendChild(answerBox);
